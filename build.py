@@ -1,143 +1,14 @@
 #!/usr/bin/env python3
-"""Generates all pages except index.html. Edit content here, run: python3 build.py"""
-import os, html, datetime
-
-SITE = "https://srilankaforindians.com"
-WA = "https://wa.me/94770000000"
-FILM_ID = "dbM8AMmEdgY"  # featured YouTube film; swap per page as real videos come in
-FILM_THUMB = f"https://i.ytimg.com/vi/{FILM_ID}/maxresdefault.jpg"
-
-def film_section(caption):
-    return f"""<section class="band sand"><div class="wrap">
-  <span class="eyebrow">The island, on film</span>
-  <h2>{caption}</h2>
-  <div class="film" style="margin-top:40px">
-    <iframe src="https://www.youtube-nocookie.com/embed/{FILM_ID}?rel=0&modestbranding=1" title="Sri Lanka, on film" allow="encrypted-media; picture-in-picture; fullscreen" loading="lazy" allowfullscreen></iframe>
-  </div>
-</div></section>
-"""
-
-def video_schema(page_name):
-    return f"""<script type="application/ld+json">{{"@context":"https://schema.org","@type":"VideoObject","name":"Sri Lanka, the island next door","description":"Featured film on the {page_name} page of srilankaforindians.com.","thumbnailUrl":["{FILM_THUMB}"],"uploadDate":"2026-10-01","embedUrl":"https://www.youtube-nocookie.com/embed/{FILM_ID}","contentUrl":"https://www.youtube.com/watch?v={FILM_ID}"}}</script>"""
-
-def crumb_schema(name, path):
-    return f"""<script type="application/ld+json">{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":"{name}","item":"{SITE}/{path}"}}]}}</script>"""
-
-def faq_schema(pairs):
-    items = ",".join(
-        f'{{"@type":"Question","name":"{q}","acceptedAnswer":{{"@type":"Answer","text":"{a}"}}}}' for q, a in pairs)
-    return f"""<script type="application/ld+json">{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{items}]}}</script>"""
-
-def head(title, desc, path, depth=0, schema=""):
-    p = "../" * depth
-    canonical = SITE + "/" + path
-    return f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc)}">
-<link rel="canonical" href="{canonical}">
-<meta property="og:type" content="website">
-<meta property="og:title" content="{html.escape(title)}">
-<meta property="og:description" content="{html.escape(desc)}">
-<meta property="og:url" content="{canonical}">
-<meta property="og:site_name" content="Sri Lanka for Indians">
-<meta property="og:image" content="{FILM_THUMB}">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{html.escape(title)}">
-<meta name="twitter:image" content="{FILM_THUMB}">
-<link rel="icon" href="{p}assets/img/logo.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="{p}assets/css/style.css?v=3">
-{schema}
-</head>
-<body>
-"""
-
-def header(depth=0):
-    p = "../" * depth
-    return f"""<header class="site-head">
-  <div class="wrap">
-    <a class="logo" href="{p}index.html" aria-label="Sri Lanka for Indians home">
-      <svg viewBox="0 0 80 100" role="img" aria-hidden="true">
-        <path d="M40 4 C40 4 72 46 72 68 a32 32 0 1 1 -64 0 C8 46 40 4 40 4 Z" fill="none" stroke="#C9A75A" stroke-width="2"/>
-        <path d="M40 18 C40 18 63 50 63 67 a23 23 0 1 1 -46 0 C17 50 40 18 40 18 Z" fill="none" stroke="#C9A75A" stroke-width="1" opacity=".45"/>
-        <circle cx="40" cy="69" r="5.5" fill="#E6C987"/>
-      </svg>
-      <span class="word">Sri Lanka<em>For Indians</em></span>
-    </a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
-    <label for="nav-toggle" class="nav-burger">Menu</label>
-    <nav aria-label="Main">
-      <a href="{p}weddings.html">Weddings</a>
-      <a href="{p}real-estate.html">Estates</a>
-      <a href="{p}business.html">Enterprise</a>
-      <a href="{p}logistics.html" class="hide-m">Logistics</a>
-      <a href="{p}second-home.html" class="hide-m">Residences</a>
-      <a href="{p}travel.html">Journeys</a>
-      <a class="btn btn-wa" href="{WA}?text=Hi%2C%20I%20found%20you%20on%20srilankaforindians.com" rel="noopener">WhatsApp</a>
-    </nav>
-  </div>
-</header>
-"""
+"""Builds the whole site. Edit content in the modules, then run: python3 build.py
+Modules: sitekit (shared chrome), media (videos/reels), home, sectors (why/), guides, cities (from/), pages_extra (tax, watch), hindi (hi/)."""
+import os, glob, datetime
+from urllib.parse import unquote
+from sitekit import *
+from sitekit import cta_banner as _cta
+from media import pick, reels
 
 def cta_banner(line, sub, wa_text, depth=0):
-    return f"""<section class="band">
-  <div class="wrap">
-    <div class="cta-banner">
-      <div><h2>{line}</h2><p>{sub}</p></div>
-      <div class="btns">
-        <a class="btn btn-primary" href="{WA}?text={wa_text}" rel="noopener">WhatsApp your guide</a>
-        <a class="btn btn-ghost" href="mailto:hello@srilankaforindians.com">Email us</a>
-      </div>
-    </div>
-  </div>
-</section>
-"""
-
-def footer(depth=0):
-    p = "../" * depth
-    return f"""<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <a class="logo" href="{p}index.html" style="margin-bottom:18px">
-          <svg viewBox="0 0 80 100" style="height:42px" aria-hidden="true">
-            <path d="M40 4 C40 4 72 46 72 68 a32 32 0 1 1 -64 0 C8 46 40 4 40 4 Z" fill="none" stroke="#C9A75A" stroke-width="2"/>
-            <path d="M40 18 C40 18 63 50 63 67 a23 23 0 1 1 -46 0 C17 50 40 18 40 18 Z" fill="none" stroke="#C9A75A" stroke-width="1" opacity=".45"/>
-            <circle cx="40" cy="69" r="5.5" fill="#E6C987"/>
-          </svg>
-          <span class="word">Sri Lanka<em>For Indians</em></span>
-        </a>
-        <p class="small">The island next door. Weddings, estates, enterprise and life in Sri Lanka, curated for Indians.</p>
-      </div>
-      <div><h4>Pursuits</h4><ul>
-        <li><a href="{p}weddings.html">Weddings</a></li>
-        <li><a href="{p}real-estate.html">Estates</a></li>
-        <li><a href="{p}business.html">Enterprise and Port City</a></li>
-        <li><a href="{p}logistics.html">Logistics</a></li>
-      </ul></div>
-      <div><h4>Live</h4><ul>
-        <li><a href="{p}second-home.html">The second address</a></li>
-        <li><a href="{p}travel.html">Journeys</a></li>
-        <li><a href="{p}from/chennai.html">From Chennai</a></li>
-        <li><a href="{p}from/mumbai.html">From Mumbai</a></li>
-      </ul></div>
-      <div><h4>Talk to us</h4><ul>
-        <li><a href="{WA}" rel="noopener">WhatsApp</a></li>
-        <li><a href="mailto:hello@srilankaforindians.com">hello@srilankaforindians.com</a></li>
-      </ul></div>
-    </div>
-    <p class="disclaimer">Sri Lanka for Indians is an independent guide and introduction service. We are not affiliated with the Government of Sri Lanka, the Colombo Port City Economic Commission or any tourism authority. Nothing on this site is legal, tax or investment advice. Visa rules, tax incentives and property laws change; verify current terms with the official source and licensed professionals before acting. Overseas investment by Indian residents is subject to RBI and FEMA regulations; consult your chartered accountant.</p>
-  </div>
-</footer>
-</body>
-</html>
-"""
+    return _cta(line, sub, unquote(wa_text))
 
 PAGES = {}
 
@@ -157,7 +28,7 @@ PAGES["weddings.html"] = dict(
   <h2>Why couples are crossing the Palk Strait</h2>
   <div class="grid c3" style="margin-top:28px">
     <div class="card"><span class="tag">Money</span><h3>Your budget stretches further</h3><p>Five star beach resorts price rooms and banquets below comparable Goa and Rajasthan properties. No Goa style liquor licence drama, and alcohol at resort rates, not destination markup rates.</p></div>
-    <div class="card"><span class="tag">Logistics</span><h3>Easier than an Indian destination wedding</h3><p>One flight under 3 hours from any metro. ETA visas online in hours. Customs is used to wedding cargo: lehengas, decor, even your panditji's samagri.</p></div>
+    <div class="card"><span class="tag">Logistics</span><h3>Easier than an Indian destination wedding</h3><p>One flight under 3 hours from any metro. Free ETA visas online in hours. Customs is used to wedding cargo: lehengas, decor, even your panditji's samagri.</p></div>
     <div class="card"><span class="tag">The wow</span><h3>Backdrops Goa cannot match</h3><p>Clifftop lawns in Galle, private beaches on the south coast, tea country manors in Ella, and sunsets your photographer will frame without a single filter.</p></div>
   </div>
 </div></section>
@@ -421,7 +292,7 @@ PAGES["travel.html"] = dict(
 <section class="band sand"><div class="wrap">
   <h2>The practicals Indians actually ask</h2>
   <div style="margin-top:24px; max-width:860px">
-    <details><summary>Visa</summary><p>Apply at the official eta.gov.lk. Approvals usually land within hours. Sri Lanka has run free visa schemes for Indians; check the fee at application time. Carry the ETA printout or PDF.</p></details>
+    <details><summary>Visa</summary><p>Since 25 May 2026 the 30 day tourist ETA is free for Indians, with double entry. Apply only at the official eta.gov.lk; approvals usually land within hours. Carry the ETA on your phone. Full details in our <a href=\"guides/visa-for-indians.html\">visa guide</a>.</p></details>
     <details><summary>Money and UPI</summary><p>UPI works at LankaQR merchants in cities and tourist areas. Carry some LKR cash for small vendors. Cards work in hotels and supermarkets.</p></details>
     <details><summary>Getting around</summary><p>PickMe is the local Ola. Intercity: hire a car with driver for the week, it costs less than you expect and the driver becomes your fixer. The hill train is an experience, book reserved seats early.</p></details>
     <details><summary>Best season</summary><p>West and south coasts shine December to April. East coast (Trinco, Arugam Bay) takes over May to September. There is always a good coast; that is the island's cheat code.</p></details>
@@ -431,139 +302,100 @@ PAGES["travel.html"] = dict(
 """ + cta_banner("Want it planned for you?", "Tell us dates, group and budget. We send a day by day plan with real hotel prices in 48 hours, free.", "Hi%2C%20plan%20my%20Sri%20Lanka%20trip"),
 )
 
-# City pages -------------------------------------------------------------
-CITIES = [
-    ("chennai","Chennai","1 hr 20 min","₹7,000 to 14,000","Daily direct flights on IndiGo, Air India and SriLankan. The closest metro to the island, and the ferry to Jaffna leaves from your state.","Tamil works across the north and east of Sri Lanka and in much of Colombo. For Chennai families this is the easiest foreign country on earth."),
-    ("mumbai","Mumbai","2 hr 30 min","₹9,000 to 18,000","Direct flights most days on SriLankan and Indian carriers.","Mumbai money is already here: shipping desks, film shoots and wedding planners all run Colombo routes."),
-    ("delhi","Delhi NCR","3 hr 30 min","₹11,000 to 22,000","Direct flights on SriLankan and IndiGo.","Swap one Gurgaon winter smog week for Galle sea air. Many NCR firms are eyeing Port City as their India plus one."),
-    ("bengaluru","Bengaluru","1 hr 45 min","₹8,000 to 16,000","Multiple daily directs. Weekend trips are genuinely practical.","Bengaluru tech teams are exactly who Port City is courting for business continuity centres."),
-    ("hyderabad","Hyderabad","1 hr 50 min","₹8,000 to 16,000","Regular direct flights on IndiGo and SriLankan.","Pharma and IT firms from Hyderabad fit the island's GCC pitch, and Ramoji sized weddings fit its resorts."),
-    ("kolkata","Kolkata","2 hr 45 min","₹10,000 to 21,000","Direct and one stop options via Chennai.","Durga Puja holidays line up with the start of the west coast season. Plan accordingly."),
-    ("ahmedabad","Ahmedabad","2 hr 45 min","₹10,000 to 20,000","One stop via Mumbai or Chennai on most days.","Gujarati travel groups and diamond trade families were among the first to spot Colombo property prices."),
-    ("pune","Pune","2 hr 45 min","₹9,000 to 18,000","Via Mumbai or direct seasonal services.","Pune's auto and IT exporters already ship through Colombo. Visit the port your containers transit."),
-    ("kochi","Kochi","1 hr 10 min","₹6,500 to 13,000","Short hop directs; the fastest international flight many Malayalis will ever take.","Kerala and Sri Lanka share the coconut, the lagoon and the ayurveda economy. The island feels like home with leopards."),
-    ("jaipur","Jaipur","4 hr (one stop)","₹12,000 to 24,000","Connections via Delhi or Mumbai.","Royal wedding planners from Jaipur are quietly adding Sri Lankan palaces and forts to their venue decks."),
-    ("coimbatore","Coimbatore","1 hr 15 min","₹6,500 to 13,000","Short directs and Chennai connections.","Textile exporters from Tirupur move cargo through Colombo every week. The flight is shorter than the drive to Ooty."),
-    ("lucknow","Lucknow","4 hr (one stop)","₹12,000 to 24,000","Connections via Delhi.","The Ramayana trail resonates nowhere more than UP. Group pilgrimages from Lucknow and Ayodhya are a growing route."),
-]
-
-CITY_BODY = """
-<section class="hero"><div class="wrap">
-  <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; From {name}</p>
-  <span class="eyebrow">From {name}</span>
-  <h1>Sri Lanka from {name}: {time} away.</h1>
-  <p class="lead">{flights} Return fares typically run {fare} depending on season. {hook}</p>
-  <div class="cta-row">
-    <a class="btn btn-primary" href="{wa}?text=Hi%2C%20I%27m%20from%20{name_enc}%2C%20planning%20Sri%20Lanka" rel="noopener">Plan from {name}</a>
-    <a class="btn btn-ghost" href="../travel.html">See itineraries</a>
-  </div>
-</div></section>
-
-<section class="band"><div class="wrap">
-  <h2>What people from {name} come for</h2>
-  <div class="grid c3" style="margin-top:28px">
-    <a class="card link-card" href="../weddings.html"><span class="tag">Weddings</span><h3>Destination weddings that beat Goa</h3><p>Run your guest list through our calculator, flights from {name} included.</p><span class="go">Compare costs &rarr;</span></a>
-    <a class="card link-card" href="../real-estate.html"><span class="tag">Property</span><h3>Sea view condos priced in dollars</h3><p>What Indians can buy, the USD 100k visa route, and the current shortlist.</p><span class="go">See the rules &rarr;</span></a>
-    <a class="card link-card" href="../business.html"><span class="tag">Business</span><h3>Port City incentives</h3><p>0% personal tax, holidays up to 15 years for approved businesses. The India plus one address.</p><span class="go">Read the numbers &rarr;</span></a>
-  </div>
-</div></section>
-
-<section class="band sand"><div class="wrap">
-  <h2>Quick facts for {name} travellers</h2>
-  <div class="table-scroll" style="margin-top:24px"><table>
-    <tr><th>Question</th><th>Answer</th></tr>
-    <tr><td>Flight time</td><td>{time} to Colombo (BIA)</td></tr>
-    <tr><td>Typical return fare</td><td class="num">{fare}</td></tr>
-    <tr><td>Visa</td><td>Online ETA at eta.gov.lk, usually approved in hours</td></tr>
-    <tr><td>Money</td><td>UPI at LankaQR merchants, cards widely accepted, carry some LKR</td></tr>
-    <tr><td>Time difference</td><td>None. Sri Lanka runs on IST.</td></tr>
-  </table></div>
-</div></section>
-"""
-
-def city_page(slug, name, time, fare, flights, hook):
-    name_enc = name.replace(" ", "%20")
-    schema = f"""<script type="application/ld+json">{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":"From {name}","item":"{SITE}/from/{slug}.html"}}]}}</script>"""
-    body = CITY_BODY.format(name=name, time=time, fare=fare, flights=flights, hook=hook, wa=WA, name_enc=name_enc)
-    body += cta_banner(f"Flying from {name}?", "One message gets you a plan: trip, wedding, property or business. Your guide on the island replies the same day.", f"Hi%2C%20I%27m%20from%20{name_enc}")
-    title = f"Sri Lanka from {name}: Flights, Cost, Weddings and Investment Guide | Sri Lanka for Indians"
-    desc = f"Everything for {name} travellers and investors heading to Sri Lanka: {time} flight time, fares from {fare.split(' to ')[0]}, visa in hours, weddings, property and Port City business setup."
-    return head(title, desc, f"from/{slug}.html", depth=1, schema=schema) + header(1) + body + footer(1)
-
-# Per page SEO + film config ---------------------------------------------
+# Per page SEO, videos and Hindi pairs ------------------------------------------
 PILLAR_META = {
-    "weddings.html": dict(crumb="Weddings", film="Where the vows <em>will be taken.</em>", faq=[
+    "weddings.html": dict(crumb="Weddings", hi="hi/shaadi.html", vids=["WvMdSZ7fmJY","gamg1oTsXQg","b1RrqsxLGms"], reels="wedding",
+        film_h="Indian weddings, <em>on this island.</em>", faq=[
         ("How much does a destination wedding in Sri Lanka cost?",
          "Sri Lankan beach resorts often price venue, rooms and catering below comparable Goa or Udaipur packages, while international flights narrow the gap depending on your city. The result swings with guest count, season and style, so run your own numbers in our calculator and ask us for three real resort quotes."),
         ("Can we bring our own pandit, decor and outfits to Sri Lanka?",
-         "Yes. Resorts here host Indian weddings regularly, and customs handling for wedding cargo, decor and a travelling pandit is routine when a planner manages the paperwork."),
-    ]),
-    "real-estate.html": dict(crumb="Estates", film="The coastline you would <em>own a piece of.</em>", faq=[
+         "Yes. Resorts here host Indian weddings regularly, and customs handling for wedding cargo, decor and a travelling pandit is routine when a planner manages the paperwork.")]),
+    "real-estate.html": dict(crumb="Estates", hi="hi/property.html", vids=["dbM8AMmEdgY","B2OIRRQbz8I","GHGrijFEpgU"],
+        film_h="Think School, Sangakkara, <em>and the case for buying.</em>", faq=[
         ("Can Indians buy apartments in Sri Lanka?",
          "Yes. Foreigners can buy condominium units above ground floor outright when the full price is paid through an inward foreign remittance. Freehold land is restricted; land is held on long lease or approved structures."),
         ("Does buying property in Sri Lanka give residency?",
-         "A qualifying property investment of USD 100,000 or more, routed through an Inward Investment Account, supports a renewable 5 year residence visa."),
-    ]),
-    "business.html": dict(crumb="Enterprise", film=None, faq=[
+         "A qualifying property investment of USD 100,000 or more, routed through an Inward Investment Account, supports a renewable 5 year residence visa.")]),
+    "business.html": dict(crumb="Enterprise", vids=["hvOeE4eW8As","GHyNEH0kQ3o","rIa82ugYTN8"],
+        film_h="The comeback, <em>explained by Indian channels.</em>", faq=[
         ("What tax does a company pay in Port City Colombo?",
          "Under Regulation 01 of 2025, primary Businesses of Strategic Importance receive corporate income tax holidays of 8 to 15 years, secondary businesses a concessionary 7.5% rate for 4 years, and personal income tax inside the zone has been 0%. All incentives require CPCEC approval."),
         ("Can an Indian company own 100% of its Sri Lankan entity?",
-         "Inside Port City, yes. Outside the zone most sectors also allow full foreign ownership through standard incorporation or the BOI route, with sector specific exceptions."),
-    ]),
-    "logistics.html": dict(crumb="Logistics", film=None, faq=[
+         "Inside Port City, yes. Outside the zone most sectors also allow full foreign ownership through standard incorporation or the BOI route, with sector specific exceptions.")]),
+    "logistics.html": dict(crumb="Logistics", vids=["jOEz-ON842A","jvRH8dcbLpg"],
+        film_h="Colombo against Vizhinjam, <em>and the port itself.</em>", faq=[
         ("Why does Colombo port matter for Indian cargo?",
-         "Colombo sits 6 to 10 nautical miles off the main east west shipping lane and handled a record 8.29 million TEU in 2025, with a large share being Indian transshipment. Adani operates the West Container Terminal."),
-    ]),
-    "second-home.html": dict(crumb="The Second Address", film="The view from your <em>second address.</em>", faq=None),
-    "travel.html": dict(crumb="Journeys", film="See where <em>you are going.</em>", faq=None),
+         "Colombo sits 6 to 10 nautical miles off the main east west shipping lane and handled a record 8.29 million TEU in 2025, with a large share being Indian transshipment. Adani operates the West Container Terminal.")]),
+    "second-home.html": dict(crumb="The Second Address", vids=["YGeivlm5C78","oriToNJZG-k","52E5aIUxzj8"],
+        film_h="Indians who <em>tried living here.</em>", faq=None),
+    "travel.html": dict(crumb="Journeys", hi="hi/yatra.html", vids=["CW6jTV-hTok","cRQu04IaAUk","7j335oyBKH8","iXQ3ij9h6WM","2SUXqcjFIgI","Bu86Z_7VzAA"],
+        film_h="See where <em>you are going.</em>", faq=None),
 }
 CTA_MARK = '<section class="band">\n  <div class="wrap">\n    <div class="cta-banner">'
 
-# Write everything -------------------------------------------------------
-written = []
-for fname, pg in PAGES.items():
-    meta = PILLAR_META.get(fname, {})
-    schema = crumb_schema(meta.get("crumb", pg["title"].split("|")[0].strip()), fname)
-    if meta.get("faq"): schema += "\n" + faq_schema(meta["faq"])
-    if meta.get("film"): schema += "\n" + video_schema(meta.get("crumb", fname))
-    body = pg["body"]
-    if meta.get("film"):
-        body = body.replace(CTA_MARK, film_section(meta["film"]) + CTA_MARK, 1)
-    html_out = head(pg["title"], pg["desc"], fname, schema=schema) + header() + body + footer()
-    if pg.get("calc"):
-        html_out = html_out.replace("</body>", '<script src="assets/js/calculator.js?v=3"></script>\n</body>')
-    with open(fname, "w") as f: f.write(html_out)
-    written.append(fname)
+def write(path, html_out):
+    d = os.path.dirname(path)
+    if d: os.makedirs(d, exist_ok=True)
+    with open(path, "w") as f: f.write(html_out)
 
-os.makedirs("from", exist_ok=True)
-for c in CITIES:
-    path = f"from/{c[0]}.html"
-    with open(path, "w") as f: f.write(city_page(*c))
-    written.append(path)
+def build_pillars():
+    for fname, pg in PAGES.items():
+        meta = PILLAR_META.get(fname, {})
+        vids = pick(*meta.get("vids", []))
+        schema = crumb_schema([(meta.get("crumb", fname), fname)])
+        if meta.get("faq"): schema += "\n" + faq_schema(meta["faq"])
+        schema += "\n" + video_schema(vids)
+        body = pg["body"]
+        if vids:
+            ig = f'<div style="margin-top:40px">{ig_grid(reels(meta["reels"], 3))}</div>' if meta.get("reels") else ""
+            block = f"""<section class="band sand"><div class="wrap">
+  <span class="eyebrow">On film</span>
+  <h2>{meta['film_h']}</h2>
+  <div style="margin-top:36px">{yt_grid(vids, 'c3' if len(vids) != 2 else 'c2')}</div>{ig}
+</div></section>
+"""
+            body = body.replace(CTA_MARK, block + CTA_MARK, 1)
+        alt = {"en": fname, "hi": meta["hi"]} if meta.get("hi") else None
+        extra = f'<script src="assets/js/calculator.js?v={ASSET_V}"></script>\n' if pg.get("calc") else ""
+        html_out = head(pg["title"], pg["desc"], fname, schema=schema, alt=alt) + header(alt_path=meta.get("hi")) + body + footer(extra_js=extra)
+        html_out = html_out.replace('<script src="assets/js/calculator.js?v=3"></script>\n</body>', '</body>')
+        write(fname, html_out)
 
-# 404
-with open("404.html", "w") as f:
-    f.write(head("Page not found | Sri Lanka for Indians", "That page drifted out to sea.", "404.html")
-        + header() + """
+def build_404():
+    write("404.html", head("Page not found | Sri Lanka for Indians", "That page drifted out to sea.", "404.html") + header() + """
 <section class="hero"><div class="wrap" style="text-align:center">
   <h1>Lost at sea.</h1>
   <p class="lead" style="margin-inline:auto">That page does not exist, or it sailed. The island is still here though.</p>
-  <div class="cta-row" style="justify-content:center"><a class="btn btn-primary" href="index.html">Back to shore</a></div>
+  <div class="cta-row" style="justify-content:center"><a class="btn btn-primary" href="/index.html">Back to shore</a></div>
 </div></section>
 """ + footer())
-written.append("404.html")
 
-# sitemap + robots
-today = datetime.date.today().isoformat()
-urls = ["", *written]
-urls = [u for u in urls if u != "404.html"]
-sm = ['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-for u in ["index.html"] + [w for w in written if w not in ("404.html","index.html")]:
-    loc = SITE + "/" + ("" if u == "index.html" else u)
-    pr = "1.0" if u == "index.html" else ("0.9" if "/" not in u else "0.7")
-    sm.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><priority>{pr}</priority></url>")
-sm.append("</urlset>")
-with open("sitemap.xml","w") as f: f.write("\n".join(sm))
-with open("robots.txt","w") as f: f.write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+def build_sitemap():
+    today = datetime.date.today().isoformat()
+    files = sorted(glob.glob("*.html") + glob.glob("*/*.html"))
+    files = [f for f in files if f != "404.html"]
+    def prio(f):
+        if f == "index.html": return "1.0"
+        if f in ("port-city-tax.html","weddings.html","real-estate.html","business.html"): return "0.9"
+        if "/" not in f or f.startswith(("hi/","guides/","why/index")): return "0.8"
+        return "0.7"
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for f in files:
+        loc = SITE + "/" + ("" if f == "index.html" else f)
+        sm.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><priority>{prio(f)}</priority></url>")
+    sm.append("</urlset>")
+    write("sitemap.xml", "\n".join(sm))
+    write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
+    return files
 
-print("Built:", len(written)+2, "files")
+def main():
+    import home, sectors, guides, cities, pages_extra, hindi
+    build_pillars()
+    for mod in (home, sectors, guides, cities, pages_extra, hindi):
+        mod.build(write)
+    build_404()
+    files = build_sitemap()
+    print("Built", len(files) + 1, "pages")
+
+if __name__ == "__main__":
+    main()

@@ -56,12 +56,13 @@
 
     var diff = inTotal - slTotal;
     var resSl = $("res-sl"), resIn = $("res-india");
+    var hi = (document.documentElement.lang || "").indexOf("hi") === 0;
     if (diff >= 0) {
-      $("savings-line").textContent = "Sri Lanka could save you";
+      $("savings-line").textContent = hi ? "श्रीलंका में बचत" : "Sri Lanka could save you";
       $("savings-amt").textContent = inr(diff) + " (" + Math.round((diff / inTotal) * 100) + "%)";
       resSl.classList.add("win"); resIn.classList.remove("win");
     } else {
-      $("savings-line").textContent = "For this setup, India is cheaper by";
+      $("savings-line").textContent = hi ? "इस सेटअप में भारत सस्ता है, अंतर" : "For this setup, India is cheaper by";
       $("savings-amt").textContent = inr(-diff);
       resIn.classList.add("win"); resSl.classList.remove("win");
     }

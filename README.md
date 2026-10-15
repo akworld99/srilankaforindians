@@ -4,22 +4,28 @@ India's guide to Sri Lanka: weddings, real estate, business (Port City), logisti
 
 ## Structure
 
-- `index.html` — homepage (hand edited)
-- `weddings.html`, `real-estate.html`, `business.html`, `logistics.html`, `second-home.html`, `travel.html` — pillar pages
-- `from/*.html` — 12 city landing pages for Indian metros (SEO)
-- `assets/css/style.css` — all styling, design tokens at the top
-- `assets/js/calculator.js` — wedding cost calculator (India vs Sri Lanka), rates at the top of the file
-- `build.py` — generates every page except index.html. Edit content there, then run `python3 build.py`
-- `sitemap.xml`, `robots.txt`, `404.html`
+Run `python3 build.py` after any edit. It regenerates every page.
 
-## Before launch — replace these placeholders
+- `sitekit.py`: shared header, footer, tax ribbon, WhatsApp number, video cards, schema helpers
+- `media.py`: every YouTube video and Instagram reel used on the site, with verified upload dates and views. Add new ones here
+- `home.py`: homepage
+- `build.py`: pillar pages (weddings, real estate, business, logistics, second home, travel) and the build entrypoint
+- `pages_extra.py`: Port City tax page with salary calculator, Watch page
+- `sectors.py`: 16 "Why Sri Lanka for X" pages under `why/`
+- `guides.py`: 8 guides under `guides/`
+- `cities.py`: 25 city pages under `from/` (Tier 1 and Tier 2)
+- `hindi.py`: Hindi pages under `hi/` with hreflang pairs
+- `assets/css/style.css`, `assets/js/site.js` (lite YouTube, tax calculator), `assets/js/calculator.js` (wedding)
+- `llms.txt`: summary for AI assistants; `sitemap.xml`, `robots.txt` are generated
 
-1. **WhatsApp number**: search and replace `94770000000` with the real number (appears in `index.html` and `build.py`, then rerun `python3 build.py`).
-2. **Email**: `hello@srilankaforindians.com` — set up the mailbox or change the address.
-3. **Video links**: the four video cards on `index.html` point to YouTube search results. Swap each `href` for the specific video URL (Think School x Sangakkara, a real wedding film, a Port City tour, a Hindi vlog). To embed instead of link, replace the card with a YouTube `<iframe>`.
-4. **Calculator rates**: `assets/js/calculator.js` — replace indicative rates with partner rate cards as you sign venues.
-5. **Domain**: buy `srilankaforindians.com`, add a `CNAME` file containing `srilankaforindians.com`, point DNS (A records to GitHub Pages IPs or CNAME to `<user>.github.io`), enable HTTPS in repo Settings → Pages.
-6. **Analytics**: add GA4 / Meta Pixel snippet before `</head>` in `index.html` and in `head()` inside `build.py`.
+Deploys automatically on push via `.github/workflows/pages.yml`. Bump `ASSET_V` in sitekit.py when CSS/JS changes.
+
+## Before launch
+
+1. WhatsApp: set in `sitekit.py` (`WA_NUM`, `WA_DISPLAY`). Currently +94 71 614 7945.
+2. Email `hello@srilankaforindians.com`: create the mailbox or change it in sitekit.py.
+3. Wedding calculator rates in `assets/js/calculator.js` are placeholders; replace with partner rate cards.
+4. Google Search Console: verify the domain, submit sitemap.xml.
 
 ## Facts used (verify before big campaigns)
 
