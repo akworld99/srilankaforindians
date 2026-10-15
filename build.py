@@ -494,7 +494,7 @@ def city_page(slug, name, time, fare, flights, hook):
 PILLAR_META = {
     "weddings.html": dict(crumb="Weddings", film="Where the vows <em>will be taken.</em>", faq=[
         ("How much does a destination wedding in Sri Lanka cost?",
-         "For a 150 guest, 2 day wedding, Sri Lankan resorts typically land 15 to 30 percent below comparable Goa or Udaipur packages once venue, rooms and catering are combined, even after flights from Indian metros. Use the calculator on this page for your numbers."),
+         "Sri Lankan beach resorts often price venue, rooms and catering below comparable Goa or Udaipur packages, while international flights narrow the gap depending on your city. The result swings with guest count, season and style, so run your own numbers in our calculator and ask us for three real resort quotes."),
         ("Can we bring our own pandit, decor and outfits to Sri Lanka?",
          "Yes. Resorts here host Indian weddings regularly, and customs handling for wedding cargo, decor and a travelling pandit is routine when a planner manages the paperwork."),
     ]),
