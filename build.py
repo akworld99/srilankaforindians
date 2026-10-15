@@ -4,6 +4,29 @@ import os, html, datetime
 
 SITE = "https://srilankaforindians.com"
 WA = "https://wa.me/94770000000"
+FILM_ID = "dbM8AMmEdgY"  # featured YouTube film; swap per page as real videos come in
+FILM_THUMB = f"https://i.ytimg.com/vi/{FILM_ID}/maxresdefault.jpg"
+
+def film_section(caption):
+    return f"""<section class="band sand"><div class="wrap">
+  <span class="eyebrow">The island, on film</span>
+  <h2>{caption}</h2>
+  <div class="film" style="margin-top:40px">
+    <iframe src="https://www.youtube-nocookie.com/embed/{FILM_ID}?rel=0&modestbranding=1" title="Sri Lanka, on film" allow="encrypted-media; picture-in-picture; fullscreen" loading="lazy" allowfullscreen></iframe>
+  </div>
+</div></section>
+"""
+
+def video_schema(page_name):
+    return f"""<script type="application/ld+json">{{"@context":"https://schema.org","@type":"VideoObject","name":"Sri Lanka, the island next door","description":"Featured film on the {page_name} page of srilankaforindians.com.","thumbnailUrl":["{FILM_THUMB}"],"uploadDate":"2026-10-01","embedUrl":"https://www.youtube-nocookie.com/embed/{FILM_ID}","contentUrl":"https://www.youtube.com/watch?v={FILM_ID}"}}</script>"""
+
+def crumb_schema(name, path):
+    return f"""<script type="application/ld+json">{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{SITE}/"}},{{"@type":"ListItem","position":2,"name":"{name}","item":"{SITE}/{path}"}}]}}</script>"""
+
+def faq_schema(pairs):
+    items = ",".join(
+        f'{{"@type":"Question","name":"{q}","acceptedAnswer":{{"@type":"Answer","text":"{a}"}}}}' for q, a in pairs)
+    return f"""<script type="application/ld+json">{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{items}]}}</script>"""
 
 def head(title, desc, path, depth=0, schema=""):
     p = "../" * depth
@@ -21,6 +44,10 @@ def head(title, desc, path, depth=0, schema=""):
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{canonical}">
 <meta property="og:site_name" content="Sri Lanka for Indians">
+<meta property="og:image" content="{FILM_THUMB}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{html.escape(title)}">
+<meta name="twitter:image" content="{FILM_THUMB}">
 <link rel="icon" href="{p}assets/img/logo.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -461,10 +488,46 @@ def city_page(slug, name, time, fare, flights, hook):
     desc = f"Everything for {name} travellers and investors heading to Sri Lanka: {time} flight time, fares from {fare.split(' to ')[0]}, visa in hours, weddings, property and Port City business setup."
     return head(title, desc, f"from/{slug}.html", depth=1, schema=schema) + header(1) + body + footer(1)
 
+# Per page SEO + film config ---------------------------------------------
+PILLAR_META = {
+    "weddings.html": dict(crumb="Weddings", film="Where the vows <em>will be taken.</em>", faq=[
+        ("How much does a destination wedding in Sri Lanka cost?",
+         "For a 150 guest, 2 day wedding, Sri Lankan resorts typically land 15 to 30 percent below comparable Goa or Udaipur packages once venue, rooms and catering are combined, even after flights from Indian metros. Use the calculator on this page for your numbers."),
+        ("Can we bring our own pandit, decor and outfits to Sri Lanka?",
+         "Yes. Resorts here host Indian weddings regularly, and customs handling for wedding cargo, decor and a travelling pandit is routine when a planner manages the paperwork."),
+    ]),
+    "real-estate.html": dict(crumb="Estates", film="The coastline you would <em>own a piece of.</em>", faq=[
+        ("Can Indians buy apartments in Sri Lanka?",
+         "Yes. Foreigners can buy condominium units above ground floor outright when the full price is paid through an inward foreign remittance. Freehold land is restricted; land is held on long lease or approved structures."),
+        ("Does buying property in Sri Lanka give residency?",
+         "A qualifying property investment of USD 100,000 or more, routed through an Inward Investment Account, supports a renewable 5 year residence visa."),
+    ]),
+    "business.html": dict(crumb="Enterprise", film=None, faq=[
+        ("What tax does a company pay in Port City Colombo?",
+         "Under Regulation 01 of 2025, primary Businesses of Strategic Importance receive corporate income tax holidays of 8 to 15 years, secondary businesses a concessionary 7.5% rate for 4 years, and personal income tax inside the zone has been 0%. All incentives require CPCEC approval."),
+        ("Can an Indian company own 100% of its Sri Lankan entity?",
+         "Inside Port City, yes. Outside the zone most sectors also allow full foreign ownership through standard incorporation or the BOI route, with sector specific exceptions."),
+    ]),
+    "logistics.html": dict(crumb="Logistics", film=None, faq=[
+        ("Why does Colombo port matter for Indian cargo?",
+         "Colombo sits 6 to 10 nautical miles off the main east west shipping lane and handled a record 8.29 million TEU in 2025, with a large share being Indian transshipment. Adani operates the West Container Terminal."),
+    ]),
+    "second-home.html": dict(crumb="The Second Address", film="The view from your <em>second address.</em>", faq=None),
+    "travel.html": dict(crumb="Journeys", film="See where <em>you are going.</em>", faq=None),
+}
+CTA_MARK = '<section class="band">\n  <div class="wrap">\n    <div class="cta-banner">'
+
 # Write everything -------------------------------------------------------
 written = []
 for fname, pg in PAGES.items():
-    html_out = head(pg["title"], pg["desc"], fname) + header() + pg["body"] + footer()
+    meta = PILLAR_META.get(fname, {})
+    schema = crumb_schema(meta.get("crumb", pg["title"].split("|")[0].strip()), fname)
+    if meta.get("faq"): schema += "\n" + faq_schema(meta["faq"])
+    if meta.get("film"): schema += "\n" + video_schema(meta.get("crumb", fname))
+    body = pg["body"]
+    if meta.get("film"):
+        body = body.replace(CTA_MARK, film_section(meta["film"]) + CTA_MARK, 1)
+    html_out = head(pg["title"], pg["desc"], fname, schema=schema) + header() + body + footer()
     if pg.get("calc"):
         html_out = html_out.replace("</body>", '<script src="assets/js/calculator.js"></script>\n</body>')
     with open(fname, "w") as f: f.write(html_out)
