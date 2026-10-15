@@ -57,7 +57,7 @@ def build(write):
     body = f"""
 <section class="hero has-video">
   <div class="hero-video" aria-hidden="true" style="background-image:url('{hero_poster}')">
-    <iframe src="https://www.youtube-nocookie.com/embed/{HERO_ID}?autoplay=1&mute=1&loop=1&playlist={HERO_ID}&controls=0&rel=0&playsinline=1&modestbranding=1&cc_load_policy=0&iv_load_policy=3&disablekb=1&fs=0&start=30" title="" tabindex="-1" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+    <iframe src="https://www.youtube-nocookie.com/embed/{HERO_ID}?autoplay=1&mute=1&loop=1&playlist={HERO_ID}&controls=0&rel=0&playsinline=1&modestbranding=1&cc_load_policy=0&iv_load_policy=3&disablekb=1&fs=0&start=120" title="" tabindex="-1" allow="autoplay; encrypted-media" loading="lazy"></iframe>
   </div>
   <div class="hero-veil"></div>
   <div class="wrap">

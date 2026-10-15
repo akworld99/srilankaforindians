@@ -418,3 +418,6 @@ th.hl{color:var(--gold)}
   .wa-float span{display:none}
   .wa-float{padding:14px}
 }
+:lang(hi) .nav-burger,:lang(hi) .tax-ribbon,:lang(hi) .hero-foot,:lang(hi) .crumbs,:lang(hi) .fact span,:lang(hi) .tc-cell span{letter-spacing:.02em; text-transform:none}
+:lang(hi) body{font-weight:400}
+:lang(hi) .fact span,:lang(hi) .small{font-size:.92rem}
