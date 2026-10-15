@@ -52,7 +52,7 @@ def head(title, desc, path, depth=0, schema=""):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap">
-<link rel="stylesheet" href="{p}assets/css/style.css">
+<link rel="stylesheet" href="{p}assets/css/style.css?v=3">
 {schema}
 </head>
 <body>
@@ -531,7 +531,7 @@ for fname, pg in PAGES.items():
         body = body.replace(CTA_MARK, film_section(meta["film"]) + CTA_MARK, 1)
     html_out = head(pg["title"], pg["desc"], fname, schema=schema) + header() + body + footer()
     if pg.get("calc"):
-        html_out = html_out.replace("</body>", '<script src="assets/js/calculator.js"></script>\n</body>')
+        html_out = html_out.replace("</body>", '<script src="assets/js/calculator.js?v=3"></script>\n</body>')
     with open(fname, "w") as f: f.write(html_out)
     written.append(fname)
 
