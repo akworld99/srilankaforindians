@@ -5,7 +5,8 @@ SITE = "https://srilankaforindians.com"
 WA_NUM = "94716147945"
 WA = f"https://wa.me/{WA_NUM}"
 WA_DISPLAY = "+94 71 614 7945"
-ASSET_V = "6"
+ASSET_V = "7"
+GA_ID = "G-EK1H1EL9KC"
 HERO_ID = "NGoCQ3HyxQs"          # Scenic Relaxation: Sri Lanka 4K, no narration
 FILM_ID = "dbM8AMmEdgY"          # Think School x Kumar Sangakkara on real estate
 OG_IMAGE = f"https://i.ytimg.com/vi/{HERO_ID}/maxresdefault.jpg"
@@ -67,6 +68,14 @@ def head(title, desc, path, depth=0, schema="", lang="en", alt=None, og_image=No
 <html lang="{lang}">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){{dataLayer.push(arguments);}}
+  gtag('js', new Date());
+  gtag('config', '{GA_ID}');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">

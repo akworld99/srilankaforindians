@@ -51,3 +51,34 @@
   range.addEventListener("input", run);
   run();
 })();
+
+/* GA4 events: WhatsApp leads, email clicks, video plays, calculator use, outbound links */
+(function () {
+  function ev(name, params) { if (typeof gtag === "function") gtag("event", name, params || {}); }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a");
+    var y = e.target.closest && e.target.closest("button.yt");
+    if (y && !y.dataset.tracked) { y.dataset.tracked = "1"; ev("video_play", { video_id: y.getAttribute("data-id"), video_title: y.getAttribute("aria-label") }); }
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var where = a.classList.contains("wa-float") ? "float" : a.closest(".site-head") ? "header" : a.closest(".hero") ? "hero" : a.closest(".cta-banner") ? "cta_banner" : a.closest(".savings") ? "wedding_calculator" : "body";
+    if (href.indexOf("wa.me/") > -1) {
+      ev("generate_lead", { method: "whatsapp", placement: where, page_path: location.pathname });
+      ev("whatsapp_click", { placement: where, page_path: location.pathname });
+    } else if (href.indexOf("mailto:") === 0) {
+      ev("generate_lead", { method: "email", placement: where, page_path: location.pathname });
+    } else if (/^https?:/.test(href) && href.indexOf(location.hostname) === -1) {
+      ev("click_outbound", { link_url: href });
+    }
+  });
+  var once = {};
+  ["guests", "days", "tier", "origin", "tc-salary"].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.addEventListener("change", function () {
+      var name = id === "tc-salary" ? "tax_calculator_used" : "wedding_calculator_used";
+      if (once[name]) return; once[name] = 1;
+      ev(name, { page_path: location.pathname });
+    });
+  });
+})();
