@@ -70,6 +70,8 @@ def header(depth=0):
       </svg>
       <span class="word">Sri Lanka<em>For Indians</em></span>
     </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+    <label for="nav-toggle" class="nav-burger">Menu</label>
     <nav aria-label="Main">
       <a href="{p}weddings.html">Weddings</a>
       <a href="{p}real-estate.html">Estates</a>
