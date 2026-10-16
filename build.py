@@ -160,7 +160,7 @@ PAGES["business.html"] = dict(
   </div>
   <div class="grid c3">
     <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">100% yours</h3><p>Full foreign ownership, no local partner requirement inside the zone.</p></div>
-    <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">16 currencies</h3><p>Transact in designated foreign currencies, ring fenced from domestic monetary shocks.</p></div>
+    <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">16 currencies, rupee included</h3><p>Transact in Sri Lanka's designated foreign currencies, the Indian rupee among them, ring fenced from domestic monetary shocks.</p></div>
     <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">Exchange control relief</h3><p>Designated Businesses of Strategic Importance are exempt from the Foreign Exchange Act. Other Port City payments follow it since 2026.</p></div>
   </div>
   <p class="small" style="opacity:.75; margin-top:18px">Per Regulation 01 of 2025 and the Colombo Port City Economic Commission (Amendment) Act No. 1 of 2026. Every incentive requires approval and depends on category and investment thresholds. Since 20 January 2026, staff of newly approved Port City companies pay normal income tax from day one; companies approved earlier keep a staff exemption until 31 January 2029. Confirm current terms with a licensed advisor; this page is a guide, not advice.</p>
@@ -185,7 +185,7 @@ PAGES["business.html"] = dict(
   </div>
   <p class="small">Indian outbound investment runs under RBI's Overseas Investment rules. Structure the India side with your CA before money moves. We will happily get on that call too.</p>
 </div></section>
-""" + cta_banner("Thinking Colombo for 2027 budgets?", "Get a one page feasibility note for your use case: entity, incentives, costs, timeline.", "Hi%2C%20send%20me%20a%20Port%20City%20feasibility%20note"),
+""" + inr_band(0, tone="") + cta_banner("Thinking Colombo for 2027 budgets?", "Get a one page feasibility note for your use case: entity, incentives, costs, timeline.", "Hi%2C%20send%20me%20a%20Port%20City%20feasibility%20note"),
 )
 
 PAGES["logistics.html"] = dict(
@@ -220,7 +220,7 @@ PAGES["logistics.html"] = dict(
   </table></div>
   <p class="small" style="margin-top:16px">Sector data points: SLPA and industry reporting, 2025 to 2026. Verify current berth and zone terms per project.</p>
 </div></section>
-""" + cta_banner("Moving boxes through Colombo already?", "Then you should have an entity here. We connect you to port side partners, agents and the SEZ route.", "Hi%2C%20exploring%20a%20logistics%20setup%20in%20Sri%20Lanka"),
+""" + inr_band(0, tone="") + cta_banner("Moving boxes through Colombo already?", "Then you should have an entity here. We connect you to port side partners, agents and the SEZ route.", "Hi%2C%20exploring%20a%20logistics%20setup%20in%20Sri%20Lanka"),
 )
 
 PAGES["second-home.html"] = dict(
@@ -353,7 +353,7 @@ HERO_MAP = {
     "logistics.html": "ship", "why/ports-shipping.html": "ship",
     "second-home.html": "aerial_b", "travel.html": "aerial_a", "hi/yatra.html": "aerial_a",
     "watch.html": "aerial_a", "404.html": "aerial_a",
-    "guides/ramayana-trail.html": "temple", "why/tea.html": "tea",
+    "guides/ramayana-trail.html": "temple", "guides/trade-in-rupees-india-sri-lanka.html": "ship", "why/tea.html": "tea",
     "why/technology.html": "plaza", "why/gcc.html": "plaza", "why/fintech.html": "plaza",
     "why/bpo-kpo.html": "containers", "why/mice-events.html": "containers", "why/film-production.html": "containers",
     "why/index.html": "aerial_b", "guides/index.html": "aerial_a",

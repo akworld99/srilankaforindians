@@ -239,6 +239,8 @@ def page(s):
   <p class="lead">{s['india']}</p>
 </div></section>
 
+{inr_band(depth, tone="")}
+
 {vid_block}
 
 <section class="band"><div class="wrap">

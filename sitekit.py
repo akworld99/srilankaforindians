@@ -5,7 +5,7 @@ SITE = "https://srilankaforindians.com"
 WA_NUM = "94716147945"
 WA = f"https://wa.me/{WA_NUM}"
 WA_DISPLAY = "+94 71 614 7945"
-ASSET_V = "12"
+ASSET_V = "13"
 GA_ID = "G-EK1H1EL9KC"
 HERO_ID = "NGoCQ3HyxQs"          # Scenic Relaxation: Sri Lanka 4K, no narration
 FILM_ID = "dbM8AMmEdgY"          # Think School x Kumar Sangakkara on real estate
@@ -119,6 +119,45 @@ def tax_ribbon(depth=0, lang="en"):
     return f"""<a class="tax-ribbon" href="{p}port-city-tax.html"><span class="tr-big">7.5%</span><span class="tr-txt">corporate tax for approved Port City businesses &middot; <b>0% for up to 15 years</b> on large projects</span><span class="tr-short">Port City corporate tax &middot; <b>0% up to 15 yrs</b></span><span class="tr-go">2026 rules &rarr;</span></a>
 """
 
+INR_GUIDE = "guides/trade-in-rupees-india-sri-lanka.html"
+
+def inr_band(depth=0, lang="en", tone="sand"):
+    """Sitewide highlight: India and Sri Lanka trade can be invoiced and settled in INR."""
+    p = "../" * depth
+    if lang == "hi":
+        return f"""<section class="band {tone} inr-band" id="inr"><div class="wrap">
+  <div class="inr-sym" aria-hidden="true">&#8377;</div>
+  <div class="inr-body">
+    <span class="eyebrow">रुपये में व्यापार</span>
+    <h2>रुपये में बिल बनाइए। <em>डॉलर की ज़रूरत नहीं।</em></h2>
+    <p class="lead">भारत और श्रीलंका के बिज़नेस आपसी व्यापार का बिल, भुगतान और सेटलमेंट भारतीय रुपये में कर सकते हैं। यह RBI के स्पेशल रुपी वोस्ट्रो अकाउंट (SRVA) से चलता है, और श्रीलंका ने रुपये को अपनी नामित विदेशी मुद्राओं में रखा है। दोनों तरफ़ डॉलर में बदलने का झंझट नहीं, करेंसी रिस्क कम।</p>
+    <ul class="inr-points">
+      <li><b>&#8377; में बिल</b><span>आयात और निर्यात की कीमत, भुगतान और सेटलमेंट रुपये में।</span></li>
+      <li><b>&#8377; में कर्ज़</b><span>अक्टूबर 2025 से भारतीय बैंक श्रीलंका के बिज़नेस और बैंकों को व्यापार के लिए रुपये में कर्ज़ दे सकते हैं।</span></li>
+      <li><b>तेज़ सेटअप</b><span>जुलाई 2026 से भारतीय बैंक वोस्ट्रो अकाउंट बिना अलग RBI मंज़ूरी के खोल सकते हैं।</span></li>
+    </ul>
+    <div class="cta-row"><a class="btn btn-primary" href="{p}{INR_GUIDE}">पूरी जानकारी (English)</a>
+    <a class="btn btn-ghost" href="{wa_link('नमस्ते, मुझे श्रीलंका के साथ रुपये में व्यापार के बारे में जानना है')}" rel="noopener">WhatsApp पर पूछें</a></div>
+  </div>
+</div></section>
+"""
+    return f"""<section class="band {tone} inr-band" id="inr"><div class="wrap">
+  <div class="inr-sym" aria-hidden="true">&#8377;</div>
+  <div class="inr-body">
+    <span class="eyebrow">Trade in rupees</span>
+    <h2>Invoice in rupees. <em>Skip the dollar.</em></h2>
+    <p class="lead">Indian and Sri Lankan businesses can invoice, pay and settle trade in Indian rupees. It runs through RBI's Special Rupee Vostro Accounts, and Sri Lanka lists the rupee among its designated foreign currencies. No dollar conversion at either end, less currency risk, and books kept in the currency you already report in.</p>
+    <ul class="inr-points">
+      <li><b>&#8377; invoices</b><span>Exports and imports priced, paid and settled in INR.</span></li>
+      <li><b>&#8377; credit</b><span>Since October 2025, Indian banks can lend rupees to Sri Lankan businesses and banks for cross border trade.</span></li>
+      <li><b>Faster setup</b><span>Since July 2026, Indian banks open rupee vostro accounts for overseas banks without a separate RBI approval.</span></li>
+    </ul>
+    <div class="cta-row"><a class="btn btn-primary" href="{p}{INR_GUIDE}">How rupee trade works</a>
+    <a class="btn btn-ghost" href="{wa_link('Hi, I want to trade with Sri Lanka in rupees')}" rel="noopener">Ask about INR deals</a></div>
+  </div>
+</div></section>
+"""
+
 def header(depth=0, lang="en", alt_path=None):
     p = "../" * depth
     if lang == "hi":
@@ -215,6 +254,7 @@ def footer(depth=0, lang="en", extra_js=""):
         <li><a href="{p}guides/trip-cost-from-india.html">Trip cost</a></li>
         <li><a href="{p}guides/ramayana-trail.html">Ramayana trail</a></li>
         <li><a href="{p}guides/ferry-india-to-sri-lanka.html">India to Sri Lanka ferry</a></li>
+        <li><a href="{p}guides/trade-in-rupees-india-sri-lanka.html">Trade in rupees (INR)</a></li>
         <li><a href="{p}guides/port-city-vs-gift-city-vs-dubai.html">Port City vs GIFT City vs Dubai</a></li>
         <li><a href="{p}watch.html">Watch: India on Sri Lanka</a></li>
         <li><a href="{p}hi/index.html" lang="hi">हिंदी में पढ़ें</a></li>

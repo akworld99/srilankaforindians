@@ -27,6 +27,41 @@ dict(slug="visa-for-indians", h1="Sri Lanka visa for Indians: free ETA, 2026",
       ("How long can Indians stay in Sri Lanka on the free ETA?","Up to 30 days with double entry. The 30 days do not restart if you leave and come back. Extensions can be applied for after arrival.")],
  source="Source: Outlook Traveller report on Sri Lanka's free ETA for 40 countries, May 2026. Always confirm on eta.gov.lk."),
 
+dict(slug="trade-in-rupees-india-sri-lanka", h1="Trade with Sri Lanka in rupees: how INR settlement works",
+ title="India Sri Lanka Trade in INR: Rupee Invoicing, Vostro Accounts and 2026 Rules | Sri Lanka for Indians",
+ desc="Indian businesses can invoice, pay and settle Sri Lanka trade in rupees. How Special Rupee Vostro Accounts work, what changed in October 2025 and July 2026, and how to start.",
+ card="Invoice, pay and settle in INR. How vostro accounts work and what changed in 2026.",
+ videos=["GHyNEH0kQ3o","rIa82ugYTN8","1vIJYuajxik"],
+ watch_h="The economy you would be <em>trading with.</em>",
+ body="""<p class="lead">Yes, Indian companies can trade with Sri Lanka in rupees. Price the invoice in INR, get paid in INR, and never touch a dollar in between. Here is how it works and what changed in 2025 and 2026.</p>
+<h2>How it works</h2>
+<ol><li><strong>Your counterparty's bank holds a rupee account in India.</strong> A Sri Lankan bank opens a Special Rupee Vostro Account (SRVA) with an Indian bank.</li>
+<li><strong>You invoice in INR.</strong> An Indian exporter prices and bills the Sri Lankan buyer in rupees. An Indian importer can be billed in rupees the same way.</li>
+<li><strong>Money moves inside rupee accounts.</strong> When a Sri Lankan importer pays, rupees move from its bank's vostro account to the Indian exporter. When an Indian importer pays a Sri Lankan supplier, rupees go into that vostro account. No dollar leg at either end.</li>
+<li><strong>Surplus rupees stay useful.</strong> The Sri Lankan side can spend the balance on more imports from India or invest it in eligible Indian debt, such as government securities.</li></ol>
+<h2>What changed, and when</h2>
+<ul><li><strong>July 2022:</strong> RBI opened its framework for invoicing, payment and settlement of exports and imports in INR. Sri Lanka, short of dollars after its 2022 crisis, was one of the first partners to use it.</li>
+<li><strong>Sri Lanka's side:</strong> the Indian rupee was added to Sri Lanka's list of designated foreign currencies, so Sri Lankan banks can hold and deal in it. By August 2023, eight Sri Lankan banks held rupee vostro accounts with Indian banks, according to India's commerce ministry.</li>
+<li><strong>October 2025:</strong> RBI allowed Indian banks to lend in rupees to people and businesses in Sri Lanka, Nepal and Bhutan, including banks there, for cross border trade. Vostro balances also became investable in Indian corporate bonds and commercial paper.</li>
+<li><strong>July 2026:</strong> RBI pulled the rules into one consolidated circular. Indian banks can now open vostro accounts for overseas banks without referring each one to RBI.</li></ul>
+<h2>Why it matters for your business</h2>
+<ul><li><strong>No double conversion:</strong> skip INR to USD to LKR on every invoice.</li>
+<li><strong>Less currency risk:</strong> your receivable sits in the currency you report in.</li>
+<li><strong>An easier sale:</strong> rupee billing removes your Sri Lankan buyer's need to find dollars, and rupee credit from Indian banks can now fund the purchase.</li>
+<li><strong>Port City fit:</strong> Port City businesses transact in Sri Lanka's designated foreign currencies, and the rupee is on that list. Confirm the terms of your own approval with your advisor.</li></ul>
+<h2>How to start</h2>
+<ol><li>Ask your Indian bank's trade desk whether it runs rupee vostro accounts and which Sri Lankan banks it works with.</li>
+<li>Ask your Sri Lankan buyer or supplier to confirm their bank can settle in INR.</li>
+<li>Put INR pricing in the contract and the invoice. Exchange rates are market determined.</li>
+<li>Keep the usual FEMA paperwork. Rupee settlement changes the currency, not the documentation.</li></ol>
+<p class="small">Investing in a Sri Lankan company from India still follows RBI's Overseas Investment rules. This page is a guide, not financial or legal advice. Talk to your bank and CA before you change how you invoice.</p>""",
+ faq=[("Can Indian companies trade with Sri Lanka in rupees?","Yes. Under RBI's rupee settlement framework, exports and imports between India and Sri Lanka can be invoiced, paid and settled in INR through Special Rupee Vostro Accounts that Sri Lankan banks hold with Indian banks."),
+      ("What is a Special Rupee Vostro Account?","A rupee account that an Indian bank opens for a foreign bank. Payments for India and Sri Lanka trade move in rupees through it, so neither side converts to dollars."),
+      ("Can Sri Lankan buyers borrow rupees from Indian banks?","Yes. Since October 2025, RBI allows Indian banks to lend in rupees to people and businesses in Sri Lanka, Nepal and Bhutan, including banks there, for cross border trade."),
+      ("Is the Indian rupee accepted in Sri Lanka?","The rupee is on Sri Lanka's list of designated foreign currencies, so banks can hold and deal in it for permitted transactions. It is not legal tender for everyday payments; travellers pay in Sri Lankan rupees, by card or by UPI at LankaQR merchants."),
+      ("Do I still need FEMA paperwork for rupee trade?","Yes. Rupee settlement changes the currency of the invoice, not the documentation and reporting your bank needs.")],
+ source="Sources: RBI framework for international trade settlement in INR (July 2022) and A.P. (DIR Series) Circular No. 19 of 17 July 2026; RBI notification FEMA 3(R)(4)/2025-RB of 6 October 2025; India's Ministry of Commerce reply in the Lok Sabha, August 2023."),
+
 dict(slug="trip-cost-from-india", h1="How much does a Sri Lanka trip cost from India?",
  title="Sri Lanka Trip Cost from India 2026: Budget, Mid Range and Luxury | Sri Lanka for Indians",
  desc="What a 6 night Sri Lanka trip costs from India in 2026: flights from every metro, hotels, car with driver, food and entry fees. Budget, mid range and luxury bands per person.",
@@ -114,7 +149,7 @@ dict(slug="port-city-vs-gift-city-vs-dubai", h1="Port City Colombo vs GIFT City 
 <tr><td>Personal income tax</td><td class="hl">Normal Sri Lankan tax for staff of companies approved since 20 Jan 2026; earlier approvals exempt until Jan 2029</td><td>Indian slabs apply to residents</td><td>0%</td></tr>
 <tr><td>Ownership</td><td class="hl">100% foreign</td><td>Indian and foreign</td><td>100% in free zones and most mainland activity</td></tr>
 <tr><td>Jurisdiction</td><td class="hl">Separate country, SEZ law</td><td>Inside India</td><td>Separate country</td></tr>
-<tr><td>Currency</td><td class="hl">16 designated foreign currencies</td><td>Foreign currency</td><td>AED, pegged to USD</td></tr>
+<tr><td>Currency</td><td class="hl">16 designated foreign currencies, including the Indian rupee</td><td>Foreign currency</td><td>AED, pegged to USD</td></tr>
 <tr><td>From Chennai</td><td class="hl">1 hr 20 min</td><td>About 2 hr</td><td>About 4 hr</td></tr>
 <tr><td>2026 risk note</td><td class="hl">Emerging market; incentives need CPCEC approval</td><td>Indian regulatory change risk</td><td>Gulf conflict exposure in 2026</td></tr>
 </table></div>
@@ -139,6 +174,8 @@ dict(slug="money-upi-sim", h1="Money, UPI and SIM cards in Sri Lanka",
 <ul><li><strong>UPI:</strong> works at LankaQR merchants in cities and tourist areas. Check your app supports international UPI and enable it before you fly.</li>
 <li><strong>Cards:</strong> Visa and Mastercard are widely accepted in hotels, malls and restaurants.</li>
 <li><strong>Cash:</strong> carry Sri Lankan rupees (LKR) for tuk tuks, temples and small shops. ATMs are common in towns.</li></ul>
+<h2>Paying a business in Sri Lanka?</h2>
+<p>Trade between Indian and Sri Lankan companies can be invoiced and settled in Indian rupees. See <a href="trade-in-rupees-india-sri-lanka.html">how rupee trade works</a>.</p>
 <h2>SIM cards</h2>
 <p>Buy a tourist SIM at Colombo airport arrivals from Dialog, SLT Mobitel or Hutch. Bring your passport. Data packs are inexpensive and coverage is good along tourist routes. Indian international roaming works but costs more.</p>
 <h2>Time zone</h2>
@@ -204,7 +241,7 @@ def page(g):
 </div></section>
 <section class="band sand"><div class="wrap">
   <span class="eyebrow">Watch</span>
-  <h2>Indians who <em>did it first.</em></h2>
+  <h2>{g.get('watch_h', 'Indians who <em>did it first.</em>')}</h2>
   <div style="margin-top:36px">{yt_grid(vids, 'c3' if len(vids) > 2 else 'c2')}</div>
 </div></section>
 <section class="band"><div class="wrap">
@@ -226,12 +263,12 @@ def hub():
   <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; Guides</p>
   <span class="eyebrow">Guides</span>
   <h1>Straight answers to <em>what Indians search for.</em></h1>
-  <p class="lead">Visas, costs, routes and the comparisons CFOs ask about. Updated October 2026.</p>
+  <p class="lead">Visas, costs, routes, rupee trade and the comparisons CFOs ask about. Updated October 2026.</p>
 </div></section>
-<section class="band"><div class="wrap"><div class="grid c4">{cards}</div></div></section>
+<section class="band"><div class="wrap"><div class="grid c3">{cards}</div></div></section>
 """ + cta_banner("Question not answered here?", "Ask us on WhatsApp. A real person replies.", "Hi, I have a question about Sri Lanka: ")
     return head("Sri Lanka Guides for Indians: Visa, Cost, Ferry, Ramayana Trail, Port City | Sri Lanka for Indians",
-                "Practical Sri Lanka guides for Indians: free ETA visa, trip cost, honeymoon, Ramayana trail, ferry from Nagapattinam, UPI and SIM, best time to visit and Port City vs GIFT City vs Dubai.",
+                "Practical Sri Lanka guides for Indians: free ETA visa, trading in rupees, trip cost, honeymoon, Ramayana trail, ferry from Nagapattinam, UPI and SIM, best time to visit and Port City vs GIFT City vs Dubai.",
                 "guides/index.html", depth, crumb_schema([("Guides","guides/index.html")])) + header(depth) + body + footer(depth)
 
 def build(write):

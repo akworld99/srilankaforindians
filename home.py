@@ -50,6 +50,7 @@ def build(write):
         ("Can an Indian buy property in Sri Lanka?", "Foreigners cannot own freehold land directly, but can buy condominium units above ground floor outright when paid through an inward foreign remittance. Land is typically held on long lease. A property investment of USD 100,000 or more can support a renewable 5 year residence visa."),
         ("What is the tax rate in Port City Colombo?", "Under Regulation 01 of 2025, primary Businesses of Strategic Importance get corporate income tax holidays of 8 to 15 years, secondary businesses a 7.5% concessionary rate for 4 years, and all incentives need approval. Since 20 January 2026, staff of newly approved Port City companies pay normal income tax; earlier approvals keep a staff exemption until January 2029."),
         ("How much does a destination wedding in Sri Lanka cost compared to India?", "Sri Lankan beach resorts often price venue, rooms and catering below comparable Goa or Udaipur packages, while international flights narrow the gap depending on your city. Run your own numbers in our calculator and ask us for three real resort quotes."),
+        ("Can Indian businesses trade with Sri Lanka in rupees?", "Yes. India and Sri Lanka trade can be invoiced, paid and settled in Indian rupees through Special Rupee Vostro Accounts that Sri Lankan banks hold with Indian banks. Since October 2025, Indian banks can also lend rupees to Sri Lankan businesses for cross border trade."),
         ("How far is Sri Lanka from India?", "Colombo is about 1 hour 20 minutes by air from Chennai, around 2 hours from Bengaluru and Hyderabad, and about 2 hours 30 minutes from Mumbai. A passenger ferry also runs between Nagapattinam and Kankesanthurai near Jaffna."),
     ]
     schema += "\n" + faq_schema(faqs)
@@ -70,12 +71,15 @@ def build(write):
     <div class="hero-inner">
       <span class="eyebrow">Namaste &middot; Ayubowan &middot; Vanakkam</span>
       <h1>The Indian Ocean kept an island <em>for you.</em></h1>
-      <p class="lead">Eighty minutes from Chennai: clifftop weddings above the ocean, sea facing residences priced in dollars, and a financial district where approved businesses pay 7.5% corporate tax. More than 4.3 lakh Indians arrived in the first nine months of 2026. Allow us to show you why the wisest of them stayed longer.</p>
+      <p class="lead">Eighty minutes from Chennai: clifftop weddings above the ocean, sea facing residences priced in dollars, and a financial district where approved businesses pay 7.5% corporate tax, and trade you can invoice in rupees. More than 4.3 lakh Indians arrived in the first nine months of 2026. Allow us to show you why the wisest of them stayed longer.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="{wa_link('Hi, I want to explore Sri Lanka')}" rel="noopener">WhatsApp your guide</a>
         <a class="btn btn-ghost" href="#calculator">The wedding ledger</a>
       </div>
-      <a class="hero-badge" href="port-city-tax.html"><span class="hb-num">7.5%</span><span class="hb-txt"><b>Port City Colombo</b>Corporate tax for approved businesses. See if you qualify &rarr;</span></a>
+      <div class="hero-badges">
+        <a class="hero-badge" href="port-city-tax.html"><span class="hb-num">7.5%</span><span class="hb-txt"><b>Port City Colombo</b>Corporate tax for approved businesses. See if you qualify &rarr;</span></a>
+        <a class="hero-badge" href="#inr"><span class="hb-num">&#8377;</span><span class="hb-txt"><b>Trade in rupees</b>Invoice and settle Sri Lanka deals in INR. How it works &rarr;</span></a>
+      </div>
     </div>
   </div>
   <div class="hero-foot">Weddings &middot; Estates &middot; Enterprise &middot; The Second Address</div>
@@ -92,6 +96,7 @@ def build(write):
   </div>
 </div>
 
+{inr_band(0)}
 <section class="band" id="loved">
   <div class="wrap">
     <span class="eyebrow">Loved by India</span>
