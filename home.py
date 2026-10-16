@@ -34,7 +34,7 @@ def tax_mega(depth=0):
 """
 
 def build(write):
-    hero_poster = f"https://i.ytimg.com/vi/{HERO_ID}/maxresdefault.jpg"
+    hero_poster = f"https://i.ytimg.com/vi/{HERO_ID}/maxres2.jpg"
     loved = pick("iLhRCwjywU8","CW6jTV-hTok","cRQu04IaAUk","gaLWS85uCzA","eiyQbvnxI-Y","Bu86Z_7VzAA")
     schema = video_schema([BY_ID[FILM_ID]] + loved)
     schema += "\n" + f'''<script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","name":"Sri Lanka for Indians","url":"{SITE}","logo":"{SITE}/assets/img/logo.svg","description":"Guide and matchmaking service helping Indians plan weddings, buy real estate, set up businesses and travel in Sri Lanka.","areaServed":["IN","LK"],"contactPoint":{{"@type":"ContactPoint","telephone":"+94716147945","contactType":"customer service","availableLanguage":["English","Hindi","Tamil"]}}}}</script>'''
