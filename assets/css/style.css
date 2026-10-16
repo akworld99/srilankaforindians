@@ -549,3 +549,4 @@ th.hl{color:var(--gold)}
 :lang(hi) .hero-badge .hb-txt b{font-size:.88rem}
 :lang(hi) .site-head nav a{font-size:.98rem}
 :lang(hi) .nav-burger{font-size:.95rem}
+.tm-ladder b,.bar .pct,.statbar b,.fact b,.figure b{font-variant-numeric:lining-nums tabular-nums}
