@@ -268,7 +268,7 @@ def hub():
   <p class="lead">Every sector page below starts with the numbers, gives you three reasons, and ends with the India angle. Pick yours.</p>
 </div></section>
 <section class="band"><div class="wrap">
-  <div class="grid c3">{cards}</div>
+  <div class="grid c4">{cards}</div>
   <h3 style="margin-top:48px">Also on Sri Lanka for Indians</h3>
   <div class="chips" style="margin-top:16px">{existing}<a href="../port-city-tax.html">Port City 7.5% tax</a></div>
 </div></section>

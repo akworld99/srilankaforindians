@@ -13,8 +13,14 @@ def tax_mega(depth=0):
         for n, v, c in bars)
     return f"""<section class="tax-mega" id="tax">
   <div class="wrap">
-    <div>
-      <div class="zero wide" aria-label="7.5 percent">7.5%<small>Corporate tax &middot; Port City Colombo</small></div>
+    <div class="tm-left">
+      <div class="zero wide" aria-label="7.5 percent">7.5%</div>
+      <div class="zero-label">Corporate tax &middot; Port City Colombo</div>
+      <ul class="tm-ladder">
+        <li><b>7.5%</b><span>For 4 years. Approved secondary businesses</span></li>
+        <li><b>0%</b><span>For 8 to 15 years. Large primary projects</span></li>
+        <li><b>100%</b><span>Foreign ownership, foreign currency operations</span></li>
+      </ul>
     </div>
     <div>
       <span class="eyebrow">The headline Indian CFOs reread</span>

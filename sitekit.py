@@ -5,7 +5,7 @@ SITE = "https://srilankaforindians.com"
 WA_NUM = "94716147945"
 WA = f"https://wa.me/{WA_NUM}"
 WA_DISPLAY = "+94 71 614 7945"
-ASSET_V = "9"
+ASSET_V = "10"
 GA_ID = "G-EK1H1EL9KC"
 HERO_ID = "NGoCQ3HyxQs"          # Scenic Relaxation: Sri Lanka 4K, no narration
 FILM_ID = "dbM8AMmEdgY"          # Think School x Kumar Sangakkara on real estate
@@ -114,9 +114,9 @@ LOGO_SVG = """<svg viewBox="0 0 80 100" role="img" aria-hidden="true">
 def tax_ribbon(depth=0, lang="en"):
     p = "../" * depth
     if lang == "hi":
-        return f"""<a class="tax-ribbon" href="{p}hi/port-city-tax.html"><span class="tr-big">7.5%</span><span class="tr-txt">कॉर्पोरेट टैक्स, मंज़ूर पोर्ट सिटी बिज़नेस के लिए &middot; बड़े प्रोजेक्ट्स पर <b>15 साल तक 0%</b></span><span class="tr-go">आंकड़े देखें &rarr;</span></a>
+        return f"""<a class="tax-ribbon" href="{p}hi/port-city-tax.html"><span class="tr-big">7.5%</span><span class="tr-txt">कॉर्पोरेट टैक्स, मंज़ूर पोर्ट सिटी बिज़नेस के लिए &middot; बड़े प्रोजेक्ट्स पर <b>15 साल तक 0%</b></span><span class="tr-short">पोर्ट सिटी कॉर्पोरेट टैक्स &middot; <b>15 साल तक 0%</b></span><span class="tr-go">आंकड़े देखें &rarr;</span></a>
 """
-    return f"""<a class="tax-ribbon" href="{p}port-city-tax.html"><span class="tr-big">7.5%</span><span class="tr-txt">corporate tax for approved Port City businesses &middot; <b>0% for up to 15 years</b> on large projects</span><span class="tr-go">2026 rules &rarr;</span></a>
+    return f"""<a class="tax-ribbon" href="{p}port-city-tax.html"><span class="tr-big">7.5%</span><span class="tr-txt">corporate tax for approved Port City businesses &middot; <b>0% for up to 15 years</b> on large projects</span><span class="tr-short">Port City corporate tax &middot; <b>0% up to 15 yrs</b></span><span class="tr-go">2026 rules &rarr;</span></a>
 """
 
 def header(depth=0, lang="en", alt_path=None):

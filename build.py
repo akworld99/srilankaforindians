@@ -305,7 +305,7 @@ PAGES["travel.html"] = dict(
 # Per page SEO, videos and Hindi pairs ------------------------------------------
 PILLAR_META = {
     "weddings.html": dict(crumb="Weddings", hi="hi/shaadi.html", vids=["WvMdSZ7fmJY","gamg1oTsXQg","b1RrqsxLGms"], reels="wedding",
-        film_h="Indian weddings, <em>on this island.</em>", faq=[
+        film_h="Destination weddings, <em>on this island.</em>", faq=[
         ("How much does a destination wedding in Sri Lanka cost?",
          "Sri Lankan beach resorts often price venue, rooms and catering below comparable Goa or Udaipur packages, while international flights narrow the gap depending on your city. The result swings with guest count, season and style, so run your own numbers in our calculator and ask us for three real resort quotes."),
         ("Can we bring our own pandit, decor and outfits to Sri Lanka?",
@@ -333,7 +333,44 @@ PILLAR_META = {
 }
 CTA_MARK = '<section class="band">\n  <div class="wrap">\n    <div class="cta-banner">'
 
+# Inner page hero backgrounds: clean frames from videos already featured on the site
+_YT = "https://i.ytimg.com/vi/{}/maxres{}.jpg"
+IMG = {
+    "aerial_a": (_YT.format("NGoCQ3HyxQs", 2), "center 60%"),
+    "aerial_b": (_YT.format("NGoCQ3HyxQs", 3), "center 55%"),
+    "plaza": (_YT.format("B2OIRRQbz8I", 3), "center 45%"),
+    "containers": (_YT.format("GHGrijFEpgU", 1), "center 55%"),
+    "ship": (_YT.format("jvRH8dcbLpg", 3), "center 72%"),
+    "temple": (_YT.format("kRjSsHlA9_0", 2), "center 30%"),
+    "bride": (_YT.format("Qbf7BM4OV28", 1), "center 40%"),
+    "tea": (_YT.format("6PViyPfd000", 1), "center 50%"),
+}
+HERO_MAP = {
+    "weddings.html": "bride", "hi/shaadi.html": "bride",
+    "real-estate.html": "aerial_b", "hi/property.html": "aerial_b",
+    "business.html": "plaza", "port-city-tax.html": "plaza", "hi/port-city-tax.html": "plaza",
+    "guides/port-city-vs-gift-city-vs-dubai.html": "plaza",
+    "logistics.html": "ship", "why/ports-shipping.html": "ship",
+    "second-home.html": "aerial_b", "travel.html": "aerial_a", "hi/yatra.html": "aerial_a",
+    "watch.html": "aerial_a", "404.html": "aerial_a",
+    "guides/ramayana-trail.html": "temple", "why/tea.html": "tea",
+    "why/technology.html": "plaza", "why/gcc.html": "plaza", "why/fintech.html": "plaza",
+    "why/bpo-kpo.html": "containers", "why/mice-events.html": "containers", "why/film-production.html": "containers",
+    "why/index.html": "aerial_b", "guides/index.html": "aerial_a",
+}
+
+def hero_img_for(path):
+    key = HERO_MAP.get(path)
+    if not key:
+        key = "aerial_a" if sum(map(ord, path)) % 2 else "aerial_b"
+    return IMG[key]
+
 def write(path, html_out):
+    if '<section class="hero">' in html_out:
+        url, pos = hero_img_for(path)
+        html_out = html_out.replace('<section class="hero">',
+            f'<section class="hero has-img" style="--hero-img:url(\'{url}\'); --hero-pos:{pos}">', 1)
+        html_out = html_out.replace("</head>", f'<link rel="preload" as="image" href="{url}" fetchpriority="high">\n</head>', 1)
     d = os.path.dirname(path)
     if d: os.makedirs(d, exist_ok=True)
     with open(path, "w") as f: f.write(html_out)

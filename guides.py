@@ -228,7 +228,7 @@ def hub():
   <h1>Straight answers to <em>what Indians search for.</em></h1>
   <p class="lead">Visas, costs, routes and the comparisons CFOs ask about. Updated October 2026.</p>
 </div></section>
-<section class="band"><div class="wrap"><div class="grid c3">{cards}</div></div></section>
+<section class="band"><div class="wrap"><div class="grid c4">{cards}</div></div></section>
 """ + cta_banner("Question not answered here?", "Ask us on WhatsApp. A real person replies.", "Hi, I have a question about Sri Lanka: ")
     return head("Sri Lanka Guides for Indians: Visa, Cost, Ferry, Ramayana Trail, Port City | Sri Lanka for Indians",
                 "Practical Sri Lanka guides for Indians: free ETA visa, trip cost, honeymoon, Ramayana trail, ferry from Nagapattinam, UPI and SIM, best time to visit and Port City vs GIFT City vs Dubai.",

@@ -84,7 +84,6 @@ REELS = [
     dict(code="DBtbKVphkzY", user="", tag="wedding"),
     dict(code="DR9iv_rjApq", user="", tag="wedding"),
     dict(code="DNM9t8LIe8k", user="joel_outschoorn", tag="wedding"),
-    dict(code="DU06nASDNzZ", user="newsfirst.lk", tag="tax"),
 ]
 def reels(tag, n=None):
     out = [r for r in REELS if r["tag"] == tag]

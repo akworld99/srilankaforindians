@@ -97,8 +97,6 @@ def tax_page():
   <span class="eyebrow">See Port City</span>
   <h2>Walk the zone <em>before you fly.</em></h2>
   <div style="margin-top:36px">{yt_grid(vids)}</div>
-  <h3 style="margin-top:50px">In the news</h3>
-  <div style="margin-top:18px; max-width:420px">{ig_grid(reels('tax'))}</div>
 </div></section>
 
 <section class="band sand"><div class="wrap">
@@ -142,7 +140,7 @@ def watch_page():
 {blocks}
 <section class="band"><div class="wrap">
   <h2>On Instagram</h2><p class="lead">Reels from travellers and wedding creators.</p>
-  <div style="margin-top:32px">{ig_grid([r for r in REELS if r['tag'] != 'tax'])}</div>
+  <div style="margin-top:32px">{ig_grid(REELS)}</div>
 </div></section>
 """ + cta_banner("Seen enough?", "Tell us which video made you want to go. We will plan the trip, the wedding or the move around it.", "Hi, I watched your videos and want to plan Sri Lanka")
     schema = crumb_schema([("Watch", "watch.html")]) + "\n" + video_schema(all_vids)

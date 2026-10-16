@@ -443,3 +443,109 @@ th.hl{color:var(--gold)}
 /* 7.5% numeral is wider than 0% */
 .tax-mega .zero.wide{font-size:clamp(6.5rem,16vw,13rem); letter-spacing:-.03em}
 .bar.hl .pct{color:var(--gold-bright)}
+
+/* ===================== v10: audit fixes ===================== */
+
+/* Inner page heroes: real island imagery under a dark veil */
+.hero.has-img{background:var(--dark)}
+.hero.has-img::before{content:""; position:absolute; inset:0; z-index:-2; pointer-events:none;
+  background:var(--hero-img) var(--hero-pos, center)/cover no-repeat}
+.hero.has-img::after{content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  background:linear-gradient(90deg, rgba(16,26,22,.94) 0%, rgba(16,26,22,.82) 40%, rgba(16,26,22,.5) 100%),
+             linear-gradient(to bottom, rgba(16,26,22,.3), rgba(16,26,22,.72))}
+
+/* Grids: hairlines drawn on the cards, so a short last row leaves no grey blocks */
+.grid{gap:0; background:transparent; border:0; border-top:1px solid var(--line); border-left:1px solid var(--line)}
+.grid > *{border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+.grid.c4{grid-template-columns:repeat(4,1fr)}
+.band.ink .grid{border-color:rgba(253,251,244,.14)}
+.band.ink .grid > .card{border:0; border-right:1px solid rgba(253,251,244,.14); border-bottom:1px solid rgba(253,251,244,.14)}
+.video-grid{gap:0; background:transparent; border:0; border-top:1px solid var(--line); border-left:1px solid var(--line)}
+.video-grid > *{border-right:1px solid var(--line); border-bottom:1px solid var(--line)}
+
+/* City links: chips sized to the name, nothing clipped */
+.city-grid{display:flex; flex-wrap:wrap; gap:10px; background:transparent; border:0}
+.city-grid a{border:1px solid var(--gold-line); padding:11px 18px; font-size:.74rem; letter-spacing:.18em; white-space:nowrap}
+
+/* Card titles: no squeezed balanced lines */
+.card h3,.yt-meta b,.vid b{text-wrap:pretty}
+
+/* Tax band: numeral sits on top, label never overlaps, left column carries the key figures */
+.tax-mega .wrap{align-items:start}
+.tax-mega .zero.wide{line-height:.9; text-shadow:0 0 80px rgba(195,154,59,.25)}
+.tax-mega .zero-label{font-size:.78rem; letter-spacing:.36em; text-transform:uppercase; color:#F1ECDF; margin-top:18px}
+.tm-ladder{list-style:none; margin:40px 0 0; padding:0; border-top:1px solid rgba(230,201,135,.25)}
+.tm-ladder li{display:grid; grid-template-columns:110px 1fr; gap:18px; align-items:baseline; padding:16px 0; border-bottom:1px solid rgba(230,201,135,.25)}
+.tm-ladder b{font-family:var(--font-display); font-weight:600; font-size:2rem; line-height:1; color:var(--gold-bright)}
+.tm-ladder span{font-size:.9rem; color:var(--dark-soft); line-height:1.5}
+
+/* Ribbon: short line on phones */
+.tax-ribbon .tr-short{display:none}
+
+/* Hindi: no letter-spacing anywhere (it breaks Devanagari), except the English logo */
+:lang(hi) body *:not(.logo):not(.logo *){letter-spacing:0 !important}
+:lang(hi) .tax-mega .zero-label,:lang(hi) .tm-ladder span{font-size:.95rem}
+
+@media (max-width:900px){
+  .grid.c4{grid-template-columns:1fr 1fr}
+  .band{padding-block:64px}
+  .card{padding:28px 22px}
+  .card.link-card::after{left:22px; right:22px}
+  .hero{padding-block:84px 64px}
+  .hero.has-img::after{background:linear-gradient(to bottom, rgba(16,26,22,.84), rgba(16,26,22,.9))}
+
+  /* Stats 2 x 2 */
+  .statbar{grid-template-columns:1fr 1fr}
+  .statbar .stat{padding:22px 18px; border:0; border-bottom:1px solid var(--line)}
+  .statbar .stat:nth-child(odd){border-right:1px solid var(--line)}
+  .statbar .stat:nth-last-child(-n+2){border-bottom:0}
+  .statbar b{font-size:2rem}
+  .statbar span{font-size:.78rem; line-height:1.5; display:block}
+
+  /* Videos and reels swipe sideways instead of stacking */
+  .yt-grid.c2,.yt-grid.c3,.yt-grid.c4,.ig-grid{grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:46%;
+    overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x mandatory; gap:16px;
+    margin-inline:-24px; padding:0 24px 12px; scroll-padding-inline:24px; scrollbar-width:thin}
+  .ig-grid{grid-auto-columns:minmax(280px,60%)}
+  .yt-card,.ig{scroll-snap-align:start}
+  .ig iframe{height:560px}
+
+  .tax-mega{padding-block:64px}
+  .tm-ladder{margin-top:28px}
+  .figure{padding:30px 22px}
+  .fact{padding:20px 22px}
+  .calc,.taxcalc{padding:26px 18px}
+}
+@media (max-width:560px){
+  .yt-grid.c2,.yt-grid.c3,.yt-grid.c4{grid-auto-columns:84%}
+  .ig-grid{grid-auto-columns:86%}
+  .tax-ribbon{flex-wrap:nowrap; gap:10px; padding-block:8px}
+  .tax-ribbon .tr-txt{display:none}
+  .tax-ribbon .tr-short{display:inline; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0}
+  .tax-ribbon .tr-big{font-size:1.3rem}
+  .chips{gap:8px}
+  .chips a{padding:8px 12px; font-size:.68rem; letter-spacing:.1em}
+  .city-grid{gap:8px}
+  .city-grid a{padding:9px 12px; font-size:.68rem; letter-spacing:.12em}
+  .tax-mega .zero-label{font-size:.7rem; letter-spacing:.24em}
+  .tm-ladder li{grid-template-columns:84px 1fr; gap:12px; padding:13px 0}
+  .tm-ladder b{font-size:1.6rem}
+  .facts .fact{display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:center}
+  .facts .fact b{font-size:1.8rem}
+  .figure b{font-size:3rem}
+  h1{font-size:clamp(2.4rem,10vw,3rem)}
+}
+.tax-mega .zero.wide{font-variant-numeric:lining-nums; line-height:1}
+.tax-mega .zero-label{margin-top:10px}
+@media (max-width:560px){
+  .eyebrow{letter-spacing:.28em; gap:10px}
+  .eyebrow::before{width:28px}
+  .hero-foot{letter-spacing:.24em}
+}
+/* Hindi: small labels need real size once letter-spacing is gone */
+:lang(hi) .eyebrow,:lang(hi) .card .tag,:lang(hi) .card .go,:lang(hi) .tr-go,:lang(hi) .crumbs,:lang(hi) .field label,:lang(hi) th,:lang(hi) footer h4,:lang(hi) .hero-foot{font-size:.92rem}
+:lang(hi) .btn{font-size:.98rem; padding-block:14px}
+:lang(hi) .site-head .btn{font-size:.9rem; padding-block:8px}
+:lang(hi) .hero-badge .hb-txt b{font-size:.88rem}
+:lang(hi) .site-head nav a{font-size:.98rem}
+:lang(hi) .nav-burger{font-size:.95rem}

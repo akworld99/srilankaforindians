@@ -11,7 +11,15 @@ def hi_tax_band():
     bars = [("भारत", 25.17, ""), ("सिंगापुर", 17, ""), ("दुबई", 9, ""), ("पोर्ट सिटी कोलंबो", 7.5, "hl")]
     bar_html = "".join(f'<div class="bar {c}"><span>{n}</span><span class="track"><span class="fill" style="width:{v/30*100:.0f}%"></span></span><span class="pct">{v}%</span></div>' for n, v, c in bars)
     return f"""<section class="tax-mega"><div class="wrap">
-  <div><div class="zero wide">7.5%<small>कॉर्पोरेट टैक्स &middot; पोर्ट सिटी कोलंबो</small></div></div>
+  <div class="tm-left">
+    <div class="zero wide" aria-label="7.5 प्रतिशत">7.5%</div>
+    <div class="zero-label">कॉर्पोरेट टैक्स &middot; पोर्ट सिटी कोलंबो</div>
+    <ul class="tm-ladder">
+      <li><b>7.5%</b><span>4 साल तक, मंज़ूर सेकेंडरी बिज़नेस</span></li>
+      <li><b>0%</b><span>8 से 15 साल तक, बड़े प्राइमरी प्रोजेक्ट</span></li>
+      <li><b>100%</b><span>विदेशी स्वामित्व, विदेशी मुद्रा में काम</span></li>
+    </ul>
+  </div>
   <div>
     <span class="eyebrow">वो आंकड़ा जो CFO दोबारा पढ़ते हैं</span>
     <h2>भारत के कॉर्पोरेट टैक्स का एक तिहाई से भी कम। <em>चेन्नई से 80 मिनट।</em></h2>
