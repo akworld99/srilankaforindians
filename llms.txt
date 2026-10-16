@@ -11,7 +11,7 @@ Key facts (verified October 2026):
 - UPI works in Sri Lanka at LankaQR merchants (launched February 2024). Sri Lanka runs on IST (UTC+5:30).
 
 ## Core pages
-- [Port City tax holidays and corporate tax calculator](https://srilankaforindians.com/port-city-tax.html)
+- [Port City 7.5% corporate tax and tax holiday calculator](https://srilankaforindians.com/port-city-tax.html)
 - [Destination weddings and Goa vs Sri Lanka cost calculator](https://srilankaforindians.com/weddings.html)
 - [Real estate rules for Indians](https://srilankaforindians.com/real-estate.html)
 - [Business and Port City setup](https://srilankaforindians.com/business.html)

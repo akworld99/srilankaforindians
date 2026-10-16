@@ -421,3 +421,25 @@ th.hl{color:var(--gold)}
 :lang(hi) .nav-burger,:lang(hi) .tax-ribbon,:lang(hi) .hero-foot,:lang(hi) .crumbs,:lang(hi) .fact span,:lang(hi) .tc-cell span{letter-spacing:.02em; text-transform:none}
 :lang(hi) body{font-weight:400}
 :lang(hi) .fact span,:lang(hi) .small{font-size:.92rem}
+
+/* ===== v9: header fits on one line; menu button below 1180px ===== */
+.site-head nav{flex-wrap:nowrap; gap:24px}
+.site-head nav a{white-space:nowrap; letter-spacing:.16em; font-size:.74rem}
+.site-head nav a.hide-m{display:none}
+.site-head nav a.nav-tax{padding:8px 14px}
+.site-head .btn{padding:10px 18px}
+.logo .word{font-size:1.08rem}
+@media (max-width:1180px){
+  .site-head .wrap{flex-wrap:wrap; gap:12px}
+  .nav-burger{display:inline-block}
+  .site-head nav{display:none; width:100%; margin-left:0; flex-direction:column; align-items:stretch; gap:0; padding-block:8px 6px; border-top:1px solid var(--line)}
+  .site-head nav a{padding:14px 2px; border-bottom:1px solid var(--line); font-size:.78rem; letter-spacing:.2em}
+  .site-head nav a.hide-m{display:block}
+  .site-head nav a.nav-tax{margin-top:8px; text-align:center}
+  .site-head nav a.btn{margin-top:14px; text-align:center; border-bottom:1px solid var(--gold)}
+  .nav-toggle:checked ~ nav{display:flex}
+}
+
+/* 7.5% numeral is wider than 0% */
+.tax-mega .zero.wide{font-size:clamp(6.5rem,16vw,13rem); letter-spacing:-.03em}
+.bar.hl .pct{color:var(--gold-bright)}

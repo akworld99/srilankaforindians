@@ -8,14 +8,14 @@ def hi_head(title, desc, path, en_path, schema=""):
     return head(title, desc, path, D, schema, lang="hi", alt={"en": en_path, "hi": path})
 
 def hi_tax_band():
-    bars = [("भारत", 25.17, ""), ("सिंगापुर", 17, ""), ("दुबई", 9, ""), ("पोर्ट सिटी BSI", 0, "hl zero-bar")]
+    bars = [("भारत", 25.17, ""), ("सिंगापुर", 17, ""), ("दुबई", 9, ""), ("पोर्ट सिटी कोलंबो", 7.5, "hl")]
     bar_html = "".join(f'<div class="bar {c}"><span>{n}</span><span class="track"><span class="fill" style="width:{v/30*100:.0f}%"></span></span><span class="pct">{v}%</span></div>' for n, v, c in bars)
     return f"""<section class="tax-mega"><div class="wrap">
-  <div><div class="zero">0%<small>कॉर्पोरेट टैक्स &middot; 15 साल तक &middot; पोर्ट सिटी</small></div></div>
+  <div><div class="zero wide">7.5%<small>कॉर्पोरेट टैक्स &middot; पोर्ट सिटी कोलंबो</small></div></div>
   <div>
     <span class="eyebrow">वो आंकड़ा जो CFO दोबारा पढ़ते हैं</span>
-    <h2>15 साल टैक्स फ्री। <em>चेन्नई से 80 मिनट।</em></h2>
-    <p>पोर्ट सिटी कोलंबो योग्य प्रोजेक्ट्स को Business of Strategic Importance (BSI) घोषित करता है और निवेश के आकार के हिसाब से 8 से 15 साल तक उनके मुनाफ़े पर कॉर्पोरेट टैक्स नहीं लगता। छोटे मंज़ूरी प्राप्त बिज़नेस को 4 साल तक 7.5% की दर मिल सकती है। साथ में 100% विदेशी स्वामित्व और विदेशी मुद्रा में काम।</p>
+    <h2>भारत के कॉर्पोरेट टैक्स का एक तिहाई से भी कम। <em>चेन्नई से 80 मिनट।</em></h2>
+    <p>पोर्ट सिटी के मंज़ूर बिज़नेस पहले 4 साल 7.5% कॉर्पोरेट टैक्स दे सकते हैं, जबकि भारत की हेडलाइन दर 25.17% है। सबसे बड़े प्रोजेक्ट्स (प्राइमरी BSI) पर निवेश के हिसाब से 8 से 15 साल तक कोई कॉर्पोरेट टैक्स नहीं। साथ में 100% विदेशी स्वामित्व और विदेशी मुद्रा में काम।</p>
     <div class="bars">{bar_html}</div>
     <p class="small">कॉर्पोरेट टैक्स की हेडलाइन दरें। पोर्ट सिटी के इंसेंटिव Regulation 01 of 2025 और Amendment Act No. 1 of 2026 के तहत, मंज़ूरी पर निर्भर। 20 जनवरी 2026 से नई मंज़ूर कंपनियों के कर्मचारियों पर सामान्य इनकम टैक्स लगता है।</p>
     <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:18px">
@@ -42,12 +42,12 @@ def index():
   <div class="wrap"><div class="hero-inner">
     <span class="eyebrow">नमस्ते &middot; आयुबोवन &middot; वणक्कम</span>
     <h1>हिंद महासागर ने एक द्वीप <em>आपके लिए रखा है।</em></h1>
-    <p class="lead">चेन्नई से सिर्फ़ 80 मिनट की उड़ान। समंदर किनारे शादियाँ, डॉलर में कीमत वाले सी फेसिंग घर, और एक ऐसा फाइनेंशियल डिस्ट्रिक्ट जहाँ रणनीतिक निवेश को 15 साल तक कॉर्पोरेट टैक्स हॉलिडे मिलता है। 2026 के पहले नौ महीनों में 4.3 लाख से ज़्यादा भारतीय श्रीलंका पहुँचे। हम आपके गाइड हैं, शुरू से आख़िर तक।</p>
+    <p class="lead">चेन्नई से सिर्फ़ 80 मिनट की उड़ान। समंदर किनारे शादियाँ, डॉलर में कीमत वाले सी फेसिंग घर, और एक ऐसा फाइनेंशियल डिस्ट्रिक्ट जहाँ मंज़ूर बिज़नेस 7.5% कॉर्पोरेट टैक्स देते हैं। 2026 के पहले नौ महीनों में 4.3 लाख से ज़्यादा भारतीय श्रीलंका पहुँचे। हम आपके गाइड हैं, शुरू से आख़िर तक।</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="{wa_link('नमस्ते, मैं श्रीलंका के बारे में जानना चाहता/चाहती हूँ')}" rel="noopener">WhatsApp पर बात करें</a>
       <a class="btn btn-ghost" href="shaadi.html">शादी का बजट देखें</a>
     </div>
-    <a class="hero-badge" href="port-city-tax.html"><span class="hb-num">0%</span><span class="hb-txt"><b>पोर्ट सिटी कोलंबो</b>15 साल तक कॉर्पोरेट टैक्स। देखें क्या आप योग्य हैं &rarr;</span></a>
+    <a class="hero-badge" href="port-city-tax.html"><span class="hb-num">7.5%</span><span class="hb-txt"><b>पोर्ट सिटी कोलंबो</b>मंज़ूर बिज़नेस के लिए कॉर्पोरेट टैक्स। देखें क्या आप योग्य हैं &rarr;</span></a>
   </div></div>
 </section>
 
@@ -59,7 +59,7 @@ def index():
   <div class="grid c3" style="margin-top:40px">
     <a class="card link-card" href="shaadi.html"><span class="tag">शादी</span><h3>समंदर किनारे डेस्टिनेशन वेडिंग</h3><p>गोवा और उदयपुर से तुलना करें। बारात के लिए वीज़ा मुफ़्त।</p><span class="go">शादी प्लान करें &rarr;</span></a>
     <a class="card link-card" href="property.html"><span class="tag">प्रॉपर्टी</span><h3>डॉलर में कीमत, समंदर का नज़ारा</h3><p>भारतीय क्या खरीद सकते हैं, और 5 साल के वीज़ा का रास्ता।</p><span class="go">नियम पढ़ें &rarr;</span></a>
-    <a class="card link-card" href="port-city-tax.html"><span class="tag">टैक्स हॉलिडे</span><h3>पोर्ट सिटी कोलंबो</h3><p>रणनीतिक निवेश पर 15 साल तक कॉर्पोरेट टैक्स हॉलिडे और 100% विदेशी स्वामित्व।</p><span class="go">आंकड़े देखें &rarr;</span></a>
+    <a class="card link-card" href="port-city-tax.html"><span class="tag">7.5% टैक्स</span><h3>पोर्ट सिटी कोलंबो</h3><p>मंज़ूर बिज़नेस के लिए 7.5% कॉर्पोरेट टैक्स, बड़े प्रोजेक्ट्स पर 15 साल तक 0%, और 100% विदेशी स्वामित्व।</p><span class="go">आंकड़े देखें &rarr;</span></a>
     <a class="card link-card" href="yatra.html"><span class="tag">यात्रा</span><h3>रामायण ट्रेल, चाय और समंदर</h3><p>मुफ़्त वीज़ा, UPI से भुगतान, और हर शहर से उड़ान।</p><span class="go">यात्रा प्लान करें &rarr;</span></a>
     <a class="card link-card" href="../why/index.html"><span class="tag">बिज़नेस</span><h3>16 सेक्टर, एक नज़र में</h3><p>टेक, BPO, मसाले, चाय, रत्न, कपड़ा, पोर्ट और बहुत कुछ (अंग्रेज़ी में)।</p><span class="go">सेक्टर देखें &rarr;</span></a>
     <a class="card link-card" href="../watch.html"><span class="tag">वीडियो</span><h3>भारतीय क्रिएटर्स की नज़र से</h3><p>50 वीडियो और रील्स, यात्रा से लेकर शादियों तक।</p><span class="go">वीडियो देखें &rarr;</span></a>
@@ -79,7 +79,7 @@ def index():
   <div style="margin-top:30px; max-width:880px">{"".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)}</div>
 </div></section>
 """ + cta_banner("आपका गाइड बस एक मैसेज दूर है", "बात करने का कोई शुल्क नहीं। हिंदी, तमिल और अंग्रेज़ी में बात करें।", "नमस्ते, मुझे श्रीलंका के बारे में मदद चाहिए", lang="hi")
-    return hi_head("श्रीलंका फॉर इंडियंस | शादी, प्रॉपर्टी, पोर्ट सिटी टैक्स हॉलिडे और यात्रा",
+    return hi_head("श्रीलंका फॉर इंडियंस | शादी, प्रॉपर्टी, पोर्ट सिटी 7.5% टैक्स और यात्रा",
                    "भारतीयों के लिए श्रीलंका गाइड: डेस्टिनेशन वेडिंग, प्रॉपर्टी, पोर्ट सिटी कोलंबो में 15 साल तक कॉर्पोरेट टैक्स हॉलिडे, मुफ़्त वीज़ा और यात्रा। WhatsApp पर गाइड से बात करें।",
                    "hi/index.html", "index.html", schema) + header(D, "hi", "index.html") + body + footer(D, "hi")
 
@@ -191,12 +191,12 @@ def tax():
 <section class="hero"><div class="wrap">
   <p class="crumbs"><a href="index.html">होम</a> &rsaquo; पोर्ट सिटी टैक्स</p>
   <span class="eyebrow">पोर्ट सिटी कोलंबो &middot; 2026 के नियम</span>
-  <h1>15 साल। <em>शून्य कॉर्पोरेट टैक्स।</em></h1>
-  <p class="lead">पोर्ट सिटी कोलंबो एक स्पेशल इकोनॉमिक ज़ोन है जिसके अपने टैक्स नियम हैं। Business of Strategic Importance घोषित प्रोजेक्ट्स पर निवेश के हिसाब से 8 से 15 साल तक कॉर्पोरेट टैक्स नहीं लगता। छोटे मंज़ूर बिज़नेस 4 साल तक 7.5% दे सकते हैं।</p>
+  <h1>7.5% कॉर्पोरेट टैक्स। <em>सबसे बड़े प्रोजेक्ट्स पर शून्य।</em></h1>
+  <p class="lead">पोर्ट सिटी कोलंबो एक स्पेशल इकोनॉमिक ज़ोन है जिसके अपने टैक्स नियम हैं। मंज़ूर बिज़नेस पहले 4 साल 7.5% कॉर्पोरेट टैक्स दे सकते हैं, भारत के 25.17% के एक तिहाई से भी कम। सबसे बड़े प्रोजेक्ट्स (प्राइमरी BSI) पर निवेश के हिसाब से 8 से 15 साल तक कोई कॉर्पोरेट टैक्स नहीं।</p>
   <div class="facts">
+    <div class="fact"><b>7.5%</b><span>मंज़ूर सेकेंडरी BSI के लिए पहले 4 साल कॉर्पोरेट टैक्स</span></div>
     <div class="fact"><b>0%</b><span>प्राइमरी BSI पर हॉलिडे के दौरान कॉर्पोरेट टैक्स</span></div>
     <div class="fact"><b>8 से 15 साल</b><span>हॉलिडे की अवधि, निवेश के आकार पर निर्भर</span></div>
-    <div class="fact"><b>7.5%</b><span>सेकेंडरी BSI के लिए 4 साल तक कॉर्पोरेट टैक्स</span></div>
   </div>
   <p class="source">Regulation 01 of 2025 और Colombo Port City Economic Commission (Amendment) Act No. 1 of 2026 (20 जनवरी 2026)।</p>
 </div></section>
@@ -222,13 +222,13 @@ def tax():
         <select id="cc-route">
           <option value="p15">प्राइमरी BSI, 15 साल (सबसे बड़े प्रोजेक्ट)</option>
           <option value="p12">प्राइमरी BSI, 12 साल</option>
-          <option value="p10" selected>प्राइमरी BSI, 10 साल</option>
+          <option value="p10">प्राइमरी BSI, 10 साल</option>
           <option value="p8">प्राइमरी BSI, 8 साल</option>
-          <option value="s4">सेकेंडरी BSI, 4 साल तक 7.5%</option>
+          <option value="s4" selected>सेकेंडरी BSI, 4 साल तक 7.5%</option>
         </select></div>
     </div>
     <div class="tc-row">
-      <div class="tc-cell"><span>भारत में <span id="cc-years">10</span> साल का कॉर्पोरेट टैक्स</span><b class="num" id="cc-india">&#8377;0</b><span>25.17% हेडलाइन दर पर</span></div>
+      <div class="tc-cell"><span>भारत में <span id="cc-years">4</span> साल का कॉर्पोरेट टैक्स</span><b class="num" id="cc-india">&#8377;0</b><span>25.17% हेडलाइन दर पर</span></div>
       <div class="tc-cell"><span>पोर्ट सिटी में कॉर्पोरेट टैक्स</span><b class="num" id="cc-pc">&#8377;0</b><span id="cc-pc-note">हॉलिडे के दौरान</span></div>
       <div class="tc-cell gold"><span>इस अवधि में टैक्स की बचत</span><b class="num" id="cc-save">&#8377;0</b><span>भारत में डिविडेंड टैक्स से पहले</span></div>
     </div>
@@ -243,7 +243,7 @@ def tax():
   <p style="margin-top:20px"><a href="../guides/port-city-vs-gift-city-vs-dubai.html">पोर्ट सिटी बनाम GIFT सिटी बनाम दुबई (अंग्रेज़ी में)</a></p>
 </div></section>
 """ + cta_banner("जानना है आप किस कैटेगरी में आएँगे?", "बताइए आप क्या करते हैं और कितना निवेश करना चाहते हैं। हम संभावित रास्ता और अगले तीन कदम बताएँगे।", "नमस्ते, मुझे पोर्ट सिटी टैक्स इंसेंटिव समझने हैं", lang="hi")
-    return hi_head("पोर्ट सिटी कोलंबो टैक्स 2026: 15 साल तक कॉर्पोरेट टैक्स हॉलिडे, क्या बदला | Sri Lanka for Indians",
+    return hi_head("पोर्ट सिटी कोलंबो टैक्स 2026: 7.5% कॉर्पोरेट टैक्स, 15 साल तक 0%, क्या बदला | Sri Lanka for Indians",
                    "पोर्ट सिटी कोलंबो टैक्स 2026: रणनीतिक निवेश पर 8 से 15 साल कॉर्पोरेट टैक्स हॉलिडे, छोटे बिज़नेस के लिए 7.5%, और नई कंपनियों के कर्मचारियों की टैक्स छूट ख़त्म। मुनाफ़ा कैलकुलेटर के साथ।",
                    "hi/port-city-tax.html", "port-city-tax.html", faq_schema(faqs)) + header(D, "hi", "port-city-tax.html") + body + footer(D, "hi")
 

@@ -141,7 +141,7 @@ PAGES["real-estate.html"] = dict(
 )
 
 PAGES["business.html"] = dict(
-    title="Port City Colombo for Indian Companies: 8 to 15 Year Tax Holidays, 2026 Rules | Sri Lanka for Indians",
+    title="Port City Colombo for Indian Companies: 7.5% Corporate Tax, 15 Year Holidays, 2026 Rules | Sri Lanka for Indians",
     desc="Set up in Sri Lanka from India. Port City Colombo tax incentives explained for 2026: corporate holidays up to 15 years, 7.5% concessionary rate, 100% foreign ownership, India plus one strategy.",
     body=f"""
 <section class="hero"><div class="wrap">
@@ -154,9 +154,9 @@ PAGES["business.html"] = dict(
 <section class="band ink"><div class="wrap">
   <h2>The headline numbers</h2>
   <div class="figures">
-    <div class="figure"><b>0%</b><span>Corporate income tax during the holiday for approved primary Businesses of Strategic Importance</span></div>
-    <div class="figure"><b>8&ndash;15 yrs</b><span>Corporate income tax holidays for primary Businesses of Strategic Importance, scaled to investment</span></div>
-    <div class="figure"><b>7.5%</b><span>Concessionary corporate rate for secondary businesses, 4 years from commercial operations</span></div>
+    <div class="figure"><b>7.5%</b><span>Corporate tax for approved secondary Businesses of Strategic Importance, first 4 years of operations</span></div>
+    <div class="figure"><b>0%</b><span>Corporate tax during the holiday for primary Businesses of Strategic Importance, the largest projects</span></div>
+    <div class="figure"><b>8&ndash;15 yrs</b><span>Length of that holiday, scaled to investment size</span></div>
   </div>
   <div class="grid c3">
     <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">100% yours</h3><p>Full foreign ownership, no local partner requirement inside the zone.</p></div>

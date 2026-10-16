@@ -53,7 +53,7 @@ def page(c):
   <div class="grid c3" style="margin-top:28px">
     <a class="card link-card" href="../weddings.html"><span class="tag">Weddings</span><h3>Destination weddings that rival Goa</h3><p>Run your guest list through our calculator, flights included.</p><span class="go">Compare costs &rarr;</span></a>
     <a class="card link-card" href="../real-estate.html"><span class="tag">Property</span><h3>Sea view condos priced in dollars</h3><p>What Indians can buy, and the USD 100,000 residence visa route.</p><span class="go">See the rules &rarr;</span></a>
-    <a class="card link-card" href="../port-city-tax.html"><span class="tag">Tax holiday</span><h3>Port City incentives</h3><p>Corporate tax holidays of up to 15 years for strategic investments, or 7.5% for smaller approved firms.</p><span class="go">Read the numbers &rarr;</span></a>
+    <a class="card link-card" href="../port-city-tax.html"><span class="tag">7.5% tax</span><h3>Port City incentives</h3><p>Approved businesses pay 7.5% corporate tax for four years; the largest projects 0% for up to 15.</p><span class="go">Read the numbers &rarr;</span></a>
   </div>
 </div></section>
 
@@ -78,7 +78,7 @@ def page(c):
 """ + cta_banner(f"Flying from {name}?", "One message gets you a plan: trip, wedding, property or business. Your guide on the island replies the same day.", f"Hi, I am from {name}")
     schema = crumb_schema([(f"From {name}", f"from/{slug}.html")]) + "\n" + video_schema(vids)
     title = f"Sri Lanka from {name}: Flights, Trip Cost, Free Visa, Weddings and Investment | Sri Lanka for Indians"
-    desc = f"Sri Lanka from {name}: {time} to Colombo, return fares around {fare.replace('&#8377;','Rs ')}, free visa for Indians, weddings, property and Port City tax holidays. Talk to a guide on WhatsApp."
+    desc = f"Sri Lanka from {name}: {time} to Colombo, return fares around {fare.replace('&#8377;','Rs ')}, free visa for Indians, weddings, property and Port City's 7.5% corporate tax. Talk to a guide on WhatsApp."
     return head(title, desc, f"from/{slug}.html", depth, schema) + header(depth) + body + footer(depth)
 
 def build(write):

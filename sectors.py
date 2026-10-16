@@ -224,7 +224,7 @@ def page(s):
   <div class="facts">{facts}</div>
   <p class="source">{s['source']}</p>
   <div class="cta-row"><a class="btn btn-primary" href="{wa_link('Hi, I am exploring Sri Lanka for ' + s['name'])}" rel="noopener">Talk to a sector guide</a>
-  <a class="btn btn-ghost" href="../port-city-tax.html">Port City tax holidays</a></div>
+  <a class="btn btn-ghost" href="../port-city-tax.html">Port City 7.5% tax</a></div>
 </div></section>
 
 <section class="band"><div class="wrap">
@@ -270,7 +270,7 @@ def hub():
 <section class="band"><div class="wrap">
   <div class="grid c3">{cards}</div>
   <h3 style="margin-top:48px">Also on Sri Lanka for Indians</h3>
-  <div class="chips" style="margin-top:16px">{existing}<a href="../port-city-tax.html">Port City tax holidays</a></div>
+  <div class="chips" style="margin-top:16px">{existing}<a href="../port-city-tax.html">Port City 7.5% tax</a></div>
 </div></section>
 """ + cta_banner("Your sector is not listed?", "Tell us what you do. If there is an angle in Sri Lanka, we will find it.", "Hi, my sector is ")
     schema = crumb_schema([("Why Sri Lanka", "why/index.html")])
