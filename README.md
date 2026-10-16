@@ -30,7 +30,7 @@ Deploys automatically on push via `.github/workflows/pages.yml`. Bump `ASSET_V` 
 ## Facts used (verify before big campaigns)
 
 - 431,162 Indian arrivals Jan–Sep 2026, India No.1 source market — SLTDA
-- Port City incentives per Regulation 01 of 2025: 8–15 yr corporate tax holidays (primary BSI), 7.5% for 4 yrs (secondary), 0% personal income tax — CPCEC framework; always confirm current terms
+- Port City incentives per Regulation 01 of 2025 and Amendment Act No. 1 of 2026: 8–15 yr corporate tax holidays (primary BSI, by investment size), 7.5% for 4 yrs (secondary). Personal income tax exemption WITHDRAWN for companies approved from 20 Jan 2026; earlier approvals exempt until 31 Jan 2029. Do not claim 0% personal tax.
 - Condo ownership + USD 100k investor visa — 2026 practice under Land (Restrictions on Alienation) Act
 - Colombo port 8.29M TEU in 2025 — SLPA reporting
 

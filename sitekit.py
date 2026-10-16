@@ -5,7 +5,7 @@ SITE = "https://srilankaforindians.com"
 WA_NUM = "94716147945"
 WA = f"https://wa.me/{WA_NUM}"
 WA_DISPLAY = "+94 71 614 7945"
-ASSET_V = "7"
+ASSET_V = "8"
 GA_ID = "G-EK1H1EL9KC"
 HERO_ID = "NGoCQ3HyxQs"          # Scenic Relaxation: Sri Lanka 4K, no narration
 FILM_ID = "dbM8AMmEdgY"          # Think School x Kumar Sangakkara on real estate
@@ -114,9 +114,9 @@ LOGO_SVG = """<svg viewBox="0 0 80 100" role="img" aria-hidden="true">
 def tax_ribbon(depth=0, lang="en"):
     p = "../" * depth
     if lang == "hi":
-        return f"""<a class="tax-ribbon" href="{p}hi/port-city-tax.html"><span class="tr-big">0%</span><span class="tr-txt">पर्सनल इनकम टैक्स &middot; <b>15 साल</b> तक कॉर्पोरेट टैक्स हॉलिडे &middot; पोर्ट सिटी कोलंबो</span><span class="tr-go">आंकड़े देखें &rarr;</span></a>
+        return f"""<a class="tax-ribbon" href="{p}hi/port-city-tax.html"><span class="tr-big">0%</span><span class="tr-txt">कॉर्पोरेट टैक्स, <b>15 साल</b> तक &middot; पोर्ट सिटी कोलंबो के रणनीतिक निवेश</span><span class="tr-go">आंकड़े देखें &rarr;</span></a>
 """
-    return f"""<a class="tax-ribbon" href="{p}port-city-tax.html"><span class="tr-big">0%</span><span class="tr-txt">personal income tax &middot; corporate tax holidays up to <b>15 years</b> &middot; Port City Colombo</span><span class="tr-go">See the numbers &rarr;</span></a>
+    return f"""<a class="tax-ribbon" href="{p}port-city-tax.html"><span class="tr-big">0%</span><span class="tr-txt">corporate tax for up to <b>15 years</b> &middot; Port City Colombo strategic investments</span><span class="tr-go">2026 rules &rarr;</span></a>
 """
 
 def header(depth=0, lang="en", alt_path=None):
@@ -124,7 +124,7 @@ def header(depth=0, lang="en", alt_path=None):
     if lang == "hi":
         nav = f"""      <a href="{p}hi/shaadi.html">शादी</a>
       <a href="{p}hi/property.html">प्रॉपर्टी</a>
-      <a class="nav-tax" href="{p}hi/port-city-tax.html">0% टैक्स</a>
+      <a class="nav-tax" href="{p}hi/port-city-tax.html">टैक्स हॉलिडे</a>
       <a href="{p}hi/yatra.html">यात्रा</a>
       <a href="{p}watch.html">वीडियो</a>
       <a class="nav-lang" href="{p}{alt_path or 'index.html'}" hreflang="en" lang="en">English</a>
@@ -134,7 +134,7 @@ def header(depth=0, lang="en", alt_path=None):
     else:
         nav = f"""      <a href="{p}weddings.html">Weddings</a>
       <a href="{p}real-estate.html">Estates</a>
-      <a class="nav-tax" href="{p}port-city-tax.html">0% Tax</a>
+      <a class="nav-tax" href="{p}port-city-tax.html">Tax Holiday</a>
       <a href="{p}why/index.html">Why Sri Lanka</a>
       <a href="{p}travel.html" class="hide-m">Journeys</a>
       <a href="{p}watch.html">Watch</a>
@@ -196,7 +196,7 @@ def footer(depth=0, lang="en", extra_js=""):
         <li><a href="{p}weddings.html">Weddings</a></li>
         <li><a href="{p}real-estate.html">Estates</a></li>
         <li><a href="{p}business.html">Enterprise</a></li>
-        <li><a href="{p}port-city-tax.html">Port City 0% tax</a></li>
+        <li><a href="{p}port-city-tax.html">Port City tax holidays</a></li>
         <li><a href="{p}logistics.html">Logistics</a></li>
         <li><a href="{p}second-home.html">The second address</a></li>
         <li><a href="{p}travel.html">Journeys</a></li>

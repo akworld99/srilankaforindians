@@ -5,13 +5,13 @@
 Key facts (verified October 2026):
 - Indian passport holders get a free 30 day double entry tourist ETA for Sri Lanka since 25 May 2026; apply at eta.gov.lk.
 - India was Sri Lanka's largest tourist source market: 431,162 Indian arrivals January to September 2026 (SLTDA).
-- Port City Colombo (Regulation 01 of 2025): corporate income tax holidays of 8 to 15 years for primary Businesses of Strategic Importance, 7.5% for 4 years for secondary businesses, 0% personal income tax for staff of approved businesses; subject to CPCEC approval.
+- Port City Colombo (Regulation 01 of 2025; Amendment Act No. 1 of 2026): corporate income tax holidays of 8 to 15 years for primary Businesses of Strategic Importance depending on investment size, 7.5% for 4 years for secondary businesses, subject to approval. Since 20 January 2026 employment income of staff at newly approved companies is taxable; companies approved earlier keep a staff exemption until 31 January 2029.
 - Foreigners can buy condominium units above ground floor outright when paid via inward foreign remittance; USD 100,000 property investment supports a renewable 5 year residence visa.
 - Sri Lanka 2025 exports: total USD 17.25B; apparel and textiles USD 4.91B; ICT/BPM USD 1.64B; tea USD 1.51B; spices and essential oils USD 450M (EDB).
 - UPI works in Sri Lanka at LankaQR merchants (launched February 2024). Sri Lanka runs on IST (UTC+5:30).
 
 ## Core pages
-- [Port City 0% tax and salary calculator](https://srilankaforindians.com/port-city-tax.html)
+- [Port City tax holidays and corporate tax calculator](https://srilankaforindians.com/port-city-tax.html)
 - [Destination weddings and Goa vs Sri Lanka cost calculator](https://srilankaforindians.com/weddings.html)
 - [Real estate rules for Indians](https://srilankaforindians.com/real-estate.html)
 - [Business and Port City setup](https://srilankaforindians.com/business.html)

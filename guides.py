@@ -111,7 +111,7 @@ dict(slug="port-city-vs-gift-city-vs-dubai", h1="Port City Colombo vs GIFT City 
 <div class="table-scroll"><table>
 <tr><th></th><th class="hl">Port City Colombo</th><th>GIFT City IFSC</th><th>Dubai (UAE)</th></tr>
 <tr><td>Corporate tax</td><td class="hl">8 to 15 year holidays for primary BSIs; 7.5% for 4 years for secondary</td><td>100% deduction for 10 of 15 years for IFSC units</td><td>9% above AED 375,000; qualifying free zone income can be 0%</td></tr>
-<tr><td>Personal income tax</td><td class="hl">0% for staff of approved firms</td><td>Indian slabs apply to residents</td><td>0%</td></tr>
+<tr><td>Personal income tax</td><td class="hl">Normal Sri Lankan tax for staff of companies approved since 20 Jan 2026; earlier approvals exempt until Jan 2029</td><td>Indian slabs apply to residents</td><td>0%</td></tr>
 <tr><td>Ownership</td><td class="hl">100% foreign</td><td>Indian and foreign</td><td>100% in free zones and most mainland activity</td></tr>
 <tr><td>Jurisdiction</td><td class="hl">Separate country, SEZ law</td><td>Inside India</td><td>Separate country</td></tr>
 <tr><td>Currency</td><td class="hl">16 designated foreign currencies</td><td>Foreign currency</td><td>AED, pegged to USD</td></tr>
@@ -119,13 +119,13 @@ dict(slug="port-city-vs-gift-city-vs-dubai", h1="Port City Colombo vs GIFT City 
 <tr><td>2026 risk note</td><td class="hl">Emerging market; incentives need CPCEC approval</td><td>Indian regulatory change risk</td><td>Gulf conflict exposure in 2026</td></tr>
 </table></div>
 <p class="small">Headline rules only. Port City per Regulation 01 of 2025; GIFT City per Section 80LA of the Income Tax Act; UAE per Federal Decree Law 47 of 2022. Effective rates depend on structure.</p>
-<h2>The bit everyone forgets: residency</h2>
-<p>Zero personal tax only helps if you are not an Indian tax resident. Broadly, spending 182 days or more in India in a year makes you resident, and high earning Indian citizens face extra rules. Structure it with your CA before you move anyone.</p>
+<h2>The bit everyone forgets: residency and POEM</h2>
+<p>Port City's staff tax exemption was withdrawn for new companies in January 2026, so for individuals Dubai is now the only zero on this table. For companies, watch India's place of effective management rule: a foreign company run day to day from India can be taxed as Indian. And zero personal tax anywhere only helps if you are not an Indian tax resident. Broadly, spending 182 days or more in India in a year makes you resident, and high earning Indian citizens face extra rules. Structure it with your CA before you move anyone.</p>
 <h2>Who should pick what</h2>
 <ul><li><strong>GIFT City:</strong> regulated financial services that want India's market with tax benefits and no relocation.</li>
 <li><strong>Dubai:</strong> global trading and holding structures, if Gulf exposure fits your risk appetite.</li>
 <li><strong>Port City:</strong> India plus one operations, GCCs, regional treasury and family offices that want a separate jurisdiction an hour from home.</li></ul>""",
- faq=[("Is Port City Colombo better than Dubai for Indian companies?","It depends on the business. Both offer zero personal income tax. Port City adds proximity to India and a different risk profile from the Gulf; Dubai offers a deeper, more established ecosystem."),
+ faq=[("Is Port City Colombo better than Dubai for Indian companies?","It depends on the business. Dubai offers zero personal income tax; Port City withdrew its staff exemption for new companies in January 2026. Port City's edge is corporate tax holidays for strategic investments, proximity to India and a different risk profile from the Gulf."),
       ("What is the tax in GIFT City?","IFSC units in GIFT City can claim a 100% tax deduction for 10 out of 15 years under Section 80LA, while staying inside Indian jurisdiction.")],
  source=""),
 

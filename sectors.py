@@ -9,11 +9,11 @@ SECTORS = [
 dict(slug="technology", name="Technology", eyebrow="Why Sri Lanka for tech",
  h1="An engineering bench <em>on India's own clock.</em>",
  lead="Sri Lanka runs on IST, educates its engineers in English, and has quietly built product teams for global software houses for two decades. For Indian tech firms, it is the delivery centre an hour away that does not compete with Bengaluru for the same people.",
- facts=[("$1.64B","ICT and BPM service exports in 2025, up 8.8%"),("IST","Colombo runs on UTC+5:30. No time zone gymnastics"),("0%","Personal income tax for staff of approved Port City firms")], source=EDB,
+ facts=[("$1.64B","ICT and BPM service exports in 2025, up 8.8%"),("IST","Colombo runs on UTC+5:30. No time zone gymnastics"),("100%","Foreign ownership inside Port City Colombo")], source=EDB,
  reasons=[("Talent","Product grade engineers","Global enterprise software houses, including IFS and WSO2, run major engineering in Colombo. The talent pool is used to building products, not just tickets."),
           ("Continuity","An India plus one that is close","Port City pitches itself to Indian GCCs as a business continuity and disaster recovery site. Same clock, short flight, separate grid and jurisdiction."),
           ("Retention","A smaller pond","A tight knit market where reputations travel fast. Strong employers find teams tend to stay together longer than in India's hottest hubs.")],
- india="Indian IT services and product companies use Colombo for 20 to 200 person centres: QA, support, product engineering and Tamil or English customer facing roles. Inside Port City, staff of approved businesses have paid zero personal income tax, which changes what a senior engineer actually takes home.",
+ india="Indian IT services and product companies use Colombo for 20 to 200 person centres: QA, support, product engineering and Tamil or English customer facing roles. Inside Port City, qualifying strategic projects can earn corporate tax holidays, and smaller approved firms a 7.5% rate for four years.",
  videos=["hvOeE4eW8As","GHyNEH0kQ3o"],
  faq=[("Is Sri Lanka good for software development outsourcing?","Yes for many teams. Sri Lanka exported $1.64 billion of ICT and BPM services in 2025, its engineers work in English, and Colombo shares India's time zone. Global software firms such as IFS and WSO2 run large engineering teams there."),
       ("Can an Indian IT company set up inside Port City Colombo?","Yes. Port City allows full foreign ownership, and approved Businesses of Strategic Importance can receive corporate tax holidays of 8 to 15 years under Regulation 01 of 2025. Approval comes from the Colombo Port City Economic Commission.")]),
@@ -33,14 +33,14 @@ dict(slug="bpo-kpo", name="BPO and KPO", eyebrow="Why Sri Lanka for BPO and KPO"
 dict(slug="gcc", name="Global Capability Centres", eyebrow="Why Sri Lanka for GCCs",
  h1="The India plus one <em>Port City is built for.</em>",
  lead="India is the GCC capital of the world. Port City Colombo has said publicly that it wants to complement that, offering smaller, specialised centres and a business continuity site outside India's own grid and jurisdiction.",
- facts=[("India +1","Port City's stated pitch to Indian GCCs"),("0%","Personal income tax inside Port City"),("80 min","Chennai to Colombo")], source="Port City Colombo deputy MD Thulci Aluwihare, interview with Moneycontrol, July 2026.",
+ facts=[("India +1","Port City's stated pitch to Indian GCCs"),("8 to 15 yrs","Corporate tax holidays for strategic investments"),("80 min","Chennai to Colombo")], source="Port City Colombo deputy MD Thulci Aluwihare, interview with Moneycontrol, July 2026.",
  reasons=[("Resilience","Business continuity and DR","A second site with separate power, telecoms and jurisdiction, close enough for weekly leadership visits."),
           ("Specialism","Small, sharp centres","Rather than 5,000 seat campuses, Colombo suits 50 to 300 person centres of excellence."),
-          ("Economics","Dollar operations, zero personal tax","Port City transacts in 16 designated currencies and has offered zero personal income tax to staff of approved firms.")],
- india="If your board has asked for concentration risk to be addressed, a Colombo centre is the cheapest credible answer: same clock, short flight, English working language, and a tax regime that helps you attract senior people.",
+          ("Economics","Dollar operations, lower corporate tax","Port City transacts in designated foreign currencies, and approved businesses can get corporate tax holidays or a 7.5% rate. Since January 2026, staff of new entrants pay normal income tax.")],
+ india="If your board has asked for concentration risk to be addressed, a Colombo centre is the cheapest credible answer: same clock, short flight, English working language, and a corporate tax regime built to pull in strategic investment.",
  videos=["hvOeE4eW8As","GHGrijFEpgU"],
  faq=[("What is an India plus one GCC strategy?","Running most capability in India while keeping a smaller second centre in another country for resilience, client requirements or specialist skills. Port City Colombo actively markets itself for this role."),
-      ("What incentives does Port City offer GCCs?","Approved primary Businesses of Strategic Importance can receive 8 to 15 year corporate tax holidays, secondary businesses a 7.5% rate for 4 years, and staff have paid 0% personal income tax, subject to CPCEC approval.")]),
+      ("What incentives does Port City offer GCCs?","Approved primary Businesses of Strategic Importance can receive 8 to 15 year corporate tax holidays, secondary businesses a 7.5% rate for 4 years, subject to approval. Since 20 January 2026, staff of newly approved companies pay normal income tax.")]),
 
 dict(slug="fintech", name="Fintech and Finance", eyebrow="Why Sri Lanka for finance",
  h1="A financial district <em>built from the sea up.</em>",
@@ -49,10 +49,10 @@ dict(slug="fintech", name="Fintech and Finance", eyebrow="Why Sri Lanka for fina
  reasons=[("Treasury","Regional treasury and holding","Multi currency operations without domestic exchange control friction."),
           ("Wealth","Family offices","A second jurisdiction for family capital, an hour from home."),
           ("Payments","Payments and fintech","Build for South Asia from a zone designed for cross border finance.")],
- india="Compare it honestly with GIFT City, which offers a 10 out of 15 year tax holiday inside India. Port City adds jurisdictional diversification and zero personal tax for non resident staff. Our comparison guide lays both side by side.",
+ india="Compare it honestly with GIFT City, which offers a 10 out of 15 year tax holiday inside India. Port City adds jurisdictional diversification and corporate tax holidays for strategic investments. Our comparison guide lays both side by side.",
  videos=["GHGrijFEpgU","hvOeE4eW8As"],
  faq=[("Is Port City Colombo a financial centre?","Yes. It is a special economic zone with financial services as a core use, including the planned Colombo International Financial Centre, and it allows transactions in 16 designated foreign currencies."),
-      ("Port City Colombo or GIFT City?","GIFT City keeps you inside Indian law with a 10 out of 15 year tax holiday for IFSC units. Port City adds a separate jurisdiction, full foreign ownership and zero personal income tax for approved firms' staff. See our full comparison guide.")]),
+      ("Port City Colombo or GIFT City?","GIFT City keeps you inside Indian law with a 10 out of 15 year tax holiday for IFSC units. Port City adds a separate jurisdiction, full foreign ownership and corporate tax holidays for strategic investments. See our full comparison guide.")]),
 
 dict(slug="spices", name="Spices", eyebrow="Why Sri Lanka for spices",
  h1="The home of <em>true cinnamon.</em>",
@@ -224,7 +224,7 @@ def page(s):
   <div class="facts">{facts}</div>
   <p class="source">{s['source']}</p>
   <div class="cta-row"><a class="btn btn-primary" href="{wa_link('Hi, I am exploring Sri Lanka for ' + s['name'])}" rel="noopener">Talk to a sector guide</a>
-  <a class="btn btn-ghost" href="../port-city-tax.html">The 0% tax story</a></div>
+  <a class="btn btn-ghost" href="../port-city-tax.html">Port City tax holidays</a></div>
 </div></section>
 
 <section class="band"><div class="wrap">
@@ -270,7 +270,7 @@ def hub():
 <section class="band"><div class="wrap">
   <div class="grid c3">{cards}</div>
   <h3 style="margin-top:48px">Also on Sri Lanka for Indians</h3>
-  <div class="chips" style="margin-top:16px">{existing}<a href="../port-city-tax.html">Port City 0% tax</a></div>
+  <div class="chips" style="margin-top:16px">{existing}<a href="../port-city-tax.html">Port City tax holidays</a></div>
 </div></section>
 """ + cta_banner("Your sector is not listed?", "Tell us what you do. If there is an angle in Sri Lanka, we will find it.", "Hi, my sector is ")
     schema = crumb_schema([("Why Sri Lanka", "why/index.html")])

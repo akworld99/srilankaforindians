@@ -5,45 +5,66 @@ from home import tax_mega
 def tax_page():
     vids = pick("hvOeE4eW8As", "GHGrijFEpgU", "GHyNEH0kQ3o")
     faqs = [
-        ("What is the tax rate in Port City Colombo?", "Under Regulation 01 of 2025, primary Businesses of Strategic Importance can receive corporate income tax holidays of 8 to 15 years depending on investment, secondary businesses a concessionary 7.5% corporate rate for 4 years, and staff of approved businesses have paid 0% personal income tax. All incentives require approval from the Colombo Port City Economic Commission."),
-        ("Is Port City Colombo tax free for Indians?", "The incentives apply to approved businesses in the zone regardless of the owner's nationality. Whether an individual Indian pays tax in India depends on Indian tax residency: residents are taxed on global income. Consult a chartered accountant."),
-        ("How does Port City compare with Dubai on tax?", "Both offer 0% personal income tax. The UAE charges 9% corporate tax above AED 375,000, with 0% possible on qualifying free zone income, while Port City offers multi year holidays or a 7.5% rate for approved businesses."),
-        ("Can Port City incentives change?", "Yes. Incentives were revised in 2023 and again under Regulation 01 of 2025, and commentators have flagged possible changes to the personal tax exemption. Lock in terms in writing with the Commission before you invest."),
+        ("What is the tax rate in Port City Colombo in 2026?", "Approved primary Businesses of Strategic Importance can receive corporate income tax holidays of 8 to 15 years after implementation, depending on investment size, under Regulation 01 of 2025. Secondary businesses can get a concessionary 7.5% corporate rate for 4 years. Other Port City companies pay normal Sri Lankan tax."),
+        ("Is there still 0% personal income tax in Port City?", "Not for new companies. The Colombo Port City Economic Commission (Amendment) Act No. 1 of 2026, certified on 20 January 2026, made employment income taxable from day one for companies approved on or after that date. Companies approved earlier keep a staff exemption for a 3 year transition, until 31 January 2029."),
+        ("How big does an investment need to be for the 15 year tax holiday?", "The longest holidays are reserved for the largest projects. Reporting in March 2026 described the full 15 years as applying to investments of USD 1 billion or more, with shorter holidays for lower tiers. Smaller approved businesses look at the secondary category: 7.5% for four years."),
+        ("How does Port City compare with Dubai on tax?", "The UAE charges 9% corporate tax above AED 375,000 and no personal income tax. Port City offers corporate tax holidays or a 7.5% rate to approved strategic businesses, but staff of newly approved companies now pay normal Sri Lankan income tax."),
+        ("Can Port City incentives change again?", "Yes. They were cut in 2023, restructured under Regulation 01 of 2025 and amended by Act No. 1 of 2026, which also introduced performance monitoring and reviews. Get your incentives written into your agreement before you invest."),
     ]
     rows = [
-        ("Corporate tax (headline)", "25.17%", "17%", "9%", "8 to 15 yr holiday, or 7.5%"),
-        ("Top personal income tax", "39%", "24%", "0%", "0%"),
+        ("Corporate tax (headline)", "25.17%", "17%", "9%", "0% for 8 to 15 yrs (primary BSI) or 7.5% for 4 yrs (secondary)"),
+        ("Personal income tax (top)", "39%", "24%", "0%", "Normal Sri Lankan rates for staff of companies approved since 20 Jan 2026"),
         ("Foreign ownership", "Sector caps apply", "100%", "100% in most activity", "100%"),
         ("Flight from Chennai", "Home", "4 hr", "4 hr", "1 hr 20 min"),
     ]
     tbl = "".join(f"<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td><td class='hl'>{e}</td></tr>" for a, b, c, d, e in rows)
     body = f"""
 <section class="hero"><div class="wrap">
-  <p class="crumbs"><a href="index.html">Home</a> &rsaquo; Port City 0% tax</p>
-  <span class="eyebrow">Port City Colombo</span>
-  <h1>Zero. <em>The most important number on this site.</em></h1>
-  <p class="lead">Port City Colombo is a special economic zone with its own tax rulebook. Approved enterprises get corporate tax holidays of up to 15 years, and their staff have paid nothing in personal income tax. Here is exactly how it works, and what it is worth to you.</p>
+  <p class="crumbs"><a href="index.html">Home</a> &rsaquo; Port City tax holidays</p>
+  <span class="eyebrow">Port City Colombo &middot; 2026 rules</span>
+  <h1>Fifteen years. <em>Zero corporate tax.</em></h1>
+  <p class="lead">Port City Colombo is a special economic zone with its own tax rulebook. Projects designated as Businesses of Strategic Importance pay no corporate income tax for 8 to 15 years, depending on how much they invest. Smaller approved firms can pay 7.5% for four years. Here is what changed in 2026, who qualifies, and what it is worth.</p>
   <div class="facts">
-    <div class="fact"><b>0%</b><span>Personal income tax for staff of approved businesses</span></div>
-    <div class="fact"><b>8 to 15 yrs</b><span>Corporate tax holidays for primary Businesses of Strategic Importance</span></div>
-    <div class="fact"><b>7.5%</b><span>Concessionary corporate rate for secondary businesses, 4 years</span></div>
+    <div class="fact"><b>0%</b><span>Corporate income tax during the holiday for primary Businesses of Strategic Importance</span></div>
+    <div class="fact"><b>8 to 15 yrs</b><span>Holiday length, scaled to investment. The full 15 years is for the largest projects</span></div>
+    <div class="fact"><b>7.5%</b><span>Concessionary corporate rate for secondary businesses, 4 years from operations</span></div>
   </div>
-  <p class="source">Regulation 01 of 2025 under the Colombo Port City Economic Commission framework, effective 30 September 2025 for five years (KPMG summary).</p>
+  <p class="source">Regulation 01 of 2025 (effective 30 September 2025 for five years) and the Colombo Port City Economic Commission (Amendment) Act No. 1 of 2026, certified 20 January 2026.</p>
 </div></section>
 
-<section class="band" id="calc"><div class="wrap">
-  <span class="eyebrow">What would you keep?</span>
-  <h2>Your salary, <em>India against Port City.</em></h2>
-  <p class="lead">Move the slider to your annual salary. We calculate Indian income tax under the new regime for FY 2025-26, and set it against Port City's zero.</p>
-  <div class="taxcalc" style="margin-top:34px">
-    <label for="tc-salary" class="field" style="display:block"><span style="display:block; font-size:.66rem; letter-spacing:.32em; text-transform:uppercase; color:var(--gold); margin-bottom:8px">Annual salary</span><span class="tc-val num" id="tc-out-salary">&#8377;50 L</span></label>
-    <input type="range" id="tc-salary" min="10" max="500" step="5" value="50" aria-label="Annual salary in lakh rupees">
-    <div class="tc-row">
-      <div class="tc-cell"><span>Income tax in India (new regime)</span><b class="num" id="tc-india">&#8377;0</b><span id="tc-rate"></span></div>
-      <div class="tc-cell"><span>Personal tax inside Port City</span><b class="num">&#8377;0</b><span>0% for approved firms' staff</span></div>
-      <div class="tc-cell gold"><span>You would keep, every year</span><b class="num" id="tc-keep">&#8377;0</b><span>Over 5 years: <span id="tc-5yr" class="num">&#8377;0</span></span></div>
+<section class="band"><div class="wrap">
+  <div class="cta-banner" style="background:var(--card); color:var(--ink); border-color:var(--gold)">
+    <div style="max-width:72ch">
+      <span class="eyebrow">What changed in January 2026</span>
+      <h2 style="color:var(--ink)">The staff tax exemption is gone <em>for new companies.</em></h2>
+      <p style="color:var(--ink-soft)">Until 2026, staff of approved Port City companies paid no personal income tax. The Amendment Act No. 1 of 2026 ended that for companies approved on or after 20 January 2026: their employees are taxed from day one. Companies approved before that keep the exemption for a three year transition, from 1 February 2026 to 31 January 2029. Corporate tax holidays for strategic investments remain, now with performance monitoring and reviews.</p>
     </div>
-    <p class="small" style="margin-top:18px">Illustrative only. Uses FY 2025-26 new regime slabs, &#8377;75,000 standard deduction, section 87A rebate, surcharge and 4% cess. The saving applies only if you are not an Indian tax resident: broadly, under 182 days a year in India, with extra rules for high earning citizens. Indian residents are taxed on global income. Talk to your CA.</p>
+  </div>
+</div></section>
+
+<section class="band sand" id="calc"><div class="wrap">
+  <span class="eyebrow">What is the holiday worth?</span>
+  <h2>Your profits, <em>India against Port City.</em></h2>
+  <p class="lead">Set your expected annual profit and the category you might qualify for. We compare corporate tax over the holiday period at India's headline rate against Port City's.</p>
+  <div class="taxcalc" style="margin-top:34px">
+    <div class="calc-grid">
+      <div class="field"><label for="cc-profit">Annual profit</label><span class="tc-val num" id="cc-profit-out">&#8377;25 Cr</span>
+        <input type="range" id="cc-profit" min="1" max="500" step="1" value="25" aria-label="Annual profit in crore rupees"></div>
+      <div class="field"><label for="cc-route">Port City category</label>
+        <select id="cc-route">
+          <option value="p15">Primary BSI, 15 year holiday (largest projects)</option>
+          <option value="p12">Primary BSI, 12 year holiday</option>
+          <option value="p10" selected>Primary BSI, 10 year holiday</option>
+          <option value="p8">Primary BSI, 8 year holiday</option>
+          <option value="s4">Secondary BSI, 7.5% for 4 years</option>
+        </select></div>
+    </div>
+    <div class="tc-row">
+      <div class="tc-cell"><span>Corporate tax in India over <span id="cc-years">10</span> years</span><b class="num" id="cc-india">&#8377;0</b><span>At 25.17% headline</span></div>
+      <div class="tc-cell"><span>Corporate tax in Port City</span><b class="num" id="cc-pc">&#8377;0</b><span id="cc-pc-note">During the holiday</span></div>
+      <div class="tc-cell gold"><span>Tax saved over the period</span><b class="num" id="cc-save">&#8377;0</b><span>Before dividend tax in India</span></div>
+    </div>
+    <p class="small" style="margin-top:18px">Illustrative only, using flat profits. Holidays start after the project implementation period and require designation as a Business of Strategic Importance, which depends on investment size and approval. Dividends paid back to Indian shareholders are taxed in India. Under India's place of effective management rule, a foreign company run day to day from India can be taxed as Indian. Talk to your CA and a Colombo tax advisor.</p>
   </div>
 </div></section>
 
@@ -64,9 +85,10 @@ def tax_page():
   <span class="eyebrow">How to qualify</span>
   <h2>Getting the incentives <em>in writing.</em></h2>
   <div class="steps" style="margin-top:30px; max-width:780px">
-    <div class="step"><h3>Pick the category</h3><p>Primary Businesses of Strategic Importance get the long holidays; secondary businesses get 7.5%. The category depends on what you do and how much you invest.</p></div>
-    <div class="step"><h3>Apply to the Commission</h3><p>The Colombo Port City Economic Commission is the single window. Your application sets out investment, jobs and activity.</p></div>
-    <div class="step"><h3>Sign the agreement</h3><p>Incentives are granted per business. Get the terms, years and conditions in your agreement before money moves.</p></div>
+    <div class="step"><h3>Size the project</h3><p>Primary Businesses of Strategic Importance fall into four categories by investment and jobs, with holidays of 8, 10, 12 or 15 years. Below those thresholds, the secondary route offers 7.5% for four years.</p></div>
+    <div class="step"><h3>Apply to the Commission</h3><p>The Colombo Port City Economic Commission is the single window. Incentives now need Ministry of Finance analysis and carry performance conditions.</p></div>
+    <div class="step"><h3>Sign the agreement</h3><p>Get the category, holiday years and conditions in your agreement before money moves. Since 2026, missed performance targets can lead to incentives being suspended or withdrawn.</p></div>
+    <div class="step"><h3>Budget payroll properly</h3><p>Staff of newly approved companies pay normal Sri Lankan income tax, so plan salaries and relocation packages on that basis.</p></div>
     <div class="step"><h3>Structure the India side</h3><p>Overseas Direct Investment from India runs under RBI rules. Your CA handles the Indian filings; we introduce the Colombo lawyers.</p></div>
   </div>
 </div></section>
@@ -83,10 +105,10 @@ def tax_page():
   <span class="eyebrow">Straight answers</span>
   <div style="margin-top:20px; max-width:880px">{"".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)}</div>
 </div></section>
-""" + cta_banner("Want the incentives mapped to your business?", "Send us what you do and how big. We reply with the likely category and the next three steps.", "Hi, I want to understand Port City tax incentives for my business")
-    schema = crumb_schema([("Port City 0% tax", "port-city-tax.html")]) + "\n" + faq_schema(faqs) + "\n" + video_schema(vids)
-    return head("Port City Colombo Tax: 0% Personal Income Tax, 15 Year Holidays, Calculator | Sri Lanka for Indians",
-                "Port City Colombo tax explained for Indians: 0% personal income tax for approved firms' staff, 8 to 15 year corporate tax holidays, 7.5% rate for secondary businesses. Salary calculator against Indian tax.",
+""" + cta_banner("Want to know which category you would fall into?", "Send us what you do and how much you plan to invest. We reply with the likely route and the next three steps.", "Hi, I want to understand Port City tax incentives for my business")
+    schema = crumb_schema([("Port City tax holidays", "port-city-tax.html")]) + "\n" + faq_schema(faqs) + "\n" + video_schema(vids)
+    return head("Port City Colombo Tax 2026: 8 to 15 Year Corporate Tax Holidays, What Changed | Sri Lanka for Indians",
+                "Port City Colombo tax in 2026, explained for Indians: 8 to 15 year corporate tax holidays for strategic investments, 7.5% for smaller firms, and the end of the staff income tax exemption for new companies. Profit calculator included.",
                 "port-city-tax.html", 0, schema, alt={"en": "port-city-tax.html", "hi": "hi/port-city-tax.html"}) \
         + header(alt_path="hi/port-city-tax.html") + body + footer()
 

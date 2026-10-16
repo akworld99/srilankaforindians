@@ -7,23 +7,23 @@ TIER1 = [("chennai","Chennai"),("mumbai","Mumbai"),("delhi","Delhi NCR"),("benga
 
 def tax_mega(depth=0):
     p = "../" * depth
-    bars = [("India (top slab)", 39, ""), ("Singapore (top)", 24, ""), ("Dubai, UAE", 0, "zero-bar"), ("Port City Colombo", 0, "hl zero-bar")]
+    bars = [("India", 25.17, ""), ("Singapore", 17, ""), ("Dubai, UAE", 9, ""), ("Port City BSI", 0, "hl zero-bar")]
     bar_html = "\n".join(
-        f'<div class="bar {c}"><span>{n}</span><span class="track"><span class="fill" style="width:{v/40*100:.0f}%"></span></span><span class="pct">{v}%</span></div>'
+        f'<div class="bar {c}"><span>{n}</span><span class="track"><span class="fill" style="width:{v/30*100:.0f}%"></span></span><span class="pct">{v}%</span></div>'
         for n, v, c in bars)
     return f"""<section class="tax-mega" id="tax">
   <div class="wrap">
     <div>
-      <div class="zero" aria-label="Zero percent">0%<small>Personal income tax &middot; Port City Colombo</small></div>
+      <div class="zero" aria-label="Zero percent">0%<small>Corporate tax &middot; up to 15 years &middot; Port City</small></div>
     </div>
     <div>
       <span class="eyebrow">The headline Indian CFOs reread</span>
-      <h2>Dubai's tax. <em>Chennai's flight time.</em></h2>
-      <p>Inside Port City Colombo, approved enterprises get corporate tax holidays of 8 to 15 years, or a 7.5% rate for secondary businesses, and staff have paid zero personal income tax. Dubai offers the same zero. It just sits four hours further away, inside the region that rattled every boardroom in 2026.</p>
-      <div class="bars" aria-label="Top personal income tax rates">
+      <h2>Fifteen tax free years. <em>Eighty minutes from Chennai.</em></h2>
+      <p>Port City Colombo designates qualifying projects as Businesses of Strategic Importance and exempts their profits from corporate income tax for 8 to 15 years, depending on investment size. Smaller approved businesses can get a 7.5% rate for four years. Add 100% foreign ownership and foreign currency operations, an hour from home and outside the region that rattled every boardroom in 2026.</p>
+      <div class="bars" aria-label="Headline corporate income tax rates">
         {bar_html}
       </div>
-      <p class="small">Top headline personal rates. India: 30% slab plus 25% surcharge plus 4% cess under the new regime. Port City incentives per Regulation 01 of 2025, subject to CPCEC approval. Indian tax residents are taxed on global income, so where you live decides what you pay.</p>
+      <p class="small">Headline corporate rates. India: 22% plus 10% surcharge plus 4% cess for domestic companies. Port City figure applies during the holiday to approved primary Businesses of Strategic Importance under Regulation 01 of 2025 and the Port City (Amendment) Act No. 1 of 2026. Since 20 January 2026, staff of newly approved Port City companies pay normal income tax.</p>
       <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:18px">
         <a class="btn btn-primary" href="{p}port-city-tax.html">Calculate your saving</a>
         <a class="btn btn-ghost" href="{p}guides/port-city-vs-gift-city-vs-dubai.html">Port City vs GIFT City vs Dubai</a>
@@ -42,7 +42,7 @@ def build(write):
     faqs = [
         ("Do Indians need a visa for Sri Lanka?", "Indian passport holders apply online for an Electronic Travel Authorisation before flying. Since 25 May 2026 the 30 day tourist ETA, with double entry, is free for Indians. Apply only on the official eta.gov.lk portal."),
         ("Can an Indian buy property in Sri Lanka?", "Foreigners cannot own freehold land directly, but can buy condominium units above ground floor outright when paid through an inward foreign remittance. Land is typically held on long lease. A property investment of USD 100,000 or more can support a renewable 5 year residence visa."),
-        ("What is the tax rate in Port City Colombo?", "Under Regulation 01 of 2025, primary Businesses of Strategic Importance get corporate income tax holidays of 8 to 15 years, secondary businesses a 7.5% concessionary rate for 4 years, and personal income tax inside Port City has been 0%. All incentives need CPCEC approval."),
+        ("What is the tax rate in Port City Colombo?", "Under Regulation 01 of 2025, primary Businesses of Strategic Importance get corporate income tax holidays of 8 to 15 years, secondary businesses a 7.5% concessionary rate for 4 years, and all incentives need approval. Since 20 January 2026, staff of newly approved Port City companies pay normal income tax; earlier approvals keep a staff exemption until January 2029."),
         ("How much does a destination wedding in Sri Lanka cost compared to India?", "Sri Lankan beach resorts often price venue, rooms and catering below comparable Goa or Udaipur packages, while international flights narrow the gap depending on your city. Run your own numbers in our calculator and ask us for three real resort quotes."),
         ("How far is Sri Lanka from India?", "Colombo is about 1 hour 20 minutes by air from Chennai, around 2 hours from Bengaluru and Hyderabad, and about 2 hours 30 minutes from Mumbai. A passenger ferry also runs between Nagapattinam and Kankesanthurai near Jaffna."),
     ]
@@ -64,12 +64,12 @@ def build(write):
     <div class="hero-inner">
       <span class="eyebrow">Namaste &middot; Ayubowan &middot; Vanakkam</span>
       <h1>The Indian Ocean kept an island <em>for you.</em></h1>
-      <p class="lead">Eighty minutes from Chennai: clifftop weddings above the ocean, sea facing residences priced in dollars, and a financial district where personal income tax reads zero. More than 4.3 lakh Indians arrived in the first nine months of 2026. Allow us to show you why the wisest of them stayed longer.</p>
+      <p class="lead">Eighty minutes from Chennai: clifftop weddings above the ocean, sea facing residences priced in dollars, and a financial district offering corporate tax holidays of up to fifteen years. More than 4.3 lakh Indians arrived in the first nine months of 2026. Allow us to show you why the wisest of them stayed longer.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="{wa_link('Hi, I want to explore Sri Lanka')}" rel="noopener">WhatsApp your guide</a>
         <a class="btn btn-ghost" href="#calculator">The wedding ledger</a>
       </div>
-      <a class="hero-badge" href="port-city-tax.html"><span class="hb-num">0%</span><span class="hb-txt"><b>Port City Colombo</b>Personal income tax. See what you would keep &rarr;</span></a>
+      <a class="hero-badge" href="port-city-tax.html"><span class="hb-num">0%</span><span class="hb-txt"><b>Port City Colombo</b>Corporate tax for up to 15 years. See if you qualify &rarr;</span></a>
     </div>
   </div>
   <div class="hero-foot">Weddings &middot; Estates &middot; Enterprise &middot; The Second Address</div>
@@ -106,7 +106,7 @@ def build(write):
     <div class="grid c3" style="margin-top:44px">
       <a class="card link-card" href="weddings.html"><span class="tag">Weddings</span><h3>Vows above the Indian Ocean</h3><p>Clifftop mandaps, resorts fluent in Indian weddings, free visas for the whole baraat.</p><span class="go">Plan the wedding &rarr;</span></a>
       <a class="card link-card" href="real-estate.html"><span class="tag">Estates</span><h3>A sea facing address, held in dollars</h3><p>Condominiums Indians may own outright, Port City residences, and a 5 year visa route from USD 100,000.</p><span class="go">How buying works &rarr;</span></a>
-      <a class="card link-card" href="port-city-tax.html"><span class="tag">Enterprise</span><h3>Port City: holidays to 15 years</h3><p>0% personal income tax, corporate holidays for approved enterprises, full foreign ownership.</p><span class="go">See the tax numbers &rarr;</span></a>
+      <a class="card link-card" href="port-city-tax.html"><span class="tag">Enterprise</span><h3>Port City: holidays to 15 years</h3><p>Corporate tax holidays of 8 to 15 years for strategic investments, or 7.5% for smaller approved firms. Full foreign ownership.</p><span class="go">See the tax numbers &rarr;</span></a>
       <a class="card link-card" href="logistics.html"><span class="tag">Logistics</span><h3>The port on the main lane</h3><p>Colombo moved a record 8.29 million TEU in 2025, much of it Indian cargo.</p><span class="go">The logistics plays &rarr;</span></a>
       <a class="card link-card" href="second-home.html"><span class="tag">The second address</span><h3>A residence 400 km from home</h3><p>Visas, schools, and what a month in Colombo truly costs.</p><span class="go">Plan the residence &rarr;</span></a>
       <a class="card link-card" href="travel.html"><span class="tag">Journeys</span><h3>Ramayana trails, leopards, tea</h3><p>Itineraries composed for Indian travellers, veg and Jain tables mapped.</p><span class="go">Begin the journey &rarr;</span></a>
@@ -213,8 +213,8 @@ def build(write):
     from cities import ALL_CITIES
     links = "\n      ".join(f'<a href="from/{c[0]}.html">{c[1]}</a>' for c in ALL_CITIES)
     body = body.replace("{CITY_LINKS}", links)
-    page = head("Sri Lanka for Indians | Weddings, Real Estate, Port City 0% Tax and Travel",
-                "India's guide to Sri Lanka. Destination weddings, property Indians can buy, Port City Colombo with 0% personal income tax, a free visa for Indians and travel from every Indian city. Talk to a guide on WhatsApp.",
+    page = head("Sri Lanka for Indians | Weddings, Real Estate, Port City Tax Holidays and Travel",
+                "India's guide to Sri Lanka. Destination weddings, property Indians can buy, Port City Colombo corporate tax holidays of up to 15 years, a free visa for Indians and travel from every Indian city. Talk to a guide on WhatsApp.",
                 "index.html", schema=schema, alt={"en": "index.html", "hi": "hi/index.html"}) \
         + header(alt_path="hi/index.html") + body + footer(extra_js=f'<script src="assets/js/calculator.js?v={ASSET_V}"></script>\n')
     write("index.html", page)

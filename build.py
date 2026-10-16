@@ -141,8 +141,8 @@ PAGES["real-estate.html"] = dict(
 )
 
 PAGES["business.html"] = dict(
-    title="Port City Colombo for Indian Companies: 0% Personal Tax, 8 to 15 Year Holidays | Sri Lanka for Indians",
-    desc="Set up in Sri Lanka from India. Port City Colombo tax incentives explained: 0% personal income tax, corporate holidays up to 15 years, 7.5% concessionary rate, 100% foreign ownership, India plus one strategy.",
+    title="Port City Colombo for Indian Companies: 8 to 15 Year Tax Holidays, 2026 Rules | Sri Lanka for Indians",
+    desc="Set up in Sri Lanka from India. Port City Colombo tax incentives explained for 2026: corporate holidays up to 15 years, 7.5% concessionary rate, 100% foreign ownership, India plus one strategy.",
     body=f"""
 <section class="hero"><div class="wrap">
   <span class="eyebrow">Business</span>
@@ -154,16 +154,16 @@ PAGES["business.html"] = dict(
 <section class="band ink"><div class="wrap">
   <h2>The headline numbers</h2>
   <div class="figures">
-    <div class="figure"><b>0%</b><span>Personal income tax inside Port City for staff of approved businesses, remunerated in foreign currency</span></div>
+    <div class="figure"><b>0%</b><span>Corporate income tax during the holiday for approved primary Businesses of Strategic Importance</span></div>
     <div class="figure"><b>8&ndash;15 yrs</b><span>Corporate income tax holidays for primary Businesses of Strategic Importance, scaled to investment</span></div>
     <div class="figure"><b>7.5%</b><span>Concessionary corporate rate for secondary businesses, 4 years from commercial operations</span></div>
   </div>
   <div class="grid c3">
     <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">100% yours</h3><p>Full foreign ownership, no local partner requirement inside the zone.</p></div>
     <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">16 currencies</h3><p>Transact in designated foreign currencies, ring fenced from domestic monetary shocks.</p></div>
-    <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">Free repatriation</h3><p>Profits and capital move out through the SEZ framework without domestic exchange control friction.</p></div>
+    <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">Exchange control relief</h3><p>Designated Businesses of Strategic Importance are exempt from the Foreign Exchange Act. Other Port City payments follow it since 2026.</p></div>
   </div>
-  <p class="small" style="opacity:.75; margin-top:18px">Per Regulation 01 of 2025 under the CPCEC framework. Every incentive requires Commission approval and depends on category and investment thresholds. Confirm current terms with a licensed advisor; this page is a guide, not advice.</p>
+  <p class="small" style="opacity:.75; margin-top:18px">Per Regulation 01 of 2025 and the Colombo Port City Economic Commission (Amendment) Act No. 1 of 2026. Every incentive requires approval and depends on category and investment thresholds. Since 20 January 2026, staff of newly approved Port City companies pay normal income tax from day one; companies approved earlier keep a staff exemption until 31 January 2029. Confirm current terms with a licensed advisor; this page is a guide, not advice.</p>
 </div></section>
 
 <section class="band"><div class="wrap">
@@ -319,7 +319,7 @@ PILLAR_META = {
     "business.html": dict(crumb="Enterprise", vids=["hvOeE4eW8As","GHyNEH0kQ3o","rIa82ugYTN8"],
         film_h="The comeback, <em>explained by Indian channels.</em>", faq=[
         ("What tax does a company pay in Port City Colombo?",
-         "Under Regulation 01 of 2025, primary Businesses of Strategic Importance receive corporate income tax holidays of 8 to 15 years, secondary businesses a concessionary 7.5% rate for 4 years, and personal income tax inside the zone has been 0%. All incentives require CPCEC approval."),
+         "Under Regulation 01 of 2025, primary Businesses of Strategic Importance receive corporate income tax holidays of 8 to 15 years, secondary businesses a concessionary 7.5% rate for 4 years. All incentives require approval. Since 20 January 2026, staff of newly approved Port City companies pay normal income tax."),
         ("Can an Indian company own 100% of its Sri Lankan entity?",
          "Inside Port City, yes. Outside the zone most sectors also allow full foreign ownership through standard incorporation or the BOI route, with sector specific exceptions.")]),
     "logistics.html": dict(crumb="Logistics", vids=["jOEz-ON842A","jvRH8dcbLpg"],
