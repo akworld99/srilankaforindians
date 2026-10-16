@@ -340,9 +340,9 @@ IMG = {
     "aerial_b": (_YT.format("NGoCQ3HyxQs", 3), "center 55%"),
     "plaza": (_YT.format("B2OIRRQbz8I", 3), "center 45%"),
     "containers": (_YT.format("GHGrijFEpgU", 1), "center 55%"),
-    "ship": (_YT.format("jvRH8dcbLpg", 3), "center 72%"),
-    "temple": (_YT.format("kRjSsHlA9_0", 2), "center 30%"),
-    "bride": (_YT.format("Qbf7BM4OV28", 1), "center 40%"),
+    "ship": (_YT.format("jvRH8dcbLpg", 3), "center 60%", 1.22),
+    "temple": (_YT.format("kRjSsHlA9_0", 2), "center 35%", 1.2),
+    "bride": (_YT.format("Qbf7BM4OV28", 1), "center 45%", 1.32),
     "tea": (_YT.format("6PViyPfd000", 1), "center 50%"),
 }
 HERO_MAP = {
@@ -367,9 +367,10 @@ def hero_img_for(path):
 
 def write(path, html_out):
     if '<section class="hero">' in html_out:
-        url, pos = hero_img_for(path)
+        url, pos, *zoom = hero_img_for(path)
+        z = f"; --hero-zoom:{zoom[0]}" if zoom else ""
         html_out = html_out.replace('<section class="hero">',
-            f'<section class="hero has-img" style="--hero-img:url(\'{url}\'); --hero-pos:{pos}">', 1)
+            f'<section class="hero has-img" style="--hero-img:url(\'{url}\'); --hero-pos:{pos}{z}">', 1)
         html_out = html_out.replace("</head>", f'<link rel="preload" as="image" href="{url}" fetchpriority="high">\n</head>', 1)
     d = os.path.dirname(path)
     if d: os.makedirs(d, exist_ok=True)

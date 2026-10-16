@@ -492,7 +492,7 @@ th.hl{color:var(--gold)}
   .card{padding:28px 22px}
   .card.link-card::after{left:22px; right:22px}
   .hero{padding-block:84px 64px}
-  .hero.has-img::after{background:linear-gradient(to bottom, rgba(16,26,22,.84), rgba(16,26,22,.9))}
+  .hero.has-img::after{background:linear-gradient(to bottom, rgba(16,26,22,.7), rgba(16,26,22,.88))}
 
   /* Stats 2 x 2 */
   .statbar{grid-template-columns:1fr 1fr}
@@ -550,3 +550,4 @@ th.hl{color:var(--gold)}
 :lang(hi) .site-head nav a{font-size:.98rem}
 :lang(hi) .nav-burger{font-size:.95rem}
 .tm-ladder b,.bar .pct,.statbar b,.fact b,.figure b{font-variant-numeric:lining-nums tabular-nums}
+.hero.has-img::before{transform:scale(var(--hero-zoom,1))}
