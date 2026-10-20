@@ -575,3 +575,11 @@ th.hl{color:var(--gold)}
   .inr-points li,.inr-points li + li{padding:14px 0; border-left:0}
 }
 :lang(hi) .inr-points b{font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",var(--font-display); font-weight:400}
+
+/* ===================== v14: currency converter ===================== */
+.fx-row{display:grid; grid-template-columns:1fr auto 1fr; gap:22px; align-items:end}
+.fx-out{display:block; font-family:var(--font-display); font-weight:600; font-size:clamp(2.2rem,5vw,3.4rem); line-height:1.1; color:var(--gold); font-variant-numeric:lining-nums tabular-nums; padding:4px 0}
+.fx #fx-amt{font-size:1.6rem; padding:14px 16px}
+.fx-swap{padding:14px 18px; margin-bottom:6px}
+.fx-meta{margin-top:18px}
+@media (max-width:700px){ .fx-row{grid-template-columns:1fr} .fx-swap{justify-self:start} }

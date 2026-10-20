@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds the whole site. Edit content in the modules, then run: python3 build.py
 Modules: sitekit (shared chrome), media (videos/reels), home, sectors (why/), guides, cities (from/), pages_extra (tax, watch), hindi (hi/)."""
-import os, glob, datetime
+import os, glob, datetime, re
 from urllib.parse import unquote
 from sitekit import *
 from sitekit import cta_banner as _cta
@@ -13,7 +13,7 @@ def cta_banner(line, sub, wa_text, depth=0):
 PAGES = {}
 
 PAGES["weddings.html"] = dict(
-    title="Destination Wedding in Sri Lanka: Cost vs Goa, Venues, Visas | Sri Lanka for Indians",
+    title="Destination Wedding in Sri Lanka: Cost vs Goa and Venues",
     desc="Plan an Indian destination wedding in Sri Lanka. Compare costs against Goa and Udaipur with our calculator, see beach venues that know Indian weddings, and get 3 real quotes free.",
     body=f"""
 <section class="hero"><div class="wrap">
@@ -84,7 +84,7 @@ PAGES["weddings.html"] = dict(
 )
 
 PAGES["real-estate.html"] = dict(
-    title="Can Indians Buy Property in Sri Lanka? Condos, Port City, Investor Visa | Sri Lanka for Indians",
+    title="Can Indians Buy Property in Sri Lanka? 2026 Rules and Costs",
     desc="How Indians buy real estate in Sri Lanka in 2026: condominium ownership rules, Port City apartments, the USD 100,000 investor residence visa, taxes, and the exact buying process.",
     body=f"""
 <section class="hero"><div class="wrap">
@@ -141,7 +141,7 @@ PAGES["real-estate.html"] = dict(
 )
 
 PAGES["business.html"] = dict(
-    title="Port City Colombo for Indian Companies: 7.5% Corporate Tax, 15 Year Holidays, 2026 Rules | Sri Lanka for Indians",
+    title="Port City Colombo for Indian Companies: 7.5% Tax, 2026 Rules",
     desc="Set up in Sri Lanka from India. Port City Colombo tax incentives explained for 2026: corporate holidays up to 15 years, 7.5% concessionary rate, 100% foreign ownership, India plus one strategy.",
     body=f"""
 <section class="hero"><div class="wrap">
@@ -189,7 +189,7 @@ PAGES["business.html"] = dict(
 )
 
 PAGES["logistics.html"] = dict(
-    title="Colombo Port and Sri Lanka Logistics for Indian Companies | Sri Lanka for Indians",
+    title="Colombo Port and Logistics for Indian Companies",
     desc="Why Indian shippers, forwarders and 3PLs set up in Sri Lanka: Colombo's record 8.29 million TEU, Indian run West Container Terminal, Hambantota, bunkering and the transshipment play.",
     body=f"""
 <section class="hero"><div class="wrap">
@@ -224,7 +224,7 @@ PAGES["logistics.html"] = dict(
 )
 
 PAGES["second-home.html"] = dict(
-    title="Sri Lanka as a Second Home for Indians: Visas, Cost of Living, Schools | Sri Lanka for Indians",
+    title="Sri Lanka as a Second Home for Indians: Visas and Costs",
     desc="Make Sri Lanka your second destination: residence visa routes including the USD 100,000 property visa, what a month in Colombo costs, schools, healthcare and the one hour commute home to India.",
     body=f"""
 <section class="hero"><div class="wrap">
@@ -267,7 +267,7 @@ PAGES["second-home.html"] = dict(
 )
 
 PAGES["travel.html"] = dict(
-    title="Sri Lanka Travel Guide for Indians: Visa, Itineraries, Ramayana Trail, Veg Food | Sri Lanka for Indians",
+    title="Sri Lanka Travel Guide for Indians 2026: Visa, Routes, Food",
     desc="The Sri Lanka travel guide built for Indian travellers: ETA visa in hours, UPI payments, Ramayana trail, honeymoon and family itineraries, veg and Jain food, and long weekend plans from every metro.",
     body=f"""
 <section class="hero"><div class="wrap">
@@ -400,7 +400,7 @@ def build_pillars():
         write(fname, html_out)
 
 def build_404():
-    write("404.html", head("Page not found | Sri Lanka for Indians", "That page drifted out to sea.", "404.html") + header() + """
+    write("404.html", head("Page not found | Sri Lanka for Indians", "That page drifted out to sea.", "404.html", noindex=True) + header() + """
 <section class="hero"><div class="wrap" style="text-align:center">
   <h1>Lost at sea.</h1>
   <p class="lead" style="margin-inline:auto">That page does not exist, or it sailed. The island is still here though.</p>
@@ -408,10 +408,28 @@ def build_404():
 </div></section>
 """ + footer())
 
-def build_sitemap():
+def page_dates(files):
+    """lastmod changes only when a page's content changes, so crawlers trust it."""
+    import hashlib, json
+    store = ".pagehashes.json"
+    try: known = json.load(open(store))
+    except Exception: known = {}
     today = datetime.date.today().isoformat()
+    out = {}
+    for f in files:
+        txt = open(f, encoding="utf-8").read()
+        txt = re.sub(r"\?v=\d+", "", txt)
+        h = hashlib.sha1(txt.encode()).hexdigest()
+        if known.get(f, {}).get("h") != h:
+            known[f] = {"h": h, "d": today}
+        out[f] = known[f]["d"]
+    json.dump(known, open(store, "w"), indent=0, sort_keys=True)
+    return out
+
+def build_sitemap():
     files = sorted(glob.glob("*.html") + glob.glob("*/*.html"))
     files = [f for f in files if f != "404.html"]
+    dates = page_dates(files)
     def prio(f):
         if f == "index.html": return "1.0"
         if f in ("port-city-tax.html","weddings.html","real-estate.html","business.html"): return "0.9"
@@ -420,16 +438,16 @@ def build_sitemap():
     sm = ['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for f in files:
         loc = SITE + "/" + ("" if f == "index.html" else f)
-        sm.append(f"  <url><loc>{loc}</loc><lastmod>{today}</lastmod><priority>{prio(f)}</priority></url>")
+        sm.append(f"  <url><loc>{loc}</loc><lastmod>{dates[f]}</lastmod><priority>{prio(f)}</priority></url>")
     sm.append("</urlset>")
     write("sitemap.xml", "\n".join(sm))
     write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
     return files
 
 def main():
-    import home, sectors, guides, cities, pages_extra, hindi
+    import home, sectors, guides, cities, pages_extra, hindi, tools
     build_pillars()
-    for mod in (home, sectors, guides, cities, pages_extra, hindi):
+    for mod in (home, sectors, guides, cities, pages_extra, hindi, tools):
         mod.build(write)
     build_404()
     files = build_sitemap()

@@ -32,13 +32,47 @@ ALL_CITIES = [
  ("bhopal","Bhopal","5 to 6 hr","&#8377;11,000 to 22,000","Via Delhi or Mumbai.","A city of lakes heading to an island of lagoons. Family trips and honeymoons from Bhopal suit the hill and coast circuit.",2,["7j335oyBKH8","52E5aIUxzj8","q0mbKsKG-ng"]),
 ]
 
+REGION = {
+    "south": ["chennai","bengaluru","hyderabad","kochi","thiruvananthapuram","madurai","tiruchirappalli","coimbatore","mangaluru","visakhapatnam"],
+    "west": ["mumbai","pune","ahmedabad","surat","vadodara","indore","nagpur","bhopal"],
+    "north": ["delhi","jaipur","chandigarh","lucknow","varanasi"],
+    "east": ["kolkata","bhubaneswar"],
+}
+NAME = {c[0]: c[1] for c in ALL_CITIES}
+
+def is_direct(flights):
+    return not flights.lower().startswith(("via", "one stop"))
+
+def nearby(slug):
+    reg = next(k for k, v in REGION.items() if slug in v)
+    pool = [x for x in REGION[reg] if x != slug]
+    if len(pool) < 4:
+        pool += [x for x in REGION["south"][:4] if x not in pool and x != slug]
+    return pool[:6]
+
+def city_faqs(c):
+    slug, name, time, fare, flights, hook, tier, _ = c
+    plain_fare = fare.replace("&#8377;", "Rs ")
+    short = time in ("About 1 hr", "1 hr 10 min", "1 hr 20 min", "1 hr 45 min", "1 hr 50 min")
+    return [
+        (f"How long is the flight from {name} to Sri Lanka?", f"About {time} to Colombo. {flights}"),
+        (f"How much is a return flight from {name} to Colombo?", f"Return economy fares typically run {plain_fare}, depending on season and how early you book."),
+        (f"Do I need a visa for Sri Lanka from {name}?", "Indian passport holders need an Electronic Travel Authorisation. It has been free for Indian tourists since 25 May 2026, valid 30 days with double entry. Apply only on eta.gov.lk."),
+        (f"Is Sri Lanka a good short trip from {name}?",
+         "Yes. The flight is short enough for a long weekend: Colombo and Galle, or Kandy and the tea country." if short else
+         "Plan five nights or more. With the connection, a week covers Kandy, the hill country and a beach without rushing."),
+    ]
+
 def page(c):
     slug, name, time, fare, flights, hook, tier, vids_ids = c
     vids = pick(*vids_ids)
     depth = 1
+    faqs = city_faqs(c)
+    faq_html = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)
+    near = "".join(f'<a href="{x}.html">From {NAME[x]}</a>' for x in nearby(slug))
     body = f"""
 <section class="hero"><div class="wrap">
-  <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; From {name}</p>
+  <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="index.html">From your city</a> &rsaquo; {name}</p>
   <span class="eyebrow">From {name}</span>
   <h1>Sri Lanka from {name}: <em>{time} away.</em></h1>
   <p class="lead">{flights} Return fares typically run {fare} depending on season. {hook}</p>
@@ -52,7 +86,7 @@ def page(c):
   <h2>What people from {name} <em>come for.</em></h2>
   <div class="grid c3" style="margin-top:28px">
     <a class="card link-card" href="../weddings.html"><span class="tag">Weddings</span><h3>Destination weddings that rival Goa</h3><p>Run your guest list through our calculator, flights included.</p><span class="go">Compare costs &rarr;</span></a>
-    <a class="card link-card" href="../real-estate.html"><span class="tag">Property</span><h3>Sea view condos priced in dollars</h3><p>What Indians can buy, and the USD 100,000 residence visa route.</p><span class="go">See the rules &rarr;</span></a>
+    <a class="card link-card" href="../real-estate.html"><span class="tag">Property</span><h3>Sea view condos priced in dollars</h3><p>What Indians can buy in Sri Lanka, what it costs and how the money moves.</p><span class="go">See the rules &rarr;</span></a>
     <a class="card link-card" href="../port-city-tax.html"><span class="tag">7.5% tax</span><h3>Port City incentives</h3><p>Approved businesses pay 7.5% corporate tax for four years; the largest projects 0% for up to 15.</p><span class="go">Read the numbers &rarr;</span></a>
   </div>
 </div></section>
@@ -62,6 +96,7 @@ def page(c):
   <div class="table-scroll" style="margin-top:24px"><table>
     <tr><th>Question</th><th>Answer</th></tr>
     <tr><td>Flight time to Colombo</td><td>{time}</td></tr>
+    <tr><td>Routing</td><td>{"Direct flights" if is_direct(flights) else "One stop"}</td></tr>
     <tr><td>Typical return fare</td><td class="num">{fare}</td></tr>
     <tr><td>Visa</td><td>Free 30 day tourist ETA for Indians since 25 May 2026. Apply on eta.gov.lk</td></tr>
     <tr><td>Money</td><td>UPI at LankaQR merchants, cards widely accepted, carry some LKR</td></tr>
@@ -75,12 +110,57 @@ def page(c):
   <h2>Indians who <em>went first.</em></h2>
   <div style="margin-top:36px">{yt_grid(vids)}</div>
 </div></section>
+
+<section class="band sand"><div class="wrap">
+  <span class="eyebrow">Quick answers</span>
+  <h2>Asked by travellers <em>from {name}.</em></h2>
+  <div style="margin-top:26px; max-width:880px">{faq_html}</div>
+  <h3 style="margin-top:44px">Flying from somewhere else?</h3>
+  <div class="chips" style="margin-top:16px">{near}<a href="index.html">All 25 cities</a></div>
+</div></section>
 """ + cta_banner(f"Flying from {name}?", "One message gets you a plan: trip, wedding, property or business. Your guide on the island replies the same day.", f"Hi, I am from {name}")
-    schema = crumb_schema([(f"From {name}", f"from/{slug}.html")]) + "\n" + video_schema(vids)
-    title = f"Sri Lanka from {name}: Flights, Trip Cost, Free Visa, Weddings and Investment | Sri Lanka for Indians"
-    desc = f"Sri Lanka from {name}: {time} to Colombo, return fares around {fare.replace('&#8377;','Rs ')}, free visa for Indians, weddings, property and Port City's 7.5% corporate tax. Talk to a guide on WhatsApp."
+    schema = crumb_schema([("From your city", "from/index.html"), (name, f"from/{slug}.html")]) + "\n" + faq_schema(faqs) + "\n" + video_schema(vids)
+    title = f"Sri Lanka from {name}: Flights, Trip Cost and Visa 2026"
+    if len(title) > 60: title = f"Sri Lanka from {name}: Flights and Visa 2026"
+    desc = f"Sri Lanka from {name}: {time} to Colombo, return fares around {fare.replace('&#8377;','Rs ')}, and a free visa for Indians. Plan trips, weddings and property with a local guide."
     return head(title, desc, f"from/{slug}.html", depth, schema) + header(depth) + body + footer(depth)
 
+def hub():
+    depth = 1
+    rows = "".join(
+        f'<tr><td><a href="{c[0]}.html">{c[1]}</a></td><td>{c[2]}</td><td>{"Direct" if is_direct(c[4]) else "One stop"}</td><td class="num">{c[3]}</td></tr>'
+        for c in ALL_CITIES)
+    faqs = [
+        ("Which Indian cities have direct flights to Sri Lanka?", "Chennai, Mumbai, Delhi, Bengaluru, Hyderabad, Kochi, Thiruvananthapuram, Madurai and Tiruchirappalli have had direct flights to Colombo, with Kolkata on some days. Schedules change, so check airlines for current routes."),
+        ("What is the shortest flight from India to Sri Lanka?", "Thiruvananthapuram, Madurai and Tiruchirappalli are about an hour from Colombo. Kochi is around 1 hour 10 minutes and Chennai about 1 hour 20 minutes."),
+        ("How much does a flight from India to Sri Lanka cost?", "Return economy fares typically run Rs 6,500 to 14,000 from South Indian cities and Rs 11,000 to 24,000 from North and Central India, depending on season."),
+    ]
+    faq_html = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)
+    body = f"""
+<section class="hero"><div class="wrap">
+  <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; From your city</p>
+  <span class="eyebrow">From your city</span>
+  <h1>Flights to Sri Lanka <em>from 25 Indian cities.</em></h1>
+  <p class="lead">Flight time, routing and typical return fares from every major Indian city to Colombo. Pick yours for a plan built around where you actually live.</p>
+</div></section>
+<section class="band"><div class="wrap">
+  <div class="table-scroll"><table>
+    <tr><th>City</th><th>Flight time</th><th>Routing</th><th class="num">Return fare</th></tr>
+    {rows}
+  </table></div>
+  <p class="small" style="margin-top:12px">Indicative economy bands. Direct means scheduled nonstop service has operated on the route; check current schedules with airlines.</p>
+</div></section>
+<section class="band sand"><div class="wrap">
+  <span class="eyebrow">Quick answers</span>
+  <div style="margin-top:20px; max-width:880px">{faq_html}</div>
+</div></section>
+""" + cta_banner("Flying with family or a wedding party?", "Send the city, dates and group size. We come back with routes and prices.", "Hi, I want help with flights to Sri Lanka from my city")
+    schema = crumb_schema([("From your city", "from/index.html")]) + "\n" + faq_schema(faqs)
+    return head("Flights to Sri Lanka from India: 25 Cities Compared",
+                "Flight time, direct or one stop, and typical return fares to Colombo from 25 Indian cities, from Chennai's 80 minutes to Lucknow and Chandigarh. Plus free visa details.",
+                "from/index.html", depth, schema) + header(depth) + body + footer(depth)
+
 def build(write):
+    write("from/index.html", hub())
     for c in ALL_CITIES:
         write(f"from/{c[0]}.html", page(c))

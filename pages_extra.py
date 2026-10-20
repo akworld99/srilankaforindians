@@ -105,7 +105,7 @@ def tax_page():
 </div></section>
 """ + cta_banner("Want to know which category you would fall into?", "Send us what you do and how much you plan to invest. We reply with the likely route and the next three steps.", "Hi, I want to understand Port City tax incentives for my business")
     schema = crumb_schema([("Port City 7.5% tax", "port-city-tax.html")]) + "\n" + faq_schema(faqs) + "\n" + video_schema(vids)
-    return head("Port City Colombo Tax 2026: 7.5% Corporate Tax, 0% for up to 15 Years, What Changed | Sri Lanka for Indians",
+    return head("Port City Colombo Tax 2026: 7.5% Corporate Tax Explained",
                 "Port City Colombo tax in 2026, explained for Indians: 7.5% corporate tax for approved businesses, 0% for 8 to 15 years on the largest projects, and the end of the staff income tax exemption for new companies. Profit calculator included.",
                 "port-city-tax.html", 0, schema, alt={"en": "port-city-tax.html", "hi": "hi/port-city-tax.html"}) \
         + header(alt_path="hi/port-city-tax.html") + body + footer()
@@ -144,7 +144,7 @@ def watch_page():
 </div></section>
 """ + cta_banner("Seen enough?", "Tell us which video made you want to go. We will plan the trip, the wedding or the move around it.", "Hi, I watched your videos and want to plan Sri Lanka")
     schema = crumb_schema([("Watch", "watch.html")]) + "\n" + video_schema(all_vids)
-    return head("Sri Lanka Videos by Indian Creators: Travel, Weddings, Port City | Sri Lanka for Indians",
+    return head("Sri Lanka Videos by Indian Creators | Sri Lanka for Indians",
                 "Watch Sri Lanka through Indian eyes: travel vlogs by Indian creators, destination weddings, Think School with Kumar Sangakkara on real estate, Port City walkthroughs, Ramayana trail and more.",
                 "watch.html", 0, schema) + header() + body + footer()
 

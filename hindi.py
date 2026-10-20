@@ -93,7 +93,7 @@ def index():
   <div style="margin-top:30px; max-width:880px">{"".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)}</div>
 </div></section>
 """ + cta_banner("आपका गाइड बस एक मैसेज दूर है", "बात करने का कोई शुल्क नहीं। हिंदी, तमिल और अंग्रेज़ी में बात करें।", "नमस्ते, मुझे श्रीलंका के बारे में मदद चाहिए", lang="hi")
-    return hi_head("श्रीलंका फॉर इंडियंस | शादी, प्रॉपर्टी, पोर्ट सिटी 7.5% टैक्स और यात्रा",
+    return hi_head("श्रीलंका फॉर इंडियंस: शादी, प्रॉपर्टी, 7.5% टैक्स और यात्रा",
                    "भारतीयों के लिए श्रीलंका गाइड: डेस्टिनेशन वेडिंग, प्रॉपर्टी, पोर्ट सिटी कोलंबो में 15 साल तक कॉर्पोरेट टैक्स हॉलिडे, मुफ़्त वीज़ा और यात्रा। WhatsApp पर गाइड से बात करें।",
                    "hi/index.html", "index.html", schema) + header(D, "hi", "index.html") + body + footer(D, "hi")
 
@@ -193,7 +193,7 @@ def property_page():
 </div></section>
 """ + cta_banner("मौजूदा शॉर्टलिस्ट चाहिए?", "कोलंबो और साउथ कोस्ट के हर प्रोजेक्ट पर हमारी नज़र है। कीमत, किराया और जोखिम।", "नमस्ते, कृपया श्रीलंका प्रॉपर्टी शॉर्टलिस्ट भेजें", lang="hi")
     schema = faq_schema(faqs) + "\n" + video_schema(vids)
-    return hi_head("क्या भारतीय श्रीलंका में प्रॉपर्टी खरीद सकते हैं? नियम, वीज़ा और पोर्ट सिटी | Sri Lanka for Indians",
+    return hi_head("क्या भारतीय श्रीलंका में प्रॉपर्टी खरीद सकते हैं? 2026 नियम | Sri Lanka for Indians",
                    "भारतीयों के लिए श्रीलंका प्रॉपर्टी गाइड: कॉन्डोमिनियम खरीदने के नियम, USD 1,00,000 पर 5 साल का वीज़ा, पोर्ट सिटी अपार्टमेंट और RBI/FEMA नियम।",
                    "hi/property.html", "real-estate.html", schema) + header(D, "hi", "real-estate.html") + body + footer(D, "hi")
 
@@ -257,7 +257,7 @@ def tax():
   <p style="margin-top:20px"><a href="../guides/port-city-vs-gift-city-vs-dubai.html">पोर्ट सिटी बनाम GIFT सिटी बनाम दुबई (अंग्रेज़ी में)</a></p>
 </div></section>
 """ + cta_banner("जानना है आप किस कैटेगरी में आएँगे?", "बताइए आप क्या करते हैं और कितना निवेश करना चाहते हैं। हम संभावित रास्ता और अगले तीन कदम बताएँगे।", "नमस्ते, मुझे पोर्ट सिटी टैक्स इंसेंटिव समझने हैं", lang="hi")
-    return hi_head("पोर्ट सिटी कोलंबो टैक्स 2026: 7.5% कॉर्पोरेट टैक्स, 15 साल तक 0%, क्या बदला | Sri Lanka for Indians",
+    return hi_head("पोर्ट सिटी कोलंबो टैक्स 2026: 7.5% कॉर्पोरेट टैक्स | Sri Lanka for Indians",
                    "पोर्ट सिटी कोलंबो टैक्स 2026: रणनीतिक निवेश पर 8 से 15 साल कॉर्पोरेट टैक्स हॉलिडे, छोटे बिज़नेस के लिए 7.5%, और नई कंपनियों के कर्मचारियों की टैक्स छूट ख़त्म। मुनाफ़ा कैलकुलेटर के साथ।",
                    "hi/port-city-tax.html", "port-city-tax.html", faq_schema(faqs)) + header(D, "hi", "port-city-tax.html") + body + footer(D, "hi")
 

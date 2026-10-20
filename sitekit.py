@@ -5,7 +5,7 @@ SITE = "https://srilankaforindians.com"
 WA_NUM = "94716147945"
 WA = f"https://wa.me/{WA_NUM}"
 WA_DISPLAY = "+94 71 614 7945"
-ASSET_V = "13"
+ASSET_V = "14"
 GA_ID = "G-EK1H1EL9KC"
 HERO_ID = "NGoCQ3HyxQs"          # Scenic Relaxation: Sri Lanka 4K, no narration
 FILM_ID = "dbM8AMmEdgY"          # Think School x Kumar Sangakkara on real estate
@@ -54,7 +54,24 @@ def video_schema(videos):
     return f'<script type="application/ld+json">{{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{items}]}}</script>'
 
 # ---------------------------------------------------------------- head
-def head(title, desc, path, depth=0, schema="", lang="en", alt=None, og_image=None):
+BRAND_SUFFIX = " | Sri Lanka for Indians"
+
+def fit_title(t):
+    """Keep titles inside Google's ~60 character display: drop the brand suffix when it would be cut."""
+    if len(t) > 60 and t.endswith(BRAND_SUFFIX):
+        t = t[: -len(BRAND_SUFFIX)]
+    return t
+
+def fit_desc(d, limit=158):
+    """Trim meta descriptions to a full sentence (or word) under the snippet limit."""
+    if len(d) <= limit: return d
+    cut = d[:limit]
+    end = max(cut.rfind(". "), cut.rfind("? "))
+    if end > 90: return cut[: end + 1]
+    return cut[: cut.rfind(" ")].rstrip(",;:") + "."
+
+def head(title, desc, path, depth=0, schema="", lang="en", alt=None, og_image=None, noindex=False):
+    title, desc = fit_title(title), fit_desc(desc)
     p = "../" * depth
     canonical = SITE + "/" + ("" if path == "index.html" else path)
     alts = ""
@@ -79,7 +96,7 @@ def head(title, desc, path, depth=0, schema="", lang="en", alt=None, og_image=No
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
-<meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1">
+<meta name="robots" content="{'noindex, follow' if noindex else 'index, follow, max-image-preview:large, max-video-preview:-1'}">
 <link rel="canonical" href="{canonical}">
 {alts}<meta property="og:type" content="website">
 <meta property="og:locale" content="{'hi_IN' if lang == 'hi' else 'en_IN'}">
@@ -255,6 +272,8 @@ def footer(depth=0, lang="en", extra_js=""):
         <li><a href="{p}guides/ramayana-trail.html">Ramayana trail</a></li>
         <li><a href="{p}guides/ferry-india-to-sri-lanka.html">India to Sri Lanka ferry</a></li>
         <li><a href="{p}guides/trade-in-rupees-india-sri-lanka.html">Trade in rupees (INR)</a></li>
+        <li><a href="{p}from/index.html">Flights from your city</a></li>
+        <li><a href="{p}sri-lankan-rupee-to-inr.html">LKR to INR converter</a></li>
         <li><a href="{p}guides/port-city-vs-gift-city-vs-dubai.html">Port City vs GIFT City vs Dubai</a></li>
         <li><a href="{p}watch.html">Watch: India on Sri Lanka</a></li>
         <li><a href="{p}hi/index.html" lang="hi">हिंदी में पढ़ें</a></li>

@@ -210,6 +210,7 @@ def build(write):
     <div class="city-grid" style="margin-top:36px">
       {{CITY_LINKS}}
     </div>
+    <p style="margin-top:22px"><a class="btn btn-ghost" href="from/index.html">Compare flights from all 25 cities</a></p>
   </div>
 </section>
 
@@ -224,7 +225,7 @@ def build(write):
     from cities import ALL_CITIES
     links = "\n      ".join(f'<a href="from/{c[0]}.html">{c[1]}</a>' for c in ALL_CITIES)
     body = body.replace("{CITY_LINKS}", links)
-    page = head("Sri Lanka for Indians | Weddings, Real Estate, Port City 7.5% Tax and Travel",
+    page = head("Sri Lanka for Indians: Weddings, Property, 7.5% Tax, Travel",
                 "India's guide to Sri Lanka. Destination weddings, property Indians can buy, Port City Colombo's 7.5% corporate tax for approved businesses, a free visa for Indians and travel from every Indian city. Talk to a guide on WhatsApp.",
                 "index.html", schema=schema, alt={"en": "index.html", "hi": "hi/index.html"}) \
         + header(alt_path="hi/index.html") + body + footer(extra_js=f'<script src="assets/js/calculator.js?v={ASSET_V}"></script>\n')

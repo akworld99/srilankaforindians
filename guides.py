@@ -4,7 +4,7 @@ from media import pick
 
 GUIDES = [
 dict(slug="visa-for-indians", h1="Sri Lanka visa for Indians: free ETA, 2026",
- title="Sri Lanka Visa for Indians 2026: Free 30 Day ETA, How to Apply | Sri Lanka for Indians",
+ title="Sri Lanka Visa for Indians 2026: Free ETA, How to Apply",
  desc="Sri Lanka's tourist ETA is free for Indian passport holders since 25 May 2026. 30 days, double entry. How to apply on eta.gov.lk, documents, extensions and business visas.",
  card="Free 30 day double entry ETA since 25 May 2026. How to apply, step by step.",
  videos=["XOWAaOTSCtM","qCWQAeRXhZU"],
@@ -28,7 +28,7 @@ dict(slug="visa-for-indians", h1="Sri Lanka visa for Indians: free ETA, 2026",
  source="Source: Outlook Traveller report on Sri Lanka's free ETA for 40 countries, May 2026. Always confirm on eta.gov.lk."),
 
 dict(slug="trade-in-rupees-india-sri-lanka", h1="Trade with Sri Lanka in rupees: how INR settlement works",
- title="India Sri Lanka Trade in INR: Rupee Invoicing, Vostro Accounts and 2026 Rules | Sri Lanka for Indians",
+ title="India Sri Lanka Trade in INR: How Rupee Settlement Works",
  desc="Indian businesses can invoice, pay and settle Sri Lanka trade in rupees. How Special Rupee Vostro Accounts work, what changed in October 2025 and July 2026, and how to start.",
  card="Invoice, pay and settle in INR. How vostro accounts work and what changed in 2026.",
  videos=["GHyNEH0kQ3o","rIa82ugYTN8","1vIJYuajxik"],
@@ -62,8 +62,57 @@ dict(slug="trade-in-rupees-india-sri-lanka", h1="Trade with Sri Lanka in rupees:
       ("Do I still need FEMA paperwork for rupee trade?","Yes. Rupee settlement changes the currency of the invoice, not the documentation and reporting your bank needs.")],
  source="Sources: RBI framework for international trade settlement in INR (July 2022) and A.P. (DIR Series) Circular No. 19 of 17 July 2026; RBI notification FEMA 3(R)(4)/2025-RB of 6 October 2025; India's Ministry of Commerce reply in the Lok Sabha, August 2023."),
 
+dict(slug="sri-lanka-itinerary-from-india", h1="Sri Lanka itinerary from India: 5, 7 and 10 days",
+ title="Sri Lanka Itinerary from India: 5, 7 and 10 Day Plans",
+ desc="Ready made Sri Lanka itineraries for Indian travellers: 5 days for Kandy and Galle, 7 days with tea country, 10 days with Sigiriya, a safari and the south coast.",
+ card="Three routes that fit flights from India: 5, 7 and 10 days, night by night.",
+ videos=["Bu86Z_7VzAA","7j335oyBKH8","52E5aIUxzj8"],
+ watch_h="Indians who <em>did the route.</em>",
+ body="""<p class="lead">Flights from South India land in Colombo in under two hours, so day one starts by lunch. These three routes work for first timers, families and couples. Every drive time below is by car with a driver, the way most Indian families travel here.</p>
+<h2>5 days: Kandy and the south coast</h2>
+<div class="table-scroll"><table>
+<tr><th>Day</th><th>Plan</th><th>Night</th></tr>
+<tr><td>1</td><td>Land at Colombo, drive to Kandy (about 3 to 4 hours). Evening puja at the Temple of the Tooth</td><td>Kandy</td></tr>
+<tr><td>2</td><td>Peradeniya botanical gardens, a tea factory, Kandy lake walk</td><td>Kandy</td></tr>
+<tr><td>3</td><td>Drive to Galle or Bentota (about 4 hours via the expressway). Sunset on the fort ramparts</td><td>Galle</td></tr>
+<tr><td>4</td><td>Galle Fort, Unawatuna beach, turtle hatchery or a river safari</td><td>Galle</td></tr>
+<tr><td>5</td><td>Colombo shopping on the way, fly home (Galle to the airport about 2 to 3 hours)</td><td>Home</td></tr>
+</table></div>
+<h2>7 days: the classic first trip</h2>
+<div class="table-scroll"><table>
+<tr><th>Day</th><th>Plan</th><th>Night</th></tr>
+<tr><td>1</td><td>Colombo airport to Kandy</td><td>Kandy</td></tr>
+<tr><td>2</td><td>Kandy: Temple of the Tooth, gardens, cultural show</td><td>Kandy</td></tr>
+<tr><td>3</td><td>Up into tea country. Stop at Ramboda falls and Seetha Amman temple near Nuwara Eliya</td><td>Nuwara Eliya</td></tr>
+<tr><td>4</td><td>Nanu Oya to Ella on the hill country train if it is running on your dates, or about 3 hours by road through tea estates</td><td>Ella</td></tr>
+<tr><td>5</td><td>Nine Arches Bridge and Little Adam's Peak at sunrise, then down to the south coast</td><td>Mirissa or Galle</td></tr>
+<tr><td>6</td><td>Whale watching in season, beach afternoon, Galle Fort at sunset</td><td>Galle</td></tr>
+<tr><td>7</td><td>Fly home</td><td>Home</td></tr>
+</table></div>
+<h2>10 days: culture, wildlife and beaches</h2>
+<div class="table-scroll"><table>
+<tr><th>Days</th><th>Plan</th><th>Nights</th></tr>
+<tr><td>1 to 2</td><td>Airport to Sigiriya or Dambulla. Climb Sigiriya rock at dawn, Dambulla cave temples</td><td>2, Sigiriya</td></tr>
+<tr><td>3 to 4</td><td>Kandy, with a stop at a spice garden in Matale on the way</td><td>2, Kandy</td></tr>
+<tr><td>5</td><td>Tea country and Seetha Amman temple</td><td>1, Nuwara Eliya</td></tr>
+<tr><td>6</td><td>Nanu Oya to Ella on the hill country train if it is running on your dates, or by road through tea estates</td><td>1, Ella</td></tr>
+<tr><td>7</td><td>Jeep safari in Yala or Udawalawe for leopards and elephants</td><td>1, near the park</td></tr>
+<tr><td>8 to 9</td><td>South coast: Mirissa or Tangalle, then Galle Fort</td><td>2, coast</td></tr>
+<tr><td>10</td><td>Fly home</td><td>Home</td></tr>
+</table></div>
+<p class="small">May to September, swap the south coast for Trincomalee or Pasikudah on the east coast, which is dry in those months. See <a href="best-time-to-visit.html">the best time to visit</a>.</p>
+<h2>Make it yours</h2>
+<ul><li><strong>Pilgrims:</strong> follow the <a href="ramayana-trail.html">Ramayana trail</a> instead of the beach days.</li>
+<li><strong>Couples:</strong> the <a href="honeymoon-from-india.html">7 night honeymoon</a> adds a private villa finish.</li>
+<li><strong>Budget:</strong> see the <a href="trip-cost-from-india.html">trip cost from India</a> in rupees, and convert prices with our <a href="../sri-lankan-rupee-to-inr.html">LKR to INR converter</a>.</li></ul>""",
+ faq=[("How many days are enough for Sri Lanka from India?","Seven days covers Kandy, tea country and a beach without rushing. Five days works for Kandy and Galle, and ten days adds Sigiriya and a wildlife safari."),
+      ("Can I do Sri Lanka in 5 days?","Yes. From South India the flight is short, so five days comfortably covers Kandy and the Galle coast, with Colombo on the way back to the airport."),
+      ("What is the best Sri Lanka route for first timers?","Colombo to Kandy, up to Nuwara Eliya and Ella in tea country, then down to Mirissa or Galle on the south coast."),
+      ("How do Indian families usually get around Sri Lanka?","A car with a driver. It is the most comfortable option for families with luggage and splits well across four people.")],
+ source=""),
+
 dict(slug="trip-cost-from-india", h1="How much does a Sri Lanka trip cost from India?",
- title="Sri Lanka Trip Cost from India 2026: Budget, Mid Range and Luxury | Sri Lanka for Indians",
+ title="Sri Lanka Trip Cost from India 2026 in Rupees",
  desc="What a 6 night Sri Lanka trip costs from India in 2026: flights from every metro, hotels, car with driver, food and entry fees. Budget, mid range and luxury bands per person.",
  card="Six nights, three budgets, every cost line. Flights from your city included.",
  videos=["Bu86Z_7VzAA","VpQiRlaI5bo","RCHD60fpDnA"],
@@ -88,7 +137,7 @@ dict(slug="trip-cost-from-india", h1="How much does a Sri Lanka trip cost from I
  source=""),
 
 dict(slug="ramayana-trail", h1="The Ramayana trail in Sri Lanka",
- title="Ramayana Trail Sri Lanka: Sites, Itinerary and Tour Plan for Indians | Sri Lanka for Indians",
+ title="Ramayana Trail Sri Lanka: Sites and Itinerary for Indians",
  desc="The Sri Lanka Ramayana trail for Indian pilgrims: Sita Amman Temple, Ashok Vatika at Hakgala, Ravana Falls, Divurumpola, Munneswaram and more, with a 7 to 10 day itinerary.",
  card="Sita Amman, Ashok Vatika, Ravana Falls and more, mapped into one yatra.",
  videos=["2SUXqcjFIgI","kRjSsHlA9_0"],
@@ -118,7 +167,7 @@ dict(slug="ramayana-trail", h1="The Ramayana trail in Sri Lanka",
  source=""),
 
 dict(slug="ferry-india-to-sri-lanka", h1="India to Sri Lanka by ferry",
- title="India to Sri Lanka Ferry: Nagapattinam to Jaffna (KKS) Guide 2026 | Sri Lanka for Indians",
+ title="India to Sri Lanka Ferry 2026: Nagapattinam to Jaffna",
  desc="How to take the passenger ferry from Nagapattinam in Tamil Nadu to Kankesanthurai near Jaffna: crossing time, tickets, luggage, visas and what creators say about the trip.",
  card="Nagapattinam to Kankesanthurai near Jaffna in about four hours. How it works.",
  videos=["QfFRvTem4zM","Tw_Ki1aw0us"],
@@ -138,7 +187,7 @@ dict(slug="ferry-india-to-sri-lanka", h1="India to Sri Lanka by ferry",
  source=""),
 
 dict(slug="port-city-vs-gift-city-vs-dubai", h1="Port City Colombo vs GIFT City vs Dubai",
- title="Port City Colombo vs GIFT City vs Dubai: Tax and Setup Compared for Indians | Sri Lanka for Indians",
+ title="Port City Colombo vs GIFT City vs Dubai for Indians",
  desc="An honest comparison for Indian founders and CFOs: corporate tax, personal tax, ownership, currency, distance and jurisdiction across Port City Colombo, GIFT City IFSC and Dubai.",
  card="Tax, ownership, distance and jurisdiction, side by side. The honest version.",
  videos=["hvOeE4eW8As","GHGrijFEpgU"],
@@ -165,7 +214,7 @@ dict(slug="port-city-vs-gift-city-vs-dubai", h1="Port City Colombo vs GIFT City 
  source=""),
 
 dict(slug="money-upi-sim", h1="Money, UPI and SIM cards in Sri Lanka",
- title="UPI in Sri Lanka, Currency and SIM Cards for Indian Travellers 2026 | Sri Lanka for Indians",
+ title="UPI in Sri Lanka, Cash and SIM Cards for Indians 2026",
  desc="Can you use UPI in Sri Lanka? Yes, at LankaQR merchants. Plus Sri Lankan rupees, cards, ATMs and the best tourist SIM options for Indian travellers.",
  card="UPI at LankaQR merchants, cards, cash and which SIM to buy at the airport.",
  videos=["qCWQAeRXhZU","oriToNJZG-k"],
@@ -174,6 +223,7 @@ dict(slug="money-upi-sim", h1="Money, UPI and SIM cards in Sri Lanka",
 <ul><li><strong>UPI:</strong> works at LankaQR merchants in cities and tourist areas. Check your app supports international UPI and enable it before you fly.</li>
 <li><strong>Cards:</strong> Visa and Mastercard are widely accepted in hotels, malls and restaurants.</li>
 <li><strong>Cash:</strong> carry Sri Lankan rupees (LKR) for tuk tuks, temples and small shops. ATMs are common in towns.</li></ul>
+<p>One Indian rupee buys roughly 3.5 Sri Lankan rupees, so divide prices by 3.5. Use our <a href="../sri-lankan-rupee-to-inr.html">live LKR to INR converter</a>.</p>
 <h2>Paying a business in Sri Lanka?</h2>
 <p>Trade between Indian and Sri Lankan companies can be invoiced and settled in Indian rupees. See <a href="trade-in-rupees-india-sri-lanka.html">how rupee trade works</a>.</p>
 <h2>SIM cards</h2>
@@ -185,7 +235,7 @@ dict(slug="money-upi-sim", h1="Money, UPI and SIM cards in Sri Lanka",
  source=""),
 
 dict(slug="honeymoon-from-india", h1="A Sri Lanka honeymoon from India",
- title="Sri Lanka Honeymoon from India: 7 Night Itinerary, Best Areas, Cost | Sri Lanka for Indians",
+ title="Sri Lanka Honeymoon from India: 7 Night Plan and Cost",
  desc="Plan a Sri Lanka honeymoon from India: a 7 night route through Kandy, the Ella train, tea country and the south coast, with the best areas, season and budget.",
  card="Seven nights: hill country, the Ella train, and a private beach to finish.",
  videos=["52E5aIUxzj8","YGeivlm5C78","7j335oyBKH8"],
@@ -205,7 +255,7 @@ dict(slug="honeymoon-from-india", h1="A Sri Lanka honeymoon from India",
  source=""),
 
 dict(slug="best-time-to-visit", h1="Best time to visit Sri Lanka from India",
- title="Best Time to Visit Sri Lanka from India: Month by Month Guide | Sri Lanka for Indians",
+ title="Best Time to Visit Sri Lanka from India: Month by Month",
  desc="Sri Lanka has two monsoons, so there is always a good coast. Month by month: west and south coasts December to April, east coast May to September, plus festivals like Esala Perahera.",
  card="Two monsoons mean there is always a good coast. Month by month.",
  videos=["q0mbKsKG-ng"],
@@ -267,7 +317,7 @@ def hub():
 </div></section>
 <section class="band"><div class="wrap"><div class="grid c3">{cards}</div></div></section>
 """ + cta_banner("Question not answered here?", "Ask us on WhatsApp. A real person replies.", "Hi, I have a question about Sri Lanka: ")
-    return head("Sri Lanka Guides for Indians: Visa, Cost, Ferry, Ramayana Trail, Port City | Sri Lanka for Indians",
+    return head("Sri Lanka Guides for Indians | Sri Lanka for Indians",
                 "Practical Sri Lanka guides for Indians: free ETA visa, trading in rupees, trip cost, honeymoon, Ramayana trail, ferry from Nagapattinam, UPI and SIM, best time to visit and Port City vs GIFT City vs Dubai.",
                 "guides/index.html", depth, crumb_schema([("Guides","guides/index.html")])) + header(depth) + body + footer(depth)
 

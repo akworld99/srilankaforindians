@@ -206,7 +206,8 @@ def page(s):
     vids = pick(*s["videos"]) if s["videos"] else []
     facts = "".join(f'<div class="fact"><b>{v}</b><span>{l}</span></div>' for v, l in s["facts"])
     reasons = "".join(f'<div class="card"><span class="tag">{t}</span><h3>{h}</h3><p>{p}</p></div>' for t, h, p in s["reasons"])
-    others = [x for x in SECTORS if x["slug"] != s["slug"]][:8]
+    i = SECTORS.index(s)
+    others = [SECTORS[(i + k) % len(SECTORS)] for k in range(1, 9)]
     chips = "".join(f'<a href="{x["slug"]}.html">{x["name"]}</a>' for x in others)
     vid_block = f"""<section class="band sand"><div class="wrap">
   <span class="eyebrow">On film</span>
@@ -252,7 +253,7 @@ def page(s):
 </div></section>
 """ + cta_banner(f"Exploring {s['name'].lower()} in Sri Lanka?", "Tell us your plan. We introduce you to the right people in 48 hours.", f"Hi, I want to explore {s['name']} in Sri Lanka")
     schema = crumb_schema([("Why Sri Lanka", "why/index.html"), (s["name"], f"why/{s['slug']}.html")]) + "\n" + faq_schema(s["faq"]) + "\n" + video_schema(vids)
-    title = f"Why Sri Lanka for {s['name']}: Opportunities for Indian Businesses | Sri Lanka for Indians"
+    title = f"{s['name']} in Sri Lanka for Indian Companies | Sri Lanka for Indians"
     desc = re.sub("<[^>]+>", "", s["lead"])[:300]
     return head(title, desc, f"why/{s['slug']}.html", depth, schema) + header(depth) + body + footer(depth)
 
@@ -276,7 +277,7 @@ def hub():
 </div></section>
 """ + cta_banner("Your sector is not listed?", "Tell us what you do. If there is an angle in Sri Lanka, we will find it.", "Hi, my sector is ")
     schema = crumb_schema([("Why Sri Lanka", "why/index.html")])
-    return head("Why Sri Lanka: 16 Sectors for Indian Businesses and Investors | Sri Lanka for Indians",
+    return head("Why Sri Lanka: 16 Sectors for Indian Businesses",
                 "Why Sri Lanka for tech, BPO, GCCs, fintech, spices, tea, gems, apparel, graphite, coconut, ports, renewables, hotels, wellness, events and film. Numbers, reasons and the India angle.",
                 "why/index.html", depth, schema) + header(depth) + body + footer(depth)
 
