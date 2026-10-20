@@ -5,7 +5,7 @@
 },
 "from/ahmedabad.html": {
 "d": "2026-10-20",
-"h": "ade4f70a433a3b6f5c32fb47bd9b896a84ada0b1"
+"h": "21e526bb57f512fa0b97e2643a4589bca9bd6b76"
 },
 "from/bengaluru.html": {
 "d": "2026-10-20",
@@ -25,7 +25,7 @@
 },
 "from/chennai.html": {
 "d": "2026-10-20",
-"h": "576975320d9b763d4f02282a533312c69b740b71"
+"h": "7b8959728c386b524201cecc95f94a9f23e05e48"
 },
 "from/coimbatore.html": {
 "d": "2026-10-20",
@@ -41,7 +41,7 @@
 },
 "from/index.html": {
 "d": "2026-10-20",
-"h": "5dde429571de08a60dca061db450b49520944922"
+"h": "77db3391739abb1156ff6f53381e8f55ccb8bf97"
 },
 "from/indore.html": {
 "d": "2026-10-20",
@@ -57,7 +57,7 @@
 },
 "from/kolkata.html": {
 "d": "2026-10-20",
-"h": "2b9f0df43a95c6bb2cc28c8cb3361bba769f946a"
+"h": "4a702f3e094c5bf544e5674f55856383c193ae6f"
 },
 "from/lucknow.html": {
 "d": "2026-10-20",
@@ -93,7 +93,7 @@
 },
 "from/tiruchirappalli.html": {
 "d": "2026-10-20",
-"h": "68a4a8afb72fd4b16607518a46a57d63a8042409"
+"h": "2f341d484b8c8aa77c2afbd47d83ed4ce1ad8cc6"
 },
 "from/vadodara.html": {
 "d": "2026-10-20",
@@ -109,51 +109,59 @@
 },
 "guides/best-time-to-visit.html": {
 "d": "2026-10-20",
-"h": "02683c6d1d2210b19c462cec01d9e3df93528f07"
+"h": "f95f919b1c0986ccb6588e7ed169033b2b1cbae6"
 },
 "guides/ferry-india-to-sri-lanka.html": {
 "d": "2026-10-20",
-"h": "4da7d5267ad75a5eebeb3f38aaab89bd955d250e"
+"h": "273031375c870dae8b32c478696a2877bb1824c5"
 },
 "guides/honeymoon-from-india.html": {
 "d": "2026-10-20",
-"h": "2a1b3e2c38f656a3eff10c3abb337f0278950049"
+"h": "079f4907c4f918fded98fa687163a4419b037b77"
 },
 "guides/index.html": {
 "d": "2026-10-20",
-"h": "1f823a806c81321f76f33a448540d6fed8a1d65a"
+"h": "55e95d2d0327159db3f14b4b1b318506d9df54c5"
+},
+"guides/is-sri-lanka-safe-for-indians.html": {
+"d": "2026-10-20",
+"h": "4c29631e52573b29726d8ec87155e5ae069115c7"
+},
+"guides/long-stay-visas-sri-lanka.html": {
+"d": "2026-10-20",
+"h": "68c3c39a7bea22c6ac4d57c68a07fc891d09f5c1"
 },
 "guides/money-upi-sim.html": {
 "d": "2026-10-20",
-"h": "e24f28b3cf821d4fe00d0c2629078eaaa47a95f1"
+"h": "6d0617b800e237ca8ecd1a637f6ece2183515906"
 },
 "guides/port-city-vs-gift-city-vs-dubai.html": {
 "d": "2026-10-20",
-"h": "d14dc99b80592c231a1dc0c641e0f304a8bcd4cf"
+"h": "a94c5c5f4afab3c329bb38e1db325a0ac91118e8"
 },
 "guides/ramayana-trail.html": {
 "d": "2026-10-20",
-"h": "5d4ee9076a85a037c060ad9ed28b74fa2d06b600"
+"h": "3cdb531e86bfefba6b2943dcdacedc888cccf3ce"
 },
 "guides/sri-lanka-itinerary-from-india.html": {
 "d": "2026-10-20",
-"h": "a11052453f2860cb39314d454784f313b95ba41c"
+"h": "81cce54e9a08ffbf5b676fca59a4950a28c0ec0a"
 },
 "guides/trade-in-rupees-india-sri-lanka.html": {
 "d": "2026-10-20",
-"h": "933195a24c0c5379dd3bb5ed7f037055309d803c"
+"h": "85c8f0c4124a3fa9238809447a56ca9287ab49cd"
 },
 "guides/trip-cost-from-india.html": {
 "d": "2026-10-20",
-"h": "d1ec41c55a82d920cc54be821e5f283254cdf96d"
+"h": "d8fd4ad27b4edec25211feea44564e7a3c72568f"
 },
 "guides/visa-for-indians.html": {
 "d": "2026-10-20",
-"h": "2ab8e395402548605b9db7ee07cc59f04ad26e40"
+"h": "3481cc2be1011e06d88a2f25ef908d0750becef0"
 },
 "hi/index.html": {
 "d": "2026-10-20",
-"h": "a6eacbd59f3e705eabc260ba46079f135ae3c20e"
+"h": "d3b21c6da51b0815e506068f669925267a2d7991"
 },
 "hi/port-city-tax.html": {
 "d": "2026-10-20",
@@ -161,7 +169,7 @@
 },
 "hi/property.html": {
 "d": "2026-10-20",
-"h": "cce7204dc06e4dc1a8ab8f4affd7cefb03b6c257"
+"h": "ce34d84971d9d5c1e97eb61d88030a01c8b74266"
 },
 "hi/shaadi.html": {
 "d": "2026-10-20",
@@ -177,7 +185,7 @@
 },
 "index.html": {
 "d": "2026-10-20",
-"h": "9223d7a1da8488b7132bc20fe1c7ee03b15597e4"
+"h": "948b8e7936d7a71347d5f170eb3a75539c806815"
 },
 "logistics.html": {
 "d": "2026-10-20",
@@ -189,11 +197,11 @@
 },
 "real-estate.html": {
 "d": "2026-10-20",
-"h": "5cea1dbf9f69db62ec09a79b83c82fefd4eacd5f"
+"h": "3243337568abeba0b461499bbf057b5efa1fb1ff"
 },
 "second-home.html": {
 "d": "2026-10-20",
-"h": "bf076ca398dab3182f4aa4b1d10c875ace32e576"
+"h": "9e768e75e9c9c3d916d51ef2459235e487f6cc0e"
 },
 "sri-lankan-rupee-to-inr.html": {
 "d": "2026-10-20",

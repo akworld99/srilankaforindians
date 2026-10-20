@@ -85,57 +85,73 @@ PAGES["weddings.html"] = dict(
 
 PAGES["real-estate.html"] = dict(
     title="Can Indians Buy Property in Sri Lanka? 2026 Rules and Costs",
-    desc="How Indians buy real estate in Sri Lanka in 2026: condominium ownership rules, Port City apartments, the USD 100,000 investor residence visa, taxes, and the exact buying process.",
+    desc="Yes. Indians can buy condos on any floor and lease land for up to 99 years, but not own freehold land. 2026 rules, costs, LRS limits, TCS and the investor visa.",
     body=f"""
 <section class="hero"><div class="wrap">
-  <span class="eyebrow">Real Estate</span>
-  <h1>Own a sea view home an hour from India.</h1>
-  <p class="lead">Yes, Indians can buy here. Condominiums outright, land on long lease, and Port City apartments inside a special economic zone. Prices in Colombo sit well below Mumbai, Bengaluru and Dubai for comparable sea facing stock, and a USD 100,000 property investment can anchor a renewable 5 year residence visa.</p>
+  <span class="eyebrow">Real Estate &middot; Updated October 2026</span>
+  <h1>Can Indians buy property in Sri Lanka? <em>Yes, with two rules.</em></h1>
+  <p class="lead">Indians can buy apartments (condominium units) outright, on any floor, and lease land for up to 99 years. You cannot own freehold land. The full price must come in from abroad through an Inward Investment Account before the deed is signed. Spend USD 100,000 and the purchase can support a 5 year investor visa.</p>
+  <div class="facts">
+    <div class="fact"><b>Any floor</b><span>Condos owned outright, since the floor limit was removed in 2018</span></div>
+    <div class="fact"><b>99 yrs</b><span>Longest land lease for foreigners. Freehold land is barred</span></div>
+    <div class="fact"><b>$100k</b><span>Investment for a 5 year investor visa; USD 200,000 for 10 years</span></div>
+  </div>
   <div class="cta-row"><a class="btn btn-primary" href="{WA}?text=Hi%2C%20I%20want%20to%20buy%20property%20in%20Sri%20Lanka" rel="noopener">Get the buyer's shortlist</a>
-  <a class="btn btn-ghost" href="#rules">Read the rules first</a></div>
+  <a class="btn btn-ghost" href="#rules">Read the rules</a></div>
 </div></section>
 
 <section class="band" id="rules"><div class="wrap">
-  <h2>The rules, without the fog</h2>
-  <div class="grid c2" style="margin-top:28px">
-    <div class="card"><span class="tag">Can do</span><h3>What Indians can buy</h3>
-      <ul style="padding-left:18px; margin:0">
-        <li>Condominium units above ground floor, owned outright, paid fully by inward foreign remittance</li>
-        <li>Land on long lease, commonly up to 99 years</li>
-        <li>Property through approved company structures, with local legal advice</li>
-        <li>Apartments inside Port City Colombo under the SEZ framework</li>
-        <li>Shares of listed Sri Lankan property companies</li>
-      </ul></div>
-    <div class="card"><span class="tag">Cannot do</span><h3>What stays off the table</h3>
-      <ul style="padding-left:18px; margin:0">
-        <li>Freehold land in your own name as a foreigner</li>
-        <li>Freehold land through a company that is 50% or more foreign owned</li>
-        <li>Local bank mortgages as a non resident; plan to fund from India or abroad</li>
-        <li>Paying in cash outside banking channels. Everything flows through an Inward Investment Account</li>
-      </ul></div>
-  </div>
-  <p class="small" style="margin-top:18px">Rules summarised from the Land (Restrictions on Alienation) Act and 2026 practice. Always confirm with a licensed Colombo property lawyer. We introduce you to ours.</p>
+  <h2>What Indians can and cannot buy</h2>
+  <div class="table-scroll" style="margin-top:26px"><table>
+    <tr><th>Property type</th><th>Can an Indian own it?</th><th>How</th></tr>
+    <tr><td>Apartment (condominium unit)</td><td class="hl">Yes, outright</td><td>Any floor. Full price paid upfront by inward remittance through an Inward Investment Account</td></tr>
+    <tr><td>Freehold land</td><td>No</td><td>Barred for foreigners and for companies 50% or more foreign owned, under the Land (Restrictions on Alienation) Act No. 38 of 2014</td></tr>
+    <tr><td>Land on lease</td><td class="hl">Yes</td><td>Up to 99 years. The old 15% lease tax was abolished in 2017; stamp duty on a lease is 1% of rent</td></tr>
+    <tr><td>House with its own land</td><td>Only on lease</td><td>The land rule applies, so a standalone house is bought as a long lease</td></tr>
+    <tr><td>Port City Colombo apartment</td><td class="hl">Yes</td><td>Under Port City's own law. Title terms differ by project; read the deed structure before you pay</td></tr>
+    <tr><td>Listed property company shares</td><td class="hl">Yes</td><td>Through the Colombo Stock Exchange, via an Inward Investment Account</td></tr>
+  </table></div>
+  <h2 style="margin-top:56px">Can Indians buy land in Sri Lanka?</h2>
+  <p class="lead">Not freehold. Since the 2014 Act, any transfer of freehold land to a foreigner is void. The working route is a long lease of up to 99 years: villa buyers on the south coast lease the land, then build or renovate. Leased land held by a foreigner cannot be mortgaged for five years from the lease date.</p>
 </div></section>
 
 <section class="band sand"><div class="wrap">
-  <h2>Three ways Indians are buying in 2026</h2>
-  <div class="grid c3" style="margin-top:28px">
-    <div class="card"><span class="tag">Yield</span><h3>Colombo sea facing condos</h3><p>Two and three bed units in Colombo 3, 4 and Dehiwala, bought for dollar linked rental yield from expats and long stay tourists. Entry from around USD 150k.</p></div>
-    <div class="card"><span class="tag">Trophy</span><h3>Port City apartments</h3><p>New builds inside the SEZ with its own regulatory regime and marina lifestyle. The long game on South Asia's newest address. Entry varies by tower and phase.</p></div>
-    <div class="card"><span class="tag">Lifestyle</span><h3>South coast villas on lease</h3><p>Galle and Weligama villa plays: long lease land, build or renovate, run as a boutique rental when you are not there. The Bali playbook, 4 hours closer to home.</p></div>
+  <h2>What it costs on top of the price</h2>
+  <div class="table-scroll" style="margin-top:26px"><table>
+    <tr><th>Cost</th><th>Rate</th><th>Notes</th></tr>
+    <tr><td>Stamp duty</td><td class="num">3% on the first LKR 100,000, 4% on the rest</td><td>Paid by the buyer to the Provincial Council</td></tr>
+    <tr><td>VAT on new condos</td><td class="num">18%</td><td>Charged by VAT registered developers. Resales between individuals carry no VAT. Ask whether a quote includes it</td></tr>
+    <tr><td>Legal and notary fees</td><td class="num">Usually 1% to 3%</td><td>Title search, deed and registration</td></tr>
+  </table></div>
+  <h2 style="margin-top:56px">The India side: LRS, TCS and your ITR</h2>
+  <div class="grid c2" style="margin-top:26px">
+    <div class="card"><span class="tag">LRS</span><h3>USD 250,000 per person, per year</h3><p>RBI's Liberalised Remittance Scheme allows buying property abroad. Resident family members can pool their limits for one purchase.</p></div>
+    <div class="card"><span class="tag">TCS</span><h3>20% above &#8377;10 lakh</h3><p>Banks collect tax at source on property remittances above &#8377;10 lakh a year in FY 2026&ndash;27. It is a credit you claim back against your income tax, not a cost, but plan the cash flow.</p></div>
+    <div class="card"><span class="tag">ITR</span><h3>Report it in Schedule FA</h3><p>Resident taxpayers must declare foreign property every year. Skipping it risks a &#8377;10 lakh penalty under the Black Money Act.</p></div>
+    <div class="card"><span class="tag">Rent</span><h3>Keep it there or bring it home</h3><p>Rent from an LRS investment can be reinvested abroad. Money you do not use or reinvest comes back to India within 180 days. On the Sri Lankan side, rent and sale proceeds return to your Inward Investment Account and can be sent out.</p></div>
   </div>
-  <h2 style="margin-top:48px">The investor visa angle</h2>
-  <p class="lead">Invest USD 100,000 or more in qualifying property through an Inward Investment Account and you can apply for a renewable 5 year residence visa. Larger investments unlock longer options. For families wanting a second base near India, this is the cleanest route on the table.</p>
 </div></section>
 
 <section class="band"><div class="wrap">
+  <h2>Three ways Indians are buying in 2026</h2>
+  <div class="grid c3" style="margin-top:28px">
+    <div class="card"><span class="tag">Yield</span><h3>Colombo sea facing condos</h3><p>Two and three bed units in Colombo 3, 4 and Dehiwala, bought for dollar linked rental yield from expats and long stay tourists. Entry from around USD 150k.</p></div>
+    <div class="card"><span class="tag">Trophy</span><h3>Port City apartments</h3><p>New builds inside the special economic zone, with its own law and a marina lifestyle. Developers of high end residential projects there received tax incentives in 2025.</p></div>
+    <div class="card"><span class="tag">Lifestyle</span><h3>South coast villas on lease</h3><p>Galle and Weligama villa plays: lease the land, build or renovate, run it as a boutique rental when you are not there. The Bali playbook, an hour from Chennai.</p></div>
+  </div>
+  <h2 style="margin-top:56px">The investor visa: USD 100,000 for 5 years</h2>
+  <p class="lead">Sri Lanka's investor visa gives a 5 year residence visa for USD 100,000 and 10 years for USD 200,000, with your spouse and dependants included. Buying a condo counts as an eligible investment, with the money routed through an Inward Investment Account. The visa fee is USD 200 per person per year. More options are in our <a href="guides/long-stay-visas-sri-lanka.html">long stay visa guide</a>.</p>
+</div></section>
+
+<section class="band sand"><div class="wrap">
   <h2>How a purchase actually runs</h2>
   <div class="steps" style="margin-top:22px; max-width:760px">
     <div class="step"><h3>Shortlist and inspect</h3><p>We send a vetted shortlist with real prices and rental histories. You fly in for one inspection weekend, or we video walk every unit.</p></div>
-    <div class="step"><h3>Legal check</h3><p>Independent lawyer verifies title, condo plan approval and developer standing. Non negotiable, and it costs less than you think.</p></div>
-    <div class="step"><h3>Money moves correctly</h3><p>Funds come from India via banking channels into an Inward Investment Account, keeping your repatriation rights clean and your CA happy with FEMA.</p></div>
-    <div class="step"><h3>Transfer, register, hand over keys</h3><p>Deed executed, registered, and if you want, our partner starts renting it the same month.</p></div>
+    <div class="step"><h3>Legal check</h3><p>An independent lawyer verifies title, the condominium plan approval and the developer. Non negotiable.</p></div>
+    <div class="step"><h3>Money moves correctly</h3><p>You remit from India under LRS into an Inward Investment Account in Sri Lanka, which pays the developer. The full price lands before the deed is signed.</p></div>
+    <div class="step"><h3>Transfer, register, hand over keys</h3><p>Deed executed and registered. If you want, our partner starts renting it the same month.</p></div>
   </div>
+  <p class="source">Sources: Land (Restrictions on Alienation) Act No. 38 of 2014 and its 2017 and 2018 amendments; CBSL Foreign Exchange Act Directions No. 15 of 2021; Department of Immigration and Emigration investor visa guideline; RBI LRS FAQs. This page is a guide, not legal or tax advice. Confirm with a Colombo property lawyer and your CA.</p>
 </div></section>
 """ + cta_banner("Want the current shortlist?", "We track every Colombo and south coast project worth an Indian buyer's time. Prices, yields, red flags.", "Hi%2C%20send%20me%20the%20Sri%20Lanka%20property%20shortlist"),
 )
@@ -236,11 +252,13 @@ PAGES["second-home.html"] = dict(
 
 <section class="band"><div class="wrap">
   <h2>Ways to stay long term</h2>
-  <div class="grid c3" style="margin-top:28px">
-    <div class="card"><span class="tag">Property route</span><h3>Investor residence visa</h3><p>USD 100,000 or more into qualifying property supports a renewable 5 year residence visa. Buy the apartment, get the base.</p></div>
-    <div class="card"><span class="tag">Business route</span><h3>Resident visa via your company</h3><p>Directors and key staff of registered businesses, including Port City entities, qualify for employment and investor visas.</p></div>
-    <div class="card"><span class="tag">Flexible route</span><h3>Long stays without committing</h3><p>Tourist ETAs with extensions let you trial island life for months before you buy anything. Try one monsoon first. We mean it.</p></div>
+  <div class="grid c2" style="margin-top:28px">
+    <div class="card"><span class="tag">Property route</span><h3>Investor visa: 5 or 10 years</h3><p>USD 100,000 for 5 years or USD 200,000 for 10, and buying a condo counts. Spouse and children included. Buy the apartment, get the base.</p></div>
+    <div class="card"><span class="tag">Remote work route</span><h3>Digital nomad visa</h3><p>Launched in February 2026: one year for remote workers earning at least USD 2,000 a month from abroad. USD 500 fee, no local employment.</p></div>
+    <div class="card"><span class="tag">Business route</span><h3>Resident visa via your company</h3><p>Directors and key staff of registered businesses, including Port City entities, can apply for employment and investor visas.</p></div>
+    <div class="card"><span class="tag">Flexible route</span><h3>Long stays without committing</h3><p>The free 30 day ETA extends to as much as 270 days in total, for a fee. Trial island life before you buy anything. Try one monsoon first.</p></div>
   </div>
+  <p style="margin-top:22px"><a class="btn btn-ghost" href="guides/long-stay-visas-sri-lanka.html">Compare every long stay visa</a></p>
 </div></section>
 
 <section class="band sand"><div class="wrap">
@@ -312,10 +330,18 @@ PILLAR_META = {
          "Yes. Resorts here host Indian weddings regularly, and customs handling for wedding cargo, decor and a travelling pandit is routine when a planner manages the paperwork.")]),
     "real-estate.html": dict(crumb="Estates", hi="hi/property.html", vids=["dbM8AMmEdgY","B2OIRRQbz8I","GHGrijFEpgU"],
         film_h="Think School, Sangakkara, <em>and the case for buying.</em>", faq=[
-        ("Can Indians buy apartments in Sri Lanka?",
-         "Yes. Foreigners can buy condominium units above ground floor outright when the full price is paid through an inward foreign remittance. Freehold land is restricted; land is held on long lease or approved structures."),
+        ("Can Indians buy property in Sri Lanka?",
+         "Yes. Indians can buy condominium units outright on any floor, paid in full from abroad through an Inward Investment Account. Freehold land is barred for foreigners, but land can be leased for up to 99 years."),
+        ("Can Indians buy land in Sri Lanka?",
+         "Not freehold. The Land (Restrictions on Alienation) Act No. 38 of 2014 bars transfers of freehold land to foreigners. Indians can lease land for up to 99 years and build on it."),
         ("Does buying property in Sri Lanka give residency?",
-         "A qualifying property investment of USD 100,000 or more, routed through an Inward Investment Account, supports a renewable 5 year residence visa.")]),
+         "It can. An eligible investment of USD 100,000, including a condo purchase routed through an Inward Investment Account, supports a 5 year investor visa. USD 200,000 supports 10 years."),
+        ("How much money can I send from India to buy property abroad?",
+         "Up to USD 250,000 per person per financial year under RBI's Liberalised Remittance Scheme, and family members can pool their limits. Banks collect 20% TCS on amounts above Rs 10 lakh a year, which you claim back against your income tax."),
+        ("What taxes do you pay when buying property in Sri Lanka?",
+         "Stamp duty of 3% on the first LKR 100,000 and 4% on the rest, 18% VAT on new condos from VAT registered developers, and legal fees of around 1% to 3%."),
+        ("Can I rent out my Sri Lankan apartment and bring the money to India?",
+         "Yes. Rent goes into your Inward Investment Account and can be sent abroad. Under RBI rules you can reinvest it, or bring unused funds back to India within 180 days.")]),
     "business.html": dict(crumb="Enterprise", vids=["hvOeE4eW8As","GHyNEH0kQ3o","rIa82ugYTN8"],
         film_h="The comeback, <em>explained by Indian channels.</em>", faq=[
         ("What tax does a company pay in Port City Colombo?",

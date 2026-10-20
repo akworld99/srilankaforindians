@@ -4,8 +4,8 @@ from media import pick
 
 GUIDES = [
 dict(slug="visa-for-indians", h1="Sri Lanka visa for Indians: free ETA, 2026",
- title="Sri Lanka Visa for Indians 2026: Free ETA, How to Apply",
- desc="Sri Lanka's tourist ETA is free for Indian passport holders since 25 May 2026. 30 days, double entry. How to apply on eta.gov.lk, documents, extensions and business visas.",
+ title="Sri Lanka Visa for Indians 2026: Free ETA and Extension",
+ desc="Sri Lanka's tourist ETA is free for Indians since 25 May 2026: 30 days, double entry. How to apply, how to extend up to 270 days, fees and the business visa.",
  card="Free 30 day double entry ETA since 25 May 2026. How to apply, step by step.",
  videos=["XOWAaOTSCtM","qCWQAeRXhZU"],
  body="""<p class="lead">Since 25 May 2026, Indian passport holders pay nothing for Sri Lanka's 30 day tourist Electronic Travel Authorisation. India is one of 40 countries on the free list. You still have to apply online before you fly.</p>
@@ -19,13 +19,22 @@ dict(slug="visa-for-indians", h1="Sri Lanka visa for Indians: free ETA, 2026",
 <ol><li>Open eta.gov.lk and choose a tourist ETA.</li>
 <li>Enter passport details exactly as printed, travel dates and your first address in Sri Lanka.</li>
 <li>Submit. Approvals usually arrive by email within hours. Save the PDF on your phone.</li></ol>
-<h2>Staying longer than 30 days</h2>
-<p>Extensions are applied for after arrival with the Department of Immigration and Emigration, and normal charges apply. Planning a long stay, a residence, or property? The investor visa route starts from a USD 100,000 property investment. See our <a href="../real-estate.html">estates page</a>.</p>
+<h2>Sri Lanka visa extension for Indians</h2>
+<p>The free 30 days can be extended, but the extension is paid. You apply inside Sri Lanka, before your current visa runs out.</p>
+<ol><li><strong>Where:</strong> online through the Department of Immigration and Emigration's tourist visa extension service, or in person at its head office in Battaramulla, Colombo. If the online application fails, go to the head office within 3 working days.</li>
+<li><strong>What to carry:</strong> passport, a photo, your return ticket and the address where you are staying.</li>
+<li><strong>How long:</strong> extensions run in bands up to a total of 270 days: 31 to 90 days, 91 to 180 days, and 181 to 270 days.</li>
+<li><strong>Fees:</strong> charged in US dollars by band. The current fee table on immigration.gov.lk lists USD 60, 150 and 200 for the three bands for most nationalities. Confirm the figure for Indian passports when you apply.</li></ol>
+<p><strong>Two rules that catch people out:</strong> applying for an extension during your first 30 days cancels the second entry on your ETA, and leaving Sri Lanka during an extension ends it. Overstaying costs USD 250 for 7 to 14 days and USD 500 beyond that.</p>
+<p>Planning months, not weeks? See <a href="long-stay-visas-sri-lanka.html">long stay visas for Indians</a>: digital nomad, investor and residence options.</p>
 <h2>Business travel</h2>
-<p>Meetings, conferences and site visits need a business ETA, which is a separate category with its own fee. Choose the right category; a tourist ETA does not cover business activity.</p>""",
+<p>Meetings, conferences and site visits need a business ETA, not the free tourist one. For SAARC nationals, including Indians, it costs USD 30, allows multiple entry for 30 days, and is not issued on arrival, so apply before you fly.</p>""",
  faq=[("Is Sri Lanka visa free for Indians?","Indians still need an Electronic Travel Authorisation, but since 25 May 2026 the 30 day tourist ETA is free for Indian passport holders. Apply on eta.gov.lk before travel."),
-      ("How long can Indians stay in Sri Lanka on the free ETA?","Up to 30 days with double entry. The 30 days do not restart if you leave and come back. Extensions can be applied for after arrival.")],
- source="Source: Outlook Traveller report on Sri Lanka's free ETA for 40 countries, May 2026. Always confirm on eta.gov.lk."),
+      ("How long can Indians stay in Sri Lanka on the free ETA?","Up to 30 days with double entry. The 30 days do not restart if you leave and come back. Extensions can be applied for after arrival."),
+      ("How do Indians extend a Sri Lanka visa?","Apply before your visa expires, online through the Department of Immigration and Emigration or at its Battaramulla head office, with your passport, a photo, a return ticket and your address. Extensions are paid and run up to a total of 270 days."),
+      ("How much is a Sri Lanka visa extension?","Fees are charged in US dollars by length. The immigration fee table lists USD 60 for 31 to 90 days, USD 150 for up to 180 days and USD 200 for up to 270 days for most nationalities; confirm the Indian rate when you apply."),
+      ("What is the Sri Lanka business visa fee for Indians?","A business ETA for SAARC nationals, including Indians, costs USD 30 and allows multiple entry for 30 days. It is not issued on arrival.")],
+ source="Sources: Department of Immigration and Emigration notice on free tourist visas for 40 countries (effective 25 May 2026), visa extension and fee pages at immigration.gov.lk (October 2026). Always confirm on eta.gov.lk."),
 
 dict(slug="trade-in-rupees-india-sri-lanka", h1="Trade with Sri Lanka in rupees: how INR settlement works",
  title="India Sri Lanka Trade in INR: How Rupee Settlement Works",
@@ -100,6 +109,7 @@ dict(slug="sri-lanka-itinerary-from-india", h1="Sri Lanka itinerary from India: 
 <tr><td>8 to 9</td><td>South coast: Mirissa or Tangalle, then Galle Fort</td><td>2, coast</td></tr>
 <tr><td>10</td><td>Fly home</td><td>Home</td></tr>
 </table></div>
+<p class="small">Train note: after Cyclone Ditwah in late 2025, the Nanu Oya to Ella section reopened in June 2026, but there is no through train from Kandy yet. Sri Lanka Railways is targeting full restoration by the end of 2026. Drive from Kandy to Nuwara Eliya and board at Nanu Oya.</p>
 <p class="small">May to September, swap the south coast for Trincomalee or Pasikudah on the east coast, which is dry in those months. See <a href="best-time-to-visit.html">the best time to visit</a>.</p>
 <h2>Make it yours</h2>
 <ul><li><strong>Pilgrims:</strong> follow the <a href="ramayana-trail.html">Ramayana trail</a> instead of the beach days.</li>
@@ -108,8 +118,66 @@ dict(slug="sri-lanka-itinerary-from-india", h1="Sri Lanka itinerary from India: 
  faq=[("How many days are enough for Sri Lanka from India?","Seven days covers Kandy, tea country and a beach without rushing. Five days works for Kandy and Galle, and ten days adds Sigiriya and a wildlife safari."),
       ("Can I do Sri Lanka in 5 days?","Yes. From South India the flight is short, so five days comfortably covers Kandy and the Galle coast, with Colombo on the way back to the airport."),
       ("What is the best Sri Lanka route for first timers?","Colombo to Kandy, up to Nuwara Eliya and Ella in tea country, then down to Mirissa or Galle on the south coast."),
+      ("Is the Kandy to Ella train running in 2026?","Partly. The Nanu Oya to Ella and Badulla section reopened on 20 June 2026, but sections between Kandy and Nanu Oya are still being repaired after Cyclone Ditwah, with full restoration targeted for the end of 2026. Drive to Nuwara Eliya and take the train from Nanu Oya."),
       ("How do Indian families usually get around Sri Lanka?","A car with a driver. It is the most comfortable option for families with luggage and splits well across four people.")],
  source=""),
+
+dict(slug="is-sri-lanka-safe-for-indians", h1="Is Sri Lanka safe for Indian tourists in 2026?",
+ title="Is Sri Lanka Safe for Indian Tourists in 2026?",
+ desc="Is Sri Lanka safe for Indians right now? Official advisories, the cyclone recovery, record Indian arrivals in 2026, and practical tips on transport, monsoons, scams and the sea.",
+ card="Advisories, the cyclone recovery and practical tips, without the panic.",
+ videos=["Bu86Z_7VzAA","cRQu04IaAUk"],
+ watch_h="Indians who <em>went this year.</em>",
+ body="""<p class="lead">Yes, for normal tourist travel. Indians are Sri Lanka's biggest group of visitors: 4,31,162 arrived between January and September 2026, and India supplied about a third of all arrivals in September. Here is what the official advisories say and what actually matters on the ground.</p>
+<h2>What governments say</h2>
+<ul><li><strong>United States:</strong> Level 2 of 4, "exercise increased caution", the same level it gives many popular destinations.</li>
+<li><strong>Australia:</strong> "exercise a high degree of caution", its standard second level.</li>
+<li><strong>India:</strong> after Cyclone Ditwah in late 2025, the Indian High Commission in Colombo said key roads and routes were open and welcomed Indian tourists back.</li></ul>
+<h2>The cyclone, and what it means for your trip</h2>
+<p>Cyclone Ditwah hit Sri Lanka in late 2025 and damaged parts of the hill country railway. Roads reopened first. The Nanu Oya to Ella train section reopened in June 2026, and the Colombo line now runs as far as Peradeniya, with full restoration of the Kandy routes targeted for the end of 2026. Plan to drive between Kandy and Nuwara Eliya and you lose nothing.</p>
+<h2>Practical safety tips</h2>
+<ul><li><strong>Getting around:</strong> use PickMe or Uber in Colombo, or agree a tuk tuk fare before you get in. Most families hire a car with a driver.</li>
+<li><strong>Monsoon:</strong> in heavy rain, avoid hill country hikes near steep slopes and follow local warnings.</li>
+<li><strong>The sea:</strong> swim at beaches with lifeguards or where locals swim. Currents are strong on the coast that is in monsoon.</li>
+<li><strong>Visa scams:</strong> apply only on eta.gov.lk. Look alike sites charge for a visa that is free for Indians.</li>
+<li><strong>Gem shops:</strong> buy certified stones from established jewellers, not from touts who approach you.</li>
+<li><strong>Money:</strong> UPI works at LankaQR merchants, so you carry less cash.</li></ul>
+<p class="small">Check the latest advisories and the weather before you fly. Conditions change with the monsoon.</p>""",
+ faq=[("Is Sri Lanka safe for Indian tourists right now?","Yes, for normal tourist travel. Indians are Sri Lanka's largest visitor group in 2026. The US rates Sri Lanka at Level 2, exercise increased caution, the same as many popular destinations."),
+      ("Is Sri Lanka safe for Indian families and solo women travellers?","Most Indian families and solo travellers report easy trips. Use registered taxis or a hired driver, keep to well used beaches, and follow the usual care you would take in any Indian tourist city."),
+      ("Is it safe to travel to Sri Lanka after the cyclone?","Yes. Roads reopened soon after Cyclone Ditwah and the Indian High Commission welcomed Indian tourists back in December 2025. Some hill country rail sections remain under repair until the end of 2026."),
+      ("Is the Kandy to Ella train running?","Partly. The Nanu Oya to Ella section reopened in June 2026; the sections from Kandy are being repaired, with full restoration targeted for the end of 2026.")],
+ source="Sources: US State Department travel advisory for Sri Lanka (October 2025); Indian High Commission statement reported by The Tribune (7 December 2025); SLTDA arrivals data; Newsfirst on the Nanu Oya to Badulla line reopening (20 June 2026)."),
+
+dict(slug="long-stay-visas-sri-lanka", h1="Long stay visas in Sri Lanka for Indians, 2026",
+ title="Long Stay Visas in Sri Lanka for Indians: 2026 Options",
+ desc="Every way an Indian can stay in Sri Lanka longer than 30 days in 2026: visa extensions up to 270 days, the digital nomad visa, the investor visa and the Golden Paradise visa.",
+ card="Extensions, digital nomad, investor and Golden Paradise visas, side by side.",
+ videos=["YGeivlm5C78","oriToNJZG-k","52E5aIUxzj8"],
+ watch_h="Indians who <em>stayed longer.</em>",
+ body="""<p class="lead">The free 30 day ETA is just the start. Indians who want a season, a year or a second base in Sri Lanka have four real routes in 2026. Here they are side by side.</p>
+<div class="table-scroll"><table>
+<tr><th>Route</th><th>How long</th><th>What it takes</th><th class="num">Fee</th></tr>
+<tr><td>Tourist visa extension</td><td>Up to 270 days in total</td><td>Apply inside Sri Lanka before the ETA expires, online or at Battaramulla</td><td class="num">USD 60 to 200 by length</td></tr>
+<tr><td>Digital nomad visa</td><td>1 year</td><td>Age 18+, remote income of at least USD 2,000 a month from abroad, plus USD 500 a month per extra dependant beyond two. No local jobs</td><td class="num">USD 500</td></tr>
+<tr><td>Investor visa</td><td>5 years, or 10 years</td><td>USD 100,000 for 5 years or USD 200,000 for 10, through an Inward Investment Account. A condo purchase qualifies. Spouse and dependants included</td><td class="num">USD 200 per person per year</td></tr>
+<tr><td>Golden Paradise visa</td><td>10 years</td><td>USD 200,000 deposited in a Sri Lankan bank; up to half can be withdrawn after the first year</td><td class="num">USD 2,000</td></tr>
+</table></div>
+<p class="small">The retiree "My Dream Home" visa is now open only to existing holders for extension. Fees shown are from Department of Immigration and Emigration pages and announcements; confirm current amounts when you apply.</p>
+<h2>Which one fits you</h2>
+<ul><li><strong>Testing island life:</strong> start with the free ETA and extend. Note that extending within the first 30 days cancels the second entry, and leaving the country ends an extension.</li>
+<li><strong>Working remotely for an Indian or global company:</strong> the digital nomad visa, launched in February 2026, is built for you. It does not allow working for a Sri Lankan employer.</li>
+<li><strong>Buying a home:</strong> the investor visa turns a USD 100,000 condo purchase into a 5 year base for the family. See <a href="../real-estate.html">the property rules for Indians</a>.</li>
+<li><strong>Parking money, not buying:</strong> the Golden Paradise visa keeps funds on deposit instead.</li>
+<li><strong>Running a business here:</strong> directors and key staff of registered companies apply for employment or investor visas through the company.</li></ul>
+<h2>Before you move</h2>
+<p>Staying abroad changes your Indian tax residency once you spend less than 182 days in India in a year, and that cuts both ways. Talk to your CA before you plan a full year away. For short trips, the <a href="visa-for-indians.html">tourist visa guide</a> covers the free ETA and extensions step by step.</p>""",
+ faq=[("How can an Indian stay in Sri Lanka for more than 30 days?","Extend the free tourist ETA inside Sri Lanka, for up to 270 days in total, or apply for a longer visa: the digital nomad visa for one year, or the investor visa for 5 or 10 years."),
+      ("Does Sri Lanka have a digital nomad visa?","Yes. It launched in February 2026. It runs for one year, costs USD 500, and needs remote income of at least USD 2,000 a month from outside Sri Lanka. Holders cannot work for local employers."),
+      ("How much investment is needed for a Sri Lanka residence visa?","USD 100,000 for a 5 year investor visa or USD 200,000 for 10 years, routed through an Inward Investment Account. Buying a condominium counts."),
+      ("Is the Sri Lanka retirement visa still available?","The My Dream Home retiree visa is now open only to existing holders for extensions. New long stay applicants usually look at the investor or digital nomad visas."),
+      ("What is the Golden Paradise visa?","A 10 year residence visa for a USD 200,000 deposit in a Sri Lankan bank, with up to half withdrawable after the first year. The visa fee is USD 2,000.")],
+ source="Sources: Department of Immigration and Emigration pages on visa extensions, fees, the investor visa guideline and My Dream Home (October 2026); Newsfirst and Ada Derana on the digital nomad visa launch (February 2026); The Morning on the Golden Paradise visa revision (October 2022)."),
 
 dict(slug="trip-cost-from-india", h1="How much does a Sri Lanka trip cost from India?",
  title="Sri Lanka Trip Cost from India 2026 in Rupees",
@@ -175,14 +243,17 @@ dict(slug="ferry-india-to-sri-lanka", h1="India to Sri Lanka by ferry",
 <h2>What to know</h2>
 <ul><li><strong>Route:</strong> Nagapattinam, Tamil Nadu to Kankesanthurai (KKS), Northern Province</li>
 <li><strong>Crossing:</strong> about four hours, weather permitting</li>
-<li><strong>Tickets:</strong> booked online with the operator. Creators have reported one way fares around &#8377;4,500; check current prices and the schedule before planning</li>
+<li><strong>Tickets:</strong> booked online with the operator, Subham. Reported one way fares run around &#8377;4,500 to 5,000 in general class; check current prices before planning</li>
 <li><strong>Visa:</strong> the same free ETA applies. Apply on eta.gov.lk before you travel</li>
-<li><strong>Season:</strong> services can pause in rough monsoon months. Always check the current timetable</li></ul>
+<li><strong>Season:</strong> the service usually pauses for the northeast monsoon from late October and returns around December. In 2025 the last sailing before the break was 28 October. Check the operator before you plan a winter crossing</li></ul>
+<h2>Ferry paused? Fly to Jaffna</h2>
+<p>IndiGo flies direct to Jaffna from Chennai and Tiruchirappalli, so you can still land straight in the north.</p>
 <h2>Why go by sea</h2>
 <p>Jaffna is the cultural heart of Tamil Sri Lanka, and arriving by sea puts you straight into it: Nallur Kandaswamy temple, Point Pedro, island hopping to Nainativu, and food that Chennai will find familiar and new at once. From Jaffna, trains and buses connect south to Anuradhapura and Colombo.</p>
 <h2>Cruise alternative</h2>
 <p>Cordelia Cruises has run Chennai sailings that call at Sri Lankan ports. Check their current itineraries for a resort style way to arrive.</p>""",
- faq=[("Is there a ferry from India to Sri Lanka?","Yes. A passenger ferry runs between Nagapattinam in Tamil Nadu and Kankesanthurai near Jaffna, taking about four hours. Check the operator for the current schedule."),
+ faq=[("Is there a ferry from India to Sri Lanka?","Yes. A passenger ferry runs between Nagapattinam in Tamil Nadu and Kankesanthurai near Jaffna, taking about four hours. It usually pauses for the monsoon from late October to around December, so check the operator first."),
+      ("Is the India to Sri Lanka ferry running in November?","Usually not. The service has paused for the northeast monsoon from late October and restarted around December. IndiGo flights from Chennai and Tiruchirappalli to Jaffna are the alternative."),
       ("Do I need a visa for the India to Sri Lanka ferry?","Yes, the same Electronic Travel Authorisation applies. For Indian tourists it has been free since 25 May 2026.")],
  source=""),
 
@@ -243,7 +314,7 @@ dict(slug="honeymoon-from-india", h1="A Sri Lanka honeymoon from India",
 <h2>The 7 night route</h2>
 <ol><li><strong>Nights 1 to 2, Kandy or Sigiriya:</strong> a jungle view resort and the climb up Sigiriya at dawn.</li>
 <li><strong>Night 3, Nuwara Eliya:</strong> a tea planter's bungalow with a fireplace.</li>
-<li><strong>Day 4:</strong> the Ella train through tea country. Book reserved seats early.</li>
+<li><strong>Day 4:</strong> the train from Nanu Oya (for Nuwara Eliya) to Ella through tea country. This section reopened in June 2026 after cyclone repairs; book reserved seats early.</li>
 <li><strong>Night 4, Ella:</strong> Nine Arches Bridge and Little Adam's Peak.</li>
 <li><strong>Nights 5 to 7, south coast:</strong> Galle Fort, Mirissa or Tangalle, a private villa and whale watching in season.</li></ol>
 <h2>When to go</h2>
