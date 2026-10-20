@@ -81,9 +81,9 @@ dict(slug="sri-lanka-itinerary-from-india", h1="Sri Lanka itinerary from India: 
 <h2>5 days: Kandy and the south coast</h2>
 <div class="table-scroll"><table>
 <tr><th>Day</th><th>Plan</th><th>Night</th></tr>
-<tr><td>1</td><td>Land at Colombo, drive to Kandy (about 3 to 4 hours). Evening puja at the Temple of the Tooth</td><td>Kandy</td></tr>
+<tr><td>1</td><td>Land at Colombo, drive to Kandy (about 2.5 to 3 hours). Evening puja at the Temple of the Tooth</td><td>Kandy</td></tr>
 <tr><td>2</td><td>Peradeniya botanical gardens, a tea factory, Kandy lake walk</td><td>Kandy</td></tr>
-<tr><td>3</td><td>Drive to Galle or Bentota (about 4 hours via the expressway). Sunset on the fort ramparts</td><td>Galle</td></tr>
+<tr><td>3</td><td>Drive to Galle or Bentota (about 4 to 5 hours, the last stretch on the Southern Expressway). Sunset on the fort ramparts</td><td>Galle</td></tr>
 <tr><td>4</td><td>Galle Fort, Unawatuna beach, turtle hatchery or a river safari</td><td>Galle</td></tr>
 <tr><td>5</td><td>Colombo shopping on the way, fly home (Galle to the airport about 2 to 3 hours)</td><td>Home</td></tr>
 </table></div>
@@ -178,6 +178,220 @@ dict(slug="long-stay-visas-sri-lanka", h1="Long stay visas in Sri Lanka for Indi
       ("Is the Sri Lanka retirement visa still available?","The My Dream Home retiree visa is now open only to existing holders for extensions. New long stay applicants usually look at the investor or digital nomad visas."),
       ("What is the Golden Paradise visa?","A 10 year residence visa for a USD 200,000 deposit in a Sri Lankan bank, with up to half withdrawable after the first year. The visa fee is USD 2,000.")],
  source="Sources: Department of Immigration and Emigration pages on visa extensions, fees, the investor visa guideline and My Dream Home (October 2026); Newsfirst and Ada Derana on the digital nomad visa launch (February 2026); The Morning on the Golden Paradise visa revision (October 2022)."),
+
+dict(slug="hindu-temples-in-sri-lanka", h1="Hindu temples in Sri Lanka: the Pancha Ishwarams and beyond",
+ title="Hindu Temples in Sri Lanka: Pancha Ishwarams and More",
+ desc="The Hindu temples Indian pilgrims visit in Sri Lanka: the five Pancha Ishwarams of Shiva, Nallur, Kataragama, Seetha Amman and Colombo's kovils, with festival dates and routes.",
+ card="Five ancient Shiva shrines, Murugan's great festivals and Colombo's granite kovil.",
+ videos=["2SUXqcjFIgI","kRjSsHlA9_0"],
+ watch_h="Pilgrims from India, <em>on the trail.</em>",
+ body="""<p class="lead">Sri Lanka has some of the oldest Shiva shrines in the Tamil world. Five of them, the Pancha Ishwarams, ring the island's coast, and several are tied to the Ramayana. Here is where they are and how Indian pilgrims fit them into a trip.</p>
+<h2>The five Pancha Ishwarams of Shiva</h2>
+<div class="table-scroll"><table>
+<tr><th>Temple</th><th>Where</th><th>Why it matters</th></tr>
+<tr><td>Koneswaram</td><td>Trincomalee, east coast</td><td>The most visited of the five, on a cliff over the sea. Called "Then Kailayam" for its link to Mount Kailash</td></tr>
+<tr><td>Munneswaram</td><td>Near Chilaw, west coast</td><td>Where tradition says Rama sought atonement after defeating Ravana. An easy stop from Colombo airport</td></tr>
+<tr><td>Ketheeswaram</td><td>Manthai, Mannar</td><td>One of the 275 Paadal Petra Sthalams praised in the Tevaram. Ravana is said to have worshipped here</td></tr>
+<tr><td>Naguleswaram</td><td>Keerimalai, near Jaffna</td><td>Linked to the sage Nagula Muni, beside the Keerimalai springs</td></tr>
+<tr><td>Tondeeswaram</td><td>Devinuwara (Dondra), far south</td><td>The southern shrine of the five, at the island's southern tip near Matara</td></tr>
+</table></div>
+<h2>More temples Indian families visit</h2>
+<ul><li><strong>Nallur Kandaswamy, Jaffna:</strong> Murugan's temple, with a 25 day festival in August and September that ends in a chariot procession. Sri Lanka's longest temple festival.</li>
+<li><strong>Kataragama, Uva Province:</strong> a shrine shared by Buddhists, Hindus and Muslims. Pilgrims walk the Pada Yatra from Jaffna for the Esala festival in July and August.</li>
+<li><strong>Seetha Amman, near Nuwara Eliya:</strong> about 8 km from town on the Badulla road, identified with Ashok Vatika. Marks on the rocks across the stream are revered as Hanuman's footprints. See the <a href="ramayana-trail.html">Ramayana trail</a>.</li>
+<li><strong>Sri Ponnambalavaneswaram, Kotahena, Colombo:</strong> rebuilt in granite and consecrated in 1912, a rare all granite kovil.</li>
+<li><strong>New Kathiresan kovils, Colombo:</strong> the start and end of the Vel festival chariot procession each July or August between Pettah and Bambalapitiya.</li></ul>
+<h2>How to fit them into a trip</h2>
+<ul><li><strong>From Colombo airport:</strong> Munneswaram is on the way north. Sri Ponnambalavaneswaram and the Kathiresan kovils are in the city.</li>
+<li><strong>North:</strong> fly from Chennai or Tiruchirappalli to Jaffna on IndiGo, or take the Nagapattinam ferry when it runs, for Nallur, Naguleswaram and Ketheeswaram.</li>
+<li><strong>East:</strong> pair Koneswaram with a Trincomalee beach stay from May to September, when the east coast is dry.</li>
+<li><strong>Hills and south:</strong> Seetha Amman on the tea country route, Kataragama with a Yala safari, Tondeeswaram on the south coast.</li></ul>
+<p>Vegetarian? Read our <a href="vegetarian-food-in-sri-lanka.html">guide to vegetarian and Jain food in Sri Lanka</a> before you travel north or east.</p>""",
+ faq=[("What are the Pancha Ishwarams in Sri Lanka?","Five ancient Shiva temples on the coast: Koneswaram in Trincomalee, Munneswaram near Chilaw, Ketheeswaram in Mannar, Naguleswaram at Keerimalai near Jaffna, and Tondeeswaram at Devinuwara in the south."),
+      ("Which Hindu temple in Sri Lanka is linked to the Ramayana?","Several. Munneswaram is where Rama is said to have sought atonement, Ketheeswaram is linked to Ravana's worship, and Seetha Amman near Nuwara Eliya is identified with Ashok Vatika."),
+      ("When is the Nallur festival in Jaffna?","The Nallur Kandaswamy festival runs for 25 days in August and September each year and ends with a chariot procession."),
+      ("How do I reach Jaffna temples from India?","Fly direct to Jaffna from Chennai or Tiruchirappalli on IndiGo, or take the Nagapattinam to Kankesanthurai ferry when it is running. It usually pauses from late October to around December.")],
+ source="Sources: Pancha Ishwarams and Kataragama references; Time Out Sri Lanka on Nallur and Sri Ponnambalavaneswaram; Sunday Observer on Ponnambalavaneswaram's history; Hiru News on the 152nd Vel festival (July 2026)."),
+
+dict(slug="vegetarian-food-in-sri-lanka", h1="Vegetarian and Jain food in Sri Lanka: what Indians need to know",
+ title="Vegetarian and Jain Food in Sri Lanka: An Indian Guide",
+ desc="Is it easy to be vegetarian in Sri Lanka? Mostly yes. Where to find pure veg South Indian food in Colombo, the Maldive fish trap in sambols and curries, and tips for Jain travellers.",
+ card="Pure veg in Colombo, the hidden fish in sambols, and how Jain travellers manage.",
+ videos=["6_-lwBnX3rc","eiyQbvnxI-Y","dbH61QhpZIY"],
+ watch_h="Indian foodies <em>on the island.</em>",
+ body="""<p class="lead">Mostly yes. A Sri Lankan rice and curry spread usually has several vegetable curries, and Colombo has pure vegetarian South Indian restaurants that feel like home. The catch is one ingredient that most vegetarians never see coming.</p>
+<h2>The Maldive fish trap</h2>
+<p>Maldive fish is dried, cured tuna, and it goes into a lot of Sri Lankan cooking that looks vegetarian. It is essential in pol sambol, the coconut relish served with almost everything, and the main ingredient in seeni sambol, the sweet onion relish. Cooks also add it to vegetable curries for flavour. At any non vegetarian restaurant, ask clearly for food with no fish and no Maldive fish.</p>
+<h2>Pure vegetarian restaurants in Colombo</h2>
+<ul><li><strong>Shanmugas,</strong> Ramakrishna Road, Wellawatte: South and North Indian vegetarian.</li>
+<li><strong>Greenlands and Saraswathi,</strong> Wellawatte: long running vegetarian classics.</li>
+<li><strong>Sri Suryas,</strong> Sea Street: South Indian vegetarian.</li>
+<li><strong>Mathura</strong> and <strong>Shri Vihar:</strong> South Indian vegetarian.</li></ul>
+<p>Wellawatte, on the coast south of the city centre, has the biggest cluster of Tamil and Indian vegetarian kitchens. Stay nearby if food is a priority.</p>
+<h2>Outside Colombo</h2>
+<p>Indian travellers report that pure vegetarian food is easy to find in Colombo, Kandy, Nuwara Eliya and the Bentota area, and harder in Galle, Sigiriya and around Horton Plains. Hotels in those places will usually cook vegetable curries to order. Tell them a day ahead.</p>
+<h2>For Jain travellers</h2>
+<p>We have not found dedicated Jain restaurants in Sri Lanka. Families manage by telling their hotel in advance, asking South Indian vegetarian kitchens to leave out onion, garlic and root vegetables, and carrying ready to eat Jain meals for long drive days. A driver who knows your needs helps more than any app.</p>
+<h2>Vegetarian dishes worth trying</h2>
+<ul><li><strong>Dhal curry, jackfruit curry and beetroot curry</strong> at any rice and curry spread, once you have confirmed there is no Maldive fish.</li>
+<li><strong>Hoppers and string hoppers</strong> with a vegetarian curry for breakfast.</li>
+<li><strong>Kiribath,</strong> coconut milk rice, served at festivals and on New Year.</li></ul>""",
+ faq=[("Is it easy to find vegetarian food in Sri Lanka?","Yes in Colombo, Kandy and the main tourist areas. Rice and curry spreads usually include several vegetable curries, and Colombo has pure vegetarian South Indian restaurants. Ask about Maldive fish, which is added to many sambols and some vegetable curries."),
+      ("What is Maldive fish in Sri Lankan food?","Dried, cured tuna used as a flavouring. It is essential in pol sambol and the main ingredient in seeni sambol, and is often added to vegetable curries, so vegetarians should ask for food without it."),
+      ("Where can I eat pure vegetarian food in Colombo?","Wellawatte has the biggest cluster, including Shanmugas, Greenlands and Saraswathi. Sri Suryas on Sea Street, Mathura and Shri Vihar also serve South Indian vegetarian food."),
+      ("Is there Jain food in Sri Lanka?","Dedicated Jain restaurants are hard to find. Tell your hotel in advance, ask vegetarian kitchens to skip onion, garlic and root vegetables, and carry ready to eat meals for long drives.")],
+ source="Sources: YAMU and Cleartrip lists of vegetarian restaurants in Colombo; Maldive fish references; Indian traveller reports. Restaurants change, so check opening hours before you go."),
+
+dict(slug="sri-lanka-vs-maldives-for-indians", h1="Sri Lanka vs Maldives for Indians: which one, and when",
+ title="Sri Lanka vs Maldives for Indians: Cost, Visa, Flights",
+ desc="Sri Lanka or Maldives from India? Visas, flight times from Chennai, Bengaluru and Mumbai, hotel costs in rupees, what you can do, and which suits a honeymoon, family or group.",
+ card="Visa, flights, costs in rupees and what you actually do. The honest comparison.",
+ videos=["52E5aIUxzj8","q0mbKsKG-ng","YGeivlm5C78"],
+ watch_h="Sri Lanka, <em>through Indian eyes.</em>",
+ body="""<p class="lead">They are 90 minutes apart and often get compared, but they are different trips. The Maldives is one resort and a lagoon. Sri Lanka is hills, temples, safaris, a famous train and the beach, for a fraction of the nightly rate.</p>
+<div class="table-scroll"><table>
+<tr><th></th><th class="hl">Sri Lanka</th><th>Maldives</th></tr>
+<tr><td>Visa for Indians</td><td class="hl">Free 30 day ETA, apply online before you fly</td><td>Free 30 day visa on arrival, with a hotel booking, onward ticket and an online traveller declaration</td></tr>
+<tr><td>From Chennai</td><td class="hl">About 1 hr 20 min direct</td><td>No current nonstop; about 6 hours with a stop</td></tr>
+<tr><td>From Bengaluru</td><td class="hl">About 1 hr 30 min direct</td><td>About 2 hours direct</td></tr>
+<tr><td>From Mumbai</td><td class="hl">About 2 hr 30 min direct</td><td>About 2 hr 50 min direct</td></tr>
+<tr><td>Where you stay</td><td class="hl">Mid range &#8377;3,500 to 7,000 a night; luxury &#8377;8,000 to 20,000+</td><td>Water villas around &#8377;80,000 to 2 lakh+ a night per couple; local island guesthouses &#8377;6,000 to 12,000</td></tr>
+<tr><td>What you do</td><td class="hl">Tea country, temples, leopards and elephants, the hill train, beaches</td><td>Snorkelling, diving, spa, the lagoon</td></tr>
+<tr><td>Paying</td><td class="hl">UPI at LankaQR merchants</td><td>Resorts price in US dollars; cards widely used</td></tr>
+</table></div>
+<p class="small">Indicative 2026 prices and flight times; check current schedules.</p>
+<h2>Who should pick what</h2>
+<ul><li><strong>Honeymoon on a sane budget:</strong> Sri Lanka. A week of hill country and a private beach villa costs less than three nights in a Maldives water villa. See our <a href="honeymoon-from-india.html">7 night honeymoon plan</a>.</li>
+<li><strong>Families and groups:</strong> Sri Lanka. More to do, cars with drivers, vegetarian food and temples.</li>
+<li><strong>Pure resort and water time:</strong> the Maldives, if the budget allows.</li>
+<li><strong>Both:</strong> fly Colombo to Malé and do five nights in Sri Lanka, then two in a Maldives resort.</li></ul>
+<h2>Where Indians are actually going</h2>
+<p>5,31,511 Indians visited Sri Lanka in 2025, making India its biggest market by a distance. Indian arrivals to the Maldives fell from about 2,09,000 in 2023 to about 1,30,000 in 2024 after the diplomatic row, and were still below 2025 levels in mid 2026.</p>""",
+ faq=[("Is Sri Lanka cheaper than the Maldives for Indians?","Yes, usually by a wide margin. Mid range Sri Lankan hotels run about Rs 3,500 to 7,000 a night, while Maldives water villas cost around Rs 80,000 to 2 lakh or more a night per couple."),
+      ("Do Indians need a visa for the Maldives or Sri Lanka?","Both are free for tourists. The Maldives gives a 30 day visa on arrival with a hotel booking and an online traveller declaration. Sri Lanka's 30 day ETA is free for Indians but must be approved online before you fly."),
+      ("Which is better for a honeymoon, Sri Lanka or Maldives?","The Maldives for pure resort time. Sri Lanka for variety, hills, a train ride, wildlife and a beach villa finish, at a much lower cost. Many couples combine five nights in Sri Lanka with two in the Maldives."),
+      ("Is there a direct flight from Chennai to the Maldives?","Not currently. Chennai has frequent direct flights to Colombo, about 1 hour 20 minutes, and Colombo connects to Malé.")],
+ source="Sources: Maldives Ministry of Foreign Affairs entry rules; flight schedule listings (October 2026); Ada Derana on 2025 Indian arrivals to Sri Lanka; PSM News on Indian arrivals to the Maldives (2025 and June 2026)."),
+
+dict(slug="sri-lanka-tour-packages-from-india", h1="Sri Lanka tour packages from India, 2026: what they cost",
+ title="Sri Lanka Tour Packages from India 2026: Prices Compared",
+ desc="What Sri Lanka packages from India cost in 2026, from about Rs 44,000 for five nights, what is included, and when a custom trip with a private driver works out better.",
+ card="Real 2026 package prices, what they include, and when custom beats a package.",
+ videos=["Bu86Z_7VzAA","VpQiRlaI5bo","RCHD60fpDnA"],
+ watch_h="Indians who <em>planned their own.</em>",
+ body="""<p class="lead">Five night Sri Lanka packages from big Indian operators start at about &#8377;44,000 per person in 2026, and Ramayana yatras run around &#8377;60,000. Here is what published prices look like, what to check before you pay, and when a custom trip wins.</p>
+<h2>Published 2026 package prices</h2>
+<div class="table-scroll"><table>
+<tr><th>Package</th><th>Length</th><th class="num">From, per person</th><th>Notes</th></tr>
+<tr><td>Thomas Cook India: Sigiriya, Kandy, Nuwara Eliya, Bentota, Colombo</td><td>5N/6D</td><td class="num">&#8377;43,900</td><td>Starting price; check whether flights are included</td></tr>
+<tr><td>Thomas Cook India: Wonder of Asia</td><td>6N/7D</td><td class="num">&#8377;58,700</td><td>Starting price</td></tr>
+<tr><td>Thomas Cook India: Ramayan Anant Yatra</td><td>6N/7D</td><td class="num">&#8377;63,000</td><td>Starting price</td></tr>
+<tr><td>IRCTC Ramayana Yatra, ex Bengaluru</td><td>5N/6D</td><td class="num">&#8377;59,950</td><td>Triple sharing; SriLankan Airlines flights and all meals included</td></tr>
+</table></div>
+<p class="small">Prices as published by the operators in 2026 and reported by Business Today. They change by date and departure city.</p>
+<h2>What 5 to 7 nights should cost, flights included</h2>
+<ul><li><strong>Budget:</strong> &#8377;35,000 to 55,000 per person</li>
+<li><strong>Mid range:</strong> &#8377;60,000 to 90,000 per person</li>
+<li><strong>Luxury:</strong> &#8377;1 to 1.8 lakh per person</li></ul>
+<p>Line by line costs are in our <a href="trip-cost-from-india.html">trip cost guide</a>.</p>
+<h2>Check these before you pay</h2>
+<ol><li><strong>Flights:</strong> included, or land only? It is the biggest swing in the price.</li>
+<li><strong>Car:</strong> private car with driver, or a shared coach?</li>
+<li><strong>Meals:</strong> breakfast only, or all meals? Vegetarian or Jain on request?</li>
+<li><strong>Entry tickets:</strong> Sigiriya, safaris and the train are often extra.</li>
+<li><strong>The train:</strong> the Kandy to Ella line is only partly running in 2026. Ask how the package handles it.</li></ol>
+<h2>Package or custom?</h2>
+<p>Packages win for first timers who want one price and a group. Custom wins for families of four or more, couples who want better hotels, and anyone with food needs. A car with a driver split four ways often beats per person package pricing. Tell us your city, dates and budget, and a vetted Sri Lankan operator quotes you in rupees.</p>""",
+ faq=[("How much is a Sri Lanka tour package from India?","Published 2026 prices start at about Rs 43,900 per person for five nights with major Indian operators, and around Rs 59,950 to 63,000 for six or seven day Ramayana yatras. Check whether flights are included."),
+      ("Does the IRCTC Sri Lanka package include flights?","The 2026 IRCTC Ramayana Yatra from Bengaluru, priced from Rs 59,950 per person on triple sharing, includes SriLankan Airlines flights and all meals."),
+      ("Is a package or a custom trip cheaper for Sri Lanka?","For families of four or more, a custom trip with a private car and driver often costs the same or less than package prices, with better hotels and food that suits you."),
+      ("What is usually not included in Sri Lanka packages?","Often flights, entry tickets to sites like Sigiriya, safari jeeps, train tickets, tips and some meals. Ask for a written inclusions list.")],
+ source="Sources: Thomas Cook India Sri Lanka packages page and Business Today on the IRCTC Ramayana Yatra (August 2026); Pickyourtrail trip cost benchmarks (2026)."),
+
+dict(slug="start-a-company-in-sri-lanka", h1="How to set up a company in Sri Lanka from India, 2026",
+ title="How to Set Up a Company in Sri Lanka from India, 2026",
+ desc="Register a private company in Sri Lanka as an Indian founder: e-ROC steps, 7 to 14 working days, fees, the resident secretary rule, 40% sector caps, taxes, and India's ODI rules.",
+ card="Incorporate in about two weeks: steps, ownership caps, taxes and the India side.",
+ videos=["GHyNEH0kQ3o","rIa82ugYTN8","hvOeE4eW8As"],
+ watch_h="The economy you would be <em>building in.</em>",
+ body="""<p class="lead">An Indian founder can own a Sri Lankan private company outright in most sectors, register it online in about two weeks, and run it with a single director. Here is the full path, from name approval to the India side paperwork.</p>
+<h2>The steps</h2>
+<ol><li><strong>Reserve the name</strong> on the Registrar of Companies' e-ROC portal. Usually 3 to 5 days. Fee LKR 2,600 plus VAT.</li>
+<li><strong>File incorporation:</strong> Forms 1, 18 and 19 with the articles of association. The certificate usually follows in 5 to 12 days. Fee LKR 5,200 plus VAT for a private company.</li>
+<li><strong>File beneficial ownership:</strong> since 30 March 2026, incorporation is only complete once the company declares who ultimately owns it.</li>
+<li><strong>Open an Inward Investment Account</strong> at a Sri Lankan bank. Foreign share capital must come in through it, and dividends and sale proceeds go back out through the same account.</li>
+<li><strong>Register for tax</strong> with the Inland Revenue Department, and for VAT once turnover crosses LKR 60 million a year.</li></ol>
+<h2>Who you need</h2>
+<ul><li><strong>Directors:</strong> at least one. Foreign nationals can be directors; most advisors say no resident director is needed for a private company, but confirm with your corporate secretary.</li>
+<li><strong>Shareholders:</strong> 1 to 50 for a private company. No minimum capital, but at least one share must be issued.</li>
+<li><strong>Company secretary:</strong> must be a resident with a recognised qualification. Most foreign founders hire a corporate secretarial firm.</li></ul>
+<h2>Ownership: open, capped and closed</h2>
+<div class="table-scroll"><table>
+<tr><th>Status</th><th>Activities</th></tr>
+<tr><td class="hl">Up to 100% foreign</td><td>Most sectors: IT, BPO, manufacturing, hotels, consulting, export trading and more</td></tr>
+<tr><td>40%, more with BOI approval</td><td>Freight forwarding, shipping agencies, travel agencies, education, mass communication, deep sea fishing, and growing or primary processing of tea, rubber, coconut, cocoa, rice, sugar and spices</td></tr>
+<tr><td>Needs a sector approval</td><td>Air transport, coastal shipping, large scale gem mining, lotteries, arms and currency manufacture</td></tr>
+<tr><td>Closed or conditional</td><td>Pawn broking, coastal fishing, and retail trade with less than USD 5 million of foreign capital</td></tr>
+</table></div>
+<h2>Ordinary company, BOI or Port City?</h2>
+<ul><li><strong>Ordinary registration:</strong> fine for most service businesses. Fastest and cheapest.</li>
+<li><strong>BOI approval:</strong> adds duty exemptions, work visas and room above sector caps. Section 16 approvals start at USD 250,000 of investment; Section 17 projects, with wider exemptions, are larger.</li>
+<li><strong>Port City Colombo:</strong> its own law and the <a href="../port-city-tax.html">7.5% corporate tax or tax holidays</a> for approved strategic businesses.</li></ul>
+<h2>Taxes in 2026</h2>
+<div class="table-scroll"><table>
+<tr><th>Tax</th><th class="num">Rate</th></tr>
+<tr><td>Corporate income tax</td><td class="num">30% (45% for gaming, liquor and tobacco)</td></tr>
+<tr><td>VAT</td><td class="num">18%</td></tr>
+<tr><td>Social Security Contribution Levy</td><td class="num">2.5% of turnover above LKR 60 million a year</td></tr>
+<tr><td>Dividend withholding tax</td><td class="num">15%, capped at 7.5% for Indian residents under the India Sri Lanka tax treaty</td></tr>
+</table></div>
+<h2>The India side: ODI</h2>
+<p>Investing in a foreign company from India runs under the FEMA Overseas Investment Rules and Regulations, 2022. An Indian company can commit up to 400% of its net worth, or USD 1 billion a year if lower, through its bank with Form FC and an Annual Performance Report each year. Individuals invest within the USD 250,000 LRS limit and cannot invest in financial services companies this way. Get your CA to structure it before money moves.</p>
+<p>Already trading with Sri Lanka? You can <a href="trade-in-rupees-india-sri-lanka.html">invoice in rupees</a>, and many goods cross <a href="india-sri-lanka-free-trade-agreement.html">duty free under the ISFTA</a>.</p>""",
+ faq=[("Can an Indian own 100% of a company in Sri Lanka?","Yes, in most sectors. Some activities are capped at 40% unless the BOI approves more, including freight forwarding, shipping and travel agencies, education, and growing tea, spices and coconut. Retail trade needs at least USD 5 million of foreign capital."),
+      ("How long does it take to register a company in Sri Lanka?","Usually 7 to 14 working days through the e-ROC portal: 3 to 5 days for name approval and 5 to 12 days for the certificate after filing."),
+      ("Does a Sri Lankan company need a local director?","Most advisors say a private company needs at least one director, who can be a foreign national, with no resident director rule. The company secretary must be a qualified resident."),
+      ("What is the corporate tax rate in Sri Lanka in 2026?","30% for most companies, with 45% for gaming, liquor and tobacco. Approved Port City businesses can get 7.5% for four years or a tax holiday."),
+      ("What approvals does an Indian company need to invest in Sri Lanka?","On the Indian side, an Overseas Direct Investment filed through your bank under the FEMA Overseas Investment Rules 2022. On the Sri Lankan side, funds come in through an Inward Investment Account.")],
+ source="Sources: Chambers Doing Business in Sri Lanka 2026; Gazette 2496/03 on registration fees (July 2026); CBSL Gazette 2213/35 on foreign ownership and Directions No. 15 of 2021; BOI; Income Tax Department of India on the India Sri Lanka DTAA; FEMA Overseas Investment Rules 2022. A guide, not legal or tax advice."),
+
+dict(slug="india-sri-lanka-free-trade-agreement", h1="India Sri Lanka Free Trade Agreement (ISFTA) explained",
+ title="India Sri Lanka Free Trade Agreement (ISFTA) Explained",
+ desc="How the India Sri Lanka FTA works in 2026: about 81% of tariff lines duty free, the 35% rules of origin, quotas on garments, tea and pepper, and where talks to upgrade it stand.",
+ card="Duty free trade, rules of origin, quotas and the 2026 upgrade talks.",
+ videos=["GHyNEH0kQ3o","vD-y2-Uv4ug","0tyHQkz2rwg"],
+ watch_h="The trade, <em>on film.</em>",
+ body="""<p class="lead">India and Sri Lanka have traded under a free trade agreement since 2000. About four out of five tariff lines are duty free both ways, which is why Sri Lankan apparel, pepper and vanaspati, and Indian machinery, pharma and vehicles cross the strait so easily.</p>
+<h2>The basics</h2>
+<ul><li><strong>Signed:</strong> 28 December 1998. <strong>In force:</strong> 1 March 2000.</li>
+<li><strong>Duty free:</strong> 4,228 of 5,224 six digit tariff lines, about 81%. India finished cutting tariffs in 2003 and Sri Lanka in 2008.</li>
+<li><strong>Negative lists:</strong> each side keeps a list of sensitive goods with no concession. The original lists covered 429 lines for India and 1,180 for Sri Lanka.</li></ul>
+<h2>Rules of origin</h2>
+<p>To qualify, a product needs at least 35% domestic value addition and must change its tariff heading at the four digit level. If Indian inputs are used, Sri Lankan value addition can drop to 25%, as long as India and Sri Lanka together add at least 35%. Exporters claim the benefit with a certificate of origin.</p>
+<h2>India's quotas on Sri Lankan goods</h2>
+<div class="table-scroll"><table>
+<tr><th>Product</th><th>Quota per year</th><th>Duty</th></tr>
+<tr><td>Garments</td><td>8 million pieces</td><td>Duty free</td></tr>
+<tr><td>Tea</td><td>15,000 tonnes</td><td>7.5%</td></tr>
+<tr><td>Pepper</td><td>2,500 tonnes</td><td>Duty free</td></tr>
+<tr><td>Vanaspati, bakery shortening and margarine</td><td>250,000 tonnes</td><td>Duty free</td></tr>
+<tr><td>Desiccated coconut</td><td>500 tonnes</td><td>Quota</td></tr>
+</table></div>
+<h2>How big is the trade?</h2>
+<p>In calendar 2025, India exported about USD 4.38 billion to Sri Lanka and imported about USD 1.04 billion, according to India's High Commission in Colombo. China edged past India as Sri Lanka's biggest trading partner in 2025, and India was the second largest source of foreign direct investment that year, after Singapore.</p>
+<h2>What is next: ETCA and the upgrade</h2>
+<p>Talks on a wider Economic and Technology Cooperation Agreement went through 14 rounds, the last in July 2024, then stalled. In August 2026 the two governments agreed a joint working group to update the FTA itself, and Sri Lanka has said it wants to renegotiate terms. Watch for changes to services, investment and the negative lists.</p>
+<h2>Using it</h2>
+<ul><li>Check your HS code against both negative lists before pricing.</li>
+<li>Get a certificate of origin for every shipment.</li>
+<li>Settle in rupees if you like: India Sri Lanka trade can be <a href="trade-in-rupees-india-sri-lanka.html">invoiced in INR</a>.</li>
+<li>Thinking of making in Sri Lanka for India? Read <a href="start-a-company-in-sri-lanka.html">how to set up a company</a>.</li></ul>""",
+ faq=[("What is the India Sri Lanka Free Trade Agreement?","A bilateral FTA signed in December 1998 and in force since 1 March 2000. About 81% of tariff lines, 4,228 of 5,224, are duty free between the two countries, with negative lists for sensitive goods."),
+      ("What are the ISFTA rules of origin?","At least 35% domestic value addition plus a change of tariff heading at the four digit level. Where Indian inputs are used, Sri Lankan value addition can be 25% if combined value addition reaches 35%."),
+      ("Can Sri Lankan tea enter India duty free?","Under a quota. India allows 15,000 tonnes of Sri Lankan tea a year at a concessional 7.5% duty under the ISFTA."),
+      ("What happened to ETCA between India and Sri Lanka?","ETCA talks went through 14 rounds, the last in July 2024, then stalled. In August 2026 the two countries agreed a joint working group to update the existing FTA instead."),
+      ("Who is Sri Lanka's biggest trading partner?","In 2025, China narrowly overtook India. India was second, with about USD 5.4 billion of two way trade, and the second largest source of foreign direct investment.")],
+ source="Sources: BOI Sri Lanka ISFTA summary (July 2025); Sri Lanka EDB market access profile on the ISFTA; High Commission of India, Colombo (July 2026); Daily FT on China overtaking India (May 2026) and the FTA upgrade (June 2026); Sunday Times on renegotiation (August 2026); BOI 2025 investment figures."),
 
 dict(slug="trip-cost-from-india", h1="How much does a Sri Lanka trip cost from India?",
  title="Sri Lanka Trip Cost from India 2026 in Rupees",

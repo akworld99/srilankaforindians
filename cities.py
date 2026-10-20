@@ -8,7 +8,7 @@ ALL_CITIES = [
  ("chennai","Chennai","1 hr 20 min","&#8377;7,000 to 14,000","Daily direct flights to Colombo on SriLankan and IndiGo, plus IndiGo flights straight to Jaffna. The closest metro to the island, and the ferry to Jaffna leaves from your own state.","Tamil works across the north and east and much of Colombo. For Chennai families this is the easiest foreign country on earth.",1,["iLhRCwjywU8","QfFRvTem4zM","oriToNJZG-k"]),
  ("mumbai","Mumbai","2 hr 30 min","&#8377;9,000 to 18,000","Direct flights most days on SriLankan and Indian carriers.","Mumbai money is already here: shipping desks, film shoots and wedding planners all run Colombo routes.",1,["CW6jTV-hTok","jmJlx-UIDsk","gamg1oTsXQg"]),
  ("delhi","Delhi NCR","3 hr 30 min","&#8377;11,000 to 22,000","Direct flights on SriLankan and IndiGo.","Swap one winter smog week for Galle sea air. Many NCR firms are weighing Port City as their India plus one.",1,["cRQu04IaAUk","Bu86Z_7VzAA","GHyNEH0kQ3o"]),
- ("bengaluru","Bengaluru","1 hr 45 min","&#8377;8,000 to 16,000","Multiple daily direct flights. Weekend trips are genuinely practical.","Bengaluru tech teams are exactly who Port City is courting for business continuity centres.",1,["gaLWS85uCzA","52E5aIUxzj8","hvOeE4eW8As"]),
+ ("bengaluru","Bengaluru","About 1 hr 30 min","&#8377;8,000 to 16,000","Multiple daily direct flights. Weekend trips are genuinely practical.","Bengaluru tech teams are exactly who Port City is courting for business continuity centres.",1,["gaLWS85uCzA","52E5aIUxzj8","hvOeE4eW8As"]),
  ("hyderabad","Hyderabad","1 hr 50 min","&#8377;8,000 to 16,000","Regular direct flights on IndiGo and SriLankan.","Pharma and IT firms from Hyderabad fit the island's GCC pitch, and big Telugu weddings fit its resorts.",1,["VpQiRlaI5bo","WvMdSZ7fmJY","hvOeE4eW8As"]),
  ("kolkata","Kolkata","2 hr 45 min","&#8377;10,000 to 21,000","One stop via Chennai, Bengaluru or Delhi; there is no regular nonstop to Colombo.","Puja holidays line up with the start of the west coast season. Plan accordingly.",1,["13_rx2SwFgY","Bu86Z_7VzAA","q0mbKsKG-ng"]),
  ("ahmedabad","Ahmedabad","3 to 4 hr","&#8377;10,000 to 20,000","One stop via Mumbai or Chennai for now. SriLankan Airlines has announced Ahmedabad as its tenth Indian city, so watch for a direct route.","Gujarati family groups and diamond traders were among the first to spot Ceylon sapphires and Colombo property.",1,["RCHD60fpDnA","0tyHQkz2rwg","hvOeE4eW8As"]),
@@ -53,7 +53,7 @@ def nearby(slug):
 def city_faqs(c):
     slug, name, time, fare, flights, hook, tier, _ = c
     plain_fare = fare.replace("&#8377;", "Rs ")
-    short = time in ("About 1 hr", "1 hr 10 min", "1 hr 20 min", "1 hr 45 min", "1 hr 50 min")
+    short = time in ("About 1 hr", "1 hr 10 min", "1 hr 20 min", "About 1 hr 30 min", "1 hr 50 min")
     return [
         (f"How long is the flight from {name} to Sri Lanka?", f"About {time} to Colombo. {flights}"),
         (f"How much is a return flight from {name} to Colombo?", f"Return economy fares typically run {plain_fare}, depending on season and how early you book."),

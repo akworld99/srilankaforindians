@@ -85,7 +85,7 @@ PAGES["weddings.html"] = dict(
 
 PAGES["real-estate.html"] = dict(
     title="Can Indians Buy Property in Sri Lanka? 2026 Rules and Costs",
-    desc="Yes. Indians can buy condos on any floor and lease land for up to 99 years, but not own freehold land. 2026 rules, costs, LRS limits, TCS and the investor visa.",
+    desc="Yes. Indians can buy condos on any floor and lease land for 99 years, but not own freehold land. 2026 rules, costs, LRS, TCS and the investor visa.",
     body=f"""
 <section class="hero"><div class="wrap">
   <span class="eyebrow">Real Estate &middot; Updated October 2026</span>
@@ -126,7 +126,7 @@ PAGES["real-estate.html"] = dict(
   <h2 style="margin-top:56px">The India side: LRS, TCS and your ITR</h2>
   <div class="grid c2" style="margin-top:26px">
     <div class="card"><span class="tag">LRS</span><h3>USD 250,000 per person, per year</h3><p>RBI's Liberalised Remittance Scheme allows buying property abroad. Resident family members can pool their limits for one purchase.</p></div>
-    <div class="card"><span class="tag">TCS</span><h3>20% above &#8377;10 lakh</h3><p>Banks collect tax at source on property remittances above &#8377;10 lakh a year in FY 2026&ndash;27. It is a credit you claim back against your income tax, not a cost, but plan the cash flow.</p></div>
+    <div class="card"><span class="tag">TCS</span><h3>20% above &#8377;10 lakh</h3><p>Banks collect tax at source on property remittances above &#8377;10 lakh a year in the 2026 to 27 financial year. It is a credit you claim back against your income tax, not a cost, but plan the cash flow.</p></div>
     <div class="card"><span class="tag">ITR</span><h3>Report it in Schedule FA</h3><p>Resident taxpayers must declare foreign property every year. Skipping it risks a &#8377;10 lakh penalty under the Black Money Act.</p></div>
     <div class="card"><span class="tag">Rent</span><h3>Keep it there or bring it home</h3><p>Rent from an LRS investment can be reinvested abroad. Money you do not use or reinvest comes back to India within 180 days. On the Sri Lankan side, rent and sale proceeds return to your Inward Investment Account and can be sent out.</p></div>
   </div>
@@ -172,7 +172,7 @@ PAGES["business.html"] = dict(
   <div class="figures">
     <div class="figure"><b>7.5%</b><span>Corporate tax for approved secondary Businesses of Strategic Importance, first 4 years of operations</span></div>
     <div class="figure"><b>0%</b><span>Corporate tax during the holiday for primary Businesses of Strategic Importance, the largest projects</span></div>
-    <div class="figure"><b>8&ndash;15 yrs</b><span>Length of that holiday, scaled to investment size</span></div>
+    <div class="figure"><b>8 to 15 yrs</b><span>Length of that holiday, scaled to investment size</span></div>
   </div>
   <div class="grid c3">
     <div class="card" style="background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.18); color:inherit"><h3 style="color:#FFFDF8">100% yours</h3><p>Full foreign ownership, no local partner requirement inside the zone.</p></div>
@@ -347,11 +347,13 @@ PILLAR_META = {
         ("What tax does a company pay in Port City Colombo?",
          "Under Regulation 01 of 2025, primary Businesses of Strategic Importance receive corporate income tax holidays of 8 to 15 years, secondary businesses a concessionary 7.5% rate for 4 years. All incentives require approval. Since 20 January 2026, staff of newly approved Port City companies pay normal income tax."),
         ("Can an Indian company own 100% of its Sri Lankan entity?",
-         "Inside Port City, yes. Outside the zone most sectors also allow full foreign ownership through standard incorporation or the BOI route, with sector specific exceptions.")]),
+         "In most sectors, yes. Non residents can hold up to 100% outside a short restricted list. Some activities are capped at 40% unless the BOI approves more, including freight forwarding, shipping and travel agencies, education, and growing tea, spices and coconut. Retail trade needs at least USD 5 million of foreign capital.")]),
     "logistics.html": dict(crumb="Logistics", vids=["jOEz-ON842A","jvRH8dcbLpg"],
         film_h="Colombo against Vizhinjam, <em>and the port itself.</em>", faq=[
         ("Why does Colombo port matter for Indian cargo?",
-         "Colombo sits 6 to 10 nautical miles off the main east west shipping lane and handled a record 8.29 million TEU in 2025, with a large share being Indian transshipment. Adani operates the West Container Terminal.")]),
+         "Colombo sits 6 to 10 nautical miles off the main east west shipping lane and handled a record 8.29 million TEU in 2025, with a large share being Indian transshipment. Adani operates the West Container Terminal."),
+        ("Can an Indian logistics company own 100% of a Sri Lankan freight forwarder?",
+         "Not by default. Foreign ownership of freight forwarding and shipping agencies is capped at 40% unless the BOI approves more, so many Indian firms enter through a joint venture with a Sri Lankan partner.")]),
     "second-home.html": dict(crumb="The Second Address", vids=["YGeivlm5C78","oriToNJZG-k","52E5aIUxzj8"],
         film_h="Indians who <em>tried living here.</em>", faq=None),
     "travel.html": dict(crumb="Journeys", hi="hi/yatra.html", vids=["CW6jTV-hTok","cRQu04IaAUk","7j335oyBKH8","iXQ3ij9h6WM","2SUXqcjFIgI","Bu86Z_7VzAA"],
@@ -402,6 +404,15 @@ def write(path, html_out):
     if d: os.makedirs(d, exist_ok=True)
     with open(path, "w") as f: f.write(html_out)
 
+RELATED = {
+    "business.html": [("guides/start-a-company-in-sri-lanka.html", "Set up a company"), ("guides/india-sri-lanka-free-trade-agreement.html", "India Sri Lanka FTA"), ("guides/trade-in-rupees-india-sri-lanka.html", "Trade in rupees"), ("guides/port-city-vs-gift-city-vs-dubai.html", "Port City vs GIFT City vs Dubai"), ("port-city-tax.html", "Port City 7.5% tax"), ("why/index.html", "16 sectors")],
+    "logistics.html": [("guides/india-sri-lanka-free-trade-agreement.html", "India Sri Lanka FTA"), ("guides/trade-in-rupees-india-sri-lanka.html", "Trade in rupees"), ("guides/start-a-company-in-sri-lanka.html", "Set up a company"), ("why/ports-shipping.html", "Ports and shipping")],
+    "travel.html": [("guides/sri-lanka-itinerary-from-india.html", "5, 7 and 10 day itineraries"), ("guides/sri-lanka-tour-packages-from-india.html", "Tour packages compared"), ("guides/hindu-temples-in-sri-lanka.html", "Hindu temples"), ("guides/vegetarian-food-in-sri-lanka.html", "Vegetarian and Jain food"), ("guides/is-sri-lanka-safe-for-indians.html", "Is it safe?"), ("guides/sri-lanka-vs-maldives-for-indians.html", "Sri Lanka vs Maldives"), ("sri-lankan-rupee-to-inr.html", "LKR to INR"), ("from/index.html", "Flights from your city")],
+    "real-estate.html": [("guides/long-stay-visas-sri-lanka.html", "Long stay visas"), ("second-home.html", "Sri Lanka as a second home"), ("sri-lankan-rupee-to-inr.html", "LKR to INR"), ("guides/start-a-company-in-sri-lanka.html", "Set up a company")],
+    "second-home.html": [("guides/long-stay-visas-sri-lanka.html", "Long stay visas"), ("real-estate.html", "Buying property"), ("guides/is-sri-lanka-safe-for-indians.html", "Is it safe?"), ("guides/vegetarian-food-in-sri-lanka.html", "Vegetarian food")],
+    "weddings.html": [("guides/vegetarian-food-in-sri-lanka.html", "Vegetarian and Jain food"), ("guides/hindu-temples-in-sri-lanka.html", "Hindu temples"), ("guides/honeymoon-from-india.html", "Honeymoon plan"), ("from/index.html", "Flights for your guests")],
+}
+
 def build_pillars():
     for fname, pg in PAGES.items():
         meta = PILLAR_META.get(fname, {})
@@ -419,6 +430,15 @@ def build_pillars():
 </div></section>
 """
             body = body.replace(CTA_MARK, block + CTA_MARK, 1)
+        if meta.get("faq") or RELATED.get(fname):
+            faq_html = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in (meta.get("faq") or []))
+            rel = "".join(f'<a href="{u}">{t}</a>' for u, t in RELATED.get(fname, []))
+            qa = f"""<section class="band"><div class="wrap">
+  {'<span class="eyebrow">Quick answers</span><div style="margin-top:20px; max-width:880px">' + faq_html + '</div>' if faq_html else ''}
+  {'<h3 style="margin-top:44px">Read next</h3><div class="chips" style="margin-top:16px">' + rel + '</div>' if rel else ''}
+</div></section>
+"""
+            body = body.replace(CTA_MARK, qa + CTA_MARK, 1)
         alt = {"en": fname, "hi": meta["hi"]} if meta.get("hi") else None
         extra = f'<script src="assets/js/calculator.js?v={ASSET_V}"></script>\n' if pg.get("calc") else ""
         html_out = head(pg["title"], pg["desc"], fname, schema=schema, alt=alt) + header(alt_path=meta.get("hi")) + body + footer(extra_js=extra)

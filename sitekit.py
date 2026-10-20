@@ -268,6 +268,8 @@ def footer(depth=0, lang="en", extra_js=""):
       </ul></div>
       <div><h4>Guides</h4><ul>
         <li><a href="{p}guides/visa-for-indians.html">Visa for Indians</a></li>
+        <li><a href="{p}guides/sri-lanka-itinerary-from-india.html">5, 7, 10 day itineraries</a></li>
+        <li><a href="{p}guides/start-a-company-in-sri-lanka.html">Set up a company</a></li>
         <li><a href="{p}guides/trip-cost-from-india.html">Trip cost</a></li>
         <li><a href="{p}guides/ramayana-trail.html">Ramayana trail</a></li>
         <li><a href="{p}guides/ferry-india-to-sri-lanka.html">India to Sri Lanka ferry</a></li>

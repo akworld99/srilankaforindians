@@ -58,7 +58,9 @@ def build(write):
     sectors_chips = "\n".join(f'<a href="why/{s["slug"]}.html">{s["name"]}</a>' for s in SECTORS)
     guide_cards = "\n".join(
         f'<a class="card link-card" href="guides/{g["slug"]}.html"><span class="tag">Guide</span><h3>{g["h1"]}</h3><p>{g["card"]}</p><span class="go">Read the guide &rarr;</span></a>'
-        for g in GUIDES[:6])
+        for g in [next(x for x in GUIDES if x["slug"] == k) for k in (
+            "sri-lanka-itinerary-from-india", "sri-lanka-tour-packages-from-india", "visa-for-indians",
+            "trip-cost-from-india", "sri-lanka-vs-maldives-for-indians", "trade-in-rupees-india-sri-lanka")])
     faq_html = "\n".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in faqs)
 
     body = f"""

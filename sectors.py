@@ -61,6 +61,7 @@ dict(slug="spices", name="Spices", eyebrow="Why Sri Lanka for spices",
  reasons=[("Purity","Ceylon cinnamon, not cassia","True cinnamon is milder and naturally far lower in coumarin than cassia, which matters to health brands and regulators."),
           ("Range","Pepper, cloves, nutmeg, cardamom","A compact spice garden with smallholder supply and established exporters."),
           ("Oils","Essential oils","Cinnamon leaf and bark oils, citronella and more for fragrance and wellness formulators.")],
+ own_note="Ownership note: foreign stakes in growing and primary processing of spices are capped at 40% unless the BOI approves more. Value added processing, export brands and export trading are open to full foreign ownership. See <a href=\"../guides/start-a-company-in-sri-lanka.html\">how to set up a company</a>.",
  india="Indian Ayurveda, FMCG and spice processing brands source Ceylon cinnamon for premium lines. The India to Sri Lanka Free Trade Agreement, in force since 2000, gives duty concessions on many goods, though some spice lines carry quotas or conditions. Check the current schedule with your customs broker.",
  videos=["OhO5fKkHTH8"],
  faq=[("What is the difference between Ceylon cinnamon and cassia?","Ceylon cinnamon is Cinnamomum verum, grown mainly in Sri Lanka. It has thin, layered quills, a milder taste and far less coumarin than cassia, which comes from related species grown in China, Indonesia and Vietnam."),
@@ -73,6 +74,7 @@ dict(slug="tea", name="Tea", eyebrow="Why Sri Lanka for tea",
  reasons=[("Brand","Origin that sells itself","Ceylon is one of the few tea origins consumers recognise by name."),
           ("Tourism","Estate bungalows","Colonial planters' bungalows in Nuwara Eliya, Ella and Hatton are now boutique stays."),
           ("Value add","Packaging and blends","Flavoured, speciality and private label packing for export.")],
+ own_note="Ownership note: foreign stakes in growing and primary processing of tea are capped at 40% unless the BOI approves more. Blending, packing, brands and export trading are open to full foreign ownership. See <a href=\"../guides/start-a-company-in-sri-lanka.html\">how to set up a company</a>.",
  india="Indian tea brands blend Ceylon for premium ranges, and investors are turning hill country bungalows into heritage hotels. The Colombo auction remains one of the world's important tea marketplaces.",
  videos=["Mkl1GAE04sg","6PViyPfd000"],
  faq=[("What makes Ceylon tea different?","Grown across distinct elevations from low country to high grown estates above 1,200 metres, Ceylon teas range from bold and malty to bright and floral, and pure Ceylon tea carries the Sri Lanka Tea Board's Lion logo."),
@@ -121,6 +123,7 @@ dict(slug="coconut-coir", name="Coconut and Coir", eyebrow="Why Sri Lanka for co
  reasons=[("Coir","Fibre, pith and mats","Coir pith for horticulture is in demand from greenhouse growers worldwide."),
           ("Food","Desiccated, milk and oil","Food grade processing with established export certifications."),
           ("Carbon","Activated carbon","Water, gold recovery and air filtration all run on coconut shell carbon.")],
+ own_note="Ownership note: foreign stakes in growing and primary processing of coconut are capped at 40% unless the BOI approves more. Downstream manufacturing such as coir products is generally open. See <a href=\"../guides/start-a-company-in-sri-lanka.html\">how to set up a company</a>.",
  india="Kerala and Tamil Nadu coconut businesses can partner rather than compete: sourcing during Indian shortfalls, joint processing, and shared export channels.",
  videos=[],
  faq=[("What coconut products does Sri Lanka export?","Desiccated coconut, coconut milk and cream, virgin coconut oil, coir fibre, coir pith and coconut shell activated carbon."),
@@ -133,6 +136,7 @@ dict(slug="ports-shipping", name="Ports and Shipping", eyebrow="Why Sri Lanka fo
  reasons=[("Transshipment","The relay point","Feeder to mainline transfers for Indian east and west coast cargo."),
           ("Marine","Repair, bunkering, crew change","Colombo and Hambantota pick up volume whenever Gulf or Red Sea routings wobble."),
           ("Indian presence","Adani and Mazagon Dock","Adani runs the West Container Terminal, and Mazagon Dock bought 51% of Colombo Dockyard in 2026.")],
+ own_note="Ownership note: foreign stakes in freight forwarding and shipping agencies are capped at 40% unless the BOI approves more, so many Indian firms enter through a joint venture. See <a href=\"../guides/start-a-company-in-sri-lanka.html\">how to set up a company</a>.",
  india="If your containers already transit Colombo, an entity here gives you control of the relay. Vizhinjam will compete for some volume, which makes a two port strategy smarter, not redundant.",
  videos=["jOEz-ON842A","jvRH8dcbLpg"],
  faq=[("Why is Colombo a transshipment hub for India?","Colombo is a few nautical miles from the main east west shipping lane and has deep water berths, so large vessels call there and smaller feeders carry cargo to and from Indian ports."),
@@ -238,6 +242,7 @@ def page(s):
   <span class="eyebrow">The India angle</span>
   <h2>What this means <em>for Indian businesses.</em></h2>
   <p class="lead">{s['india']}</p>
+  {('<p class="small">' + s['own_note'] + '</p>') if s.get('own_note') else ''}
 </div></section>
 
 {inr_band(depth, tone="")}
@@ -273,7 +278,7 @@ def hub():
 <section class="band"><div class="wrap">
   <div class="grid c4">{cards}</div>
   <h3 style="margin-top:48px">Also on Sri Lanka for Indians</h3>
-  <div class="chips" style="margin-top:16px">{existing}<a href="../port-city-tax.html">Port City 7.5% tax</a></div>
+  <div class="chips" style="margin-top:16px">{existing}<a href="../port-city-tax.html">Port City 7.5% tax</a><a href="../guides/start-a-company-in-sri-lanka.html">Set up a company</a><a href="../guides/india-sri-lanka-free-trade-agreement.html">India Sri Lanka FTA</a></div>
 </div></section>
 """ + cta_banner("Your sector is not listed?", "Tell us what you do. If there is an angle in Sri Lanka, we will find it.", "Hi, my sector is ")
     schema = crumb_schema([("Why Sri Lanka", "why/index.html")])

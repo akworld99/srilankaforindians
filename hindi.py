@@ -274,6 +274,7 @@ def yatra():
   <span class="eyebrow">यात्रा और वीज़ा</span>
   <h1>गोवा जितना पास। <em>विदेश जितना ख़ास।</em></h1>
   <p class="lead">मुफ़्त वीज़ा, UPI से भुगतान, वही IST टाइम ज़ोन, और हर बड़े शहर से उड़ान। समंदर, पहाड़, चाय के बागान, तेंदुए और रामायण ट्रेल, सब एक हफ़्ते में।</p>
+  <p class="lead" style="margin-top:-6px">कीमतें श्रीलंकाई रुपये में होती हैं: 3.5 से भाग दें। <a href="shrilanka-rupaya-inr.html" style="color:var(--gold-bright)">लाइव करेंसी कन्वर्टर</a> देखें।</p>
 </div></section>
 
 <section class="band"><div class="wrap">
