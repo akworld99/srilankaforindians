@@ -94,6 +94,7 @@ def head(title, desc, path, depth=0, schema="", lang="en", alt=None, og_image=No
   gtag('config', '{GA_ID}');
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="msvalidate.01" content="27B97BD71EAD04E7F6600F0E391A69CD" />
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <meta name="robots" content="{'noindex, follow' if noindex else 'index, follow, max-image-preview:large, max-video-preview:-1'}">
