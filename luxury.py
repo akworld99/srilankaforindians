@@ -53,15 +53,29 @@ def hub():
   <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; Luxury</p>
   <span class="eyebrow">Luxury and nightlife</span>
   <h1>Colombo, <em>after dark.</em></h1>
-  <p class="lead">Suites over the Indian Ocean, a USD 1.2 billion integrated resort, sunsets on the Port City promenade and tables at the city's best rooms. All of it 80 minutes from Chennai, on Indian time, with a free visa. Tell us the weekend you want and we line it up.</p>
+  <p class="lead">Suites over the Indian Ocean, a billion dollar integrated resort, sunsets on the Port City promenade and tables at the city's best rooms. All of it 80 minutes from Chennai, on Indian time, with a free visa. Tell us the weekend you want and we line it up.</p>
   <div class="cta-row"><a class="btn btn-primary" href="#plan">Plan a VIP weekend</a></div>
 </div></section>
 
 <section class="band"><div class="wrap">
   <span class="eyebrow">The new address</span>
   <h2>South Asia's first <em>integrated resort.</em></h2>
-  <p class="lead">City of Dreams Sri Lanka, built by Macau's Melco and John Keells, opened in Colombo in August 2025: around 800 rooms, a luxury mall, conference halls and a casino on the beachfront. It changed what a Colombo weekend can be.</p>
+  <p class="lead">City of Dreams Sri Lanka, built by Macau's Melco and John Keells for more than USD 1.2 billion, had its grand opening in Colombo in August 2025: 800 rooms across two hotels, a luxury mall, ballrooms, 17 restaurants and bars, and a casino. It changed what a Colombo weekend can be.</p>
+  <div class="grid c3" style="margin-top:36px">
+    <a class="card link-card" href="city-of-dreams-sri-lanka.html"><span class="tag">The resort</span><h3>City of Dreams, explained</h3><p>Two hotels, 17 places to eat, shows, and the casino's entry rules.</p><span class="go">Read the guide &rarr;</span></a>
+    <a class="card link-card" href="luxury-weekend-in-colombo.html"><span class="tag">Two nights</span><h3>The luxury weekend</h3><p>ITC Ratnadipa or Nüwa, Ministry of Crab, a private yacht at sunset.</p><span class="go">See the plan &rarr;</span></a>
+    <a class="card link-card" href="colombo-nightlife.html"><span class="tag">After dark</span><h3>Colombo nightlife</h3><p>Rooftops, supper clubs and the rules that catch first timers out.</p><span class="go">Where to go &rarr;</span></a>
+    <a class="card link-card" href="bachelor-party-in-colombo.html"><span class="tag">Groups</span><h3>Bachelor and bachelorette</h3><p>The two night plan: rooftops, a boat, Bentota and a big Saturday.</p><span class="go">Plan the weekend &rarr;</span></a>
+    <a class="card link-card" href="events-calendar.html"><span class="tag">Dates</span><h3>Events calendar</h3><p>Deepavali to New Year's Eve and the temple processions after.</p><span class="go">See what is on &rarr;</span></a>
+    <a class="card link-card" href="../guides/new-year-in-sri-lanka-from-india.html"><span class="tag">31 December</span><h3>New Year in Colombo</h3><p>Fireworks over Galle Face and Port City, galas and beach parties.</p><span class="go">Plan New Year &rarr;</span></a>
+  </div>
   {RESPONSIBLE}
+</div></section>
+
+<section class="band ink"><div class="wrap">
+  <span class="eyebrow">On film</span>
+  <h2>Indians who <em>went first.</em></h2>
+  <div style="margin-top:36px">{yt_grid(pick("FDoDcwf_pDc","3oVYpDEXeLU","zqba47Zl-Wk"))}</div>
 </div></section>
 
 <section class="band sand" id="plan"><div class="wrap">
@@ -71,7 +85,7 @@ def hub():
   {vip_form()}
 </div></section>
 """ + cta_banner("Rather just talk?", "Message us on WhatsApp with the dates and the mood. We reply the same day.", "Hi, I want to plan a luxury weekend in Colombo")
-    schema = crumb_schema([("Luxury", "luxury/index.html")])
+    schema = crumb_schema([("Luxury", "luxury/index.html")]) + "\n" + video_schema(pick("FDoDcwf_pDc","3oVYpDEXeLU","zqba47Zl-Wk"))
     return head("Colombo Luxury Weekends and Nightlife for Indians",
                 "Plan a luxury weekend in Colombo from India: City of Dreams suites, Port City marina, fine dining and nightlife, 80 minutes from Chennai. Send your plan on WhatsApp.",
                 "luxury/index.html", D, schema) + header(D) + body + footer(D)
@@ -151,7 +165,7 @@ def nightlife():
         "Where to go out in Colombo in 2026: rooftop bars, supper clubs and lounges at City of Dreams, Kingsbury, Hilton and Port City. Drinking age, closing times and Poya day rules.",
         "Colombo after dark", "Colombo nightlife, <em>2026 edition.</em>",
         "Colombo goes out on rooftops and in supper clubs, not in mega clubs. Here is where the city actually spends its Friday nights, and the rules that catch first timers out.",
-        body, faqs, occasion="Luxury weekend",
+        body, faqs, vids=("PnfdGFtZOPI","IzKwdP6hcLY","9119VUOlspA"), occasion="Luxury weekend",
         source="Sources: EconomyNext and Sunday Times on Gatz (2026); Daily FT on Cinnamon Life and Vistas (December 2025); Hayleys on The Kingsbury; Sunday Observer on ON14 (2025); Newswire on Level 4 (2025); The Morning on Tiki Bar (2026); Life.lk on Chill Colombo; Asia's 50 Best Bars 2025; NATA Act No. 27 of 2006; Newsfirst and Ada Derana on liquor hours and Poya closures.")
 
 def bachelor():
@@ -186,7 +200,7 @@ def bachelor():
         "Plan a bachelor or bachelorette weekend in Colombo from India: rooftops, a supper club, a catamaran or Bentota water sports day, and five star stays. Visa, Poya days and group tips.",
         "Bachelor and bachelorette", "The last weekend, <em>done properly.</em>",
         "Goa is crowded and Bangkok is four hours away. Colombo is 80 minutes from Chennai, the visa is free, and the whole weekend fits into five star hotels, a boat and three very good rooftops.",
-        body, faqs, occasion="Bachelor party", responsible=True,
+        body, faqs, vids=("zqba47Zl-Wk","bu0jyUlkwdc","PnfdGFtZOPI"), occasion="Bachelor party", responsible=True,
         source="Sources: venue and charter details from EconomyNext, Daily FT, Sunday Observer and Booking Manager on Sail Lanka Charter; Sunday Observer on the Port City marina (January 2025); Cinnamon Bentota Beach water sports.")
 
 def events():
@@ -223,14 +237,98 @@ def events():
         "What is on in Colombo and Sri Lanka from November 2026 to April 2027: Deepavali, City of Dreams shows, concerts, Poya days, New Year's Eve, Navam Perahera and Sinhala and Tamil New Year.",
         "Events calendar", "What is on, <em>November to April.</em>",
         "The dates worth building a trip around this season, from Deepavali in Colombo to the New Year's Eve fireworks and the temple processions of the new year.",
-        body, faqs, occasion="Luxury weekend",
+        body, faqs, vids=("AVTidW78qNQ","9119VUOlspA"), occasion="Luxury weekend",
         source="Sources: Ada Derana on 2026 public holidays and the Navam Perahera; Sunday Times on This Is Michael at City of Dreams (August 2026); Tickets Ministry December 2026 listings; Ada Derana on New Year's Eve 2025; The Papare and Wikipedia on cricket fixtures; Newswire on the Galle Literary Festival; Gazette 2493/05 on 2027 holidays.")
+
+def cod():
+    body = """<div class="facts">
+  <div class="fact"><b>800</b><span>Rooms across Cinnamon Life (687) and Nüwa (113)</span></div>
+  <div class="fact"><b>17</b><span>Restaurants and bars under one roof</span></div>
+  <div class="fact"><b>5,000+</b><span>Guests the ballrooms and event spaces can host</span></div>
+</div>
+<h2>What is inside</h2>
+<div class="table-scroll"><table>
+<tr><th>Part</th><th>What it is</th></tr>
+<tr><td>Cinnamon Life</td><td>The big hotel, 687 rooms, open since October 2024, with the city's largest ballrooms and event spaces</td></tr>
+<tr><td>Nüwa</td><td>The top tier: 113 rooms including 19 VIP suites and 15 premium suites, opened in August 2025</td></tr>
+<tr><td>The casino</td><td>Opened in August 2025, operated by Melco, with about 119 tables and 250 slot machines</td></tr>
+<tr><td>The Shoppes</td><td>The luxury mall inside the resort</td></tr>
+<tr><td>Kurundu Spa</td><td>The resort spa</td></tr>
+<tr><td>The Podium and ballrooms</td><td>Shows, concerts, fashion weeks and the biggest Indian weddings in Colombo</td></tr>
+</table></div>
+<h2>Where to eat and drink</h2>
+<ul><li><strong>Indiya:</strong> the Indian restaurant, for when the group wants dal and tandoor.</li>
+<li><strong>Sapphire Dragon</strong> (Cantonese), <strong>Yoroko</strong> (Japanese), <strong>Bistro des Marées</strong> and <strong>Staten Bar &amp; Grill</strong>.</li>
+<li><strong>Gatz:</strong> a two storey champagne bar and supper club with live bands every night.</li>
+<li><strong>Flux</strong> (rooftop lounge), <strong>Dreams &amp; Beats</strong> (rooftop pool bar) and <strong>Pool + Bar 09</strong>.</li></ul>
+<h2>Shows and big nights</h2>
+<p>Hrithik Roshan performed at the opening weekend in August 2025. Mercedes-Benz Fashion Week Sri Lanka ran at Cinnamon Life in October 2026, and This Is Michael, a Michael Jackson tribute, plays The Podium on 8 and 9 November 2026. See the full <a href="events-calendar.html">events calendar</a>.</p>
+<h2>Casino basics</h2>
+<ul><li>Expect a minimum age of 21, a passport check at the door, and a smart casual dress code: no sleeveless shirts, shorts or slippers.</li>
+<li>Sri Lankan citizens pay a USD 100 entry levy. Ask at the door about any charge for foreign passport holders; reports have differed.</li>
+<li>Sri Lanka's new Gambling Regulatory Authority came into force on 1 December 2025, with detailed regulations still being finalised in 2026.</li></ul>
+<h2>What a night costs</h2>
+<p>Rooms at Cinnamon Life were booking at around &#8377;14,600 to 17,800 a night in October 2026. Nüwa suites cost considerably more; we quote on request. Weekends and the Christmas to New Year fortnight run highest.</p>
+<h2>Getting there</h2>
+<p>City of Dreams is on the beachfront in Colombo 2, next to the Beira Lake and a short drive from Galle Face. Fly into Colombo, 80 minutes from Chennai, about 90 minutes from Bengaluru and two and a half hours from Mumbai.</p>"""
+    faqs = [("What is City of Dreams Sri Lanka?","South Asia's first integrated resort, in Colombo, built by John Keells and Macau's Melco. It combines the Cinnamon Life hotel (687 rooms), the Nüwa hotel (113 rooms), a casino, a luxury mall, a spa, ballrooms and about 17 restaurants and bars."),
+            ("When did City of Dreams Sri Lanka open?","Cinnamon Life opened in October 2024. The casino and the Nüwa hotel opened with the resort's grand opening on 1 and 2 August 2025."),
+            ("Is there an Indian restaurant at City of Dreams Colombo?","Yes. Indiya is the resort's Indian restaurant, alongside Cantonese, Japanese and European dining."),
+            ("What are the casino entry rules at City of Dreams Sri Lanka?","Expect a minimum age of 21, a passport check and a smart casual dress code. Sri Lankan citizens pay a USD 100 entry levy; ask at the door about any charge for foreign visitors."),
+            ("How much does a room at City of Dreams Colombo cost?","Cinnamon Life rooms were booking at around Rs 14,600 to 17,800 a night in October 2026. Nüwa suites cost more and are quoted on request.")]
+    return lux_page("city-of-dreams-sri-lanka", "City of Dreams guide", "City of Dreams Sri Lanka: The Guide for Indian Visitors",
+        "City of Dreams Sri Lanka explained for Indians: Cinnamon Life and Nüwa hotels, 17 restaurants including Indiya, shows, the casino's entry rules, room rates and how to plan a weekend.",
+        "City of Dreams Sri Lanka", "City of Dreams, <em>explained for Indians.</em>",
+        "South Asia's first integrated resort opened in Colombo in August 2025: two hotels, a casino, a mall, a spa and 17 places to eat and drink, built by John Keells and Macau's Melco. Here is what is inside and how to do it well.",
+        body, faqs, vids=("FDoDcwf_pDc","AVTidW78qNQ","rBoKEVmCx0Y"), occasion="Luxury weekend", responsible=True,
+        source="Sources: Daily FT on the opening (August 2025); Ada Derana on Cinnamon Life (October 2024) and City of Dreams (May 2026); Asia Gaming Brief and ASGAM on the casino, dining and the Gambling Regulatory Authority (2026); Outlook Traveller hotel review (August 2025); Sunday Times on This Is Michael (August 2026); KAYAK rate data (October 2026).")
+
+def weekend():
+    body = """<h2>Where to stay</h2>
+<div class="table-scroll"><table>
+<tr><th>Hotel</th><th>Why</th><th>Price guide</th></tr>
+<tr><td><strong>Nüwa, City of Dreams</strong></td><td>The most exclusive rooms in the city: 113 keys, with VIP and premium suites</td><td>On request</td></tr>
+<tr><td><strong>Cinnamon Life, City of Dreams</strong></td><td>687 rooms inside the integrated resort, with the rooftop bars and Indiya downstairs</td><td>About &#8377;14,600 to 17,800 a night</td></tr>
+<tr><td><strong>ITC Ratnadipa</strong></td><td>India's ITC Hotels, opened April 2024: 352 rooms, nine restaurants and bars, a sky bridge and a helipad</td><td>About USD 205 to 270 a night</td></tr>
+<tr><td><strong>Shangri-La Colombo</strong></td><td>500 rooms and 34 suites over Galle Face, with the Tiki Bar</td><td>On request</td></tr>
+<tr><td><strong>Galle Face Hotel</strong></td><td>Founded in 1864: 156 rooms of old world grandeur on the sea</td><td>On request</td></tr>
+<tr><td><strong>Cinnamon Grand</strong></td><td>Opened in 1975 as the Lanka Oberoi, Oberoi's first hotel outside India</td><td>On request</td></tr>
+</table></div>
+<p class="small">Rates from KAYAK booking data, October 2026. Weekends and the festive season run higher.</p>
+<h2>Where to eat</h2>
+<ul><li><strong>Ministry of Crab,</strong> Old Dutch Hospital: Colombo's most famous table, on Asia's 50 Best Restaurants extended list. Book ahead.</li>
+<li><strong>Nihonbashi,</strong> now at Port City: the Japanese institution, 30 years old in 2025, with eight private dining rooms.</li>
+<li><strong>Indiya, Sapphire Dragon and Yoroko</strong> at City of Dreams.</li></ul>
+<h2>What to do</h2>
+<ul><li><strong>Port City:</strong> walk the 500 metre Marina Promenade and swim at the free beach. The superyacht marina is due in 2027.</li>
+<li><strong>On the water:</strong> Browns' private yacht Saakya takes up to 15 guests from Port City; sunset catamaran sails also run from Colombo.</li>
+<li><strong>Spa:</strong> Kurundu Spa at City of Dreams, or your hotel's.</li>
+<li><strong>Shopping:</strong> The Shoppes at City of Dreams, One Galle Face and The Mall at Port City.</li>
+<li><strong>Nights out:</strong> rooftops, the supper club and live music. See <a href="colombo-nightlife.html">Colombo nightlife</a>.</li></ul>
+<h2>The two night plan</h2>
+<div class="table-scroll"><table>
+<tr><th>When</th><th>Plan</th></tr>
+<tr><td>Friday</td><td>Morning flight from Mumbai (about 2.5 hours), Bengaluru (about 1.5) or Delhi (about 3.5). Spa, then dinner at Ministry of Crab and a rooftop nightcap</td></tr>
+<tr><td>Saturday</td><td>Port City promenade and beach, a private yacht at sunset, dinner at Nihonbashi, then Gatz</td></tr>
+<tr><td>Sunday</td><td>Late breakfast, shopping, fly home</td></tr>
+</table></div>
+<p>Staying longer? Add two nights in a Galle Fort villa or a tea estate bungalow. See our <a href="../guides/sri-lanka-itinerary-from-india.html">itineraries</a>.</p>"""
+    faqs = [("What are the best luxury hotels in Colombo?","Nüwa and Cinnamon Life at City of Dreams, ITC Ratnadipa, Shangri-La Colombo, the Galle Face Hotel and Cinnamon Grand are the top tier in 2026."),
+            ("Is there an Indian hotel brand in Colombo?","Yes. ITC Hotels opened ITC Ratnadipa in April 2024, with 352 rooms, nine restaurants and bars and a helipad. Cinnamon Grand opened in 1975 as the Lanka Oberoi."),
+            ("Can you hire a yacht in Colombo?","Yes. Browns' private yacht Saakya takes up to 15 guests from Port City, and crewed catamaran sunset sails run from Colombo. Port City's superyacht marina is due in 2027."),
+            ("How much does a luxury weekend in Colombo cost from India?","Rooms at Cinnamon Life ran about Rs 14,600 to 17,800 a night and ITC Ratnadipa about USD 205 to 270 in October 2026, before flights, dining and experiences. Suites and the festive season cost more.")]
+    return lux_page("luxury-weekend-in-colombo", "Luxury weekend in Colombo", "Luxury Weekend in Colombo from India: Hotels, Dining, Yachts",
+        "Plan a luxury weekend in Colombo from India: City of Dreams, ITC Ratnadipa and Shangri-La, Ministry of Crab and Nihonbashi, a private yacht from Port City, and a two night plan.",
+        "Luxury weekend", "Two nights in Colombo, <em>done well.</em>",
+        "Suites over the Indian Ocean, a crab dinner people fly in for, a private yacht at sunset and a supper club after. Closer than Dubai, cheaper than the Maldives, and on Indian time.",
+        body, faqs, vids=("3oVYpDEXeLU","dVuI5bFoUOY","9119VUOlspA"), occasion="Luxury weekend",
+        source="Sources: The Week on ITC Ratnadipa (April 2024); Daily FT and Ada Derana on City of Dreams; Daily Mirror on Cinnamon Grand (December 2025), Nihonbashi (June 2025) and Browns' Saakya (June 2025); Port City Colombo on the marina (January 2025); Sunday Times on Port City beach (July 2023); KAYAK rate data (October 2026).")
 
 NAV = [("city-of-dreams-sri-lanka", "City of Dreams guide"), ("luxury-weekend-in-colombo", "Luxury weekend in Colombo"),
        ("colombo-nightlife", "Colombo nightlife"), ("bachelor-party-in-colombo", "Bachelor and bachelorette weekends"),
        ("events-calendar", "Events calendar")]
 
-PAGES = [("index", hub), ("colombo-nightlife", nightlife), ("bachelor-party-in-colombo", bachelor), ("events-calendar", events)]
+PAGES = [("index", hub), ("city-of-dreams-sri-lanka", cod), ("luxury-weekend-in-colombo", weekend), ("colombo-nightlife", nightlife), ("bachelor-party-in-colombo", bachelor), ("events-calendar", events)]
 
 def build(write):
     for slug, fn in PAGES:

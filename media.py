@@ -52,6 +52,16 @@ T-P-dpm6bZE|2023-05-12|Sheneller|99697|1319|The Best Ayurveda Wellness Retreat i
 2SUXqcjFIgI|2024-11-07|SriLankan Airlines|360107|310|Relive the Epic of the Ramayana Trail|ramayana
 kRjSsHlA9_0|2026-03-09|Tours and Foods|2608|567|Complete Sri Lanka Ramayana Tour Plan: 10 Day Itinerary|ramayana
 iXQ3ij9h6WM|2026-01-10|Wout of the World|31071|2102|Spotting Leopards in Yala National Park|wildlife
+AVTidW78qNQ|2025-08-03|NiKo Diaries|23976|1144|Grand Opening: City of Dreams Sri Lanka with Hrithik Roshan, BnS, Yohani, Umara and Umariya|cod
+FDoDcwf_pDc|2025-08-13|Irfan's view|473642|941|Most Luxurious Hotel: City of Dreams, Sri Lanka|cod,luxury
+rBoKEVmCx0Y|2025-05-18|Wandering Shey|41342|1590|Cinnamon Life Colombo Hotel Review: Luxury Hotel in City of Dreams Sri Lanka|cod,hotel
+dVuI5bFoUOY|2025-03-08|Andrew Dobson|95064|1211|ITC Ratnadipa Colombo Tour: Best Luxury Hotel in Sri Lankan Capital|hotel,luxury
+3oVYpDEXeLU|2026-03-21|Kripal Amanna|201059|2919|Checking Into Colombo's Finest Destination: A Luxury Escape With The Boss|luxury
+PnfdGFtZOPI|2025-10-24|DesiGirl Traveller|168222|2038|48 Hrs in Colombo, Sri Lanka: Best Places to Visit, Local Food, Casino and Nightlife|nightlife
+IzKwdP6hcLY|2024-07-03|The Rooftop Guide|8503|192|Best Rooftop Bars in Colombo|nightlife
+9119VUOlspA|2026-09-05|Walking Pixels 4K|11768|968|Colombo Port City Waterfront Night Walk: Illuminated Foot Bridge and Galle Face Skyline|portcity,nightlife
+zqba47Zl-Wk|2026-04-15|Aarush Bhola Fit - Mess|924471|1165|Full Enjoy at Sri Lanka: Boys Trip|friends
+bu0jyUlkwdc|2026-04-19|Chirag Khanna|78250|1429|Sri Lanka with the boys|friends
 """
 
 def _len_txt(s):
