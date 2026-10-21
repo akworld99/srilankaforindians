@@ -210,7 +210,7 @@ dict(slug="hindu-temples-in-sri-lanka", h1="Hindu temples in Sri Lanka: the Panc
  faq=[("What are the Pancha Ishwarams in Sri Lanka?","Five ancient Shiva temples on the coast: Koneswaram in Trincomalee, Munneswaram near Chilaw, Ketheeswaram in Mannar, Naguleswaram at Keerimalai near Jaffna, and Tondeeswaram at Devinuwara in the south."),
       ("Which Hindu temple in Sri Lanka is linked to the Ramayana?","Several. Munneswaram is where Rama is said to have sought atonement, Ketheeswaram is linked to Ravana's worship, and Seetha Amman near Nuwara Eliya is identified with Ashok Vatika."),
       ("When is the Nallur festival in Jaffna?","The Nallur Kandaswamy festival runs for 25 days in August and September each year and ends with a chariot procession."),
-      ("How do I reach Jaffna temples from India?","Fly direct to Jaffna from Chennai or Tiruchirappalli on IndiGo, or take the Nagapattinam to Kankesanthurai ferry when it is running. It usually pauses from late October to around December.")],
+      ("How do I reach Jaffna temples from India?","Fly direct to Jaffna from Chennai or Tiruchirappalli on IndiGo, or take the Nagapattinam to Kankesanthurai ferry when it is running. It pauses from late October or November until late February or March.")],
  source="Sources: Pancha Ishwarams and Kataragama references; Time Out Sri Lanka on Nallur and Sri Ponnambalavaneswaram; Sunday Observer on Ponnambalavaneswaram's history; Hiru News on the 152nd Vel festival (July 2026)."),
 
 dict(slug="vegetarian-food-in-sri-lanka", h1="Vegetarian and Jain food in Sri Lanka: what Indians need to know",
@@ -393,6 +393,90 @@ dict(slug="india-sri-lanka-free-trade-agreement", h1="India Sri Lanka Free Trade
       ("Who is Sri Lanka's biggest trading partner?","In 2025, China narrowly overtook India. India was second, with about USD 5.4 billion of two way trade, and the second largest source of foreign direct investment.")],
  source="Sources: BOI Sri Lanka ISFTA summary (July 2025); Sri Lanka EDB market access profile on the ISFTA; High Commission of India, Colombo (July 2026); Daily FT on China overtaking India (May 2026) and the FTA upgrade (June 2026); Sunday Times on renegotiation (August 2026); BOI 2025 investment figures."),
 
+dict(slug="sri-lanka-in-december", h1="Sri Lanka in December 2026: weather, where to go, what is on",
+ title="Sri Lanka in December 2026: Weather, Places, What's On",
+ desc="Is December a good time for Sri Lanka? Yes for the west and south coasts and the hills. Weather by region, Christmas, Adam's Peak season, Yala, whales, and a 7 night plan from India.",
+ card="Peak season on the south coast, cold nights in the hills, and what to skip.",
+ videos=["q0mbKsKG-ng","iXQ3ij9h6WM","7j335oyBKH8"],
+ watch_h="December on the island, <em>by Indian creators.</em>",
+ body="""<p class="lead">December opens peak season on Sri Lanka's west and south coasts, and Indians fill it: 56,715 arrived in December 2025 alone. The trick is knowing which side of the island to be on, because the northeast monsoon is soaking the other one.</p>
+<h2>December weather, region by region</h2>
+<div class="table-scroll"><table>
+<tr><th>Region</th><th>December</th><th>Verdict</th></tr>
+<tr><td>Colombo and the west coast</td><td>Around 31&deg;C by day, 24&deg;C at night, with some showers early in the month</td><td class="hl">Go</td></tr>
+<tr><td>South coast: Galle, Mirissa, Tangalle</td><td>Season opens with clear skies and calmer seas</td><td class="hl">Go</td></tr>
+<tr><td>Hill country: Kandy, Nuwara Eliya, Ella</td><td>Nuwara Eliya around 19&deg;C by day and 11&deg;C at night, with regular rain</td><td class="hl">Go, pack a jacket</td></tr>
+<tr><td>East coast: Trincomalee, Arugam Bay</td><td>Wettest time of year, around 340 mm of rain in Trincomalee</td><td>Skip the beaches</td></tr>
+<tr><td>North: Jaffna</td><td>Northeast monsoon rain</td><td>Go for temples, not the beach</td></tr>
+</table></div>
+<p class="small">Averages from long term climate records. For 2026, the Department of Meteorology has flagged above normal rain linked to El Ni&ntilde;o, with effects expected into December to February. Check the forecast the week you fly.</p>
+<h2>What is on in December 2026</h2>
+<ul><li><strong>Unduvap Poya, Wednesday 23 December:</strong> a public holiday, and traditionally the start of the Adam's Peak (Sri Pada) pilgrimage season, which runs to Vesak in May. Liquor shops close on Poya days; star hotels usually serve.</li>
+<li><strong>Christmas, Friday 25 December:</strong> a public holiday. Colombo's malls and hotels decorate from late November.</li>
+<li><strong>New Year's Eve:</strong> fireworks over Galle Face Green and Port City. See our <a href="new-year-in-sri-lanka-from-india.html">New Year in Sri Lanka guide</a>.</li>
+<li><strong>Whale watching:</strong> Mirissa's season runs through the northeast monsoon months, from about late November to April.</li>
+<li><strong>Leopards:</strong> Yala is open. Blocks 1 and 2 closed for drought from 14 September and reopened on 16 October 2026.</li></ul>
+<h2>What to skip in December</h2>
+<ul><li><strong>The east coast beaches</strong> of Trincomalee, Pasikudah and Arugam Bay. Save them for May to September.</li>
+<li><strong>The Minneriya elephant gathering,</strong> which happens from about July to October.</li>
+<li><strong>The Nagapattinam ferry,</strong> paused for the monsoon. Fly to Colombo or Jaffna instead.</li>
+<li><strong>A through train from Kandy to Ella.</strong> Repairs after Cyclone Ditwah are due to finish around the end of 2026 or early 2027. Board at Nanu Oya instead; that section is running.</li></ul>
+<h2>A 7 night December plan from India</h2>
+<div class="table-scroll"><table>
+<tr><th>Nights</th><th>Where</th><th>Why</th></tr>
+<tr><td>2</td><td>Kandy</td><td>Temple of the Tooth, gardens, cooler air</td></tr>
+<tr><td>1</td><td>Nuwara Eliya</td><td>Tea estates and Seetha Amman temple. Cold nights</td></tr>
+<tr><td>1</td><td>Ella</td><td>Nanu Oya to Ella by train, Nine Arches Bridge</td></tr>
+<tr><td>1</td><td>Yala</td><td>Morning jeep safari for leopards</td></tr>
+<tr><td>2</td><td>Mirissa or Galle</td><td>Whale watching, beach, Galle Fort at sunset</td></tr>
+</table></div>
+<h2>Book early</h2>
+<p>The Christmas and New Year fortnight lines up with Indian school winter breaks, and it is the most expensive time of the season. Lock flights and south coast hotels by October or early November. The tourist ETA is free for Indians; apply on eta.gov.lk a week before you fly. More routes in our <a href="sri-lanka-itinerary-from-india.html">5, 7 and 10 day itineraries</a>.</p>""",
+ faq=[("Is December a good time to visit Sri Lanka?","Yes, for the west and south coasts and the hill country. December opens peak season on the south coast with clear skies and calmer seas. The east coast and the north get northeast monsoon rain, so skip those beaches."),
+      ("Which part of Sri Lanka is best in December?","The south coast (Galle, Mirissa, Tangalle), Colombo and the hill country (Kandy, Nuwara Eliya, Ella). Yala is open for safaris and Mirissa's whale season is under way."),
+      ("Is it cold in Sri Lanka in December?","Only in the hills. Colombo stays around 31 degrees by day, but Nuwara Eliya averages about 19 degrees by day and 11 at night, so pack a warm layer."),
+      ("Can you climb Adam's Peak in December?","The pilgrimage season traditionally opens on Unduvap Poya, which falls on 23 December 2026, and runs to Vesak in May. Before that, the climb is off season."),
+      ("Is the Kandy to Ella train running in December 2026?","Not end to end. The Nanu Oya to Ella section is running, but sections from Kandy are still being repaired, with completion expected around the end of 2026 or early 2027.")],
+ source="Sources: Sri Lanka Tourism weather guide; Newsfirst on the northeast monsoon (December 2025); The Morning on the 2026 Met Department outlook; Government of Sri Lanka 2026 holiday calendar; Newsfirst and Newswire on Yala (September and October 2026); Sri Lanka Navy whale watching; SLTDA December 2025 arrivals; Ada Derana on railway repairs (July 2026)."),
+
+dict(slug="new-year-in-sri-lanka-from-india", h1="New Year in Sri Lanka from India: where to be at midnight",
+ title="New Year in Sri Lanka 2027 from India: Plans and Parties",
+ desc="Ring in 2027 in Sri Lanka: fireworks over Galle Face and Port City, hotel galas, south coast resorts, a 4 night plan from India, and what to book now. Plus Sri Lanka's April New Year.",
+ card="Fireworks over Galle Face and Port City, beach galas, and what to book now.",
+ videos=["B2OIRRQbz8I","GHGrijFEpgU","oriToNJZG-k"],
+ watch_h="Colombo and Port City, <em>on film.</em>",
+ body="""<p class="lead">Colombo puts on a proper New Year's Eve. To welcome 2026, fireworks went up over Galle Face Green, Port City and the Lotus Tower at the same time, and Galle Face filled with music and food stalls. It is 80 minutes from Chennai, the visa is free, and you are on the same clock as home.</p>
+<h2>Where to be at midnight</h2>
+<div class="table-scroll"><table>
+<tr><th>Where</th><th>What it is like</th><th>Best for</th></tr>
+<tr><td class="hl">Galle Face Green, Colombo</td><td>The big free public party: crowds, music, food stalls and the fireworks overhead</td><td>Groups of friends</td></tr>
+<tr><td class="hl">Port City Colombo</td><td>Fireworks over the marina; Port City put on its own display to welcome 2025</td><td>Couples, a view without the crush</td></tr>
+<tr><td class="hl">A Colombo hotel gala</td><td>Ballroom dinners and dance nights in the big city hotels</td><td>Families and corporate groups</td></tr>
+<tr><td class="hl">South coast resort</td><td>Gala dinners on the beach around Galle, Bentota and Mirissa, usually sold as a package with your stay</td><td>Honeymooners</td></tr>
+</table></div>
+<p class="small">Events for 31 December 2026 are usually announced in November and December. Last year's line up is a guide, not a promise.</p>
+<h2>A 4 night New Year plan from India</h2>
+<ol><li><strong>29 December:</strong> land in Colombo, drive down the expressway to Galle or Bentota.</li>
+<li><strong>30 December:</strong> Galle Fort, beach, whale watching from Mirissa if you are keen.</li>
+<li><strong>31 December:</strong> back to Colombo in the afternoon. Dinner, then Galle Face Green or a hotel gala for midnight.</li>
+<li><strong>1 January:</strong> a slow breakfast, Port City and Galle Face by day.</li>
+<li><strong>2 January:</strong> fly home.</li></ol>
+<p>Prefer the beach at midnight? Flip it: Colombo first, then a south coast resort for the 31st.</p>
+<h2>Know before you go</h2>
+<ul><li><strong>Book now:</strong> this is the most expensive fortnight of the season, and it overlaps Indian school winter breaks. Flights and Colombo hotels with a Galle Face view sell out first.</li>
+<li><strong>Getting around on the 31st:</strong> police run a traffic plan around Galle Face, with about 1,200 officers deployed last year. Arrive early and walk or take a tuk tuk for the last stretch.</li>
+<li><strong>Poya and Christmas:</strong> 23 December is Unduvap Poya and 25 December is Christmas, both public holidays. Liquor shops close on Poya days; star hotels usually serve.</li>
+<li><strong>Visa and money:</strong> the tourist ETA is free for Indians, and UPI works at LankaQR merchants. Convert prices with our <a href="../sri-lankan-rupee-to-inr.html">LKR to INR converter</a>.</li></ul>
+<h2>Sri Lanka's own New Year is in April</h2>
+<p>The island's biggest celebration is Sinhala and Tamil New Year, on 13 and 14 April 2027: family feasts, kiribath, games and an auspicious time to light the hearth. Closer to New Year's Day, Tamils celebrate Thai Pongal on 15 January 2027, and Duruthu Poya falls on 22 January, when the Kelaniya temple near Colombo holds its Duruthu Perahera procession.</p>
+<p>Staying on into January? See <a href="sri-lanka-in-december.html">Sri Lanka in December</a> for weather and where to go.</p>""",
+ faq=[("Where can I celebrate New Year's Eve in Colombo?","Galle Face Green is the big free public party, with fireworks overhead. Port City Colombo puts on fireworks over the marina, and the large city hotels run ballroom galas. South coast resorts host beach gala dinners."),
+      ("Are there fireworks in Colombo on New Year's Eve?","Yes. To welcome 2026, fireworks went up over Galle Face Green, Port City and the Lotus Tower. Plans for 31 December 2026 are usually announced in November and December."),
+      ("Is Sri Lanka expensive at New Year?","It is the peak of the season, so hotels and flights cost the most. Book by October or early November, and look at south coast villas shared between two families."),
+      ("When is Sinhala and Tamil New Year in 2027?","13 and 14 April 2027. It is Sri Lanka's biggest festival, celebrated with family feasts, kiribath and traditional games."),
+      ("Do Indians need a visa for a New Year trip to Sri Lanka?","An Electronic Travel Authorisation is required, but it is free for Indian tourists since 25 May 2026. Apply on eta.gov.lk before you fly.")],
+ source="Sources: Ada Derana and The Morning on New Year's Eve 2025 in Colombo (January 2026); Ada Derana on Port City's fireworks (January 2025); LMD on hotel galas (October 2025); Ada Derana on the police traffic plan (December 2025); Gazette 2493/05 of 2026 on 2027 public holidays; Government of Sri Lanka 2026 holiday calendar."),
+
 dict(slug="trip-cost-from-india", h1="How much does a Sri Lanka trip cost from India?",
  title="Sri Lanka Trip Cost from India 2026 in Rupees",
  desc="What a 6 night Sri Lanka trip costs from India in 2026: flights from every metro, hotels, car with driver, food and entry fees. Budget, mid range and luxury bands per person.",
@@ -459,15 +543,15 @@ dict(slug="ferry-india-to-sri-lanka", h1="India to Sri Lanka by ferry",
 <li><strong>Crossing:</strong> about four hours, weather permitting</li>
 <li><strong>Tickets:</strong> booked online with the operator, Subham. Reported one way fares run around &#8377;4,500 to 5,000 in general class; check current prices before planning</li>
 <li><strong>Visa:</strong> the same free ETA applies. Apply on eta.gov.lk before you travel</li>
-<li><strong>Season:</strong> the service usually pauses for the northeast monsoon from late October and returns around December. In 2025 the last sailing before the break was 28 October. Check the operator before you plan a winter crossing</li></ul>
+<li><strong>Season:</strong> the service pauses for the northeast monsoon from late October or early November and has restarted in late February or March: on 22 February in 2025 and 6 March in 2026. Do not plan a December or January crossing</li></ul>
 <h2>Ferry paused? Fly to Jaffna</h2>
 <p>IndiGo flies direct to Jaffna from Chennai and Tiruchirappalli, so you can still land straight in the north.</p>
 <h2>Why go by sea</h2>
 <p>Jaffna is the cultural heart of Tamil Sri Lanka, and arriving by sea puts you straight into it: Nallur Kandaswamy temple, Point Pedro, island hopping to Nainativu, and food that Chennai will find familiar and new at once. From Jaffna, trains and buses connect south to Anuradhapura and Colombo.</p>
 <h2>Cruise alternative</h2>
 <p>Cordelia Cruises has run Chennai sailings that call at Sri Lankan ports. Check their current itineraries for a resort style way to arrive.</p>""",
- faq=[("Is there a ferry from India to Sri Lanka?","Yes. A passenger ferry runs between Nagapattinam in Tamil Nadu and Kankesanthurai near Jaffna, taking about four hours. It usually pauses for the monsoon from late October to around December, so check the operator first."),
-      ("Is the India to Sri Lanka ferry running in November?","Usually not. The service has paused for the northeast monsoon from late October and restarted around December. IndiGo flights from Chennai and Tiruchirappalli to Jaffna are the alternative."),
+ faq=[("Is there a ferry from India to Sri Lanka?","Yes. A passenger ferry runs between Nagapattinam in Tamil Nadu and Kankesanthurai near Jaffna, taking about four hours. It pauses for the monsoon from late October or November until late February or March, so check the operator first."),
+      ("Is the India to Sri Lanka ferry running in November?","Usually not. The service pauses for the northeast monsoon from late October or November and restarted in late February in 2025 and early March in 2026. IndiGo flights from Chennai and Tiruchirappalli to Jaffna are the alternative."),
       ("Do I need a visa for the India to Sri Lanka ferry?","Yes, the same Electronic Travel Authorisation applies. For Indian tourists it has been free since 25 May 2026.")],
  source=""),
 
@@ -552,7 +636,7 @@ dict(slug="best-time-to-visit", h1="Best time to visit Sri Lanka from India",
 <tr><td>July or August</td><td>Kandy Esala Perahera</td><td>One of Asia's great processions. Hotels fill fast</td></tr>
 <tr><td>October to November</td><td>Shoulder season</td><td>Inter monsoon showers, good deals, Deepavali trips</td></tr>
 </table></div>
-<p>Indian school holidays line up nicely: summer break suits the east coast, and the Diwali to New Year window opens the south coast season.</p>""",
+<p>Indian school holidays line up nicely: summer break suits the east coast, and the Diwali to New Year window opens the south coast season. Going this winter? Read <a href="sri-lanka-in-december.html">Sri Lanka in December</a> and <a href="new-year-in-sri-lanka-from-india.html">New Year in Sri Lanka</a>.</p>""",
  faq=[("What is the best time to visit Sri Lanka from India?","December to April for the west and south coasts and hill country; May to September for the east coast."),
       ("Can I visit Sri Lanka during the monsoon?","Yes. When one coast has monsoon rain, the other is usually dry, so plan your route around the season.")],
  source=""),
@@ -600,7 +684,7 @@ def hub():
   <h1>Straight answers to <em>what Indians search for.</em></h1>
   <p class="lead">Visas, costs, routes, rupee trade and the comparisons CFOs ask about. Updated October 2026.</p>
 </div></section>
-<section class="band"><div class="wrap"><div class="grid c3">{cards}</div></div></section>
+<section class="band"><div class="wrap"><div class="grid c4">{cards}</div></div></section>
 """ + cta_banner("Question not answered here?", "Ask us on WhatsApp. A real person replies.", "Hi, I have a question about Sri Lanka: ")
     return head("Sri Lanka Guides for Indians | Sri Lanka for Indians",
                 "Practical Sri Lanka guides for Indians: free ETA visa, trading in rupees, trip cost, honeymoon, Ramayana trail, ferry from Nagapattinam, UPI and SIM, best time to visit and Port City vs GIFT City vs Dubai.",
