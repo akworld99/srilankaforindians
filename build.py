@@ -381,7 +381,7 @@ HERO_MAP = {
     "logistics.html": "ship", "why/ports-shipping.html": "ship",
     "second-home.html": "aerial_b", "travel.html": "aerial_a", "hi/yatra.html": "aerial_a",
     "watch.html": "aerial_a", "404.html": "aerial_a",
-    "guides/ramayana-trail.html": "temple", "guides/sri-lanka-in-december.html": "aerial_b", "luxury/index.html": "plaza", "luxury/city-of-dreams-sri-lanka.html": "plaza", "luxury/luxury-weekend-in-colombo.html": "aerial_a", "luxury/colombo-nightlife.html": "plaza", "luxury/bachelor-party-in-colombo.html": "aerial_b", "luxury/events-calendar.html": "plaza", "guides/new-year-in-sri-lanka-from-india.html": "plaza", "guides/trade-in-rupees-india-sri-lanka.html": "ship", "why/tea.html": "tea",
+    "guides/ramayana-trail.html": "temple", "guides/sri-lanka-in-december.html": "aerial_b", "luxury/index.html": "plaza", "luxury/city-of-dreams-sri-lanka.html": "plaza", "luxury/luxury-weekend-in-colombo.html": "aerial_a", "luxury/colombo-nightlife.html": "plaza", "luxury/bachelor-party-in-colombo.html": "aerial_b", "luxury/events-calendar.html": "plaza", "luxury/south-coast-parties.html": "aerial_b", "guides/new-year-in-sri-lanka-from-india.html": "plaza", "guides/trade-in-rupees-india-sri-lanka.html": "ship", "why/tea.html": "tea",
     "why/technology.html": "plaza", "why/gcc.html": "plaza", "why/fintech.html": "plaza",
     "why/bpo-kpo.html": "containers", "why/mice-events.html": "containers", "why/film-production.html": "containers",
     "why/index.html": "aerial_b", "guides/index.html": "aerial_a",

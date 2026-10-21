@@ -53,7 +53,7 @@ def hub():
   <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; Luxury</p>
   <span class="eyebrow">Luxury and nightlife</span>
   <h1>Colombo, <em>after dark.</em></h1>
-  <p class="lead">Suites over the Indian Ocean, a billion dollar integrated resort, sunsets on the Port City promenade and tables at the city's best rooms. All of it 80 minutes from Chennai, on Indian time, with a free visa. Tell us the weekend you want and we line it up.</p>
+  <p class="lead">Suites over the Indian Ocean, a billion dollar integrated resort, sunsets on the Port City promenade and tables at the city's best rooms. All of it 80 minutes from Chennai, on Indian time, with a free visa. And when the city is not enough, the south coast parties are two hours away. Tell us the weekend you want and we line it up.</p>
   <div class="cta-row"><a class="btn btn-primary" href="#plan">Plan a VIP weekend</a></div>
 </div></section>
 
@@ -67,7 +67,7 @@ def hub():
     <a class="card link-card" href="colombo-nightlife.html"><span class="tag">After dark</span><h3>Colombo nightlife</h3><p>Rooftops, supper clubs and the rules that catch first timers out.</p><span class="go">Where to go &rarr;</span></a>
     <a class="card link-card" href="bachelor-party-in-colombo.html"><span class="tag">Groups</span><h3>Bachelor and bachelorette</h3><p>The two night plan: rooftops, a boat, Bentota and a big Saturday.</p><span class="go">Plan the weekend &rarr;</span></a>
     <a class="card link-card" href="events-calendar.html"><span class="tag">Dates</span><h3>Events calendar</h3><p>Deepavali to New Year's Eve and the temple processions after.</p><span class="go">See what is on &rarr;</span></a>
-    <a class="card link-card" href="../guides/new-year-in-sri-lanka-from-india.html"><span class="tag">31 December</span><h3>New Year in Colombo</h3><p>Fireworks over Galle Face and Port City, galas and beach parties.</p><span class="go">Plan New Year &rarr;</span></a>
+    <a class="card link-card" href="south-coast-parties.html"><span class="tag">Down south</span><h3>South coast parties</h3><p>Mirissa, Weligama, Hiriketiya and New Year's Eve galas by the sea.</p><span class="go">Head south &rarr;</span></a>
   </div>
   {RESPONSIBLE}
 </div></section>
@@ -149,7 +149,7 @@ def nightlife():
 </table></div>
 <p class="small">Venues confirmed open in 2025 and 2026 reporting. Line ups change weekly; we confirm the night before you go.</p>
 <h2>Worth the drive: Smoke &amp; Bitters</h2>
-<p>On the south coast at Dikwella, Smoke &amp; Bitters ranked number 14 on Asia's 50 Best Bars in 2025. Pair it with a beach night if you head down to Tangalle or Mirissa.</p>
+<p>On the south coast at Dikwella, Smoke &amp; Bitters ranked number 14 on Asia's 50 Best Bars in 2025. Pair it with a beach night if you head down to Tangalle or Mirissa, and see our guide to <a href="south-coast-parties.html">south coast parties</a>.</p>
 <h2>Rules worth knowing</h2>
 <ul><li><strong>Age:</strong> you must be 21 to buy alcohol in Sri Lanka.</li>
 <li><strong>Hours:</strong> hotel bars generally run to midnight, and up to 2 am where the licence allows. Most of the venues above sit in hotels.</li>
@@ -179,6 +179,8 @@ def bachelor():
 <tr><td>Saturday night</td><td>The big night: a reserved table at Sky Lounge or Flux, with the group's driver on standby</td></tr>
 <tr><td>Sunday</td><td>Late brunch, Tiki Bar at the Shangri-La for one last view of Galle Face, fly home</td></tr>
 </table></div>
+<h2>The south coast version</h2>
+<p>Swap Colombo for the surf towns: a villa in Ahangama or Weligama, Wednesday night at The Doctor's House near Mirissa, Saturday at Dots Bay House in Hiriketiya, and cocktails at Smoke &amp; Bitters or Raa. Galle is about two hours from the airport. See <a href="south-coast-parties.html">south coast parties</a>.</p>
 <h2>On the water</h2>
 <p>Sail Lanka Charter runs crewed catamarans from Colombo, Mirissa and Trincomalee, by the hour, day or week, including sunset sails. Port City's new marina is still being built and is due in 2027, so confirm the departure point when you book.</p>
 <h2>For the bachelorette</h2>
@@ -205,6 +207,7 @@ def bachelor():
 
 def events():
     rows = [
+        ("Every Wednesday", "Surf Camp Night", "The Doctor's House, Madiha near Mirissa, 6 pm to midnight"),
         ("8 Nov 2026", "Deepavali", "Public holiday in Sri Lanka. Kovils across Colombo light up"),
         ("8 to 9 Nov 2026", "This Is Michael", "Michael Jackson tribute by Lenny Jay at The Podium, City of Dreams"),
         ("24 Nov 2026", "Il Poya", "Public holiday. Bars and liquor shops close"),
@@ -214,7 +217,7 @@ def events():
         ("December 2026", "Australia women in Sri Lanka", "Three ODIs; dates to be confirmed"),
         ("23 Dec 2026", "Unduvap Poya", "Traditional start of the Adam's Peak pilgrimage season. Bars close"),
         ("25 Dec 2026", "Christmas", "Public holiday. Hotel galas and decorated malls"),
-        ("31 Dec 2026", "New Year's Eve", "Last year: fireworks over Galle Face Green, Port City and the Lotus Tower. 2026 plans to be announced"),
+        ("31 Dec 2026", "New Year's Eve", "Colombo: fireworks over Galle Face Green, Port City and the Lotus Tower last year. South coast: galas announced at Anantara Peace Haven Tangalle (USD 390), Amangalla and Cape Weligama"),
         ("15 Jan 2027", "Thai Pongal", "Public holiday, celebrated by Tamils across the island"),
         ("22 Jan 2027", "Duruthu Poya", "Kelaniya temple's Duruthu Perahera procession near Colombo in January"),
         ("Late Jan or Feb 2027", "Navam Perahera", "Gangaramaya temple's procession through Colombo. In 2026 it ran on 31 January and 1 February"),
@@ -324,11 +327,81 @@ def weekend():
         body, faqs, vids=("3oVYpDEXeLU","dVuI5bFoUOY","9119VUOlspA"), occasion="Luxury weekend",
         source="Sources: The Week on ITC Ratnadipa (April 2024); Daily FT and Ada Derana on City of Dreams; Daily Mirror on Cinnamon Grand (December 2025), Nihonbashi (June 2025) and Browns' Saakya (June 2025); Port City Colombo on the marina (January 2025); Sunday Times on Port City beach (July 2023); KAYAK rate data (October 2026).")
 
+def south():
+    body = """<h2>New Year's Eve 2026: already announced</h2>
+<div class="table-scroll"><table>
+<tr><th>Where</th><th>What</th><th>Price</th></tr>
+<tr><td><strong>Anantara Peace Haven, Tangalle</strong></td><td>The Celestial Gala, 7 pm to midnight: buffet, fireworks and an after party</td><td>USD 390 per adult, USD 180 per child, taxes included</td></tr>
+<tr><td><strong>Amangalla, Galle Fort</strong></td><td>Poolside cocktails, dinner, midnight fireworks and a DJ by the pool from 11 pm</td><td>On request</td></tr>
+<tr><td><strong>Cape Weligama</strong></td><td>Six course dinner, dancing and fireworks at midnight</td><td>On request</td></tr>
+<tr><td><strong>Amanwella, Tangalle</strong></td><td>New Year's Eve gala in its 2026 to 2027 festive programme</td><td>On request</td></tr>
+</table></div>
+<p>Last year's big party night was at <strong>Dots Bay House in Hiriketiya</strong>: Dots NYE 2025, with international DJs and Mixmag Asia, sold out. In Ahangama, <strong>TRAX</strong> ran its New Year's Eve 2024 party from 8 pm to 3 am at LKR 12,000 with two drinks. Watch both for 2026 announcements.</p>
+<h2>Where the south coast parties</h2>
+<div class="table-scroll"><table>
+<tr><th>Venue</th><th>Town</th><th>What it is</th></tr>
+<tr><td>Dots Bay House</td><td>Hiriketiya</td><td>The south's big club night: 500 plus guests, a serious sound system, Saturday parties</td></tr>
+<tr><td>The Doctor's House</td><td>Madiha, next to Mirissa</td><td>Wednesday Surf Camp Night from 6 pm to midnight; free before 6, LKR 2,000 after</td></tr>
+<tr><td>TRAX</td><td>Ahangama</td><td>Jungle techno and house club</td></tr>
+<tr><td>The Cove, Cape Weligama</td><td>Weligama</td><td>Beach club opened in July 2025, on a calm swimming bay</td></tr>
+<tr><td>Angel Beach</td><td>Unawatuna</td><td>Day club with a swim up bar, weekend live music and sunset DJ sets</td></tr>
+<tr><td>Locale</td><td>Weligama</td><td>Rooftop with live bands and DJs</td></tr>
+<tr><td>Hotel de Uncles</td><td>Ahangama</td><td>Sunset cocktails in the surf town</td></tr>
+</table></div>
+<h2>Three bars Asia's best lists rate</h2>
+<ul><li><strong>Smoke &amp; Bitters,</strong> Pehembiya beach, Dikwella: number 14 on Asia's 50 Best Bars 2025, with wood fire food.</li>
+<li><strong>Raa,</strong> Hiriketiya: billed as the world's first arrack and toddy cocktail bar, with toddy tapped on site. Number 71 in Asia in 2026.</li>
+<li><strong>Ropewalk,</strong> Galle Fort Hotel: more than 75 arracks, on Asia's 50 Best Bars extended list.</li></ul>
+<h2>Where to stay</h2>
+<div class="table-scroll"><table>
+<tr><th>Stay</th><th>Why</th></tr>
+<tr><td>Amangalla, Galle Fort</td><td>The old New Oriental Hotel: 31 rooms and a MICHELIN Key inside the fort walls</td></tr>
+<tr><td>Cape Weligama</td><td>The only Sri Lankan resort on Condé Nast Traveller's Gold List 2026, with a MICHELIN Key</td></tr>
+<tr><td>Amanwella, Tangalle</td><td>About 30 suites, each with a plunge pool, on an 800 metre beach</td></tr>
+<tr><td>Anantara Peace Haven, Tangalle</td><td>Clifftop resort with the most clearly priced New Year gala on the coast</td></tr>
+<tr><td>Jetwing Lighthouse, Galle</td><td>60 rooms, one of Geoffrey Bawa's last buildings</td></tr>
+<tr><td>Hotel Kabalana, Ahangama</td><td>Faces The Rock, a famous surf break</td></tr>
+</table></div>
+<p class="small">Long stay discounts at the top resorts usually exclude 20 December to 10 January. Book the festive fortnight early.</p>
+<h2>Getting there</h2>
+<ul><li><strong>Colombo airport to Galle:</strong> about 2 hours by car, just over 2 to Ahangama, about 3 to Tangalle.</li>
+<li><strong>Colombo to Galle:</strong> about 1 hour on the Southern Expressway from Kottawa, or 2 to 3 hours on the coastal train.</li>
+<li><strong>Galle to Mirissa:</strong> 35 to 60 minutes by car.</li>
+<li><strong>In a hurry:</strong> helicopter transfers from the airport to Galle take about an hour.</li></ul>
+<h2>Rules that matter down south</h2>
+<ul><li><strong>Drugs: do not.</strong> Sri Lanka has some of the harshest drug laws in Asia. Holding 5 grams or more of pure heroin, cocaine or methamphetamine carries death or life imprisonment, a life sentence was handed down for about 2 grams of heroin in 2025, and cannabis brings long prison terms. Police made more than 1.6 lakh drug arrests in a national operation between October 2025 and April 2026.</li>
+<li><strong>Noise:</strong> outdoor loudspeakers are restricted late at night unless an event holds a police licence, so the big nights happen at licensed venues and hotels. Buy tickets from the venue itself.</li>
+<li><strong>The sea:</strong> December to April is the south coast's calm, dry season, but currents still catch swimmers. Swim at lifeguarded beaches; Mirissa's police life saving unit rescued a tourist in December 2025.</li>
+<li><strong>Poya:</strong> Wednesday 23 December 2026 is Unduvap Poya. Bars and liquor shops close.</li>
+<li><strong>Age:</strong> 21 to drink.</li></ul>
+<h2>Come for the surf too</h2>
+<p>The south coast is in surf season from about November to March. Weligama is the beginner's bay, Ahangama has breaks from Kabalana to Midigama, and Hikkaduwa hosted Red Bull Ride My Wave in 2025.</p>
+<h2>A 4 night New Year down south</h2>
+<div class="table-scroll"><table>
+<tr><th>Day</th><th>Plan</th></tr>
+<tr><td>29 Dec</td><td>Land, drive to Galle Fort. Arrack cocktails at Ropewalk</td></tr>
+<tr><td>30 Dec</td><td>Surf lesson in Weligama, lunch at The Cove, sunset at Hotel de Uncles</td></tr>
+<tr><td>31 Dec</td><td>Your resort's gala, or the Hiriketiya party if it is announced</td></tr>
+<tr><td>1 Jan</td><td>A slow beach day, dinner at Smoke &amp; Bitters</td></tr>
+<tr><td>2 Jan</td><td>Drive to the airport, about 2 to 3 hours</td></tr>
+</table></div>"""
+    faqs = [("Where is the best New Year's Eve party in Sri Lanka?","On the south coast, Hiriketiya's Dots Bay House sold out its New Year's Eve 2025 party, and resorts like Anantara Peace Haven Tangalle, Amangalla and Cape Weligama host galas with fireworks. In Colombo, the big public party is at Galle Face Green."),
+            ("How much is New Year's Eve at Anantara Tangalle?","The Celestial Gala on 31 December 2026 costs USD 390 per adult and USD 180 per child, taxes included, with a buffet, fireworks and an after party."),
+            ("Is Mirissa good for New Year's Eve?","Yes. December is the dry season on the south coast, Mirissa's beach bars run party nights, and Weligama, Ahangama and Hiriketiya are a short drive away."),
+            ("How far is the south coast from Colombo airport?","About 2 hours to Galle, just over 2 hours to Ahangama and about 3 hours to Tangalle by car."),
+            ("What are Sri Lanka's drug laws for tourists?","Extremely strict. Possession of 5 grams or more of pure heroin, cocaine or methamphetamine carries death or life imprisonment, and cannabis brings long prison sentences. Do not use or carry drugs.")]
+    return lux_page("south-coast-parties", "South coast parties", "South Coast Sri Lanka Parties and New Year's Eve 2026",
+        "Party down south: Mirissa, Weligama, Ahangama, Hiriketiya and Galle Fort. New Year's Eve 2026 galas already announced, venues, where to stay, travel times and the rules that matter.",
+        "Mirissa, Weligama, Ahangama, Hiriketiya", "The south coast, <em>after dark.</em>",
+        "For a lot of Indian groups, New Year's Eve means the south coast, not a city ballroom. December is dry season down there, the surf towns throw the parties, and Galle is two hours from the airport.",
+        body, faqs, vids=("BCvFI6xQs9M","CUdyIyeODvA","cznBiktig4w"), occasion="New Year's Eve",
+        source="Sources: Anantara, Aman and Resplendent Ceylon festive pages (2026); Mixmag Asia on Dots Bay House and The Doctor's House (2024 to 2026); Resident Advisor listings; Daily FT on Smoke &amp; Bitters, Raa and Ropewalk (July 2026); MICHELIN Guide; Act No. 41 of 2022; Ada Derana on drug arrests (May 2026) and sentencing (April 2025); Newsfirst on loudspeaker rules (August 2026); Newswire on a Mirissa rescue (December 2025); Lonely Planet and National Geographic on surfing.")
+
 NAV = [("city-of-dreams-sri-lanka", "City of Dreams guide"), ("luxury-weekend-in-colombo", "Luxury weekend in Colombo"),
-       ("colombo-nightlife", "Colombo nightlife"), ("bachelor-party-in-colombo", "Bachelor and bachelorette weekends"),
+       ("colombo-nightlife", "Colombo nightlife"), ("bachelor-party-in-colombo", "Bachelor and bachelorette weekends"), ("south-coast-parties", "South coast parties"),
        ("events-calendar", "Events calendar")]
 
-PAGES = [("index", hub), ("city-of-dreams-sri-lanka", cod), ("luxury-weekend-in-colombo", weekend), ("colombo-nightlife", nightlife), ("bachelor-party-in-colombo", bachelor), ("events-calendar", events)]
+PAGES = [("index", hub), ("city-of-dreams-sri-lanka", cod), ("luxury-weekend-in-colombo", weekend), ("colombo-nightlife", nightlife), ("bachelor-party-in-colombo", bachelor), ("south-coast-parties", south), ("events-calendar", events)]
 
 def build(write):
     for slug, fn in PAGES:

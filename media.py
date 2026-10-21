@@ -62,6 +62,9 @@ IzKwdP6hcLY|2024-07-03|The Rooftop Guide|8503|192|Best Rooftop Bars in Colombo|n
 9119VUOlspA|2026-09-05|Walking Pixels 4K|11768|968|Colombo Port City Waterfront Night Walk: Illuminated Foot Bridge and Galle Face Skyline|portcity,nightlife
 zqba47Zl-Wk|2026-04-15|Aarush Bhola Fit - Mess|924471|1165|Full Enjoy at Sri Lanka: Boys Trip|friends
 bu0jyUlkwdc|2026-04-19|Chirag Khanna|78250|1429|Sri Lanka with the boys|friends
+BCvFI6xQs9M|2025-05-16|Mithun Hansraj|21375|482|Mirissa Sri Lanka Nightlife Tour: Beach Nightlife, Party Clubs, Bars and Cafes|south,nightlife
+CUdyIyeODvA|2026-04-02|Sons & Eri|33989|1956|We Did Not Expect This in South Sri Lanka: Mirissa, Weligama, Hiriketiya, Tangalle|south
+cznBiktig4w|2026-05-26|Kovai Outdoors|198561|1816|Hikkaduwa Beach, Sri Lanka (Tamil vlog)|south
 """
 
 def _len_txt(s):

@@ -413,7 +413,7 @@ dict(slug="sri-lanka-in-december", h1="Sri Lanka in December 2026: weather, wher
 <h2>What is on in December 2026</h2>
 <ul><li><strong>Unduvap Poya, Wednesday 23 December:</strong> a public holiday, and traditionally the start of the Adam's Peak (Sri Pada) pilgrimage season, which runs to Vesak in May. Liquor shops close on Poya days; star hotels usually serve.</li>
 <li><strong>Christmas, Friday 25 December:</strong> a public holiday. Colombo's malls and hotels decorate from late November.</li>
-<li><strong>New Year's Eve:</strong> fireworks over Galle Face Green and Port City. See our <a href="new-year-in-sri-lanka-from-india.html">New Year in Sri Lanka guide</a>.</li>
+<li><strong>New Year's Eve:</strong> fireworks over Galle Face Green and Port City in Colombo, or galas and surf town parties on the south coast. See our <a href="new-year-in-sri-lanka-from-india.html">New Year in Sri Lanka guide</a> and <a href="../luxury/south-coast-parties.html">south coast parties</a>.</li>
 <li><strong>Whale watching:</strong> Mirissa's season runs through the northeast monsoon months, from about late November to April.</li>
 <li><strong>Leopards:</strong> Yala is open. Blocks 1 and 2 closed for drought from 14 September and reopened on 16 October 2026.</li></ul>
 <h2>What to skip in December</h2>
@@ -440,8 +440,8 @@ dict(slug="sri-lanka-in-december", h1="Sri Lanka in December 2026: weather, wher
  source="Sources: Sri Lanka Tourism weather guide; Newsfirst on the northeast monsoon (December 2025); The Morning on the 2026 Met Department outlook; Government of Sri Lanka 2026 holiday calendar; Newsfirst and Newswire on Yala (September and October 2026); Sri Lanka Navy whale watching; SLTDA December 2025 arrivals; Ada Derana on railway repairs (July 2026)."),
 
 dict(slug="new-year-in-sri-lanka-from-india", h1="New Year in Sri Lanka from India: where to be at midnight",
- title="New Year in Sri Lanka 2027 from India: Plans and Parties",
- desc="Ring in 2027 in Sri Lanka: fireworks over Galle Face and Port City, hotel galas, south coast resorts, a 4 night plan from India, and what to book now. Plus Sri Lanka's April New Year.",
+ title="New Year in Sri Lanka 2027 from India: Colombo or the Beach",
+ desc="Ring in 2027 in Sri Lanka: Galle Face and Port City fireworks in Colombo, or south coast galas and surf town parties in Tangalle, Weligama and Hiriketiya. Plans and what to book now.",
  card="Fireworks over Galle Face and Port City, beach galas, and what to book now.",
  videos=["B2OIRRQbz8I","GHGrijFEpgU","oriToNJZG-k"],
  watch_h="Colombo and Port City, <em>on film.</em>",
@@ -452,16 +452,18 @@ dict(slug="new-year-in-sri-lanka-from-india", h1="New Year in Sri Lanka from Ind
 <tr><td class="hl">Galle Face Green, Colombo</td><td>The big free public party: crowds, music, food stalls and the fireworks overhead</td><td>Groups of friends</td></tr>
 <tr><td class="hl">Port City Colombo</td><td>Fireworks over the marina; Port City put on its own display to welcome 2025</td><td>Couples, a view without the crush</td></tr>
 <tr><td class="hl">A Colombo hotel gala</td><td>Ballroom dinners and dance nights in the big city hotels</td><td>Families and corporate groups</td></tr>
-<tr><td class="hl">South coast resort</td><td>Gala dinners on the beach around Galle, Bentota and Mirissa, usually sold as a package with your stay</td><td>Honeymooners</td></tr>
+<tr><td class="hl">Anantara Peace Haven, Tangalle</td><td>The Celestial Gala: buffet, fireworks and an after party, USD 390 per adult (announced for 2026)</td><td>Families and couples</td></tr>
+<tr><td class="hl">Amangalla or Cape Weligama</td><td>Fort and clifftop galas with midnight fireworks; Amangalla adds a DJ by the pool from 11 pm</td><td>Honeymooners</td></tr>
+<tr><td class="hl">Hiriketiya and the surf towns</td><td>Dots Bay House sold out its New Year's Eve 2025 party; Ahangama and Mirissa run their own nights</td><td>Groups of friends</td></tr>
 </table></div>
-<p class="small">Events for 31 December 2026 are usually announced in November and December. Last year's line up is a guide, not a promise.</p>
+<p class="small">Colombo's public events are usually announced in November and December; the south coast resort galas above are already on sale. Full details in our <a href="../luxury/south-coast-parties.html">south coast parties guide</a>.</p>
 <h2>A 4 night New Year plan from India</h2>
 <ol><li><strong>29 December:</strong> land in Colombo, drive down the expressway to Galle or Bentota.</li>
 <li><strong>30 December:</strong> Galle Fort, beach, whale watching from Mirissa if you are keen.</li>
 <li><strong>31 December:</strong> back to Colombo in the afternoon. Dinner, then Galle Face Green or a hotel gala for midnight.</li>
 <li><strong>1 January:</strong> a slow breakfast, Port City and Galle Face by day.</li>
 <li><strong>2 January:</strong> fly home.</li></ol>
-<p>Prefer the beach at midnight? Flip it: Colombo first, then a south coast resort for the 31st.</p>
+<p>Prefer the beach at midnight? Flip it: Colombo first, then a south coast resort or a surf town party for the 31st. See <a href="../luxury/south-coast-parties.html">south coast parties and New Year galas</a>.</p>
 <p>Want suites, a table and a driver sorted? See <a href="../luxury/index.html">Colombo after dark</a> and our VIP weekend concierge.</p>
 <h2>Know before you go</h2>
 <ul><li><strong>Book now:</strong> this is the most expensive fortnight of the season, and it overlaps Indian school winter breaks. Flights and Colombo hotels with a Galle Face view sell out first.</li>
@@ -471,7 +473,7 @@ dict(slug="new-year-in-sri-lanka-from-india", h1="New Year in Sri Lanka from Ind
 <h2>Sri Lanka's own New Year is in April</h2>
 <p>The island's biggest celebration is Sinhala and Tamil New Year, on 13 and 14 April 2027: family feasts, kiribath, games and an auspicious time to light the hearth. Closer to New Year's Day, Tamils celebrate Thai Pongal on 15 January 2027, and Duruthu Poya falls on 22 January, when the Kelaniya temple near Colombo holds its Duruthu Perahera procession.</p>
 <p>Staying on into January? See <a href="sri-lanka-in-december.html">Sri Lanka in December</a> for weather and where to go.</p>""",
- faq=[("Where can I celebrate New Year's Eve in Colombo?","Galle Face Green is the big free public party, with fireworks overhead. Port City Colombo puts on fireworks over the marina, and the large city hotels run ballroom galas. South coast resorts host beach gala dinners."),
+ faq=[("Where can I celebrate New Year's Eve in Sri Lanka?","In Colombo, Galle Face Green is the big free public party with fireworks, and the city hotels run galas. On the south coast, Anantara Peace Haven Tangalle (USD 390 per adult), Amangalla and Cape Weligama have announced 2026 galas, and the surf towns of Hiriketiya, Ahangama and Mirissa run party nights."),
       ("Are there fireworks in Colombo on New Year's Eve?","Yes. To welcome 2026, fireworks went up over Galle Face Green, Port City and the Lotus Tower. Plans for 31 December 2026 are usually announced in November and December."),
       ("Is Sri Lanka expensive at New Year?","It is the peak of the season, so hotels and flights cost the most. Book by October or early November, and look at south coast villas shared between two families."),
       ("When is Sinhala and Tamil New Year in 2027?","13 and 14 April 2027. It is Sri Lanka's biggest festival, celebrated with family feasts, kiribath and traditional games."),
