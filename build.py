@@ -381,7 +381,7 @@ HERO_MAP = {
     "logistics.html": "ship", "why/ports-shipping.html": "ship",
     "second-home.html": "aerial_b", "travel.html": "aerial_a", "hi/yatra.html": "aerial_a",
     "watch.html": "aerial_a", "404.html": "aerial_a",
-    "guides/ramayana-trail.html": "temple", "guides/sri-lanka-in-december.html": "aerial_b", "guides/new-year-in-sri-lanka-from-india.html": "plaza", "guides/trade-in-rupees-india-sri-lanka.html": "ship", "why/tea.html": "tea",
+    "guides/ramayana-trail.html": "temple", "guides/sri-lanka-in-december.html": "aerial_b", "luxury/index.html": "plaza", "guides/new-year-in-sri-lanka-from-india.html": "plaza", "guides/trade-in-rupees-india-sri-lanka.html": "ship", "why/tea.html": "tea",
     "why/technology.html": "plaza", "why/gcc.html": "plaza", "why/fintech.html": "plaza",
     "why/bpo-kpo.html": "containers", "why/mice-events.html": "containers", "why/film-production.html": "containers",
     "why/index.html": "aerial_b", "guides/index.html": "aerial_a",
@@ -491,9 +491,9 @@ def build_sitemap():
     return files
 
 def main():
-    import home, sectors, guides, cities, pages_extra, hindi, tools
+    import home, sectors, guides, cities, pages_extra, hindi, tools, luxury
     build_pillars()
-    for mod in (home, sectors, guides, cities, pages_extra, hindi, tools):
+    for mod in (home, sectors, guides, cities, pages_extra, hindi, tools, luxury):
         mod.build(write)
     build_404()
     files = build_sitemap()

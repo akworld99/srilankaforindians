@@ -194,7 +194,8 @@ def header(depth=0, lang="en", alt_path=None):
       <a class="nav-tax" href="{p}port-city-tax.html">7.5% Tax</a>
       <a href="{p}why/index.html">Why Sri Lanka</a>
       <a href="{p}travel.html" class="hide-m">Journeys</a>
-      <a href="{p}watch.html">Watch</a>
+      <a href="{p}luxury/index.html">Luxury</a>
+      <a href="{p}watch.html" class="hide-m">Watch</a>
       <a class="nav-lang" href="{p}{alt_path or 'hi/index.html'}" hreflang="hi" lang="hi">हिंदी</a>
       <a class="btn btn-wa" href="{wa_link('Hi, I found you on srilankaforindians.com')}" rel="noopener">WhatsApp</a>"""
         home = f"{p}index.html"
@@ -257,6 +258,7 @@ def footer(depth=0, lang="en", extra_js=""):
         <li><a href="{p}logistics.html">Logistics</a></li>
         <li><a href="{p}second-home.html">The second address</a></li>
         <li><a href="{p}travel.html">Journeys</a></li>
+        <li><a href="{p}luxury/index.html">Luxury and nightlife</a></li>
       </ul></div>
       <div><h4>Why Sri Lanka</h4><ul>
         <li><a href="{p}why/technology.html">Technology</a></li>
