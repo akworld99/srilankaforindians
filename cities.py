@@ -10,7 +10,7 @@ ALL_CITIES = [
  ("delhi","Delhi NCR","3 hr 30 min","&#8377;11,000 to 22,000","Direct flights on SriLankan and IndiGo.","Swap one winter smog week for Galle sea air. Many NCR firms are weighing Port City as their India plus one.",1,["cRQu04IaAUk","Bu86Z_7VzAA","GHyNEH0kQ3o"]),
  ("bengaluru","Bengaluru","About 1 hr 30 min","&#8377;8,000 to 16,000","Multiple daily direct flights. Weekend trips are genuinely practical.","Bengaluru tech teams are exactly who Port City is courting for business continuity centres.",1,["gaLWS85uCzA","52E5aIUxzj8","hvOeE4eW8As"]),
  ("hyderabad","Hyderabad","1 hr 50 min","&#8377;8,000 to 16,000","Regular direct flights on IndiGo and SriLankan.","Pharma and IT firms from Hyderabad fit the island's GCC pitch, and big Telugu weddings fit its resorts.",1,["VpQiRlaI5bo","WvMdSZ7fmJY","hvOeE4eW8As"]),
- ("kolkata","Kolkata","2 hr 45 min","&#8377;10,000 to 21,000","One stop via Chennai, Bengaluru or Delhi; there is no regular nonstop to Colombo.","Puja holidays line up with the start of the west coast season. Plan accordingly.",1,["13_rx2SwFgY","Bu86Z_7VzAA","q0mbKsKG-ng"]),
+ ("kolkata","Kolkata","5 to 7 hr","&#8377;10,000 to 21,000","One stop via Chennai, Bengaluru or Delhi; there is no regular nonstop to Colombo.","Puja holidays line up with the start of the west coast season. Plan accordingly.",1,["13_rx2SwFgY","Bu86Z_7VzAA","q0mbKsKG-ng"]),
  ("ahmedabad","Ahmedabad","3 to 4 hr","&#8377;10,000 to 20,000","One stop via Mumbai or Chennai for now. SriLankan Airlines has announced Ahmedabad as its tenth Indian city, so watch for a direct route.","Gujarati family groups and diamond traders were among the first to spot Ceylon sapphires and Colombo property.",1,["RCHD60fpDnA","0tyHQkz2rwg","hvOeE4eW8As"]),
  ("pune","Pune","3 to 4 hr","&#8377;9,000 to 18,000","Via Mumbai, Bengaluru or Chennai.","Pune's auto and IT exporters already ship through Colombo. Visit the port your containers transit.",1,["jmJlx-UIDsk","jOEz-ON842A","GHyNEH0kQ3o"]),
  ("kochi","Kochi","1 hr 10 min","&#8377;6,500 to 13,000","Short direct flights; the quickest international hop many Malayalis will ever take.","Kerala and Sri Lanka share the coconut, the lagoon and the Ayurveda economy. The island feels like home, with leopards.",2,["Tw_Ki1aw0us","D1nxIlWT6o0","iXQ3ij9h6WM"]),
@@ -120,9 +120,9 @@ def page(c):
 </div></section>
 """ + cta_banner(f"Flying from {name}?", "One message gets you a plan: trip, wedding, property or business. Your guide on the island replies the same day.", f"Hi, I am from {name}")
     schema = crumb_schema([("From your city", "from/index.html"), (name, f"from/{slug}.html")]) + "\n" + faq_schema(faqs) + "\n" + video_schema(vids)
-    title = f"Sri Lanka from {name}: Flights, Trip Cost and Visa 2026"
-    if len(title) > 60: title = f"Sri Lanka from {name}: Flights and Visa 2026"
-    desc = f"Sri Lanka from {name}: {time} to Colombo, return fares around {fare.replace('&#8377;','Rs ')}, and a free visa for Indians. Plan trips, weddings and property with a local guide."
+    title = f"{name} to Sri Lanka Flights: Time, Fares and Visa 2026"
+    if len(title) > 60: title = f"{name} to Sri Lanka Flights and Visa 2026"
+    desc = f"{name} to Sri Lanka: {time} to Colombo, return fares around {fare.replace('&#8377;','Rs ')}, and a free visa for Indians. Plan trips, weddings and property with a local guide."
     return head(title, desc, f"from/{slug}.html", depth, schema) + header(depth) + body + footer(depth)
 
 def hub():

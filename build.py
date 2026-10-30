@@ -84,7 +84,7 @@ PAGES["weddings.html"] = dict(
 )
 
 PAGES["real-estate.html"] = dict(
-    title="Can Indians Buy Property in Sri Lanka? 2026 Rules and Costs",
+    title="Can Indians Buy Property or Land in Sri Lanka? 2026 Rules",
     desc="Yes. Indians can buy condos on any floor and lease land for 99 years, but not own freehold land. 2026 rules, costs, LRS, TCS and the investor visa.",
     body=f"""
 <section class="hero"><div class="wrap">

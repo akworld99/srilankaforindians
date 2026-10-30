@@ -5,6 +5,16 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK1H1EL9KC"></script>
 <script>
+  (function(){
+    var off=false;
+    try {
+      var q=location.search;
+      if(/[?&]internal=1/.test(q)) localStorage.setItem('slfi_internal','1');
+      if(/[?&]internal=0/.test(q)) localStorage.removeItem('slfi_internal');
+      off=localStorage.getItem('slfi_internal')==='1';
+    } catch(e) {}
+    if(off || navigator.webdriver || location.hostname!=='srilankaforindians.com') window['ga-disable-G-EK1H1EL9KC']=true;
+  })();
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -39,7 +49,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&family=Tiro+Devanagari+Hindi:ital@0;1&family=Mukta:wght@300;400;600&display=swap">
 <link rel="stylesheet" href="../assets/css/style.css?v=14">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://srilankaforindians.com/"},{"@type":"ListItem","position":2,"name":"श्रीलंकाई रुपया","item":"https://srilankaforindians.com/hi/shrilanka-rupaya-inr.html"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1 श्रीलंकाई रुपया कितने भारतीय रुपये के बराबर है?","acceptedAnswer":{"@type":"Answer","text":"लगभग 0.29 भारतीय रुपये। यानी 1 भारतीय रुपया लगभग 3.49 श्रीलंकाई रुपये के बराबर है (20 October 2026)। ऊपर का कन्वर्टर ताज़ा रेट दिखाता है।"}},{"@type":"Question","name":"दिमाग में जल्दी कैसे बदलें?","acceptedAnswer":{"@type":"Answer","text":"श्रीलंकाई कीमत को 3.5 से भाग दें। LKR 3,500 का खाना लगभग 1,000 रुपये का है।"}},{"@type":"Question","name":"क्या श्रीलंका में भारतीय रुपया चलता है?","acceptedAnswer":{"@type":"Answer","text":"रोज़मर्रा के भुगतान में नहीं। दुकानें और होटल श्रीलंकाई रुपये में दाम लेते हैं। LankaQR वाली जगहों पर UPI चलता है।"}},{"@type":"Question","name":"भारत से कितना भारतीय कैश ले जा सकते हैं?","acceptedAnswer":{"@type":"Answer","text":"RBI के नियम के अनुसार विदेश यात्रा पर 25,000 रुपये तक के भारतीय नोट ले जा सकते हैं (नेपाल और भूटान को छोड़कर)। बाकी के लिए फॉरेक्स कार्ड या UPI इस्तेमाल करें।"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"1 श्रीलंकाई रुपया कितने भारतीय रुपये के बराबर है?","acceptedAnswer":{"@type":"Answer","text":"लगभग 0.29 भारतीय रुपये। यानी 1 भारतीय रुपया लगभग 3.49 श्रीलंकाई रुपये के बराबर है (30 October 2026)। ऊपर का कन्वर्टर ताज़ा रेट दिखाता है।"}},{"@type":"Question","name":"दिमाग में जल्दी कैसे बदलें?","acceptedAnswer":{"@type":"Answer","text":"श्रीलंकाई कीमत को 3.5 से भाग दें। LKR 3,500 का खाना लगभग 1,000 रुपये का है।"}},{"@type":"Question","name":"क्या श्रीलंका में भारतीय रुपया चलता है?","acceptedAnswer":{"@type":"Answer","text":"रोज़मर्रा के भुगतान में नहीं। दुकानें और होटल श्रीलंकाई रुपये में दाम लेते हैं। LankaQR वाली जगहों पर UPI चलता है।"}},{"@type":"Question","name":"भारत से कितना भारतीय कैश ले जा सकते हैं?","acceptedAnswer":{"@type":"Answer","text":"RBI के नियम के अनुसार विदेश यात्रा पर 25,000 रुपये तक के भारतीय नोट ले जा सकते हैं (नेपाल और भूटान को छोड़कर)। बाकी के लिए फॉरेक्स कार्ड या UPI इस्तेमाल करें।"}}]}</script>
 <link rel="preload" as="image" href="https://i.ytimg.com/vi/NGoCQ3HyxQs/maxres2.jpg" fetchpriority="high">
 </head>
 <body>
@@ -81,14 +91,14 @@
       <button class="btn btn-ghost fx-swap" id="fx-swap" type="button" aria-label="दिशा बदलें">&#8646; बदलें</button>
       <div class="field"><label id="fx-to-l">भारतीय रुपये (INR)</label><output id="fx-out" class="fx-out" for="fx-amt">&#8377;2,865</output></div>
     </div>
-    <p class="small fx-meta" id="fx-meta">1 INR = 3.49 LKR &middot; रेट 20 October 2026 का। बैंक या कार्ड अपना मार्जिन जोड़ते हैं।</p>
+    <p class="small fx-meta" id="fx-meta">1 INR = 3.49 LKR &middot; रेट 30 October 2026 का। बैंक या कार्ड अपना मार्जिन जोड़ते हैं।</p>
   </div>
   <div class="table-scroll" style="margin-top:36px; max-width:560px"><table style="min-width:0"><tr><th>श्रीलंकाई रुपये</th><th class="num">भारतीय रुपये</th></tr><tr><td class="num">LKR 100</td><td class="num" data-lkr="100">&#8377;29</td></tr><tr><td class="num">LKR 500</td><td class="num" data-lkr="500">&#8377;143</td></tr><tr><td class="num">LKR 1,000</td><td class="num" data-lkr="1000">&#8377;287</td></tr><tr><td class="num">LKR 5,000</td><td class="num" data-lkr="5000">&#8377;1,433</td></tr><tr><td class="num">LKR 10,000</td><td class="num" data-lkr="10000">&#8377;2,865</td></tr><tr><td class="num">LKR 50,000</td><td class="num" data-lkr="50000">&#8377;14,327</td></tr><tr><td class="num">LKR 1,00,000</td><td class="num" data-lkr="100000">&#8377;28,653</td></tr></table></div>
   <p style="margin-top:26px">पूरी यात्रा का खर्च देखें: <a href="yatra.html">श्रीलंका यात्रा गाइड</a>।</p>
 </div></section>
 <section class="band sand"><div class="wrap">
   <span class="eyebrow">सीधे जवाब</span>
-  <div style="margin-top:20px; max-width:880px"><details><summary>1 श्रीलंकाई रुपया कितने भारतीय रुपये के बराबर है?</summary><p>लगभग 0.29 भारतीय रुपये। यानी 1 भारतीय रुपया लगभग 3.49 श्रीलंकाई रुपये के बराबर है (20 October 2026)। ऊपर का कन्वर्टर ताज़ा रेट दिखाता है।</p></details><details><summary>दिमाग में जल्दी कैसे बदलें?</summary><p>श्रीलंकाई कीमत को 3.5 से भाग दें। LKR 3,500 का खाना लगभग 1,000 रुपये का है।</p></details><details><summary>क्या श्रीलंका में भारतीय रुपया चलता है?</summary><p>रोज़मर्रा के भुगतान में नहीं। दुकानें और होटल श्रीलंकाई रुपये में दाम लेते हैं। LankaQR वाली जगहों पर UPI चलता है।</p></details><details><summary>भारत से कितना भारतीय कैश ले जा सकते हैं?</summary><p>RBI के नियम के अनुसार विदेश यात्रा पर 25,000 रुपये तक के भारतीय नोट ले जा सकते हैं (नेपाल और भूटान को छोड़कर)। बाकी के लिए फॉरेक्स कार्ड या UPI इस्तेमाल करें।</p></details></div>
+  <div style="margin-top:20px; max-width:880px"><details><summary>1 श्रीलंकाई रुपया कितने भारतीय रुपये के बराबर है?</summary><p>लगभग 0.29 भारतीय रुपये। यानी 1 भारतीय रुपया लगभग 3.49 श्रीलंकाई रुपये के बराबर है (30 October 2026)। ऊपर का कन्वर्टर ताज़ा रेट दिखाता है।</p></details><details><summary>दिमाग में जल्दी कैसे बदलें?</summary><p>श्रीलंकाई कीमत को 3.5 से भाग दें। LKR 3,500 का खाना लगभग 1,000 रुपये का है।</p></details><details><summary>क्या श्रीलंका में भारतीय रुपया चलता है?</summary><p>रोज़मर्रा के भुगतान में नहीं। दुकानें और होटल श्रीलंकाई रुपये में दाम लेते हैं। LankaQR वाली जगहों पर UPI चलता है।</p></details><details><summary>भारत से कितना भारतीय कैश ले जा सकते हैं?</summary><p>RBI के नियम के अनुसार विदेश यात्रा पर 25,000 रुपये तक के भारतीय नोट ले जा सकते हैं (नेपाल और भूटान को छोड़कर)। बाकी के लिए फॉरेक्स कार्ड या UPI इस्तेमाल करें।</p></details></div>
 </div></section>
 <a class="wa-float" href="https://wa.me/94716147945?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%2C%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%B2%E0%A4%82%E0%A4%95%E0%A4%BE%20%E0%A4%95%E0%A5%87%20%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87%20%E0%A4%AE%E0%A5%87%E0%A4%82%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%8F" rel="noopener" aria-label="WhatsApp +94 71 614 7945"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.2-3.8 1.2 1.2-3.7-.3-.4a10.4 10.4 0 0 1-1.6-5.6C5.2 10 10 5.3 16 5.3S26.8 10 26.8 15.8 22 26.4 16 26.4zm5.9-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.8 5 .8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg><span>WhatsApp</span></a>
 <footer>
@@ -149,7 +159,7 @@
 <script>
 (function(){
   var rate=3.49, dir='lkr', amt=document.getElementById('fx-amt'), out=document.getElementById('fx-out'), meta=document.getElementById('fx-meta');
-  function ind(n){return Math.round(n).toLocaleString('en-IN');}
+  function ind(n){return n<100 ? n.toFixed(2) : Math.round(n).toLocaleString('en-IN');}
   function run(){
     var v=parseFloat(amt.value)||0;
     out.textContent = dir==='lkr' ? '\u20B9'+ind(v/rate) : 'LKR '+ind(v*rate);

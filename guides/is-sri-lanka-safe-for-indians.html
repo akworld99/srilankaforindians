@@ -5,6 +5,16 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK1H1EL9KC"></script>
 <script>
+  (function(){
+    var off=false;
+    try {
+      var q=location.search;
+      if(/[?&]internal=1/.test(q)) localStorage.setItem('slfi_internal','1');
+      if(/[?&]internal=0/.test(q)) localStorage.removeItem('slfi_internal');
+      off=localStorage.getItem('slfi_internal')==='1';
+    } catch(e) {}
+    if(off || navigator.webdriver || location.hostname!=='srilankaforindians.com') window['ga-disable-G-EK1H1EL9KC']=true;
+  })();
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());

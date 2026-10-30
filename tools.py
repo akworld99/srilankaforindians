@@ -1,8 +1,8 @@
 """Utility pages that answer high volume searches: LKR to INR converter."""
 from sitekit import *
 
-FALLBACK_LKR_PER_INR = 3.49   # 20 Oct 2026, open.er-api.com: 1 INR = 3.4946 LKR
-RATE_DATE = "20 October 2026"
+FALLBACK_LKR_PER_INR = 3.49   # 30 Oct 2026, open.er-api.com: 1 INR = 3.4898 LKR
+RATE_DATE = "30 October 2026"
 
 def fmt_in(n):
     """Indian digit grouping: 1,00,000"""
@@ -21,7 +21,7 @@ def converter_js(r, hi=False):
     return f"""<script>
 (function(){{
   var rate={r}, dir='lkr', amt=document.getElementById('fx-amt'), out=document.getElementById('fx-out'), meta=document.getElementById('fx-meta');
-  function ind(n){{return Math.round(n).toLocaleString('en-IN');}}
+  function ind(n){{return n<100 ? n.toFixed(2) : Math.round(n).toLocaleString('en-IN');}}
   function run(){{
     var v=parseFloat(amt.value)||0;
     out.textContent = dir==='lkr' ? '\\u20B9'+ind(v/rate) : 'LKR '+ind(v*rate);
@@ -50,8 +50,9 @@ def converter_js(r, hi=False):
 
 def converter():
     r = FALLBACK_LKR_PER_INR
-    lkr_rows = "".join(f'<tr><td class="num">LKR {fmt_in(a)}</td><td class="num" data-lkr="{a}">&#8377;{fmt_in(a / r)}</td></tr>'
+    lkr_rows = "".join(f'<tr><td class="num"><a href="lkr-to-inr/{a}-lkr-to-inr.html">LKR {fmt_in(a)}</a></td><td class="num" data-lkr="{a}">&#8377;{fmt_in(a / r)}</td></tr>'
                        for a in (100, 500, 1000, 2000, 5000, 10000, 25000, 50000, 100000, 1000000))
+    pop = "".join(f'<a href="lkr-to-inr/{a}-lkr-to-inr.html">{fmt_in(a)} LKR to INR</a>' for a in AMOUNTS)
     inr_rows = "".join(f'<tr><td class="num">&#8377;{fmt_in(a)}</td><td class="num" data-inr="{a}">LKR {fmt_in(a * r)}</td></tr>'
                        for a in (100, 500, 1000, 2000, 5000, 10000, 25000, 50000, 100000))
     faqs = [
@@ -67,7 +68,7 @@ def converter():
   <p class="crumbs"><a href="index.html">Home</a> &rsaquo; LKR to INR</p>
   <span class="eyebrow">Currency converter</span>
   <h1>Sri Lankan rupee to Indian rupee, <em>live.</em></h1>
-  <p class="lead">Type an amount and switch direction. Quick rule while you travel: <strong style="color:#fff;font-weight:500">divide any Sri Lankan price by 3.5</strong> to get rupees.</p>
+  <p class="lead"><strong style="color:#fff;font-weight:500">1 Sri Lankan rupee = &#8377;{1 / r:.3f}</strong> and 1 Indian rupee = LKR {r:.2f} today. Type an amount and switch direction. Quick rule while you travel: <strong style="color:#fff;font-weight:500">divide any Sri Lankan price by 3.5</strong> to get rupees.</p>
 </div></section>
 
 <section class="band"><div class="wrap">
@@ -84,6 +85,8 @@ def converter():
     <div class="card"><h3>LKR to INR</h3><div class="table-scroll"><table style="min-width:0"><tr><th>Sri Lankan rupees</th><th class="num">Indian rupees</th></tr>{lkr_rows}</table></div></div>
     <div class="card"><h3>INR to LKR</h3><div class="table-scroll"><table style="min-width:0"><tr><th>Indian rupees</th><th class="num">Sri Lankan rupees</th></tr>{inr_rows}</table></div></div>
   </div>
+  <h3 style="margin-top:44px">Popular amounts</h3>
+  <div class="chips" style="margin-top:16px">{pop}</div>
 </div></section>
 
 <section class="band sand"><div class="wrap prose">
@@ -106,7 +109,7 @@ def converter():
 """ + cta_banner("Planning the trip, not just the money?", "Tell us dates and budget in rupees. We send back a plan with real prices.", "Hi, I want a Sri Lanka plan within my budget")
     js = converter_js(r)
     schema = crumb_schema([("LKR to INR", "sri-lankan-rupee-to-inr.html")]) + "\n" + faq_schema(faqs)
-    return head("Sri Lankan Rupee to INR: Live LKR to Indian Rupee Converter",
+    return head("LKR to INR Today: Sri Lankan Rupee to Indian Rupee Converter",
                 f"Convert Sri Lankan rupees to Indian rupees at the live rate. 1 INR is about {r:.2f} LKR: divide Sri Lankan prices by 3.5. Tables, UPI tips and cash rules for Indians.",
                 "sri-lankan-rupee-to-inr.html", 0, schema, alt={"en": "sri-lankan-rupee-to-inr.html", "hi": HI_PATH}) + header(0, alt_path=HI_PATH) + body + footer(0, extra_js=js)
 
@@ -153,6 +156,81 @@ def converter_hi():
                 f"श्रीलंकाई रुपये को भारतीय रुपये में बदलें। 1 INR लगभग {r:.2f} LKR: श्रीलंकाई कीमत को 3.5 से भाग दें। UPI और कैश के नियम भी।",
                 HI_PATH, 1, schema, lang="hi", alt={"en": "sri-lankan-rupee-to-inr.html", "hi": HI_PATH}) + header(1, "hi", "sri-lankan-rupee-to-inr.html") + body + footer(1, "hi", extra_js=js)
 
+AMOUNTS = (1, 5, 10, 20, 25, 50, 100, 200, 250, 300, 500, 800, 1000, 1500, 2000, 2500, 3000, 5000, 6000,
+           10000, 15000, 17500, 20000, 22000, 25000, 30000, 40000, 50000, 60000, 70000, 75000, 100000, 200000, 500000, 1000000)
+
+def amt_path(a): return f"lkr-to-inr/{a}-lkr-to-inr.html"
+
+def fmt_money(v):
+    """Rupee value: paise precision below 100, whole rupees above."""
+    return f"{v:,.2f}" if v < 100 else fmt_in(v)
+
+def amount_page(a):
+    r = FALLBACK_LKR_PER_INR
+    inr = a / r
+    with_margin = inr * 1.035
+    i = AMOUNTS.index(a)
+    near = AMOUNTS[max(0, i - 4): i + 5]
+    rows = "".join(
+        (f'<tr><td class="num"><strong>LKR {fmt_in(x)}</strong></td><td class="num" data-lkr="{x}"><strong>&#8377;{fmt_money(x / r)}</strong></td></tr>' if x == a else
+         f'<tr><td class="num"><a href="{x}-lkr-to-inr.html">LKR {fmt_in(x)}</a></td><td class="num" data-lkr="{x}">&#8377;{fmt_money(x / r)}</td></tr>')
+        for x in near)
+    chips = "".join(f'<a href="{x}-lkr-to-inr.html">{fmt_in(x)} LKR</a>' for x in AMOUNTS if x != a)
+    A = fmt_in(a); I = fmt_money(inr)
+    faqs = [
+        (f"How much is {A} Sri Lankan rupees in Indian rupees?", f"LKR {A} is about &#8377;{I} at the mid market rate of 1 INR = {r:.2f} LKR ({RATE_DATE}). The converter on this page loads the latest rate."),
+        (f"How much will {A} LKR actually cost me with an Indian card?", f"Indian banks and forex cards usually add a markup of 2 to 3.5% plus GST on international spends. At a 3.5% markup, LKR {A} costs you about &#8377;{fmt_money(with_margin)}. A zero markup forex card or UPI on LankaQR keeps it close to &#8377;{I}."),
+        ("What is the quick way to convert LKR to INR?", "Divide the Sri Lankan amount by 3.5. It is close enough for shopping, tuk tuks and restaurant bills."),
+    ]
+    faq_html = "".join(f"<details><summary>{q}</summary><p>{x}</p></details>" for q, x in faqs)
+    body = f"""
+<section class="hero"><div class="wrap">
+  <p class="crumbs"><a href="../index.html">Home</a> &rsaquo; <a href="../sri-lankan-rupee-to-inr.html">LKR to INR</a> &rsaquo; {A} LKR</p>
+  <span class="eyebrow">LKR to INR today</span>
+  <h1>{A} Sri Lankan {"rupee" if a == 1 else "rupees"} = <em data-lkr="{a}">&#8377;{I}</em></h1>
+  <p class="lead">At today's rate of 1 INR = {r:.2f} LKR, <strong style="color:#fff;font-weight:500">LKR {A} is about &#8377;{I}</strong>. Quick rule: divide any Sri Lankan price by 3.5.</p>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="calc fx" id="fx">
+    <div class="fx-row">
+      <div class="field"><label for="fx-amt" id="fx-from-l">Sri Lankan rupees (LKR)</label><input id="fx-amt" type="number" inputmode="decimal" min="0" value="{a}"></div>
+      <button class="btn btn-ghost fx-swap" id="fx-swap" type="button" aria-label="Swap direction">&#8646; Swap</button>
+      <div class="field"><label id="fx-to-l">Indian rupees (INR)</label><output id="fx-out" class="fx-out" for="fx-amt">&#8377;{I}</output></div>
+    </div>
+    <p class="small fx-meta" id="fx-meta">1 INR = {r:.2f} LKR &middot; 1 LKR = &#8377;{1 / r:.3f} &middot; Rate as of {RATE_DATE}. Indicative mid market rate; your bank or card will add a margin.</p>
+  </div>
+
+  <div class="grid c2" style="margin-top:44px">
+    <div class="card"><h3>Amounts near LKR {A}</h3><div class="table-scroll"><table style="min-width:0"><tr><th>Sri Lankan rupees</th><th class="num">Indian rupees</th></tr>{rows}</table></div></div>
+    <div class="card"><h3>What you actually pay</h3>
+      <div class="table-scroll"><table style="min-width:0">
+        <tr><th>How you pay</th><th class="num">Cost of LKR {A}</th></tr>
+        <tr><td>Mid market rate</td><td class="num">&#8377;{I}</td></tr>
+        <tr><td>Card with 3.5% markup</td><td class="num">&#8377;{fmt_money(with_margin)}</td></tr>
+      </table></div>
+      <p class="small" style="margin-top:14px">Paying in Sri Lanka? <a href="../guides/money-upi-sim.html">UPI, cards and cash for Indians</a>.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="band sand"><div class="wrap">
+  <span class="eyebrow">Quick answers</span>
+  <div style="margin-top:20px; max-width:880px">{faq_html}</div>
+  <h3 style="margin-top:44px">Other amounts</h3>
+  <div class="chips" style="margin-top:16px">{chips}</div>
+  <p style="margin-top:26px">Budgeting the whole trip? See the <a href="../guides/trip-cost-from-india.html">Sri Lanka trip cost from India</a> in rupees, or the <a href="../sri-lankan-rupee-to-inr.html">full LKR to INR converter</a>.</p>
+</div></section>
+""" + cta_banner("Planning the trip, not just the money?", "Tell us dates and budget in rupees. We send back a plan with real prices.", "Hi, I want a Sri Lanka plan within my budget")
+    js = converter_js(r)
+    schema = crumb_schema([("LKR to INR", "sri-lankan-rupee-to-inr.html"), (f"{A} LKR", amt_path(a))]) + "\n" + faq_schema(faqs)
+    unit = "Rupee" if a == 1 else "Rupees"
+    return head(f"{a} LKR to INR Today: {A} Sri Lankan {unit} = \u20b9{I}",
+                f"{A} Sri Lankan {unit.lower()} is about \u20b9{I} today (1 INR = {r:.2f} LKR). Live converter, nearby amounts and what it costs on an Indian card.",
+                amt_path(a), 1, schema) + header(1) + body + footer(1, extra_js=js)
+
 def build(write):
     write("sri-lankan-rupee-to-inr.html", converter())
     write(HI_PATH, converter_hi())
+    for a in AMOUNTS:
+        write(amt_path(a), amount_page(a))

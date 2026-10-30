@@ -1,350 +1,490 @@
 {
 "business.html": {
-"d": "2026-10-21",
-"h": "6406800d569b8e9c89a824869de905d874c7fa1d"
+"d": "2026-10-30",
+"h": "6e1ee2905b6d35919d187e30c8cea207d015c50a"
 },
 "from/ahmedabad.html": {
-"d": "2026-10-21",
-"h": "a85fffc7b00c819e3c8c171b62c31c1a3fa78ac9"
+"d": "2026-10-30",
+"h": "472eb3a8c67563d4c42bb5d671e9dc66b6eb019a"
 },
 "from/bengaluru.html": {
-"d": "2026-10-21",
-"h": "1a7bc38ee7d3ed99ee551b31aa5dc6b059a6b701"
+"d": "2026-10-30",
+"h": "578f63a5874bf92fa22a88476ea52060cbc3c666"
 },
 "from/bhopal.html": {
-"d": "2026-10-21",
-"h": "4c1916b0975018ce33552ad826e8db85538534f9"
+"d": "2026-10-30",
+"h": "6826065c9462edc8db66dea819a13216dcc5d564"
 },
 "from/bhubaneswar.html": {
-"d": "2026-10-21",
-"h": "58bbf21304d40954e1ca697f03c3195894bec109"
+"d": "2026-10-30",
+"h": "e5e15f33527133064098f0eb7b574926f5ae54cc"
 },
 "from/chandigarh.html": {
-"d": "2026-10-21",
-"h": "a7d3b4ae1a683884e159ec82c251c3e131c3d312"
+"d": "2026-10-30",
+"h": "5bea5be6c44a055bda1b3fab038d3ab963400cf4"
 },
 "from/chennai.html": {
-"d": "2026-10-21",
-"h": "969fb515365ce42e8d23d74b64b9beae13f15426"
+"d": "2026-10-30",
+"h": "623c02f3f677dda9eec4a4565790e7bd5e1a3668"
 },
 "from/coimbatore.html": {
-"d": "2026-10-21",
-"h": "151b41bff25a60f15b96660d3e9a1d68c10e5389"
+"d": "2026-10-30",
+"h": "3e50ea80b4c6cb4d1381200e09a5f649d8523b8e"
 },
 "from/delhi.html": {
-"d": "2026-10-21",
-"h": "a6d7d75ee0749be33f612244caa7616b87aeefea"
+"d": "2026-10-30",
+"h": "6307d30f56a23bad99d2c5efb5593e84aad61440"
 },
 "from/hyderabad.html": {
-"d": "2026-10-21",
-"h": "78c5ece81f6cfc4b8c170f39154c8846d253b33e"
+"d": "2026-10-30",
+"h": "235dd15f8efb67421f79a45a157e4ef6f2e4e246"
 },
 "from/index.html": {
-"d": "2026-10-21",
-"h": "023ef485b30f25ea59ad5044c85900ba88047cbb"
+"d": "2026-10-30",
+"h": "acf0926ba7ab751190fa3bdfe9a8eb5096a1f376"
 },
 "from/indore.html": {
-"d": "2026-10-21",
-"h": "f5f6862066d550d46fbe8f24ca3829da5e7bcf63"
+"d": "2026-10-30",
+"h": "5f6fa612f1b426e38ca8d2b65edf51433f2fa83b"
 },
 "from/jaipur.html": {
-"d": "2026-10-21",
-"h": "75ed6c797df30e0f04aebc1411fc8d159a0e6c11"
+"d": "2026-10-30",
+"h": "e045339c28a79cdd6b10bb79d01a897c8b935c17"
 },
 "from/kochi.html": {
-"d": "2026-10-21",
-"h": "38ab9e660ea7020a9a1f95929cf27b120460cf8c"
+"d": "2026-10-30",
+"h": "bc45e84ead2408575796c04730d2d3ab5fecc888"
 },
 "from/kolkata.html": {
-"d": "2026-10-21",
-"h": "13b34d9d7a459ed3ab00ff72d840a4a8027f1b06"
+"d": "2026-10-30",
+"h": "ea3b04746418f66e8ae6f7742baa5f91cddfc8cb"
 },
 "from/lucknow.html": {
-"d": "2026-10-21",
-"h": "0c00db4ffd9ceb116e44f1bd07e55587511fa100"
+"d": "2026-10-30",
+"h": "c5910ca4a49e26f2dfb28f9bf24897dbcbd36482"
 },
 "from/madurai.html": {
-"d": "2026-10-21",
-"h": "79699361d7469327a7036eda2dc0b5b682f88926"
+"d": "2026-10-30",
+"h": "973409bb43f4ea05cc01581a094ca3848222bddf"
 },
 "from/mangaluru.html": {
-"d": "2026-10-21",
-"h": "249d5069482a4d6eca7dc467df16a3588531ddac"
+"d": "2026-10-30",
+"h": "067cbdd80e27fe40207edf3adad13161c81bc10c"
 },
 "from/mumbai.html": {
-"d": "2026-10-21",
-"h": "61a854fbce431bbf5f3b0273fd39ef3e76e58ae4"
+"d": "2026-10-30",
+"h": "8aa505781ec96980c815349118c77786587138f8"
 },
 "from/nagpur.html": {
-"d": "2026-10-21",
-"h": "603c3143ee866bdd6b9fdad50262f1d5035c69f3"
+"d": "2026-10-30",
+"h": "3dd8ae1aa6630cb55b7b4cbd2bd8fc3eb53dbae5"
 },
 "from/pune.html": {
-"d": "2026-10-21",
-"h": "a6d5b0624446665bc984331c53bd02b292a186c9"
+"d": "2026-10-30",
+"h": "9a6f5dfd73e147e7905ba34b73fc156c4ae9dafc"
 },
 "from/surat.html": {
-"d": "2026-10-21",
-"h": "1812ea30587ba66fcd78fa630a7a9e78232a9d78"
+"d": "2026-10-30",
+"h": "bd124578e296bc62da6c4b9b3e6d096e2c07c793"
 },
 "from/thiruvananthapuram.html": {
-"d": "2026-10-21",
-"h": "aff5a2ab18b7d5f876fdfb5f2727429f8ef6ae12"
+"d": "2026-10-30",
+"h": "bd4193306eb0863cfa419172baffd38247ded554"
 },
 "from/tiruchirappalli.html": {
-"d": "2026-10-21",
-"h": "44bdf5e29819afe839679de2f404e3707a815bb2"
+"d": "2026-10-30",
+"h": "78e75c3070b0d99bc61ec2681ba0aed35d05821a"
 },
 "from/vadodara.html": {
-"d": "2026-10-21",
-"h": "990f969bc8431f255f6fae6a4a1df62542a9dbc3"
+"d": "2026-10-30",
+"h": "dc94d6b89f68e368f6e9e235c77f535ce0c062f8"
 },
 "from/varanasi.html": {
-"d": "2026-10-21",
-"h": "d6fa836973fe8f85abd4a724d117ce2b493c1839"
+"d": "2026-10-30",
+"h": "b400c230a53542bba07af51115e81ade9d28f81b"
 },
 "from/visakhapatnam.html": {
-"d": "2026-10-21",
-"h": "21f53afe77991ab0f49331054d9961503d49f4cb"
+"d": "2026-10-30",
+"h": "0c134322cf53e88e4639e713c7eaa4dcb9cc5e16"
 },
 "guides/best-time-to-visit.html": {
-"d": "2026-10-21",
-"h": "046cc16b2d17ebe776545335eefa01c81d56c1e8"
+"d": "2026-10-30",
+"h": "d9993f3a3f11ac0300c311d59a4d2ffd39a1d1c5"
 },
 "guides/ferry-india-to-sri-lanka.html": {
-"d": "2026-10-21",
-"h": "3302a2378396f9ad5c18014899f192082bfd7489"
+"d": "2026-10-30",
+"h": "92bcbcfe45d2ab6cea9ae4605ac8aeddb69bd8d9"
 },
 "guides/hindu-temples-in-sri-lanka.html": {
-"d": "2026-10-21",
-"h": "f2e894868a87550133783bf8f319d4d02c90f644"
+"d": "2026-10-30",
+"h": "1d1e66ab417a6606a45833e4a42299c2453c0e0f"
 },
 "guides/honeymoon-from-india.html": {
-"d": "2026-10-21",
-"h": "52ac0f3f2008321c98e6d9057877e2beeb0b9cd7"
+"d": "2026-10-30",
+"h": "26e3c287282c478e1e24b7501493e8de1018f86f"
 },
 "guides/index.html": {
-"d": "2026-10-21",
-"h": "39da22e3ad7b28652cb30ac9b4cfc73dcf867919"
+"d": "2026-10-30",
+"h": "907f1c3eb9de95afe20227b5c44be536bbd858aa"
 },
 "guides/india-sri-lanka-free-trade-agreement.html": {
-"d": "2026-10-21",
-"h": "551b6dba00b17a0abd3f876eeebf18af275a1626"
+"d": "2026-10-30",
+"h": "60efe7b8046d6c34184d60e6be6f40fd274dc9c6"
 },
 "guides/is-sri-lanka-safe-for-indians.html": {
-"d": "2026-10-21",
-"h": "acf88252135f87f013219cbf22fb651f9ad94211"
+"d": "2026-10-30",
+"h": "f535a87d20e3329950ac4332968608d5cbab0ee5"
 },
 "guides/long-stay-visas-sri-lanka.html": {
-"d": "2026-10-21",
-"h": "f097d8cb30deb444274b6ef264756c57446f6b8f"
+"d": "2026-10-30",
+"h": "d05dac650d0dd075550bae10429d521bd30d8203"
 },
 "guides/money-upi-sim.html": {
-"d": "2026-10-21",
-"h": "a7a2387d1494dde580ffb90041e846c686a47ac1"
+"d": "2026-10-30",
+"h": "6f61d2540824b635521a1e0aaa3bae0c8c175cf7"
 },
 "guides/new-year-in-sri-lanka-from-india.html": {
-"d": "2026-10-21",
-"h": "1aeb54ebfbff21de871bdcc2a73ea7b79aed0aea"
+"d": "2026-10-30",
+"h": "536a1080cc4bec367bd1ab5c798c5c8408871f6f"
 },
 "guides/port-city-vs-gift-city-vs-dubai.html": {
-"d": "2026-10-21",
-"h": "ecec2598fa1ea1908989f46501d9e031dbda9cc9"
+"d": "2026-10-30",
+"h": "14bfc82c4c7a1965907c328b7853ca9f8b9a1f6e"
 },
 "guides/ramayana-trail.html": {
-"d": "2026-10-21",
-"h": "c51dd3a3f62b082691f076488e9796f79a7e6fe8"
+"d": "2026-10-30",
+"h": "f02936a14e8ea130b734e9779309da704e95cb3a"
 },
 "guides/sri-lanka-in-december.html": {
-"d": "2026-10-21",
-"h": "a8d2d35b59b0fdf72920ca7f6f3c727e9ac1909e"
+"d": "2026-10-30",
+"h": "5e54dd3aa9bcdd4c32cc729ef2b4574894b27afb"
 },
 "guides/sri-lanka-itinerary-from-india.html": {
-"d": "2026-10-21",
-"h": "09a1d078156e7eb99b3c711607e3f876333a1e6c"
+"d": "2026-10-30",
+"h": "c22af0c84a617e9553e3aea3e6e1ccc28386fe25"
 },
 "guides/sri-lanka-tour-packages-from-india.html": {
-"d": "2026-10-21",
-"h": "e3b88af56a887915456c8b63e2adc883d66cf39e"
+"d": "2026-10-30",
+"h": "6061261d50b493d3da722822929013857e4214e5"
 },
 "guides/sri-lanka-vs-maldives-for-indians.html": {
-"d": "2026-10-21",
-"h": "da7186ecee3398bd757a1144484ab0d229dd0444"
+"d": "2026-10-30",
+"h": "9a32e19f2d8e0400b148635df78137e1ce96e8fd"
 },
 "guides/start-a-company-in-sri-lanka.html": {
-"d": "2026-10-21",
-"h": "25e74f2ddd813709ac0aaa7fd006ed2074d65954"
+"d": "2026-10-30",
+"h": "c5758cadd5ac0d8d74f8a1387a86ba37b5792e98"
 },
 "guides/trade-in-rupees-india-sri-lanka.html": {
-"d": "2026-10-21",
-"h": "f5750fbe856445b6e1f1c519f43716f23e4eae4b"
+"d": "2026-10-30",
+"h": "3c12e7beeabda3e8c073009b2fdee3390efc125b"
 },
 "guides/trip-cost-from-india.html": {
-"d": "2026-10-21",
-"h": "06bbc7339b13bf86904756339ae21ebea0e9de0f"
+"d": "2026-10-30",
+"h": "cce1c82cdfb538ff9a68096427152810b00fd2fb"
 },
 "guides/vegetarian-food-in-sri-lanka.html": {
-"d": "2026-10-21",
-"h": "e695bb87b9bc93d0af9097f3cc7c553a891d96c0"
+"d": "2026-10-30",
+"h": "ad178cbbd3f1e7ff6935b2d8f44ed177de4dfdfc"
 },
 "guides/visa-for-indians.html": {
-"d": "2026-10-21",
-"h": "98457f2f357871c5cd74f4794b1de01620c28b24"
+"d": "2026-10-30",
+"h": "3be3c4b82c55186ace00da6654e09a29cd80baad"
 },
 "hi/index.html": {
-"d": "2026-10-21",
-"h": "a8f324df94a1d3e3819f58e0aa87b47fe8423f7b"
+"d": "2026-10-30",
+"h": "9919b509f06f90c86ae9243bfd425bdbda40b2dd"
 },
 "hi/port-city-tax.html": {
-"d": "2026-10-21",
-"h": "ea4b3857d6d7a5489ac92aa4df63bac37296b0f0"
+"d": "2026-10-30",
+"h": "3e11a69b7e8364599c40e6debfe2795ac3550e50"
 },
 "hi/property.html": {
-"d": "2026-10-21",
-"h": "a14a60365abd6fecea715aaa56f0c1715c840497"
+"d": "2026-10-30",
+"h": "4eb63179ee855322d7fef4fd23c7c988125167a4"
 },
 "hi/shaadi.html": {
-"d": "2026-10-21",
-"h": "fbb4be90b876e501396470b23d951541ba1c4e5d"
+"d": "2026-10-30",
+"h": "0c73096b55e3c42230414afd91e32d02772bc1a5"
 },
 "hi/shrilanka-rupaya-inr.html": {
-"d": "2026-10-21",
-"h": "6678ba9138ad3e5c2ba6fe1d497646f1b43778b0"
+"d": "2026-10-30",
+"h": "ea43fd8d339143ea5dd7007d90a92f2aace81999"
 },
 "hi/yatra.html": {
-"d": "2026-10-21",
-"h": "40d50ce73a466005862e0eb973dfb637030759e0"
+"d": "2026-10-30",
+"h": "68c42f83318fbac245564a7f7b2c80598a69658a"
 },
 "index.html": {
-"d": "2026-10-21",
-"h": "9516900828f001ed369423a6933644f4a495086c"
+"d": "2026-10-30",
+"h": "1330591435f7977d246d8889c27cfaf1794edbc9"
+},
+"lkr-to-inr/1-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "bba2079c3f1a11ef4e8709e1de733ac53af52cc4"
+},
+"lkr-to-inr/10-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "521676c923b9c6ca0040c291a7d956391763afe7"
+},
+"lkr-to-inr/100-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "febe4f17dd38259df1586b5419c6c7aba3e17437"
+},
+"lkr-to-inr/1000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "519623b7a99eb99f13917969d944bb3951034841"
+},
+"lkr-to-inr/10000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "24032321388234356ea975e553e4096d86d0147d"
+},
+"lkr-to-inr/100000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "6fb8f4b59d82abc66024b08bef87fcb5180d0d1e"
+},
+"lkr-to-inr/1000000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "d80bbd9dfae197fdba0d15e99e2db7a547123832"
+},
+"lkr-to-inr/1500-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "bb0505dac26cebd337f9765ac4667b4f0e2b6d33"
+},
+"lkr-to-inr/15000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "32a2bdad114c25baccc2ebe5cbe1ff335b4942c1"
+},
+"lkr-to-inr/17500-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "13a893b0d60add9aee4ff2a7e8aafafe166d811a"
+},
+"lkr-to-inr/20-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "b7766457b463d9b49e6b60303e8490612d4405bb"
+},
+"lkr-to-inr/200-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "69dbf508b7ff68d62adce4b4d573ea0f8523ed76"
+},
+"lkr-to-inr/2000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "473eb477a66c0354f771be1a4d6309652644ca42"
+},
+"lkr-to-inr/20000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "f82367f6b02cced2089672defddf6e5d90d19807"
+},
+"lkr-to-inr/200000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "7f0bdb1cd3573f3722f12ad83ad380e3b2e9014c"
+},
+"lkr-to-inr/22000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "a293af629a3bf2e87e954301cf9d379939d3e268"
+},
+"lkr-to-inr/25-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "969ce63a59c53d6fe6f9faa63d0acae5693d7948"
+},
+"lkr-to-inr/250-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "f1e7e2c841df195953093f159049712ab04304d0"
+},
+"lkr-to-inr/2500-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "7d73bf4ba850be50fad349050fda293ea08f8be7"
+},
+"lkr-to-inr/25000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "21740a61efde5a405dbf675d850dc8c2012ecb73"
+},
+"lkr-to-inr/300-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "7ef96a239471f5f908645544a3ca23d01e2fb026"
+},
+"lkr-to-inr/3000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "5ba5fd7a5424cdd8f1e1b2a772d8ef2eb42aa32e"
+},
+"lkr-to-inr/30000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "7070fcfd81a1d4979b9a496d079afa35cfaff0d0"
+},
+"lkr-to-inr/40000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "18d71cb1e2aa1940fc8a7b3637ddd73026039ec7"
+},
+"lkr-to-inr/5-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "d4dfab86a03294a8db3896a9eed1996025ac7575"
+},
+"lkr-to-inr/50-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "a2454cf69b946c9f39953baeb259c03204eff888"
+},
+"lkr-to-inr/500-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "bb2e272e2bb05d07e0c735979d93a286ad89b412"
+},
+"lkr-to-inr/5000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "cb3f7de685aa1dad97cc6a97b6adfe0fcdd4f5ac"
+},
+"lkr-to-inr/50000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "0eb8291e2c653ba371fc86e3b6175a1a71bd683b"
+},
+"lkr-to-inr/500000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "f92a8f805965023ff2a276b728d363e60179408f"
+},
+"lkr-to-inr/6000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "0b21ca781578924144d933d32f7c316e5036e001"
+},
+"lkr-to-inr/60000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "95d2ce358b15e75fcca487e753cedf2ff87623ad"
+},
+"lkr-to-inr/70000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "3f4a630f6359fbd4c0435433cd50277192555123"
+},
+"lkr-to-inr/75000-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "142f86758427750b21152448b2504fd1f46d1f89"
+},
+"lkr-to-inr/800-lkr-to-inr.html": {
+"d": "2026-10-30",
+"h": "d8cd9da3f17127def4ba6f6b2e2a0f62b790722f"
 },
 "logistics.html": {
-"d": "2026-10-21",
-"h": "c22c8b25e4792ea2773b1bb276a57ae8aa80f7db"
+"d": "2026-10-30",
+"h": "582c7028204b8913a19456bfd3edc4f58e7d9d85"
 },
 "luxury/bachelor-party-in-colombo.html": {
-"d": "2026-10-21",
-"h": "e76c0c3632d53051642689a97d6dcbb52ad77efe"
+"d": "2026-10-30",
+"h": "a99b41ea15bc9c32d5f6d6fea9e826d2e3d33e0d"
 },
 "luxury/city-of-dreams-sri-lanka.html": {
-"d": "2026-10-21",
-"h": "9936f9c3c277e1abf6752fbab46cca4e033c2917"
+"d": "2026-10-30",
+"h": "067620d989c05cacb7bd564ca0fe6c853187a64b"
 },
 "luxury/colombo-nightlife.html": {
-"d": "2026-10-21",
-"h": "ef9c907d2affca2f1c8e6324df29b320f612445e"
+"d": "2026-10-30",
+"h": "8a191cb62836825719d09e6e66160861f6de76d8"
 },
 "luxury/events-calendar.html": {
-"d": "2026-10-21",
-"h": "50bd2ac9e897b27f3703330dd489e2017ce1c608"
+"d": "2026-10-30",
+"h": "8db562ad1eb67f1d13f2f9b3f364655a42304bd8"
 },
 "luxury/index.html": {
-"d": "2026-10-21",
-"h": "46750d2b18cff70219cba879d9a0da25b33be9df"
+"d": "2026-10-30",
+"h": "df14bdf468f70a5408fde740382a0cc612ae9c15"
 },
 "luxury/luxury-weekend-in-colombo.html": {
-"d": "2026-10-21",
-"h": "476e2ae1a4cea8b4b16a95690df2b44a51786980"
+"d": "2026-10-30",
+"h": "40f7448506a543ed2f85b7129a23b295efc41855"
 },
 "luxury/south-coast-parties.html": {
-"d": "2026-10-21",
-"h": "64d2ea82464f50dad9d17d094fd486d6d7adcb39"
+"d": "2026-10-30",
+"h": "e860af99c73d53e9eb873c03ad3647bee6f64ba4"
 },
 "port-city-tax.html": {
-"d": "2026-10-21",
-"h": "670c778ee93ff1739ddbbeccc0ac2e15ae423938"
+"d": "2026-10-30",
+"h": "72bbcfef6689c9bc1215ec261dadee5fef46f406"
 },
 "real-estate.html": {
-"d": "2026-10-21",
-"h": "3b6ed5de77ba43f2c4af6d35f8ca49b741b6a9d3"
+"d": "2026-10-30",
+"h": "da28be2e90459c3a3472ae828a1e43c625a42cbd"
 },
 "second-home.html": {
-"d": "2026-10-21",
-"h": "d53b184c8574d3a6a7aa6bfa9d9db33625ed3cda"
+"d": "2026-10-30",
+"h": "85b514a3f0a85b6a14b8f5d8b8cc3ef691c503d9"
 },
 "sri-lankan-rupee-to-inr.html": {
-"d": "2026-10-21",
-"h": "d6166f5dd0c4b4d225c0c6c6621c12b58cd13c8e"
+"d": "2026-10-30",
+"h": "b49aeb37c6c7e0c1217c0709a25be539a778542d"
 },
 "travel.html": {
-"d": "2026-10-21",
-"h": "11bc2072825d8cf6607201b38654af7d007d2201"
+"d": "2026-10-30",
+"h": "6b6fac8f41d001d55808657245341adae2fa92c4"
 },
 "watch.html": {
-"d": "2026-10-21",
-"h": "78a0f61b895ebe62cbf221319b2b9f3afe647d97"
+"d": "2026-10-30",
+"h": "cadbcee8bb8549b35a29907679c6a112f588a8b7"
 },
 "weddings.html": {
-"d": "2026-10-21",
-"h": "839b273cbed28dfa950cd6e8881a0cf6f6cf195b"
+"d": "2026-10-30",
+"h": "f301dfc4e39cb87bf935d4469d26307d06185511"
 },
 "why/apparel-textiles.html": {
-"d": "2026-10-21",
-"h": "e90c51240027bebd997c8b0441502f6bdafb035b"
+"d": "2026-10-30",
+"h": "4ad1311c6191f5530bf6b405e355afced57ec7e1"
 },
 "why/ayurveda-wellness.html": {
-"d": "2026-10-21",
-"h": "360b79c3c0056d6f9996564b2dcafa4114b9cbd5"
+"d": "2026-10-30",
+"h": "6f6d87066bf60acc18caa70bac376c6e734479ce"
 },
 "why/bpo-kpo.html": {
-"d": "2026-10-21",
-"h": "2c94a8e6199a33e849a4898b58311105aa860959"
+"d": "2026-10-30",
+"h": "c2e677f74361d633d0c02f3d10058d98e3bebc5f"
 },
 "why/coconut-coir.html": {
-"d": "2026-10-21",
-"h": "ebeb11c20c632117b652d9a4954576afdddc1f1d"
+"d": "2026-10-30",
+"h": "da10c8985d6f31322b47ff38cc2bea0cc7b5758b"
 },
 "why/film-production.html": {
-"d": "2026-10-21",
-"h": "f1bb51084672efcae44f8867129597b13878ca50"
+"d": "2026-10-30",
+"h": "47a16e98e22e73d686b68cb382bc4e37df2a8328"
 },
 "why/fintech.html": {
-"d": "2026-10-21",
-"h": "b2fc50fd6566b44d182d78160dc42646c0afc6b6"
+"d": "2026-10-30",
+"h": "c2a58fa52deb92e9ff9c6c5a456068be349cffa0"
 },
 "why/gcc.html": {
-"d": "2026-10-21",
-"h": "c3df966cb986399172f02db772e56757448db6f6"
+"d": "2026-10-30",
+"h": "694a66752b838d9c79a54fd68e49b9a635715ff7"
 },
 "why/gems-jewellery.html": {
-"d": "2026-10-21",
-"h": "863b7362da5931f66cf774e7e647fd0792bf6eee"
+"d": "2026-10-30",
+"h": "80a7806c01031a0d8d9b3cacababb76efabbddcc"
 },
 "why/graphite-minerals.html": {
-"d": "2026-10-21",
-"h": "78be2a8903666c6bfd429d358fe39ce314bb77a4"
+"d": "2026-10-30",
+"h": "23621a6c75f74dd28829e40a3a678abe52be73f5"
 },
 "why/hospitality-hotels.html": {
-"d": "2026-10-21",
-"h": "d946ca7fa950b1ab366c9b897e89771db68afc92"
+"d": "2026-10-30",
+"h": "a8d140b60711cb58f40190b6bed443ac3b630004"
 },
 "why/index.html": {
-"d": "2026-10-21",
-"h": "60e18b3eba6c0bd169033226eb7e01b59cf18998"
+"d": "2026-10-30",
+"h": "0c3a4b1dee1cc430f38c71f03d104c93183c8144"
 },
 "why/mice-events.html": {
-"d": "2026-10-21",
-"h": "16037508dcae2b166a5aee8db8a60dd3da458c48"
+"d": "2026-10-30",
+"h": "aecbf5d6102e9b72010281fd5544ea6101f75d9e"
 },
 "why/ports-shipping.html": {
-"d": "2026-10-21",
-"h": "217b543e460b5bd4c51f324aa082899183842162"
+"d": "2026-10-30",
+"h": "5f33bec475654f24689409f0cea421d08a7da6e7"
 },
 "why/renewable-energy.html": {
-"d": "2026-10-21",
-"h": "d7fef469df1240f6e805d79a7bb004bb04742f83"
+"d": "2026-10-30",
+"h": "8ec231a8aceadfaff7c122cbafb98355ce43d52e"
 },
 "why/spices.html": {
-"d": "2026-10-21",
-"h": "94d812bf9e77b4ed22ec0033bfb9d907f7bb7fa1"
+"d": "2026-10-30",
+"h": "0448798eb46eb7191f3b877097315ba8ab03017c"
 },
 "why/tea.html": {
-"d": "2026-10-21",
-"h": "b5b610587264939a2e4600e053c960e6f7bcee9c"
+"d": "2026-10-30",
+"h": "6343d5d685d5e011075896dd4650c6632896fee5"
 },
 "why/technology.html": {
-"d": "2026-10-21",
-"h": "a890e0c2d0d315d145dc7f46373f6d2d06f81e0d"
+"d": "2026-10-30",
+"h": "07057f8f1c25553100e5ad70a1cc96b221721217"
 }
 }

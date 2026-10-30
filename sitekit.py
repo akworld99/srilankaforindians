@@ -88,6 +88,16 @@ def head(title, desc, path, depth=0, schema="", lang="en", alt=None, og_image=No
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
 <script>
+  (function(){{
+    var off=false;
+    try {{
+      var q=location.search;
+      if(/[?&]internal=1/.test(q)) localStorage.setItem('slfi_internal','1');
+      if(/[?&]internal=0/.test(q)) localStorage.removeItem('slfi_internal');
+      off=localStorage.getItem('slfi_internal')==='1';
+    }} catch(e) {{}}
+    if(off || navigator.webdriver || location.hostname!=='srilankaforindians.com') window['ga-disable-{GA_ID}']=true;
+  }})();
   window.dataLayer = window.dataLayer || [];
   function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());

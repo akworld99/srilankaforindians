@@ -4,7 +4,7 @@ from media import pick
 
 GUIDES = [
 dict(slug="visa-for-indians", h1="Sri Lanka visa for Indians: free ETA, 2026",
- title="Sri Lanka Visa for Indians 2026: Free ETA and Extension",
+ title="Sri Lanka Visa for Indians 2026: Free ETA, Cost, Extension",
  desc="Sri Lanka's tourist ETA is free for Indians since 25 May 2026: 30 days, double entry. How to apply, how to extend up to 270 days, fees and the business visa.",
  card="Free 30 day double entry ETA since 25 May 2026. How to apply, step by step.",
  videos=["XOWAaOTSCtM","qCWQAeRXhZU"],
@@ -481,7 +481,7 @@ dict(slug="new-year-in-sri-lanka-from-india", h1="New Year in Sri Lanka from Ind
  source="Sources: Ada Derana and The Morning on New Year's Eve 2025 in Colombo (January 2026); Ada Derana on Port City's fireworks (January 2025); LMD on hotel galas (October 2025); Ada Derana on the police traffic plan (December 2025); Gazette 2493/05 of 2026 on 2027 public holidays; Government of Sri Lanka 2026 holiday calendar."),
 
 dict(slug="trip-cost-from-india", h1="How much does a Sri Lanka trip cost from India?",
- title="Sri Lanka Trip Cost from India 2026 in Rupees",
+ title="Sri Lanka Trip Cost from India 2026: Budget in Rupees",
  desc="What a 6 night Sri Lanka trip costs from India in 2026: flights from every metro, hotels, car with driver, food and entry fees. Budget, mid range and luxury bands per person.",
  card="Six nights, three budgets, every cost line. Flights from your city included.",
  videos=["Bu86Z_7VzAA","VpQiRlaI5bo","RCHD60fpDnA"],

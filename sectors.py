@@ -18,7 +18,7 @@ dict(slug="technology", name="Technology", eyebrow="Why Sri Lanka for tech",
  faq=[("Is Sri Lanka good for software development outsourcing?","Yes for many teams. Sri Lanka exported $1.64 billion of ICT and BPM services in 2025, its engineers work in English, and Colombo shares India's time zone. Global software firms such as IFS and WSO2 run large engineering teams there."),
       ("Can an Indian IT company set up inside Port City Colombo?","Yes. Port City allows full foreign ownership, and approved Businesses of Strategic Importance can receive corporate tax holidays of 8 to 15 years under Regulation 01 of 2025. Approval comes from the Colombo Port City Economic Commission.")]),
 
-dict(slug="bpo-kpo", name="BPO and KPO", eyebrow="Why Sri Lanka for BPO and KPO",
+dict(slug="bpo-kpo", title="Why Sri Lanka for BPO and KPO: A Guide for Indian Companies", desc="Why Sri Lanka for BPO and KPO? A finance, accounting and legal outsourcing base trusted by UK and Australian clients, English speaking teams, and a 7.5% tax rate for approved Port City firms.", name="BPO and KPO", eyebrow="Why Sri Lanka for BPO and KPO",
  h1="Finance, legal and voice teams <em>that clients trust.</em>",
  lead="Sri Lanka built its outsourcing reputation on finance and accounting for UK and Australian clients. It has one of the largest pools of CIMA trained management accountants outside Britain, and a legal system that works in English.",
  facts=[("$1.64B","ICT and BPM exports in 2025"),("CIMA","One of the largest CIMA communities outside the UK"),("English","The language of contracts, courts and boardrooms")], source=EDB,
@@ -191,6 +191,8 @@ dict(slug="mice-events", name="MICE and Events", eyebrow="Why Sri Lanka for even
       ("Do business visitors need a different visa?","Conference delegates and business visitors should apply for the appropriate business ETA. Check eta.gov.lk for the current category and fee.")]),
 
 dict(slug="film-production", name="Film and Production", eyebrow="Why Sri Lanka for film",
+ title="Filming in Sri Lanka: Incentives and Permits for Indian Crews",
+ desc="Does Sri Lanka offer film incentives or rebates? Not a cash rebate yet. What it does offer Indian crews: a single window permit being set up in 2026, low costs and every location within a day.",
  h1="Every location, <em>within a day's drive.</em>",
  lead="Hollywood has known it for decades. The Bridge on the River Kwai was filmed at Kitulgala, and Indiana Jones and the Temple of Doom shot scenes here. Beaches, rainforest, misty highlands and colonial forts sit within a few hours of each other.",
  facts=[("Kitulgala","Where The Bridge on the River Kwai was filmed"),("Temple of Doom","Indiana Jones shot scenes in Sri Lanka"),("1 day","Beach to highlands drive")], source="Production history, Sri Lanka Tourism.",
@@ -200,7 +202,8 @@ dict(slug="film-production", name="Film and Production", eyebrow="Why Sri Lanka 
  india="Bollywood, Tamil and Telugu song shoots, ad films and OTT productions get variety without long haul travel. We connect you with fixers and permit specialists.",
  videos=["q0mbKsKG-ng","8g9ccCkT-u0"],
  faq=[("Which famous films were shot in Sri Lanka?","The Bridge on the River Kwai was filmed at Kitulgala, and Indiana Jones and the Temple of Doom filmed scenes in Sri Lanka."),
-      ("Do Indian film crews need permits to shoot in Sri Lanka?","Yes. Filming generally needs approvals and some locations require separate permits. Work with a local fixer who handles them.")]),
+      ("Does Sri Lanka offer film incentives or rebates for foreign productions?","Not a cash rebate. Unlike Malaysia or Thailand, Sri Lanka has no percentage rebate on local spend as of October 2026. The saving comes from lower location, crew and hotel costs. In June 2026 the Presidential Secretariat began setting up a single window approval system so foreign films, ads and music videos no longer need separate permits from several agencies."),
+     ("Do Indian film crews need permits to shoot in Sri Lanka?","Yes. Filming generally needs approvals and some locations require separate permits. Work with a local fixer who handles them.")]),
 ]
 
 EXISTING = [("weddings.html","Weddings"),("real-estate.html","Real Estate"),("logistics.html","Logistics"),("second-home.html","Second Home"),("travel.html","Travel")]
@@ -258,8 +261,8 @@ def page(s):
 </div></section>
 """ + cta_banner(f"Exploring {s['name'].lower()} in Sri Lanka?", "Tell us your plan. We introduce you to the right people in 48 hours.", f"Hi, I want to explore {s['name']} in Sri Lanka")
     schema = crumb_schema([("Why Sri Lanka", "why/index.html"), (s["name"], f"why/{s['slug']}.html")]) + "\n" + faq_schema(s["faq"]) + "\n" + video_schema(vids)
-    title = f"{s['name']} in Sri Lanka for Indian Companies | Sri Lanka for Indians"
-    desc = re.sub("<[^>]+>", "", s["lead"])[:300]
+    title = s.get("title") or f"{s['name']} in Sri Lanka for Indian Companies | Sri Lanka for Indians"
+    desc = s.get("desc") or re.sub("<[^>]+>", "", s["lead"])[:300]
     return head(title, desc, f"why/{s['slug']}.html", depth, schema) + header(depth) + body + footer(depth)
 
 def hub():
